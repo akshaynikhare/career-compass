@@ -1,0 +1,325 @@
+{
+  "schema_version": 1,
+  "personality": [
+    {
+      "id": "p01",
+      "text": "I enjoy building or fixing things with my hands — like a bicycle, a gadget, or something at home.",
+      "dimension": "R",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p02",
+      "text": "I prefer working outdoors or in a workshop rather than sitting at a desk all day.",
+      "dimension": "R",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p03",
+      "text": "When something breaks at home (a fan, a tap, a switch), I am the first to try and fix it.",
+      "dimension": "R",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p04",
+      "text": "I enjoy activities like cooking, pottery, stitching, or woodwork where I use my hands to make something.",
+      "dimension": "R",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p05",
+      "text": "I like figuring out how or why something works — even if it takes a long time.",
+      "dimension": "I",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p06",
+      "text": "I often ask 'why' and 'how' questions that go beyond what is taught in class.",
+      "dimension": "I",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p07",
+      "text": "I enjoy doing experiments — in the science lab or even trying things out at home — to test an idea.",
+      "dimension": "I",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p08",
+      "text": "I would rather draw, write a story, or play music than solve a maths problem.",
+      "dimension": "A",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p09",
+      "text": "I enjoy expressing myself creatively — through art, dance, photography, writing, or music.",
+      "dimension": "A",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p10",
+      "text": "When given a school project, I focus more on how it looks and how creative it is than following the exact format.",
+      "dimension": "A",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p11",
+      "text": "I naturally step in to help a friend who is struggling, even without being asked.",
+      "dimension": "S",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p12",
+      "text": "I enjoy explaining topics to my classmates or younger students — I feel satisfied when they understand.",
+      "dimension": "S",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p13",
+      "text": "I am good at understanding how someone feels, even when they do not say it directly.",
+      "dimension": "S",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p14",
+      "text": "People often come to me when they need advice or someone to talk to.",
+      "dimension": "S",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p15",
+      "text": "I enjoy convincing others to try something I believe in.",
+      "dimension": "E",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p16",
+      "text": "In group projects, I usually end up taking charge and deciding how things will be done.",
+      "dimension": "E",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p17",
+      "text": "I enjoy the idea of starting something new — a small business, a school club, or an event — and making it successful.",
+      "dimension": "E",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p18",
+      "text": "I like making lists and keeping my things — notes, timetable, books — well organized.",
+      "dimension": "C",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p19",
+      "text": "I prefer following a clear set of steps or rules to complete a task rather than doing it my own way.",
+      "dimension": "C",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    },
+    {
+      "id": "p20",
+      "text": "I am comfortable working with numbers, spreadsheets, or accounts — keeping track of figures feels natural to me.",
+      "dimension": "C",
+      "weight": 1.0,
+      "options": [
+        { "label": "Strongly disagree", "score": 1 },
+        { "label": "Disagree",          "score": 2 },
+        { "label": "Neutral",           "score": 3 },
+        { "label": "Agree",             "score": 4 },
+        { "label": "Strongly agree",    "score": 5 }
+      ]
+    }
+  ],
+  "constraints": [
+    {
+      "id": "c01",
+      "text": "How many years can your family support your studies after Class 12?",
+      "type": "single",
+      "key": "years_available",
+      "options": [
+        { "label": "1–2 years",  "value": 2 },
+        { "label": "3–4 years",  "value": 4 },
+        { "label": "5–6 years",  "value": 6 },
+        { "label": "7 or more years", "value": 9 }
+      ]
+    },
+    {
+      "id": "c02",
+      "text": "What is your family's approximate yearly budget for your education (fees, hostel, books, etc.)?",
+      "type": "single",
+      "key": "annual_budget_inr",
+      "options": [
+        { "label": "Under ₹50,000",           "value": 50000 },
+        { "label": "₹50,000 – ₹2 Lakh",       "value": 200000 },
+        { "label": "₹2 Lakh – ₹6 Lakh",       "value": 600000 },
+        { "label": "Above ₹6 Lakh",            "value": 1500000 }
+      ]
+    },
+    {
+      "id": "c03",
+      "text": "Are you willing to move to another city or state for your studies?",
+      "type": "single",
+      "key": "can_relocate",
+      "options": [
+        { "label": "Yes, anywhere in India",   "value": true },
+        { "label": "No, I prefer to stay local", "value": false }
+      ]
+    },
+    {
+      "id": "c04",
+      "text": "How comfortable are you with high-stakes entrance exams like NEET or JEE?",
+      "type": "single",
+      "key": "exam_intensity",
+      "options": [
+        { "label": "Very comfortable — I will prepare hard",          "value": 3 },
+        { "label": "Somewhat comfortable",                            "value": 2 },
+        { "label": "I prefer streams without tough entrance exams",   "value": 1 }
+      ]
+    },
+    {
+      "id": "c05",
+      "text": "Which stream are you leaning towards after Class 10?",
+      "type": "single",
+      "key": "stream_pref",
+      "options": [
+        { "label": "Science with Maths (PCM)",  "value": "pcm" },
+        { "label": "Science with Biology (PCB)", "value": "pcb" },
+        { "label": "Commerce",                   "value": "commerce" },
+        { "label": "Arts / Humanities",          "value": "arts" },
+        { "label": "I don't know yet",           "value": "any" }
+      ]
+    }
+  ]
+}

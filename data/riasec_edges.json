@@ -1,0 +1,4118 @@
+{
+  "schema_version": 1,
+  "edges": [
+    {
+      "profession_id": "physician_doctor_general",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "surgeon_general",
+      "R": 0.23,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.27,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "cardiologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "cardiothoracic_surgeon",
+      "R": 0.23,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.27,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "neurologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "neurosurgeon",
+      "R": 0.23,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.27,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "orthopedic_surgeon",
+      "R": 0.23,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.27,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "dermatologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "pediatrician",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "neonatologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "gynecologist_obstetrician",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "ophthalmologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "ent_specialist",
+      "R": 0.23,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.27,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "psychiatrist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "radiologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "anesthesiologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "pathologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "endocrinologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "oncologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "oncosurgeon",
+      "R": 0.23,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.27,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "gastroenterologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "hepatologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "nephrologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "pulmonologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "rheumatologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "hematologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "infectious_disease_specialist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "urologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "plastic_surgeon",
+      "R": 0.23,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.27,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "geriatrician",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "palliative_care_specialist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "sports_medicine_doctor",
+      "R": 0.23,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.27,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "sleep_medicine_specialist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "pain_management_specialist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "hyperbaric_medicine_specialist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "pharmacologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "toxicologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "dentist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "orthodontist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "periodontist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "endodontist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "oral_maxillofacial_surgeon",
+      "R": 0.23,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.27,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "pharmacist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "clinical_pharmacist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "physiotherapist",
+      "R": 0.19,
+      "I": 0.39,
+      "A": 0,
+      "S": 0.38,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "sports_physiotherapist",
+      "R": 0.08,
+      "I": 0.37,
+      "A": 0,
+      "S": 0.51,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "neurological_physiotherapist",
+      "R": 0.08,
+      "I": 0.37,
+      "A": 0,
+      "S": 0.51,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "occupational_therapist",
+      "R": 0.08,
+      "I": 0.37,
+      "A": 0,
+      "S": 0.51,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "speech_language_therapist",
+      "R": 0.08,
+      "I": 0.37,
+      "A": 0,
+      "S": 0.51,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "audiologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "optometrist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "dietitian_clinical_nutritionist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "veterinarian",
+      "R": 0.23,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.27,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "veterinary_surgeon",
+      "R": 0.23,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.27,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "midwife",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "nurse_registered",
+      "R": 0.08,
+      "I": 0.37,
+      "A": 0,
+      "S": 0.51,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "nurse_anesthetist_crna",
+      "R": 0.19,
+      "I": 0.39,
+      "A": 0,
+      "S": 0.38,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "critical_care_nurse",
+      "R": 0.08,
+      "I": 0.37,
+      "A": 0,
+      "S": 0.51,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "paramedic_emergency_medical_technician",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "radiographer",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "medical_lab_technician",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "phlebotomist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "prosthetist_orthotist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "hospital_administrator",
+      "R": 0.08,
+      "I": 0.38,
+      "A": 0,
+      "S": 0.33,
+      "E": 0,
+      "C": 0.21
+    },
+    {
+      "profession_id": "health_informatics_specialist",
+      "R": 0.05,
+      "I": 0.54,
+      "A": 0,
+      "S": 0.36,
+      "E": 0,
+      "C": 0.05
+    },
+    {
+      "profession_id": "perfusionist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "ayurvedic_doctor_bams",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "homeopathic_doctor_bhms",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "naturopath_yoga_therapist",
+      "R": 0.08,
+      "I": 0.37,
+      "A": 0,
+      "S": 0.51,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "software_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "backend_developer",
+      "R": 0.14,
+      "I": 0.62,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.09
+    },
+    {
+      "profession_id": "frontend_developer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "full_stack_developer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "data_scientist",
+      "R": 0.14,
+      "I": 0.62,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.09
+    },
+    {
+      "profession_id": "data_engineer",
+      "R": 0.14,
+      "I": 0.62,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.09
+    },
+    {
+      "profession_id": "data_analyst",
+      "R": 0.14,
+      "I": 0.62,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.09
+    },
+    {
+      "profession_id": "ai_ml_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "mlops_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "prompt_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "computer_vision_engineer",
+      "R": 0.14,
+      "I": 0.62,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.09
+    },
+    {
+      "profession_id": "nlp_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "cybersecurity_analyst",
+      "R": 0.14,
+      "I": 0.62,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.09
+    },
+    {
+      "profession_id": "penetration_tester_ethical_hacker",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "security_architect",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "malware_analyst_reverse_engineer",
+      "R": 0.14,
+      "I": 0.62,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.09
+    },
+    {
+      "profession_id": "digital_forensics_investigator",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "devops_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "site_reliability_engineer_sre",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "platform_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "cloud_architect",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "network_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "telecom_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "database_administrator_dba",
+      "R": 0.12,
+      "I": 0.57,
+      "A": 0.04,
+      "S": 0.04,
+      "E": 0,
+      "C": 0.23
+    },
+    {
+      "profession_id": "product_manager_tech",
+      "R": 0.17,
+      "I": 0.41,
+      "A": 0.04,
+      "S": 0,
+      "E": 0.25,
+      "C": 0.13
+    },
+    {
+      "profession_id": "technical_program_manager",
+      "R": 0.17,
+      "I": 0.41,
+      "A": 0.04,
+      "S": 0,
+      "E": 0.25,
+      "C": 0.13
+    },
+    {
+      "profession_id": "ux_ui_designer",
+      "R": 0.18,
+      "I": 0.41,
+      "A": 0.23,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "ux_researcher",
+      "R": 0.14,
+      "I": 0.62,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.09
+    },
+    {
+      "profession_id": "qa_engineer_sdet",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "embedded_systems_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "iot_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "blockchain_developer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "game_developer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "ar_vr_developer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "quantum_computing_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "robotics_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "it_support_technician",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "systems_analyst",
+      "R": 0.14,
+      "I": 0.62,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.09
+    },
+    {
+      "profession_id": "technical_writer",
+      "R": 0.09,
+      "I": 0.47,
+      "A": 0.22,
+      "S": 0.04,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "scrum_master",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "school_teacher_primary",
+      "R": 0,
+      "I": 0.17,
+      "A": 0.22,
+      "S": 0.57,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "school_teacher_secondary",
+      "R": 0,
+      "I": 0.17,
+      "A": 0.22,
+      "S": 0.57,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "professor_lecturer",
+      "R": 0,
+      "I": 0.17,
+      "A": 0.22,
+      "S": 0.57,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "school_principal",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.2,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "special_education_teacher",
+      "R": 0,
+      "I": 0.17,
+      "A": 0.22,
+      "S": 0.57,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "early_childhood_educator",
+      "R": 0,
+      "I": 0.17,
+      "A": 0.22,
+      "S": 0.57,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "school_counselor",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.2,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "career_counselor",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.2,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "curriculum_developer",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.2,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "instructional_designer",
+      "R": 0,
+      "I": 0.14,
+      "A": 0.36,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "corporate_trainer",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.2,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "librarian",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.2,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "tutor_private_coach",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.2,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "education_technology_specialist",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.2,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "academic_researcher",
+      "R": 0,
+      "I": 0.35,
+      "A": 0.17,
+      "S": 0.44,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "education_policy_analyst",
+      "R": 0,
+      "I": 0.35,
+      "A": 0.17,
+      "S": 0.44,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "sign_language_interpreter",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.2,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "lawyer_advocate",
+      "R": 0,
+      "I": 0.24,
+      "A": 0.08,
+      "S": 0.24,
+      "E": 0.36,
+      "C": 0.08
+    },
+    {
+      "profession_id": "corporate_lawyer",
+      "R": 0,
+      "I": 0.26,
+      "A": 0.07,
+      "S": 0.21,
+      "E": 0.25,
+      "C": 0.21
+    },
+    {
+      "profession_id": "criminal_lawyer",
+      "R": 0,
+      "I": 0.24,
+      "A": 0.08,
+      "S": 0.24,
+      "E": 0.36,
+      "C": 0.08
+    },
+    {
+      "profession_id": "constitutional_lawyer",
+      "R": 0,
+      "I": 0.24,
+      "A": 0.08,
+      "S": 0.24,
+      "E": 0.36,
+      "C": 0.08
+    },
+    {
+      "profession_id": "intellectual_property_ip_lawyer",
+      "R": 0,
+      "I": 0.24,
+      "A": 0.08,
+      "S": 0.24,
+      "E": 0.36,
+      "C": 0.08
+    },
+    {
+      "profession_id": "cyber_law_specialist",
+      "R": 0,
+      "I": 0.34,
+      "A": 0.09,
+      "S": 0.26,
+      "E": 0.22,
+      "C": 0.09
+    },
+    {
+      "profession_id": "family_law_attorney",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "judge",
+      "R": 0,
+      "I": 0.24,
+      "A": 0.08,
+      "S": 0.24,
+      "E": 0.36,
+      "C": 0.08
+    },
+    {
+      "profession_id": "public_prosecutor",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "ias_officer",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "ips_officer",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "ifs_officer_indian_foreign_service",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "irs_officer",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "state_civil_services_officer",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "police_inspector_sub_inspector",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "military_officer",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "judge_advocate_general_jag",
+      "R": 0,
+      "I": 0.24,
+      "A": 0.08,
+      "S": 0.24,
+      "E": 0.36,
+      "C": 0.08
+    },
+    {
+      "profession_id": "forensic_scientist",
+      "R": 0,
+      "I": 0.34,
+      "A": 0.09,
+      "S": 0.26,
+      "E": 0.22,
+      "C": 0.09
+    },
+    {
+      "profession_id": "forensic_psychologist",
+      "R": 0,
+      "I": 0.22,
+      "A": 0.09,
+      "S": 0.43,
+      "E": 0.17,
+      "C": 0.09
+    },
+    {
+      "profession_id": "paralegal",
+      "R": 0,
+      "I": 0.24,
+      "A": 0.08,
+      "S": 0.24,
+      "E": 0.36,
+      "C": 0.08
+    },
+    {
+      "profession_id": "notary",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "customs_officer",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "intelligence_analyst",
+      "R": 0,
+      "I": 0.34,
+      "A": 0.09,
+      "S": 0.26,
+      "E": 0.22,
+      "C": 0.09
+    },
+    {
+      "profession_id": "probation_officer",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "diplomat",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "public_policy_analyst",
+      "R": 0,
+      "I": 0.34,
+      "A": 0.09,
+      "S": 0.26,
+      "E": 0.22,
+      "C": 0.09
+    },
+    {
+      "profession_id": "regulatory_affairs_specialist",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.1,
+      "S": 0.3,
+      "E": 0.3,
+      "C": 0.1
+    },
+    {
+      "profession_id": "rti_activist_social_auditor",
+      "R": 0,
+      "I": 0.22,
+      "A": 0.09,
+      "S": 0.26,
+      "E": 0.17,
+      "C": 0.26
+    },
+    {
+      "profession_id": "chartered_accountant_ca",
+      "R": 0,
+      "I": 0.26,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0.26,
+      "C": 0.35
+    },
+    {
+      "profession_id": "cost_management_accountant_cma",
+      "R": 0,
+      "I": 0.26,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0.26,
+      "C": 0.35
+    },
+    {
+      "profession_id": "company_secretary_cs",
+      "R": 0,
+      "I": 0.26,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0.26,
+      "C": 0.35
+    },
+    {
+      "profession_id": "accountant",
+      "R": 0,
+      "I": 0.26,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0.26,
+      "C": 0.35
+    },
+    {
+      "profession_id": "financial_analyst",
+      "R": 0,
+      "I": 0.4,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0.3,
+      "C": 0.17
+    },
+    {
+      "profession_id": "investment_banker",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.4,
+      "C": 0.2
+    },
+    {
+      "profession_id": "equity_research_analyst",
+      "R": 0,
+      "I": 0.4,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0.3,
+      "C": 0.17
+    },
+    {
+      "profession_id": "portfolio_manager",
+      "R": 0,
+      "I": 0.22,
+      "A": 0.04,
+      "S": 0,
+      "E": 0.52,
+      "C": 0.22
+    },
+    {
+      "profession_id": "actuary",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.4,
+      "C": 0.2
+    },
+    {
+      "profession_id": "economist",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.4,
+      "C": 0.2
+    },
+    {
+      "profession_id": "auditor",
+      "R": 0,
+      "I": 0.26,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0.26,
+      "C": 0.35
+    },
+    {
+      "profession_id": "risk_manager",
+      "R": 0,
+      "I": 0.22,
+      "A": 0.04,
+      "S": 0,
+      "E": 0.52,
+      "C": 0.22
+    },
+    {
+      "profession_id": "tax_consultant",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.4,
+      "C": 0.2
+    },
+    {
+      "profession_id": "financial_planner_cfp",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.4,
+      "C": 0.2
+    },
+    {
+      "profession_id": "venture_capital_analyst",
+      "R": 0,
+      "I": 0.4,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0.3,
+      "C": 0.17
+    },
+    {
+      "profession_id": "hedge_fund_analyst",
+      "R": 0,
+      "I": 0.4,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0.3,
+      "C": 0.17
+    },
+    {
+      "profession_id": "stockbroker_dealer",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.4,
+      "C": 0.2
+    },
+    {
+      "profession_id": "insurance_underwriter",
+      "R": 0,
+      "I": 0.24,
+      "A": 0.2,
+      "S": 0.08,
+      "E": 0.32,
+      "C": 0.16
+    },
+    {
+      "profession_id": "insurance_agent_irda_licensed",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.4,
+      "C": 0.2
+    },
+    {
+      "profession_id": "loan_officer",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.4,
+      "C": 0.2
+    },
+    {
+      "profession_id": "credit_analyst",
+      "R": 0,
+      "I": 0.4,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0.3,
+      "C": 0.17
+    },
+    {
+      "profession_id": "anti_money_laundering_aml_analyst",
+      "R": 0,
+      "I": 0.4,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0.3,
+      "C": 0.17
+    },
+    {
+      "profession_id": "real_estate_agent_rera_consultant",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.4,
+      "C": 0.2
+    },
+    {
+      "profession_id": "real_estate_appraiser",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.4,
+      "C": 0.2
+    },
+    {
+      "profession_id": "entrepreneur",
+      "R": 0,
+      "I": 0.22,
+      "A": 0.04,
+      "S": 0,
+      "E": 0.52,
+      "C": 0.22
+    },
+    {
+      "profession_id": "management_consultant",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.4,
+      "C": 0.2
+    },
+    {
+      "profession_id": "supply_chain_manager",
+      "R": 0,
+      "I": 0.22,
+      "A": 0.04,
+      "S": 0,
+      "E": 0.52,
+      "C": 0.22
+    },
+    {
+      "profession_id": "payroll_specialist",
+      "R": 0,
+      "I": 0.26,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0.26,
+      "C": 0.35
+    },
+    {
+      "profession_id": "civil_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "structural_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "geotechnical_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "transportation_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "water_resources_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "environmental_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "mechanical_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "automotive_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "aerospace_aeronautical_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "electrical_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "power_systems_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "electronics_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "vlsi_design_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "rf_microwave_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "chemical_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "polymer_plastics_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "biomedical_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "bioprocess_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "petroleum_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "mining_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "marine_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "naval_architect",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "nuclear_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "industrial_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "agricultural_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "mechatronics_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "materials_science_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "metallurgist",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "surveyor_geomatics_engineer",
+      "R": 0.35,
+      "I": 0.4,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "graphic_designer",
+      "R": 0.05,
+      "I": 0,
+      "A": 0.76,
+      "S": 0.09,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "illustrator",
+      "R": 0,
+      "I": 0.04,
+      "A": 0.8,
+      "S": 0.08,
+      "E": 0.04,
+      "C": 0.04
+    },
+    {
+      "profession_id": "motion_graphics_designer",
+      "R": 0.05,
+      "I": 0,
+      "A": 0.76,
+      "S": 0.09,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "typographer",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "journalist",
+      "R": 0,
+      "I": 0.08,
+      "A": 0.72,
+      "S": 0.12,
+      "E": 0.04,
+      "C": 0.04
+    },
+    {
+      "profession_id": "investigative_journalist",
+      "R": 0,
+      "I": 0.08,
+      "A": 0.72,
+      "S": 0.12,
+      "E": 0.04,
+      "C": 0.04
+    },
+    {
+      "profession_id": "data_journalist",
+      "R": 0,
+      "I": 0.22,
+      "A": 0.63,
+      "S": 0.11,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "photojournalist",
+      "R": 0,
+      "I": 0.08,
+      "A": 0.72,
+      "S": 0.12,
+      "E": 0.04,
+      "C": 0.04
+    },
+    {
+      "profession_id": "filmmaker_director",
+      "R": 0.04,
+      "I": 0.04,
+      "A": 0.57,
+      "S": 0.04,
+      "E": 0.22,
+      "C": 0.09
+    },
+    {
+      "profession_id": "screenwriter",
+      "R": 0,
+      "I": 0.08,
+      "A": 0.72,
+      "S": 0.12,
+      "E": 0.04,
+      "C": 0.04
+    },
+    {
+      "profession_id": "documentary_filmmaker",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "cinematographer_dop",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "film_editor",
+      "R": 0,
+      "I": 0.08,
+      "A": 0.72,
+      "S": 0.12,
+      "E": 0.04,
+      "C": 0.04
+    },
+    {
+      "profession_id": "colorist",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "sound_designer",
+      "R": 0.05,
+      "I": 0,
+      "A": 0.76,
+      "S": 0.09,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "foley_artist",
+      "R": 0.05,
+      "I": 0,
+      "A": 0.76,
+      "S": 0.09,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "music_composer",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "lyricist",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "musician_performer",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "music_producer",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "actor",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "stage_theatre_actor",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "voice_actor",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "standup_comedian",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "author_writer",
+      "R": 0,
+      "I": 0.08,
+      "A": 0.72,
+      "S": 0.12,
+      "E": 0.04,
+      "C": 0.04
+    },
+    {
+      "profession_id": "content_creator_youtube_instagram",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "podcast_producer",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "animator",
+      "R": 0.05,
+      "I": 0,
+      "A": 0.76,
+      "S": 0.09,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "vfx_artist",
+      "R": 0.05,
+      "I": 0,
+      "A": 0.76,
+      "S": 0.09,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "photographer",
+      "R": 0,
+      "I": 0.08,
+      "A": 0.72,
+      "S": 0.12,
+      "E": 0.04,
+      "C": 0.04
+    },
+    {
+      "profession_id": "art_director",
+      "R": 0.04,
+      "I": 0.04,
+      "A": 0.57,
+      "S": 0.04,
+      "E": 0.22,
+      "C": 0.09
+    },
+    {
+      "profession_id": "copywriter",
+      "R": 0,
+      "I": 0.08,
+      "A": 0.72,
+      "S": 0.12,
+      "E": 0.04,
+      "C": 0.04
+    },
+    {
+      "profession_id": "tattoo_artist",
+      "R": 0.05,
+      "I": 0,
+      "A": 0.76,
+      "S": 0.09,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "calligrapher",
+      "R": 0.05,
+      "I": 0.05,
+      "A": 0.65,
+      "S": 0.15,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "cartoonist",
+      "R": 0,
+      "I": 0.08,
+      "A": 0.72,
+      "S": 0.12,
+      "E": 0.04,
+      "C": 0.04
+    },
+    {
+      "profession_id": "electrician",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "plumber",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "carpenter",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "welder",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "mason_bricklayer",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "hvac_technician",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "roofer",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "painter_industrial_decorative",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "pipefitter",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "glazier",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "ironworker_fabricator",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "boilermaker",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "elevator_mechanic",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "fire_protection_engineer",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "quantity_surveyor",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "site_supervisor_foreman",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "crane_operator",
+      "R": 0.6,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "biologist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "molecular_biologist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "microbiologist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "virologist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "immunologist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "biochemist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "pharmacognosist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "bioinformatician",
+      "R": 0.05,
+      "I": 0.8,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0,
+      "C": 0.05
+    },
+    {
+      "profession_id": "chemist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "analytical_chemist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "computational_chemist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "physicist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "astrophysicist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "geophysicist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "geologist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "hydrogeologist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "soil_scientist",
+      "R": 0.05,
+      "I": 0.8,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0,
+      "C": 0.05
+    },
+    {
+      "profession_id": "seismologist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "astronomer",
+      "R": 0.05,
+      "I": 0.8,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0,
+      "C": 0.05
+    },
+    {
+      "profession_id": "meteorologist",
+      "R": 0.05,
+      "I": 0.8,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0,
+      "C": 0.05
+    },
+    {
+      "profession_id": "oceanographer",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "ecologist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "epidemiologist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "biostatistician",
+      "R": 0.05,
+      "I": 0.8,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0,
+      "C": 0.05
+    },
+    {
+      "profession_id": "archaeologist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "anthropologist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "neuroscientist",
+      "R": 0.05,
+      "I": 0.8,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0,
+      "C": 0.05
+    },
+    {
+      "profession_id": "geneticist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "toxicologist__science_research",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "materials_scientist",
+      "R": 0.05,
+      "I": 0.8,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0,
+      "C": 0.05
+    },
+    {
+      "profession_id": "nanotechnologist",
+      "R": 0.1,
+      "I": 0.7,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "climate_scientist",
+      "R": 0.05,
+      "I": 0.8,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0,
+      "C": 0.05
+    },
+    {
+      "profession_id": "chef_executive",
+      "R": 0.21,
+      "I": 0.03,
+      "A": 0.28,
+      "S": 0.17,
+      "E": 0.21,
+      "C": 0.1
+    },
+    {
+      "profession_id": "sous_chef",
+      "R": 0.23,
+      "I": 0.04,
+      "A": 0.3,
+      "S": 0.27,
+      "E": 0.08,
+      "C": 0.08
+    },
+    {
+      "profession_id": "pastry_chef_p_tissier",
+      "R": 0.23,
+      "I": 0.04,
+      "A": 0.3,
+      "S": 0.27,
+      "E": 0.08,
+      "C": 0.08
+    },
+    {
+      "profession_id": "baker",
+      "R": 0.23,
+      "I": 0.04,
+      "A": 0.3,
+      "S": 0.27,
+      "E": 0.08,
+      "C": 0.08
+    },
+    {
+      "profession_id": "chocolatier",
+      "R": 0.2,
+      "I": 0.05,
+      "A": 0.25,
+      "S": 0.35,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "food_stylist",
+      "R": 0.2,
+      "I": 0.05,
+      "A": 0.25,
+      "S": 0.35,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "food_scientist",
+      "R": 0.14,
+      "I": 0.23,
+      "A": 0.23,
+      "S": 0.3,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "nutritionist",
+      "R": 0.2,
+      "I": 0.05,
+      "A": 0.25,
+      "S": 0.35,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "barista",
+      "R": 0.2,
+      "I": 0.05,
+      "A": 0.25,
+      "S": 0.35,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "sommelier",
+      "R": 0.2,
+      "I": 0.05,
+      "A": 0.25,
+      "S": 0.35,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "tea_sommelier",
+      "R": 0.2,
+      "I": 0.05,
+      "A": 0.25,
+      "S": 0.35,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "mixologist_bartender",
+      "R": 0.2,
+      "I": 0.05,
+      "A": 0.25,
+      "S": 0.35,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "hotel_general_manager",
+      "R": 0.17,
+      "I": 0.04,
+      "A": 0.22,
+      "S": 0.22,
+      "E": 0.26,
+      "C": 0.09
+    },
+    {
+      "profession_id": "revenue_manager_hospitality",
+      "R": 0.17,
+      "I": 0.04,
+      "A": 0.22,
+      "S": 0.22,
+      "E": 0.26,
+      "C": 0.09
+    },
+    {
+      "profession_id": "event_manager",
+      "R": 0.17,
+      "I": 0.04,
+      "A": 0.22,
+      "S": 0.22,
+      "E": 0.26,
+      "C": 0.09
+    },
+    {
+      "profession_id": "travel_tourism_manager",
+      "R": 0.17,
+      "I": 0.04,
+      "A": 0.22,
+      "S": 0.22,
+      "E": 0.26,
+      "C": 0.09
+    },
+    {
+      "profession_id": "catering_manager",
+      "R": 0.17,
+      "I": 0.04,
+      "A": 0.22,
+      "S": 0.22,
+      "E": 0.26,
+      "C": 0.09
+    },
+    {
+      "profession_id": "food_critic_food_blogger",
+      "R": 0.2,
+      "I": 0.05,
+      "A": 0.25,
+      "S": 0.35,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "resort_manager",
+      "R": 0.17,
+      "I": 0.04,
+      "A": 0.22,
+      "S": 0.22,
+      "E": 0.26,
+      "C": 0.09
+    },
+    {
+      "profession_id": "commercial_pilot",
+      "R": 0.48,
+      "I": 0.13,
+      "A": 0,
+      "S": 0,
+      "E": 0.13,
+      "C": 0.26
+    },
+    {
+      "profession_id": "fighter_pilot_iaf",
+      "R": 0.48,
+      "I": 0.13,
+      "A": 0,
+      "S": 0,
+      "E": 0.13,
+      "C": 0.26
+    },
+    {
+      "profession_id": "drone_pilot",
+      "R": 0.48,
+      "I": 0.13,
+      "A": 0,
+      "S": 0,
+      "E": 0.13,
+      "C": 0.26
+    },
+    {
+      "profession_id": "ship_captain",
+      "R": 0.48,
+      "I": 0.13,
+      "A": 0,
+      "S": 0,
+      "E": 0.13,
+      "C": 0.26
+    },
+    {
+      "profession_id": "air_traffic_controller_atc",
+      "R": 0.4,
+      "I": 0.15,
+      "A": 0,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.2
+    },
+    {
+      "profession_id": "train_driver_loco_pilot",
+      "R": 0.48,
+      "I": 0.13,
+      "A": 0,
+      "S": 0,
+      "E": 0.13,
+      "C": 0.26
+    },
+    {
+      "profession_id": "logistics_manager",
+      "R": 0.35,
+      "I": 0.13,
+      "A": 0,
+      "S": 0,
+      "E": 0.3,
+      "C": 0.22
+    },
+    {
+      "profession_id": "supply_chain_analyst",
+      "R": 0.32,
+      "I": 0.32,
+      "A": 0,
+      "S": 0.09,
+      "E": 0.09,
+      "C": 0.18
+    },
+    {
+      "profession_id": "customs_broker",
+      "R": 0.4,
+      "I": 0.15,
+      "A": 0,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.2
+    },
+    {
+      "profession_id": "freight_forwarding_agent",
+      "R": 0.4,
+      "I": 0.15,
+      "A": 0,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.2
+    },
+    {
+      "profession_id": "dispatch_controller",
+      "R": 0.4,
+      "I": 0.15,
+      "A": 0,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.2
+    },
+    {
+      "profession_id": "warehouse_manager",
+      "R": 0.35,
+      "I": 0.13,
+      "A": 0,
+      "S": 0,
+      "E": 0.3,
+      "C": 0.22
+    },
+    {
+      "profession_id": "fleet_manager",
+      "R": 0.35,
+      "I": 0.13,
+      "A": 0,
+      "S": 0,
+      "E": 0.3,
+      "C": 0.22
+    },
+    {
+      "profession_id": "railway_engineer",
+      "R": 0.4,
+      "I": 0.15,
+      "A": 0,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.2
+    },
+    {
+      "profession_id": "port_harbor_manager",
+      "R": 0.35,
+      "I": 0.13,
+      "A": 0,
+      "S": 0,
+      "E": 0.3,
+      "C": 0.22
+    },
+    {
+      "profession_id": "delivery_courier_last_mile_exec",
+      "R": 0.4,
+      "I": 0.15,
+      "A": 0,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.2
+    },
+    {
+      "profession_id": "astronaut",
+      "R": 0.48,
+      "I": 0.13,
+      "A": 0,
+      "S": 0,
+      "E": 0.13,
+      "C": 0.26
+    },
+    {
+      "profession_id": "social_worker",
+      "R": 0,
+      "I": 0.13,
+      "A": 0.09,
+      "S": 0.74,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "psychologist_clinical",
+      "R": 0,
+      "I": 0.13,
+      "A": 0.09,
+      "S": 0.74,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "counselor_therapist",
+      "R": 0,
+      "I": 0.13,
+      "A": 0.09,
+      "S": 0.74,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "community_organizer",
+      "R": 0,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.65,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "caseworker",
+      "R": 0,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.65,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "substance_abuse_counselor",
+      "R": 0,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.65,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "crisis_counselor",
+      "R": 0,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.65,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "child_welfare_specialist",
+      "R": 0,
+      "I": 0.16,
+      "A": 0.08,
+      "S": 0.52,
+      "E": 0.2,
+      "C": 0.04
+    },
+    {
+      "profession_id": "human_rights_activist",
+      "R": 0,
+      "I": 0.16,
+      "A": 0.08,
+      "S": 0.52,
+      "E": 0.2,
+      "C": 0.04
+    },
+    {
+      "profession_id": "rehabilitation_specialist",
+      "R": 0,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.65,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "life_coach",
+      "R": 0,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.65,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "school_social_worker",
+      "R": 0,
+      "I": 0.13,
+      "A": 0.09,
+      "S": 0.74,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "grief_counselor",
+      "R": 0,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.65,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "farmer_modern",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "agronomist",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "agricultural_scientist",
+      "R": 0.23,
+      "I": 0.44,
+      "A": 0.05,
+      "S": 0.09,
+      "E": 0.05,
+      "C": 0.14
+    },
+    {
+      "profession_id": "plant_breeder",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "plant_pathologist",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "entomologist",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "agricultural_extension_officer",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "horticulturist",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "floriculturist",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "hydroponics_vertical_farm_specialist",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "aquaculture_farmer",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "fisheries_scientist",
+      "R": 0.23,
+      "I": 0.44,
+      "A": 0.05,
+      "S": 0.09,
+      "E": 0.05,
+      "C": 0.14
+    },
+    {
+      "profession_id": "forester_forest_officer",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "wildlife_biologist_ecologist",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "conservation_scientist",
+      "R": 0.23,
+      "I": 0.44,
+      "A": 0.05,
+      "S": 0.09,
+      "E": 0.05,
+      "C": 0.14
+    },
+    {
+      "profession_id": "environmental_consultant",
+      "R": 0.26,
+      "I": 0.31,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0,
+      "C": 0.3
+    },
+    {
+      "profession_id": "climate_change_analyst",
+      "R": 0.23,
+      "I": 0.44,
+      "A": 0.05,
+      "S": 0.09,
+      "E": 0.05,
+      "C": 0.14
+    },
+    {
+      "profession_id": "sustainability_manager",
+      "R": 0.27,
+      "I": 0.26,
+      "A": 0.04,
+      "S": 0,
+      "E": 0.26,
+      "C": 0.17
+    },
+    {
+      "profession_id": "soil_scientist__agriculture_environment",
+      "R": 0.23,
+      "I": 0.44,
+      "A": 0.05,
+      "S": 0.09,
+      "E": 0.05,
+      "C": 0.14
+    },
+    {
+      "profession_id": "landscape_architect",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "beekeeper_apiarist",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "architect",
+      "R": 0.17,
+      "I": 0.17,
+      "A": 0.36,
+      "S": 0.04,
+      "E": 0,
+      "C": 0.26
+    },
+    {
+      "profession_id": "urban_designer",
+      "R": 0.18,
+      "I": 0.09,
+      "A": 0.55,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "urban_planner",
+      "R": 0.2,
+      "I": 0.15,
+      "A": 0.4,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "landscape_architect__architecture_design",
+      "R": 0.2,
+      "I": 0.15,
+      "A": 0.4,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "interior_designer",
+      "R": 0.18,
+      "I": 0.09,
+      "A": 0.55,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "spatial_designer",
+      "R": 0.18,
+      "I": 0.09,
+      "A": 0.55,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "industrial_designer",
+      "R": 0.18,
+      "I": 0.09,
+      "A": 0.55,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "product_designer",
+      "R": 0.18,
+      "I": 0.09,
+      "A": 0.55,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "fashion_designer",
+      "R": 0.18,
+      "I": 0.09,
+      "A": 0.55,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "textile_designer",
+      "R": 0.18,
+      "I": 0.09,
+      "A": 0.55,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "accessory_designer",
+      "R": 0.18,
+      "I": 0.09,
+      "A": 0.55,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "jewelry_designer",
+      "R": 0.18,
+      "I": 0.09,
+      "A": 0.55,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "set_production_designer",
+      "R": 0.18,
+      "I": 0.09,
+      "A": 0.55,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "exhibition_designer",
+      "R": 0.18,
+      "I": 0.09,
+      "A": 0.55,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "lighting_designer",
+      "R": 0.18,
+      "I": 0.09,
+      "A": 0.55,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "parametric_computational_designer",
+      "R": 0.18,
+      "I": 0.09,
+      "A": 0.55,
+      "S": 0,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "professional_athlete",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "cricket_player",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "football_player",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "badminton_player",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "sports_coach",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "strength_conditioning_coach",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "personal_trainer",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "sports_psychologist",
+      "R": 0.39,
+      "I": 0.09,
+      "A": 0.09,
+      "S": 0.39,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "sports_nutritionist",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "sports_physiotherapist__sports_fitness",
+      "R": 0.39,
+      "I": 0.09,
+      "A": 0.09,
+      "S": 0.39,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "athletic_trainer",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "yoga_instructor",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "dance_instructor",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "physical_education_teacher",
+      "R": 0.4,
+      "I": 0.04,
+      "A": 0.13,
+      "S": 0.35,
+      "E": 0.04,
+      "C": 0.04
+    },
+    {
+      "profession_id": "sports_analyst",
+      "R": 0.35,
+      "I": 0.23,
+      "A": 0.09,
+      "S": 0.23,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "referee_umpire",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "esports_player_coach",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "sports_agent",
+      "R": 0.45,
+      "I": 0.05,
+      "A": 0.1,
+      "S": 0.25,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "golf_course_manager",
+      "R": 0.39,
+      "I": 0.04,
+      "A": 0.09,
+      "S": 0.13,
+      "E": 0.26,
+      "C": 0.09
+    },
+    {
+      "profession_id": "psychiatrist__mental_health_wellness",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.15,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "clinical_psychologist",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.13,
+      "S": 0.58,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "counseling_psychologist",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.13,
+      "S": 0.58,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "child_psychologist",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.13,
+      "S": 0.58,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "neuropsychologist",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.13,
+      "S": 0.58,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "rehabilitation_psychologist",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.13,
+      "S": 0.58,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "industrial_organizational_psychologist",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.13,
+      "S": 0.58,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "art_therapist",
+      "R": 0,
+      "I": 0.19,
+      "A": 0.27,
+      "S": 0.5,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "public_health_officer",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.4,
+      "E": 0.2,
+      "C": 0.1
+    },
+    {
+      "profession_id": "epidemiologist__public_health_policy",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.4,
+      "E": 0.2,
+      "C": 0.1
+    },
+    {
+      "profession_id": "health_policy_analyst",
+      "R": 0,
+      "I": 0.39,
+      "A": 0.04,
+      "S": 0.35,
+      "E": 0.13,
+      "C": 0.09
+    },
+    {
+      "profession_id": "biostatistician__public_health_policy",
+      "R": 0,
+      "I": 0.39,
+      "A": 0.04,
+      "S": 0.35,
+      "E": 0.13,
+      "C": 0.09
+    },
+    {
+      "profession_id": "environmental_health_specialist",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.05,
+      "S": 0.4,
+      "E": 0.2,
+      "C": 0.1
+    },
+    {
+      "profession_id": "healthcare_administrator",
+      "R": 0,
+      "I": 0.26,
+      "A": 0.04,
+      "S": 0.35,
+      "E": 0.09,
+      "C": 0.26
+    },
+    {
+      "profession_id": "cfa_charterholder",
+      "R": 0,
+      "I": 0.3,
+      "A": 0,
+      "S": 0.05,
+      "E": 0.35,
+      "C": 0.3
+    },
+    {
+      "profession_id": "frm_holder",
+      "R": 0,
+      "I": 0.3,
+      "A": 0,
+      "S": 0.05,
+      "E": 0.35,
+      "C": 0.3
+    },
+    {
+      "profession_id": "quantitative_analyst_quant",
+      "R": 0,
+      "I": 0.44,
+      "A": 0,
+      "S": 0.04,
+      "E": 0.26,
+      "C": 0.26
+    },
+    {
+      "profession_id": "algorithmic_trader",
+      "R": 0,
+      "I": 0.44,
+      "A": 0,
+      "S": 0.04,
+      "E": 0.26,
+      "C": 0.26
+    },
+    {
+      "profession_id": "treasury_manager",
+      "R": 0,
+      "I": 0.25,
+      "A": 0,
+      "S": 0,
+      "E": 0.46,
+      "C": 0.29
+    },
+    {
+      "profession_id": "transfer_pricing_specialist",
+      "R": 0,
+      "I": 0.3,
+      "A": 0,
+      "S": 0.05,
+      "E": 0.35,
+      "C": 0.3
+    },
+    {
+      "profession_id": "ethical_hacker_penetration_tester",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "ai_safety_researcher",
+      "R": 0.05,
+      "I": 0.54,
+      "A": 0.14,
+      "S": 0.09,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "digital_twin_engineer",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "cyber_threat_intelligence_analyst",
+      "R": 0.05,
+      "I": 0.54,
+      "A": 0.14,
+      "S": 0.09,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "space_systems_engineer",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "satellite_imagery_analyst",
+      "R": 0.05,
+      "I": 0.54,
+      "A": 0.14,
+      "S": 0.09,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "geospatial_data_scientist",
+      "R": 0.05,
+      "I": 0.54,
+      "A": 0.14,
+      "S": 0.09,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "sustainability_esg_consultant",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "carbon_credit_trader",
+      "R": 0.09,
+      "I": 0.39,
+      "A": 0.13,
+      "S": 0.09,
+      "E": 0.04,
+      "C": 0.26
+    },
+    {
+      "profession_id": "ocean_energy_engineer",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "hydrogen_energy_specialist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "nuclear_medicine_technologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "medical_physicist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "health_informatician",
+      "R": 0.05,
+      "I": 0.54,
+      "A": 0.14,
+      "S": 0.09,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "voice_chatbot_designer",
+      "R": 0.09,
+      "I": 0.31,
+      "A": 0.32,
+      "S": 0.05,
+      "E": 0.14,
+      "C": 0.09
+    },
+    {
+      "profession_id": "genealogist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "private_investigator",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "funeral_director_mortician",
+      "R": 0.09,
+      "I": 0.35,
+      "A": 0.13,
+      "S": 0,
+      "E": 0.3,
+      "C": 0.13
+    },
+    {
+      "profession_id": "aroma_therapist",
+      "R": 0.09,
+      "I": 0.39,
+      "A": 0.13,
+      "S": 0.26,
+      "E": 0.04,
+      "C": 0.09
+    },
+    {
+      "profession_id": "color_consultant",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "cryonics_technician",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "handwriting_analyst_graphologist",
+      "R": 0.05,
+      "I": 0.54,
+      "A": 0.14,
+      "S": 0.09,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "sexologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "cruise_director",
+      "R": 0.09,
+      "I": 0.35,
+      "A": 0.13,
+      "S": 0,
+      "E": 0.3,
+      "C": 0.13
+    },
+    {
+      "profession_id": "yacht_captain",
+      "R": 0.22,
+      "I": 0.35,
+      "A": 0.13,
+      "S": 0,
+      "E": 0.13,
+      "C": 0.17
+    },
+    {
+      "profession_id": "drone_uav_engineer",
+      "R": 0.22,
+      "I": 0.35,
+      "A": 0.13,
+      "S": 0,
+      "E": 0.13,
+      "C": 0.17
+    },
+    {
+      "profession_id": "cybersecurity_policy_advisor",
+      "R": 0.05,
+      "I": 0.54,
+      "A": 0.14,
+      "S": 0.09,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "luthier_instrument_maker",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "aquarist_marine_biologist_public_aquariu",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "esports_commentator_caster",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "nft_crypto_artist",
+      "R": 0.09,
+      "I": 0.31,
+      "A": 0.32,
+      "S": 0.05,
+      "E": 0.14,
+      "C": 0.09
+    },
+    {
+      "profession_id": "forklift_operator",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "locksmith",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "animal_trainer",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "pet_groomer",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "financial_independence_coach",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    },
+    {
+      "profession_id": "k_12_edtech_content_creator",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0.15,
+      "S": 0.1,
+      "E": 0.15,
+      "C": 0.1
+    }
+  ]
+}

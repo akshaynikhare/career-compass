@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Advisor — Your Results</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="test-header">
+      <a href="index.html" class="btn-ghost" style="padding-left:0; color:var(--primary); font-weight:700; font-size:1rem; text-decoration:none;">
+        &#9711; Career Advisor
+      </a>
+      <a href="test.html" class="btn-secondary" style="font-size:0.8125rem; padding:0.4rem 0.875rem;">
+        Retake Test
+      </a>
+    </div>
+
+    <!-- No-result fallback -->
+    <div id="no-result" class="hidden card text-center" style="padding:2rem;">
+      <p style="font-size:2rem;">&#128214;</p>
+      <h2 class="mt-1">No results yet</h2>
+      <p class="mt-1">Complete the test first to see your career matches.</p>
+      <a href="test.html" class="btn-primary mt-2" style="margin-top:1rem;">Take the Test &rarr;</a>
+    </div>
+
+    <!-- Results (hidden until data loads) -->
+    <div id="results-content" class="hidden">
+
+      <!-- Hero header -->
+      <div class="result-header card mb-2" style="margin-bottom:1rem;">
+        <h1>Your Career Profile</h1>
+        <p>Based on your answers, here are your top career matches.</p>
+      </div>
+
+      <!-- RIASEC Chart -->
+      <div class="card mb-2" style="margin-bottom:1rem;">
+        <h2 class="section-title">Your Personality Profile (RIASEC)</h2>
+        <div id="riasec-chart" class="riasec-chart"></div>
+        <p class="text-muted mt-1" style="font-size:0.8125rem;">The bar shows your relative strength in each interest dimension.</p>
+      </div>
+
+      <!-- Top 10 Matches -->
+      <div class="card mb-2" style="margin-bottom:1rem;">
+        <h2 class="section-title">Your Top Career Matches</h2>
+        <div id="top10-cards" class="career-cards"></div>
+      </div>
+
+      <!-- Stretch Goals (collapsible) -->
+      <div class="card mb-2" style="margin-bottom:1rem;" id="stretch-section">
+        <div class="collapsible-header" id="stretch-toggle" aria-expanded="false" role="button" tabindex="0">
+          <h2>Stretch Goals</h2>
+          <span class="collapsible-chevron" aria-hidden="true">&#9660;</span>
+        </div>
+        <p class="text-muted mt-1" style="font-size:0.875rem; margin-bottom:0.75rem;">These careers match your personality but have some practical constraints. Worth knowing about.</p>
+        <div class="collapsible-body" id="stretch-body">
+          <div class="section-divider"></div>
+          <div id="stretch5-cards" class="career-cards" style="padding-top:0.5rem;"></div>
+        </div>
+      </div>
+
+      <!-- Save Result -->
+      <div class="card" style="margin-bottom:2rem;">
+        <h2 class="section-title">Save My Result</h2>
+        <p class="text-muted mb-2" style="font-size:0.875rem; margin-bottom:1rem;">Enter your details to save a copy or share with a parent or counsellor.</p>
+
+        <form class="save-form" id="save-form" novalidate>
+          <div class="form-field">
+            <label for="student-name">Full Name</label>
+            <input type="text" id="student-name" name="name" placeholder="Your name" autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="student-email">Email <span class="text-muted" style="font-weight:400;">(optional)</span></label>
+            <input type="email" id="student-email" name="email" placeholder="you@example.com" autocomplete="email">
+          </div>
+          <div class="form-field">
+            <label for="student-phone">Phone <span class="text-muted" style="font-weight:400;">(optional)</span></label>
+            <input type="tel" id="student-phone" name="phone" placeholder="10-digit mobile number" autocomplete="tel">
+          </div>
+
+          <button type="submit" class="btn-primary" id="btn-save">Save Result</button>
+          <div class="save-status" id="save-status"></div>
+        </form>
+
+        <!-- Post-save actions (hidden until save succeeds or download fallback) -->
+        <div id="post-save-actions" class="hidden" style="margin-top:1rem; display:none; flex-direction:column; gap:0.625rem;">
+          <button class="btn-secondary" id="btn-download" style="width:100%; justify-content:center;">
+            &#11015; Download as Text
+          </button>
+        </div>
+      </div>
+
+    </div><!-- /results-content -->
+  </div><!-- /container -->
+
+  <script src="src/config.js"></script>
+  <script src="src/store.js"></script>
+  <script src="src/render.js"></script>
+</body>
+</html>

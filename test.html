@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Advisor — Test</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="test-header">
+      <a href="index.html" class="app-logo btn-ghost" style="padding-left:0; color: var(--primary); font-weight:700; font-size:1rem; text-decoration:none;">
+        &#9711; Career Advisor
+      </a>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="progress-wrapper">
+      <div class="progress-label">
+        <span id="progress-text">Question 1 of 25</span>
+        <span id="progress-pct">4%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width: 4%"></div>
+      </div>
+    </div>
+
+    <!-- Question card -->
+    <div class="card" id="question-card">
+      <div id="loading-state" class="loading-state">
+        <div class="spinner"></div>
+        <p class="mt-2 text-muted">Loading questions…</p>
+      </div>
+
+      <div id="question-content" class="hidden">
+        <span class="question-type-label" id="question-type-label"></span>
+        <p class="question-number" id="question-number"></p>
+        <p class="question-text" id="question-text"></p>
+        <div class="options-list" id="options-list"></div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-buttons">
+      <button class="btn-ghost" id="btn-prev" disabled>&#8592; Prev</button>
+      <button class="btn-primary" id="btn-next" disabled>Next &rarr;</button>
+    </div>
+
+    <!-- Error message -->
+    <p id="error-msg" class="hidden text-center mt-2" style="color:#DC2626; font-size:0.875rem;"></p>
+  </div>
+
+  <script src="src/config.js"></script>
+  <script src="src/match.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
