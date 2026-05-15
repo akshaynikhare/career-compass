@@ -29,10 +29,9 @@
       var res = await fetch(cfg.SUPABASE_URL + '/rest/v1/career_test_results', {
         method: 'POST',
         headers: {
-          'apikey':        cfg.SUPABASE_ANON_KEY,
-          'Authorization': 'Bearer ' + cfg.SUPABASE_ANON_KEY,
-          'Content-Type':  'application/json',
-          'Prefer':        'return=minimal'
+          'apikey':       cfg.SUPABASE_ANON_KEY,
+          'Content-Type': 'application/json',
+          'Prefer':       'return=minimal'
         },
         body: JSON.stringify(payload)
       });
