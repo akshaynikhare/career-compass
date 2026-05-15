@@ -100,5 +100,33 @@
     }, 100);
   }
 
-  window.Store = { saveResult: saveResult, downloadResult: downloadResult };
+  function saveProfile(studentInfo, result) {
+    var cfg = window.__CFG || {};
+
+    if (!cfg.SUPABASE_URL || !cfg.SUPABASE_ANON_KEY) return;
+
+    var payload = {
+      student_name:  studentInfo.name  || null,
+      student_email: studentInfo.email || null,
+      student_phone: studentInfo.phone || null,
+      riasec_vector: result.riasec,
+      constraints:   result.constraints || {},
+      top_matches: (result.top10 || []).map(function (m) {
+        return { id: m.profession.id, name: m.profession.name, score: +m.score.toFixed(3) };
+      }),
+      user_agent: navigator.userAgent
+    };
+
+    fetch(cfg.SUPABASE_URL + '/rest/v1/career_test_results', {
+      method: 'POST',
+      headers: {
+        'apikey':       cfg.SUPABASE_ANON_KEY,
+        'Content-Type': 'application/json',
+        'Prefer':       'return=minimal'
+      },
+      body: JSON.stringify(payload)
+    }).catch(function () {});
+  }
+
+  window.Store = { saveResult: saveResult, downloadResult: downloadResult, saveProfile: saveProfile };
 })();

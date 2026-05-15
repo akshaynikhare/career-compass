@@ -79,58 +79,76 @@ if (edgesResult.missing) {
 // ── 2. Question counts ─────────────────────────────────────────────────────
 
 const VALID_DIMENSIONS = new Set(['R', 'I', 'A', 'S', 'E', 'C']);
-const CONSTRAINT_KEYS  = new Set(['years_available', 'annual_budget_inr', 'can_relocate', 'exam_intensity', 'stream_pref']);
+const CONSTRAINT_KEYS  = new Set([
+  'years_available', 'annual_budget_inr', 'exam_intensity', 'can_relocate',
+  'stream_pref', 'need_early_income', 'work_setting', 'college_type',
+  'learning_style', 'family_background'
+]);
 
 if (questionsResult.data) {
-  const { personality = [], constraints = [] } = questionsResult.data;
+  const {
+    personal_financial = [],
+    career_quick       = [],
+    career_deep        = []
+  } = questionsResult.data;
 
-  // Personality count
-  if (personality.length === 20) {
-    pass('Personality question count: 20');
+  // Section counts
+  if (personal_financial.length === 10) {
+    pass('personal_financial question count: 10');
   } else {
-    fail('Personality question count: 20', `got ${personality.length}`);
+    fail('personal_financial question count: 10', `got ${personal_financial.length}`);
   }
 
-  // Constraint count
-  if (constraints.length === 5) {
-    pass('Constraint question count: 5');
+  if (career_quick.length === 10) {
+    pass('career_quick question count: 10');
   } else {
-    fail('Constraint question count: 5', `got ${constraints.length}`);
+    fail('career_quick question count: 10', `got ${career_quick.length}`);
   }
 
-  // Dimension validity
-  const badDims = personality.filter(q => !VALID_DIMENSIONS.has(q.dimension));
-  if (badDims.length === 0) {
-    pass('All personality dimensions valid');
+  if (career_deep.length === 25) {
+    pass('career_deep question count: 25');
   } else {
-    fail('All personality dimensions valid',
-      `invalid dimension(s) on: ${badDims.map(q => q.id).join(', ')}`);
+    fail('career_deep question count: 25', `got ${career_deep.length}`);
   }
 
-  // Options: exactly 5 with scores 1–5
-  const badOpts = personality.filter(q => {
-    if (!Array.isArray(q.options) || q.options.length !== 5) return true;
-    const scores = q.options.map(o => o.score).sort((a, b) => a - b);
-    return scores.join(',') !== '1,2,3,4,5';
-  });
-  if (badOpts.length === 0) {
-    pass('All personality question options valid (5 options, scores 1–5)');
+  // career_quick dimension validity
+  const badQuickDims = career_quick.filter(q => !VALID_DIMENSIONS.has(q.dimension));
+  if (badQuickDims.length === 0) {
+    pass('All career_quick dimensions valid');
   } else {
-    fail('All personality question options valid (5 options, scores 1–5)',
-      `bad options on: ${badOpts.map(q => q.id).join(', ')}`);
+    fail('All career_quick dimensions valid',
+      `invalid dimension(s) on: ${badQuickDims.map(q => q.id).join(', ')}`);
+  }
+
+  // career_deep dimension validity
+  const badDeepDims = career_deep.filter(q => !VALID_DIMENSIONS.has(q.dimension));
+  if (badDeepDims.length === 0) {
+    pass('All career_deep dimensions valid');
+  } else {
+    fail('All career_deep dimensions valid',
+      `invalid dimension(s) on: ${badDeepDims.map(q => q.id).join(', ')}`);
+  }
+
+  // personal_financial key field presence
+  const missingKeyField = personal_financial.filter(q => !('key' in q));
+  if (missingKeyField.length === 0) {
+    pass('All personal_financial items have a key field');
+  } else {
+    fail('All personal_financial items have a key field',
+      `${missingKeyField.length} item(s) missing key field`);
   }
 
   // Constraint keys
-  const actualKeys = new Set(constraints.map(c => c.key));
+  const actualKeys  = new Set(personal_financial.map(c => c.key));
   const missingKeys = [...CONSTRAINT_KEYS].filter(k => !actualKeys.has(k));
   const extraKeys   = [...actualKeys].filter(k => !CONSTRAINT_KEYS.has(k));
   if (missingKeys.length === 0 && extraKeys.length === 0) {
-    pass('Constraint question keys valid');
+    pass('personal_financial constraint keys valid');
   } else {
     const reasons = [];
     if (missingKeys.length) reasons.push(`missing: ${missingKeys.join(', ')}`);
     if (extraKeys.length)   reasons.push(`unexpected: ${extraKeys.join(', ')}`);
-    fail('Constraint question keys valid', reasons.join('; '));
+    fail('personal_financial constraint keys valid', reasons.join('; '));
   }
 }
 

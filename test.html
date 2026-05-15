@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Career Advisor — Test</title>
   <link rel="stylesheet" href="styles/main.css">
+  <style>
+    .form-group { margin-bottom: 1rem; }
+    .form-group label { display:block; font-size:0.875rem; font-weight:600; color:var(--text); margin-bottom:0.4rem; }
+    .form-group input { width:100%; padding:0.65rem 0.875rem; border:2px solid var(--border); border-radius:8px; font-size:1rem; color:var(--text); box-sizing:border-box; }
+    .form-group input:focus { outline:none; border-color:var(--primary); }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -16,19 +22,40 @@
       </a>
     </div>
 
-    <!-- Progress bar -->
-    <div class="progress-wrapper">
+    <!-- Student Info (Phase 0) -->
+    <div id="student-info-phase" class="card">
+      <p class="question-type-label">Before we begin</p>
+      <h2 style="font-size:1.25rem; margin-bottom:0.25rem;">Tell us about yourself</h2>
+      <p class="text-muted" style="font-size:0.875rem; margin-bottom:1.5rem;">Your details help personalise your career report. We keep them private.</p>
+      <div class="form-group">
+        <label for="si-name">Full Name *</label>
+        <input type="text" id="si-name" placeholder="Your full name" autocomplete="name" />
+      </div>
+      <div class="form-group">
+        <label for="si-email">Email Address *</label>
+        <input type="email" id="si-email" placeholder="your@email.com" autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label for="si-phone">Mobile Number *</label>
+        <input type="tel" id="si-phone" placeholder="10-digit mobile number" autocomplete="tel" maxlength="10" pattern="[0-9]{10}" />
+      </div>
+      <p id="si-error" class="hidden" style="color:#DC2626; font-size:0.875rem; margin-top:0.5rem;"></p>
+      <button class="btn-primary" id="btn-begin" style="margin-top:1rem;">Begin Test &#8594;</button>
+    </div>
+
+    <!-- Progress bar (hidden during phase 0) -->
+    <div class="progress-wrapper hidden" id="progress-wrapper">
       <div class="progress-label">
-        <span id="progress-text">Question 1 of 25</span>
-        <span id="progress-pct">4%</span>
+        <span id="progress-text">Personal Background — Q1 of 10</span>
+        <span id="progress-pct">2%</span>
       </div>
       <div class="progress-track">
-        <div class="progress-fill" id="progress-fill" style="width: 4%"></div>
+        <div class="progress-fill" id="progress-fill" style="width: 2%"></div>
       </div>
     </div>
 
-    <!-- Question card -->
-    <div class="card" id="question-card">
+    <!-- Question card (hidden during phase 0) -->
+    <div class="card hidden" id="question-card">
       <div id="loading-state" class="loading-state">
         <div class="spinner"></div>
         <p class="mt-2 text-muted">Loading questions…</p>
@@ -42,8 +69,8 @@
       </div>
     </div>
 
-    <!-- Navigation -->
-    <div class="nav-buttons">
+    <!-- Navigation (hidden during phase 0) -->
+    <div class="nav-buttons hidden" id="nav-buttons">
       <button class="btn-ghost" id="btn-prev" disabled>&#8592; Prev</button>
       <button class="btn-primary" id="btn-next" disabled>Next &rarr;</button>
     </div>
@@ -54,6 +81,7 @@
 
   <script src="src/config.js"></script>
   <script src="src/match.js"></script>
+  <script src="src/store.js"></script>
   <script src="src/app.js"></script>
 </body>
 </html>
