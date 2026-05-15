@@ -55,12 +55,24 @@
     { end: 44, section: 'Personality Profile',  total: 25 }
   ];
 
-  // ── Load data ─────────────────────────────────────────────────────────────
+  // ── Load data (sessionStorage cache — no re-fetch on retake) ─────────────
+  function cachedFetch(url, cacheKey) {
+    var cached = sessionStorage.getItem(cacheKey);
+    if (cached) return Promise.resolve(JSON.parse(cached));
+    return fetch(url).then(function (r) {
+      if (!r.ok) throw new Error(cacheKey);
+      return r.json();
+    }).then(function (data) {
+      try { sessionStorage.setItem(cacheKey, JSON.stringify(data)); } catch (e) {}
+      return data;
+    });
+  }
+
   try {
     var results = await Promise.all([
-      fetch('./data/questions.json').then(function (r) { if (!r.ok) throw new Error('questions'); return r.json(); }),
-      fetch('./data/professions.json').then(function (r) { if (!r.ok) throw new Error('professions'); return r.json(); }),
-      fetch('./data/riasec_edges.json').then(function (r) { if (!r.ok) throw new Error('edges'); return r.json(); })
+      cachedFetch('./data/questions.json',   'cat_data_questions'),
+      cachedFetch('./data/professions.json', 'cat_data_professions'),
+      cachedFetch('./data/riasec_edges.json','cat_data_edges')
     ]);
     questions   = results[0];
     professions = results[1];
@@ -74,6 +86,27 @@
   allQuestions = questions.personal_financial
     .concat(questions.career_quick)
     .concat(questions.career_deep);
+
+  // ── bfcache reset — clears stale radio state on back/retake navigation ────
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) {
+      // Page was restored from bfcache: reset all state and go back to phase 0
+      careerAnswers  = {};
+      constraints    = {};
+      currentIndex   = 0;
+      studentInfo    = null;
+      elSiName.value  = '';
+      elSiEmail.value = '';
+      elSiPhone.value = '';
+      elSiError.classList.add('hidden');
+      elStudentPhase.classList.remove('hidden');
+      elProgressWrapper.classList.add('hidden');
+      elQuestionCard.classList.add('hidden');
+      elNavButtons.classList.add('hidden');
+      elContent.classList.add('hidden');
+      elLoading.classList.remove('hidden');
+    }
+  });
 
   // ── Phase 0: Student info ─────────────────────────────────────────────────
   elBtnBegin.addEventListener('click', function () {
