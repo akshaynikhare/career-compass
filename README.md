@@ -1,6 +1,6 @@
 # Career Compass
 
-**A free, browser-based career guidance tool for Indian Class 10 students**
+**Free RIASEC career aptitude test for Indian Class 9–10 students — 507 professions, AI domain matching, offline PWA**
 
 [![Deploy](https://github.com/akshaynikhare/career-compass/actions/workflows/deploy.yml/badge.svg)](https://github.com/akshaynikhare/career-compass/actions/workflows/deploy.yml)
 [![Validate Data](https://github.com/akshaynikhare/career-compass/actions/workflows/validate.yml/badge.svg)](https://github.com/akshaynikhare/career-compass/actions/workflows/validate.yml)
@@ -11,17 +11,19 @@
 
 ## What is Career Compass?
 
-Career Compass is a free career guidance tool built specifically for Indian Class 10 students. No login, no app install, no fees — it works on cheap Android browsers out of the box.
+Career Compass is a **free career guidance tool** built specifically for Indian Class 9–10 students (age 14–16) who need to pick their Class 11 stream — PCM, PCB, Commerce, or Arts/Humanities.
 
-Students take a 45-question test (10 background + 10 quick interests + 25 personality) and the browser maps their answers to 457 Indian professions using the **Holland RIASEC personality framework**. All computation runs entirely in the browser — no answers are ever sent to a server. Only the final RIASEC profile (plus name/email/phone for follow-up) is saved anonymously to Supabase.
+Students take a 45-question assessment and the browser matches their personality to **507 Indian professions** using the Holland **RIASEC personality framework**. Results show career domains ranked by fit, with each domain's top careers, salary ranges, required entrance exams, and a day-in-the-life preview.
 
-**Key facts:**
-- Free, no login required
-- Works offline-capable on low-end Android devices
-- 45 questions: 10 personal/financial background + 10 quick career interests + 25 deep RIASEC personality
-- RIASEC framework maps personality to 457 Indian professions
-- All scoring runs client-side — privacy-first
-- Results saved anonymously to Supabase (RIASEC profile only, not raw answers)
+**Why Career Compass?**
+- **Free career test India** — no login, no app install, no fees, no ads
+- Works on cheap Android browsers, offline-capable (PWA)
+- **RIASEC Class 10** assessment: 45 questions covering personal constraints + personality
+- **507 Indian professions** with real salary data, education paths, and entrance exams
+- Multi-domain results — see top career clusters, not just a ranked list
+- AI-powered domain ranking (Gemini Flash) explains *why* each domain fits *you*
+- **Career after 10th** guidance: every result links back to stream choice
+- All scoring runs client-side — privacy-first, answers never leave your browser
 
 ---
 
@@ -50,8 +52,8 @@ All data files live in `data/` and are git-tracked. Changes go through PRs with 
 | File | Description | Items |
 |---|---|---|
 | `data/questions.json` | 45 test questions (schema v2) | 10+10+25 |
-| `data/professions.json` | Indian profession database | 457 |
-| `data/riasec_edges.json` | RIASEC weight graph | 457 edges |
+| `data/professions.json` | Indian profession database | 507 |
+| `data/riasec_edges.json` | RIASEC weight graph | 507 unique vectors |
 | `data/categories.json` | Category metadata | — |
 
 ---

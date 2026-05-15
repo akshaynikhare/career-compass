@@ -1,0 +1,39 @@
+# Career Compass
+
+> Free RIASEC career aptitude test for Indian Class 9-10 students (age 14-16).
+
+Career Compass helps students discover the best career path before choosing their Class 11 stream (PCM/PCB/Commerce/Arts). It uses the RIASEC personality model, 507 Indian professions with real salary/path data, and AI-powered domain matching.
+
+## What it does
+
+Students answer 45 questions covering personal constraints (budget, years available, exam preference, stream choice) and RIASEC personality traits. The tool matches them against 507 Indian professions and groups results into career domains. An optional Gemini AI layer ranks the top domains and explains why each fits the student's personality.
+
+## Key facts
+
+- Free, no signup, no ads, no tracking
+- 45-question assessment: 10 personal constraints + 10 work style + 25 RIASEC personality questions
+- 507 Indian professions: salary range, education path, entrance exams, required stream
+- Multi-domain results: shows top career domains with ranked careers inside each domain
+- AI-powered domain ranking via Gemini Flash (explains WHY each domain fits)
+- Offline-capable PWA — works without internet after first load
+- Open source: https://github.com/akshaynikhare/career-compass
+
+## Target audience
+
+Indian students in Class 9 or 10 (age 14-16) deciding which stream to choose in Class 11. Also useful for parents, teachers, and career counsellors working with this age group.
+
+## Technology
+
+- Vanilla JavaScript, no framework
+- RIASEC dot-product matching algorithm with 507 unique profession vectors
+- Supabase for optional profile saving
+- Google Gemini Flash 2.0 for AI domain ranking
+- Hosted on GitHub Pages (static, no server)
+
+## Live tool
+
+https://akshaynikhare.github.io/career-compass/
+
+## Source code
+
+https://github.com/akshaynikhare/career-compass
