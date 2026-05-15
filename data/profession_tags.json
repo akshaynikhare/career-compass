@@ -166,7 +166,8 @@
     "competitive_exam",
     "long_study",
     "high_earning",
-    "pcb_stream"
+    "pcb_stream",
+    "specialist_medical"
   ],
   "endocrinologist": [
     "healthcare",
@@ -569,9 +570,7 @@
     "structured",
     "competitive_exam",
     "high_earning",
-    "pcb_stream",
-    "clinical",
-    "policy_sub"
+    "pcb_stream"
   ],
   "health_informatics_specialist": [
     "healthcare",
@@ -730,8 +729,7 @@
     "analytical",
     "competitive_exam",
     "high_earning",
-    "pcm_stream",
-    "infra_sub"
+    "pcm_stream"
   ],
   "malware_analyst_reverse_engineer": [
     "tech",
@@ -746,8 +744,7 @@
     "analytical",
     "competitive_exam",
     "high_earning",
-    "pcm_stream",
-    "finance_analytical"
+    "pcm_stream"
   ],
   "devops_engineer": [
     "tech",
@@ -800,9 +797,7 @@
     "structured",
     "competitive_exam",
     "high_earning",
-    "pcm_stream",
-    "data_sub",
-    "policy_sub"
+    "pcm_stream"
   ],
   "product_manager_tech": [
     "tech",
@@ -929,21 +924,18 @@
   ],
   "school_teacher_primary": [
     "education",
-    "expressive",
     "people_focused",
     "any_stream",
     "teaching_sub"
   ],
   "school_teacher_secondary": [
     "education",
-    "expressive",
     "people_focused",
     "any_stream",
     "teaching_sub"
   ],
   "professor_lecturer": [
     "education",
-    "expressive",
     "people_focused",
     "any_stream",
     "teaching_sub"
@@ -955,14 +947,12 @@
   ],
   "special_education_teacher": [
     "education",
-    "expressive",
     "people_focused",
     "any_stream",
     "teaching_sub"
   ],
   "early_childhood_educator": [
     "education",
-    "expressive",
     "people_focused",
     "any_stream",
     "teaching_sub"
@@ -1036,6 +1026,7 @@
   "lawyer_advocate": [
     "legal",
     "governance",
+    "analytical",
     "entrepreneurial",
     "competitive_exam",
     "high_earning",
@@ -1058,6 +1049,7 @@
   "criminal_lawyer": [
     "legal",
     "governance",
+    "analytical",
     "entrepreneurial",
     "competitive_exam",
     "high_earning",
@@ -1068,6 +1060,7 @@
   "constitutional_lawyer": [
     "legal",
     "governance",
+    "analytical",
     "entrepreneurial",
     "competitive_exam",
     "high_earning",
@@ -1078,6 +1071,7 @@
   "intellectual_property_ip_lawyer": [
     "legal",
     "governance",
+    "analytical",
     "entrepreneurial",
     "competitive_exam",
     "high_earning",
@@ -1089,7 +1083,6 @@
     "legal",
     "governance",
     "analytical",
-    "people_focused",
     "entrepreneurial",
     "competitive_exam",
     "high_earning",
@@ -1099,7 +1092,6 @@
   "family_law_attorney": [
     "legal",
     "governance",
-    "people_focused",
     "entrepreneurial",
     "competitive_exam",
     "high_earning",
@@ -1109,6 +1101,7 @@
   "judge": [
     "legal",
     "governance",
+    "analytical",
     "entrepreneurial",
     "competitive_exam",
     "commerce_stream",
@@ -1118,7 +1111,6 @@
   "public_prosecutor": [
     "legal",
     "governance",
-    "people_focused",
     "entrepreneurial",
     "competitive_exam",
     "commerce_stream",
@@ -1127,7 +1119,6 @@
   "ias_officer": [
     "legal",
     "governance",
-    "people_focused",
     "entrepreneurial",
     "competitive_exam",
     "commerce_stream",
@@ -1137,7 +1128,6 @@
   "ips_officer": [
     "legal",
     "governance",
-    "people_focused",
     "entrepreneurial",
     "competitive_exam",
     "commerce_stream",
@@ -1147,7 +1137,6 @@
   "ifs_officer_indian_foreign_service": [
     "legal",
     "governance",
-    "people_focused",
     "entrepreneurial",
     "competitive_exam",
     "commerce_stream",
@@ -1156,7 +1145,6 @@
   "irs_officer": [
     "legal",
     "governance",
-    "people_focused",
     "entrepreneurial",
     "competitive_exam",
     "commerce_stream",
@@ -1165,7 +1153,6 @@
   "state_civil_services_officer": [
     "legal",
     "governance",
-    "people_focused",
     "entrepreneurial",
     "commerce_stream",
     "arts_stream",
@@ -1174,7 +1161,6 @@
   "police_inspector_sub_inspector": [
     "legal",
     "governance",
-    "people_focused",
     "entrepreneurial",
     "commerce_stream",
     "arts_stream"
@@ -1182,7 +1168,7 @@
   "military_officer": [
     "legal",
     "governance",
-    "people_focused",
+    "analytical",
     "entrepreneurial",
     "commerce_stream",
     "arts_stream"
@@ -1190,6 +1176,7 @@
   "judge_advocate_general_jag": [
     "legal",
     "governance",
+    "analytical",
     "entrepreneurial",
     "competitive_exam",
     "commerce_stream",
@@ -1200,7 +1187,6 @@
     "legal",
     "governance",
     "analytical",
-    "people_focused",
     "entrepreneurial",
     "commerce_stream",
     "arts_stream",
@@ -1209,7 +1195,9 @@
   "forensic_psychologist": [
     "legal",
     "governance",
+    "analytical",
     "people_focused",
+    "entrepreneurial",
     "commerce_stream",
     "arts_stream",
     "mental_health_sub"
@@ -1217,6 +1205,7 @@
   "paralegal": [
     "legal",
     "governance",
+    "analytical",
     "entrepreneurial",
     "commerce_stream",
     "arts_stream",
@@ -1225,7 +1214,6 @@
   "notary": [
     "legal",
     "governance",
-    "people_focused",
     "entrepreneurial",
     "competitive_exam",
     "commerce_stream",
@@ -1235,7 +1223,6 @@
   "customs_officer": [
     "legal",
     "governance",
-    "people_focused",
     "entrepreneurial",
     "commerce_stream",
     "arts_stream"
@@ -1244,7 +1231,6 @@
     "legal",
     "governance",
     "analytical",
-    "people_focused",
     "entrepreneurial",
     "commerce_stream",
     "arts_stream",
@@ -1253,7 +1239,6 @@
   "probation_officer": [
     "legal",
     "governance",
-    "people_focused",
     "entrepreneurial",
     "commerce_stream",
     "arts_stream"
@@ -1261,7 +1246,6 @@
   "diplomat": [
     "legal",
     "governance",
-    "people_focused",
     "entrepreneurial",
     "competitive_exam",
     "commerce_stream",
@@ -1272,7 +1256,6 @@
     "legal",
     "governance",
     "analytical",
-    "people_focused",
     "entrepreneurial",
     "commerce_stream",
     "arts_stream",
@@ -1282,7 +1265,7 @@
   "regulatory_affairs_specialist": [
     "legal",
     "governance",
-    "people_focused",
+    "analytical",
     "entrepreneurial",
     "commerce_stream",
     "arts_stream"
@@ -1290,7 +1273,7 @@
   "rti_activist_social_auditor": [
     "legal",
     "governance",
-    "people_focused",
+    "entrepreneurial",
     "structured",
     "commerce_stream",
     "arts_stream"
@@ -1298,7 +1281,6 @@
   "chartered_accountant_ca": [
     "business",
     "finance",
-    "analytical",
     "entrepreneurial",
     "structured",
     "competitive_exam",
@@ -1309,7 +1291,6 @@
   "cost_management_accountant_cma": [
     "business",
     "finance",
-    "analytical",
     "entrepreneurial",
     "structured",
     "competitive_exam",
@@ -1320,7 +1301,6 @@
   "company_secretary_cs": [
     "business",
     "finance",
-    "analytical",
     "entrepreneurial",
     "structured",
     "competitive_exam",
@@ -1331,7 +1311,6 @@
   "accountant": [
     "business",
     "finance",
-    "analytical",
     "entrepreneurial",
     "structured",
     "commerce_stream",
@@ -1342,6 +1321,7 @@
     "finance",
     "analytical",
     "entrepreneurial",
+    "structured",
     "high_earning",
     "commerce_stream",
     "arts_stream",
@@ -1351,6 +1331,7 @@
     "business",
     "finance",
     "entrepreneurial",
+    "structured",
     "high_earning",
     "commerce_stream",
     "arts_stream",
@@ -1361,6 +1342,7 @@
     "finance",
     "analytical",
     "entrepreneurial",
+    "structured",
     "high_earning",
     "commerce_stream",
     "arts_stream",
@@ -1382,6 +1364,7 @@
     "business",
     "finance",
     "entrepreneurial",
+    "structured",
     "high_earning",
     "commerce_stream",
     "arts_stream",
@@ -1391,6 +1374,7 @@
     "business",
     "finance",
     "entrepreneurial",
+    "structured",
     "high_earning",
     "commerce_stream",
     "arts_stream",
@@ -1399,7 +1383,6 @@
   "auditor": [
     "business",
     "finance",
-    "analytical",
     "entrepreneurial",
     "structured",
     "competitive_exam",
@@ -1422,6 +1405,7 @@
     "business",
     "finance",
     "entrepreneurial",
+    "structured",
     "high_earning",
     "commerce_stream",
     "arts_stream",
@@ -1431,6 +1415,7 @@
     "business",
     "finance",
     "entrepreneurial",
+    "structured",
     "high_earning",
     "commerce_stream",
     "arts_stream"
@@ -1440,6 +1425,7 @@
     "finance",
     "analytical",
     "entrepreneurial",
+    "structured",
     "high_earning",
     "commerce_stream",
     "arts_stream",
@@ -1450,6 +1436,7 @@
     "finance",
     "analytical",
     "entrepreneurial",
+    "structured",
     "high_earning",
     "commerce_stream",
     "arts_stream",
@@ -1459,6 +1446,7 @@
     "business",
     "finance",
     "entrepreneurial",
+    "structured",
     "high_earning",
     "commerce_stream",
     "arts_stream"
@@ -1466,7 +1454,9 @@
   "insurance_underwriter": [
     "business",
     "finance",
+    "expressive",
     "entrepreneurial",
+    "structured",
     "commerce_stream",
     "arts_stream",
     "written_sub"
@@ -1475,6 +1465,7 @@
     "business",
     "finance",
     "entrepreneurial",
+    "structured",
     "commerce_stream",
     "arts_stream"
   ],
@@ -1482,6 +1473,7 @@
     "business",
     "finance",
     "entrepreneurial",
+    "structured",
     "commerce_stream",
     "arts_stream"
   ],
@@ -1490,6 +1482,7 @@
     "finance",
     "analytical",
     "entrepreneurial",
+    "structured",
     "commerce_stream",
     "arts_stream",
     "finance_analytical"
@@ -1499,6 +1492,7 @@
     "finance",
     "analytical",
     "entrepreneurial",
+    "structured",
     "commerce_stream",
     "arts_stream",
     "finance_analytical"
@@ -1507,6 +1501,7 @@
     "business",
     "finance",
     "entrepreneurial",
+    "structured",
     "high_earning",
     "commerce_stream",
     "arts_stream",
@@ -1516,6 +1511,7 @@
     "business",
     "finance",
     "entrepreneurial",
+    "structured",
     "commerce_stream",
     "arts_stream"
   ],
@@ -1533,6 +1529,7 @@
     "business",
     "finance",
     "entrepreneurial",
+    "structured",
     "high_earning",
     "commerce_stream",
     "arts_stream",
@@ -1551,7 +1548,6 @@
   "payroll_specialist": [
     "business",
     "finance",
-    "analytical",
     "entrepreneurial",
     "structured",
     "commerce_stream",
@@ -1597,8 +1593,7 @@
     "hands_on",
     "analytical",
     "competitive_exam",
-    "pcm_stream",
-    "mental_health_sub"
+    "pcm_stream"
   ],
   "mechanical_engineer": [
     "engineering",
@@ -1710,8 +1705,7 @@
     "hands_on",
     "analytical",
     "high_earning",
-    "pcm_stream",
-    "field_work"
+    "pcm_stream"
   ],
   "naval_architect": [
     "engineering",
@@ -1741,7 +1735,8 @@
     "hands_on",
     "analytical",
     "competitive_exam",
-    "pcm_stream"
+    "pcm_stream",
+    "field_work"
   ],
   "mechatronics_engineer": [
     "engineering",
@@ -1819,8 +1814,7 @@
     "expressive",
     "any_stream",
     "arts_stream",
-    "written_sub",
-    "finance_analytical"
+    "written_sub"
   ],
   "data_journalist": [
     "creative",
@@ -1828,7 +1822,6 @@
     "expressive",
     "any_stream",
     "arts_stream",
-    "data_sub",
     "written_sub"
   ],
   "photojournalist": [
@@ -2022,7 +2015,8 @@
     "expressive",
     "high_earning",
     "any_stream",
-    "arts_stream"
+    "arts_stream",
+    "visual_sub"
   ],
   "photographer": [
     "creative",
@@ -2159,6 +2153,7 @@
     "trades",
     "construction",
     "hands_on",
+    "structured",
     "any_stream",
     "field_work",
     "finance_analytical"
@@ -2368,8 +2363,7 @@
     "science",
     "analytical",
     "pcm_stream",
-    "pcb_stream",
-    "data_sub"
+    "pcb_stream"
   ],
   "archaeologist": [
     "research",
@@ -2525,7 +2519,6 @@
     "expressive",
     "entrepreneurial",
     "any_stream",
-    "clinical",
     "leadership_sub"
   ],
   "event_manager": [
@@ -2553,7 +2546,8 @@
     "hospitality",
     "expressive",
     "people_focused",
-    "any_stream"
+    "any_stream",
+    "written_sub"
   ],
   "resort_manager": [
     "hospitality",
@@ -2592,6 +2586,7 @@
   "air_traffic_controller_atc": [
     "transport",
     "hands_on",
+    "structured",
     "any_stream"
   ],
   "train_driver_loco_pilot": [
@@ -2612,23 +2607,26 @@
     "transport",
     "hands_on",
     "analytical",
+    "structured",
     "any_stream",
     "finance_analytical"
   ],
   "customs_broker": [
     "transport",
     "hands_on",
+    "structured",
     "any_stream"
   ],
   "freight_forwarding_agent": [
     "transport",
     "hands_on",
-    "any_stream",
-    "clinical"
+    "structured",
+    "any_stream"
   ],
   "dispatch_controller": [
     "transport",
     "hands_on",
+    "structured",
     "any_stream"
   ],
   "warehouse_manager": [
@@ -2650,6 +2648,7 @@
   "railway_engineer": [
     "transport",
     "hands_on",
+    "structured",
     "any_stream"
   ],
   "port_harbor_manager": [
@@ -2663,6 +2662,7 @@
   "delivery_courier_last_mile_exec": [
     "transport",
     "hands_on",
+    "structured",
     "any_stream"
   ],
   "astronaut": [
@@ -2731,6 +2731,7 @@
     "social",
     "welfare",
     "people_focused",
+    "entrepreneurial",
     "any_stream",
     "arts_stream"
   ],
@@ -2738,6 +2739,7 @@
     "social",
     "welfare",
     "people_focused",
+    "entrepreneurial",
     "competitive_exam",
     "any_stream",
     "arts_stream"
@@ -2794,7 +2796,8 @@
     "analytical",
     "pcm_stream",
     "pcb_stream",
-    "research_sub"
+    "research_sub",
+    "field_work"
   ],
   "plant_breeder": [
     "agriculture",
@@ -2810,7 +2813,8 @@
     "hands_on",
     "analytical",
     "pcm_stream",
-    "pcb_stream"
+    "pcb_stream",
+    "specialist_medical"
   ],
   "entomologist": [
     "agriculture",
@@ -2826,7 +2830,8 @@
     "hands_on",
     "analytical",
     "pcm_stream",
-    "pcb_stream"
+    "pcb_stream",
+    "field_work"
   ],
   "horticulturist": [
     "agriculture",
@@ -2885,6 +2890,7 @@
     "environment",
     "hands_on",
     "analytical",
+    "people_focused",
     "pcm_stream",
     "pcb_stream",
     "research_sub",
@@ -2906,7 +2912,6 @@
     "structured",
     "pcm_stream",
     "pcb_stream",
-    "mental_health_sub",
     "leadership_sub"
   ],
   "climate_change_analyst": [
@@ -2921,7 +2926,6 @@
     "agriculture",
     "environment",
     "hands_on",
-    "analytical",
     "entrepreneurial",
     "pcm_stream",
     "pcb_stream",
@@ -2930,6 +2934,7 @@
   "soil_scientist__agriculture_environment": [
     "agriculture",
     "environment",
+    "hands_on",
     "analytical",
     "pcm_stream",
     "pcb_stream",
@@ -2954,6 +2959,7 @@
   "architect": [
     "architecture",
     "design",
+    "analytical",
     "expressive",
     "structured",
     "high_earning",
@@ -3097,8 +3103,7 @@
     "fitness",
     "hands_on",
     "high_earning",
-    "any_stream",
-    "policy_sub"
+    "any_stream"
   ],
   "sports_coach": [
     "sports",
@@ -3173,6 +3178,7 @@
     "sports",
     "fitness",
     "hands_on",
+    "analytical",
     "any_stream",
     "finance_analytical"
   ],
@@ -3233,6 +3239,7 @@
   "child_psychologist": [
     "mental_health",
     "wellness",
+    "analytical",
     "people_focused",
     "pcb_stream",
     "mental_health_sub"
@@ -3271,6 +3278,7 @@
   "public_health_officer": [
     "policy",
     "healthcare",
+    "analytical",
     "people_focused",
     "competitive_exam",
     "long_study",
@@ -3279,6 +3287,7 @@
   "epidemiologist__public_health_policy": [
     "policy",
     "healthcare",
+    "analytical",
     "people_focused",
     "competitive_exam",
     "long_study",
@@ -3298,12 +3307,12 @@
     "healthcare",
     "analytical",
     "people_focused",
-    "pcb_stream",
-    "data_sub"
+    "pcb_stream"
   ],
   "environmental_health_specialist": [
     "policy",
     "healthcare",
+    "analytical",
     "people_focused",
     "pcb_stream",
     "mental_health_sub"
@@ -3315,8 +3324,7 @@
     "people_focused",
     "structured",
     "high_earning",
-    "pcb_stream",
-    "policy_sub"
+    "pcb_stream"
   ],
   "cfa_charterholder": [
     "finance",
@@ -3342,7 +3350,6 @@
     "finance",
     "specialized",
     "analytical",
-    "entrepreneurial",
     "structured",
     "high_earning",
     "commerce_stream",
@@ -3384,6 +3391,7 @@
     "niche",
     "emerging",
     "analytical",
+    "expressive",
     "high_earning",
     "any_stream"
   ],
@@ -3414,6 +3422,7 @@
     "niche",
     "emerging",
     "analytical",
+    "expressive",
     "high_earning",
     "pcm_stream"
   ],
@@ -3438,6 +3447,7 @@
     "niche",
     "emerging",
     "analytical",
+    "expressive",
     "high_earning",
     "any_stream",
     "leadership_sub"
@@ -3455,6 +3465,7 @@
     "niche",
     "emerging",
     "analytical",
+    "expressive",
     "competitive_exam",
     "high_earning",
     "pcm_stream"
@@ -3484,6 +3495,7 @@
     "niche",
     "emerging",
     "analytical",
+    "expressive",
     "competitive_exam",
     "long_study",
     "high_earning",
@@ -3493,7 +3505,6 @@
   "voice_chatbot_designer": [
     "niche",
     "emerging",
-    "analytical",
     "expressive",
     "high_earning",
     "any_stream"
@@ -3508,8 +3519,7 @@
     "niche",
     "emerging",
     "analytical",
-    "any_stream",
-    "finance_analytical"
+    "any_stream"
   ],
   "funeral_director_mortician": [
     "niche",
@@ -3531,6 +3541,7 @@
     "niche",
     "emerging",
     "analytical",
+    "expressive",
     "any_stream",
     "leadership_sub"
   ],
@@ -3551,6 +3562,7 @@
     "niche",
     "emerging",
     "analytical",
+    "expressive",
     "competitive_exam",
     "long_study",
     "any_stream"
@@ -3566,7 +3578,6 @@
   "yacht_captain": [
     "niche",
     "emerging",
-    "analytical",
     "high_earning",
     "any_stream"
   ],
@@ -3581,6 +3592,7 @@
     "niche",
     "emerging",
     "analytical",
+    "expressive",
     "competitive_exam",
     "high_earning",
     "pcm_stream",
@@ -3591,12 +3603,14 @@
     "niche",
     "emerging",
     "analytical",
+    "expressive",
     "any_stream"
   ],
   "aquarist_marine_biologist_public_aquariu": [
     "niche",
     "emerging",
     "analytical",
+    "expressive",
     "any_stream",
     "research_sub",
     "field_work"
@@ -3610,7 +3624,6 @@
   "nft_crypto_artist": [
     "niche",
     "emerging",
-    "analytical",
     "expressive",
     "high_earning",
     "any_stream"
@@ -3625,6 +3638,7 @@
     "niche",
     "emerging",
     "analytical",
+    "expressive",
     "any_stream"
   ],
   "animal_trainer": [
@@ -3644,12 +3658,14 @@
     "niche",
     "emerging",
     "analytical",
+    "expressive",
     "any_stream"
   ],
   "k_12_edtech_content_creator": [
     "niche",
     "emerging",
     "analytical",
+    "expressive",
     "pcm_stream",
     "written_sub"
   ],
@@ -3709,9 +3725,7 @@
     "structured",
     "high_earning",
     "pcm_stream",
-    "commerce_stream",
-    "data_sub",
-    "policy_sub"
+    "commerce_stream"
   ],
   "cloud_solutions_architect": [
     "tech",
@@ -3805,7 +3819,6 @@
   ],
   "special_education_teacher_new": [
     "education",
-    "expressive",
     "people_focused",
     "any_stream",
     "teaching_sub"
@@ -3831,7 +3844,6 @@
   ],
   "language_teacher_foreign": [
     "education",
-    "expressive",
     "people_focused",
     "any_stream",
     "arts_stream",
@@ -3894,8 +3906,7 @@
     "structured",
     "any_stream",
     "commerce_stream",
-    "arts_stream",
-    "research_sub"
+    "arts_stream"
   ],
   "prison_counsellor": [
     "social",
@@ -3941,6 +3952,7 @@
   "neuropsychologist_new": [
     "mental_health",
     "wellness",
+    "analytical",
     "people_focused",
     "long_study",
     "high_earning",
@@ -3962,6 +3974,7 @@
     "finance",
     "analytical",
     "entrepreneurial",
+    "structured",
     "competitive_exam",
     "high_earning",
     "pcm_stream",
@@ -3972,7 +3985,6 @@
     "finance",
     "specialized",
     "analytical",
-    "entrepreneurial",
     "structured",
     "high_earning",
     "pcm_stream",
@@ -3982,6 +3994,7 @@
   "pension_fund_manager": [
     "finance",
     "specialized",
+    "analytical",
     "entrepreneurial",
     "structured",
     "competitive_exam",
@@ -3995,7 +4008,6 @@
     "finance",
     "specialized",
     "analytical",
-    "entrepreneurial",
     "structured",
     "high_earning",
     "pcm_stream",
@@ -4005,7 +4017,6 @@
     "finance",
     "specialized",
     "analytical",
-    "entrepreneurial",
     "structured",
     "competitive_exam",
     "high_earning",
@@ -4017,7 +4028,6 @@
     "finance",
     "specialized",
     "analytical",
-    "entrepreneurial",
     "structured",
     "high_earning",
     "pcm_stream",
@@ -4067,7 +4077,6 @@
     "hands_on",
     "analytical",
     "pcm_stream",
-    "pcb_stream",
-    "field_work"
+    "pcb_stream"
   ]
 }

@@ -1,0 +1,22 @@
+[
+  {"dominant":["I","R"],"name":"A.P.J. Abdul Kalam","role":"Scientist & 11th President of India","note":"Combined deep curiosity with hands-on aerospace engineering"},
+  {"dominant":["I","E"],"name":"Sundar Pichai","role":"CEO, Google & Alphabet","note":"Analytical mind paired with business leadership at global scale"},
+  {"dominant":["A","E"],"name":"Shah Rukh Khan","role":"Actor & Film Producer","note":"Creative performer who built one of India's biggest entertainment companies"},
+  {"dominant":["S","E"],"name":"Narendra Modi","role":"Prime Minister of India","note":"People-centred leadership with strong entrepreneurial drive"},
+  {"dominant":["I","C"],"name":"Infosys Narayana Murthy","role":"Co-founder, Infosys","note":"Methodical thinker who built India's IT industry with structured precision"},
+  {"dominant":["A","S"],"name":"A.R. Rahman","role":"Music Composer & Oscar Winner","note":"Artistic genius with deep emotional connection to his audience"},
+  {"dominant":["I","A"],"name":"Viswanathan Anand","role":"World Chess Champion","note":"Pure investigative thinking with creative strategic flair"},
+  {"dominant":["S","A"],"name":"Priyanka Chopra","role":"Actor & Global Entrepreneur","note":"Social charisma and artistic expression on a world stage"},
+  {"dominant":["R","I"],"name":"Kalpana Chawla","role":"NASA Astronaut","note":"Hands-on engineering drive fueled by relentless scientific curiosity"},
+  {"dominant":["E","C"],"name":"Ratan Tata","role":"Chairman Emeritus, Tata Group","note":"Business leadership built on disciplined long-term thinking"},
+  {"dominant":["S","I"],"name":"Vandana Shiva","role":"Environmental Scientist & Activist","note":"Combines scientific research with deep social commitment"},
+  {"dominant":["A","I"],"name":"Vikram Sarabhai","role":"Father of India's Space Programme","note":"Artistic vision guided by rigorous scientific methodology"},
+  {"dominant":["R","E"],"name":"Dhirubhai Ambani","role":"Founder, Reliance Industries","note":"Built India's largest conglomerate with hands-on entrepreneurial grit"},
+  {"dominant":["C","I"],"name":"T.N. Seshan","role":"Chief Election Commissioner","note":"Structured thinking and investigative rigour reformed Indian elections"},
+  {"dominant":["S","E"],"name":"Azim Premji","role":"Chairman, Wipro","note":"Led a global tech company while dedicating billions to Indian education"},
+  {"dominant":["A","E"],"name":"Satyajit Ray","role":"Filmmaker & Oscar Laureate","note":"Creative storytelling combined with the drive to build a cinematic legacy"},
+  {"dominant":["I","S"],"name":"M.S. Swaminathan","role":"Father of India's Green Revolution","note":"Scientific research channelled entirely toward social food security"},
+  {"dominant":["R","C"],"name":"Sudha Murthy","role":"Author & Philanthropist","note":"Engineering precision paired with structured compassionate giving"},
+  {"dominant":["E","S"],"name":"Verghese Kurien","role":"Father of India's White Revolution","note":"Entrepreneurial leadership that transformed India's dairy industry for farmers"},
+  {"dominant":["I","C"],"name":"C.V. Raman","role":"Nobel Laureate in Physics","note":"Methodical experimentation and precise thinking led to the discovery of the Raman Effect"}
+]

@@ -11,7 +11,8 @@
   function computeRiasec(answers, questions) {
     var raw = { R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 };
 
-    questions.personality.forEach(function (q) {
+    var personalityQs = questions.personality || questions.career_deep || [];
+    personalityQs.forEach(function (q) {
       var score = answers[q.id];
       if (score == null) return;
       raw[q.dimension] += score * q.weight;
@@ -88,10 +89,47 @@
 
     matches.sort(function (a, b) { return b.score - a.score; });
 
-    var top10 = matches.filter(function (m) { return m.passed_constraints; }).slice(0, 10);
+    // Type weighting: slight penalty for Minor/Niche so Major careers aren't crowded out.
+    // weighted_score is only used for selection — .score stays untouched for display.
+    var TYPE_WEIGHT = { 'Major': 1.0, 'Minor': 0.97, 'Niche': 0.93 };
+    matches.forEach(function (m) {
+      m.weighted_score = m.score * (TYPE_WEIGHT[m.profession.type] || 1.0);
+    });
+
+    // Re-sort passing matches by weighted_score for diversity-aware top10 selection.
+    var passed = matches.filter(function (m) { return m.passed_constraints; });
+    passed.sort(function (a, b) { return b.weighted_score - a.weighted_score; });
+
+    // Diversity cap: max 2 careers per category in top10.
+    var catCount = {};
+    var top10 = [];
+    for (var i = 0; i < passed.length && top10.length < 10; i++) {
+      var cat = passed[i].profession.category;
+      catCount[cat] = catCount[cat] || 0;
+      if (catCount[cat] < 2) {
+        top10.push(passed[i]);
+        catCount[cat]++;
+      }
+    }
+
+    // stretch5: constraint-failing careers, top 5 by raw score (no type weighting).
     var stretch5 = matches.filter(function (m) { return !m.passed_constraints; }).slice(0, 5);
 
-    return { riasec: riasec, matches: matches, top10: top10, stretch5: stretch5 };
+    // topByDomain: top 2 per category across all passing matches,
+    // sorted by each domain's best weighted_score descending.
+    var domainMap = {};
+    passed.forEach(function (m) {
+      var c = m.profession.category;
+      if (!domainMap[c]) domainMap[c] = [];
+      if (domainMap[c].length < 2) domainMap[c].push(m);
+    });
+    var topByDomain = Object.keys(domainMap)
+      .map(function (c) { return { category: c, matches: domainMap[c] }; })
+      .sort(function (a, b) {
+        return b.matches[0].weighted_score - a.matches[0].weighted_score;
+      });
+
+    return { riasec: riasec, matches: matches, top10: top10, stretch5: stretch5, topByDomain: topByDomain };
   }
 
   return { match: match };

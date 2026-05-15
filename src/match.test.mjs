@@ -18,7 +18,8 @@ const edges       = JSON.parse(readFileSync(join(dataDir, 'riasec_edges.json'),'
 // Build answer sets from question metadata
 function buildAnswers(scoreFn) {
   const answers = {};
-  questions.personality.forEach(q => {
+  const personalityQs = questions.personality || questions.career_deep || [];
+  personalityQs.forEach(q => {
     answers[q.id] = scoreFn(q.dimension);
   });
   return answers;
@@ -121,4 +122,54 @@ test('Normalized RIASEC: sum of all dimension values equals 1.0 ± 0.01', () => 
     Math.abs(sum - 1.0) <= 0.01,
     `RIASEC values sum to ${sum}, expected 1.0 ± 0.01`
   );
+});
+
+// ── Test 6: topByDomain structure ───────────────────────────────────────────
+test('topByDomain: array of domain objects with <=2 constraint-passing matches each', () => {
+  const answers = buildAnswers(() => 3);
+  const result = match(answers, defaultConstraints, questions, professions, edges);
+
+  assert.ok(Array.isArray(result.topByDomain), 'topByDomain should be an array');
+
+  for (const domain of result.topByDomain) {
+    assert.ok(typeof domain.category === 'string',
+      `domain.category should be a string, got ${typeof domain.category}`);
+    assert.ok(Array.isArray(domain.matches),
+      'domain.matches should be an array');
+    assert.ok(domain.matches.length >= 1 && domain.matches.length <= 2,
+      `domain.matches.length should be 1–2, got ${domain.matches.length}`);
+    for (const m of domain.matches) {
+      assert.strictEqual(m.profession.category, domain.category,
+        `Match category ${m.profession.category} should equal domain ${domain.category}`);
+      assert.ok(m.passed_constraints,
+        `topByDomain should only contain constraint-passing matches`);
+    }
+  }
+
+  // Sorted descending by best weighted_score
+  for (let i = 1; i < result.topByDomain.length; i++) {
+    const prev = result.topByDomain[i - 1].matches[0].weighted_score;
+    const curr = result.topByDomain[i].matches[0].weighted_score;
+    assert.ok(prev >= curr,
+      `topByDomain not sorted: index ${i-1} score ${prev} < index ${i} score ${curr}`);
+  }
+});
+
+// ── Test 7: Diversity cap ────────────────────────────────────────────────────
+test('Diversity cap: top10 has at most 2 professions per category', () => {
+  // All-I profile is the extreme case that used to flood with 10 Science & Research
+  const answers = buildAnswers(dim => dim === 'I' ? 5 : 1);
+  const result = match(answers, defaultConstraints, questions, professions, edges);
+
+  const catCount = {};
+  for (const m of result.top10) {
+    const cat = m.profession.category;
+    catCount[cat] = (catCount[cat] || 0) + 1;
+    assert.ok(catCount[cat] <= 2,
+      `Category "${cat}" appears ${catCount[cat]} times in top10 (max allowed: 2)`);
+  }
+
+  const distinctCats = Object.keys(catCount).length;
+  assert.ok(distinctCats >= 3,
+    `Expected >= 3 distinct categories in top10, got ${distinctCats}: ${Object.keys(catCount).join(', ')}`);
 });

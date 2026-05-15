@@ -3,7 +3,7 @@
   "personal_financial": [
     {
       "id": "pf01",
-      "text": "Which stream are you considering after Class 10?",
+      "text": "Which stream are you thinking of taking after Class 10?",
       "type": "single",
       "key": "stream_pref",
       "options": [
@@ -16,7 +16,7 @@
     },
     {
       "id": "pf02",
-      "text": "How many years can your family support full-time studies after Class 12?",
+      "text": "For how many years can your family pay for your studies after Class 12?",
       "type": "single",
       "key": "years_available",
       "options": [
@@ -28,7 +28,7 @@
     },
     {
       "id": "pf03",
-      "text": "What is your family's approximate annual budget for your education (fees + living)?",
+      "text": "How much money can your family spend on your studies each year (fees + food + stay)?",
       "type": "single",
       "key": "annual_budget_inr",
       "options": [
@@ -40,86 +40,86 @@
     },
     {
       "id": "pf04",
-      "text": "How prepared are you to crack high-stakes entrance exams like NEET or JEE?",
+      "text": "Are you ready to work very hard for tough entrance exams like NEET or JEE?",
       "type": "single",
       "key": "exam_intensity",
       "options": [
-        { "label": "Very prepared, I'll give it my best",       "value": 3 },
-        { "label": "Somewhat prepared",                         "value": 2 },
-        { "label": "I prefer streams with easier entrance",     "value": 1 }
+        { "label": "Yes, I will give my best",               "value": 3 },
+        { "label": "Maybe, I am not fully sure",             "value": 2 },
+        { "label": "I prefer courses with easier entrance",  "value": 1 }
       ]
     },
     {
       "id": "pf05",
-      "text": "Are you willing to move to another city or state for your studies?",
+      "text": "Are you okay with moving to another city or state for your studies?",
       "type": "single",
       "key": "can_relocate",
       "options": [
-        { "label": "Yes, anywhere in India",         "value": true },
-        { "label": "Prefer to stay in my state",     "value": false }
+        { "label": "Yes, anywhere in India",       "value": true },
+        { "label": "I want to stay in my state",   "value": false }
       ]
     },
     {
       "id": "pf06",
-      "text": "How important is it for you to start earning within 3–4 years after Class 12?",
+      "text": "Do you need to start earning money within 3–4 years after Class 12?",
       "type": "single",
       "key": "need_early_income",
       "options": [
-        { "label": "Very important, I need to earn soon",   "value": true },
-        { "label": "Not urgent, I can study longer",        "value": false }
+        { "label": "Yes, I need to earn soon",      "value": true },
+        { "label": "No, I can study for longer",    "value": false }
       ]
     },
     {
       "id": "pf07",
-      "text": "What kind of work environment do you picture yourself in?",
+      "text": "Where do you imagine yourself working?",
       "type": "single",
       "key": "work_setting",
       "options": [
-        { "label": "Mostly indoors (office/lab/hospital)",    "value": "indoor" },
-        { "label": "Mostly outdoors (field/site/nature)",     "value": "outdoor" },
-        { "label": "Mix of both",                             "value": "any" }
+        { "label": "Mostly indoors (office / lab / hospital)",   "value": "indoor" },
+        { "label": "Mostly outdoors (field / site / nature)",    "value": "outdoor" },
+        { "label": "Mix of both",                                "value": "any" }
       ]
     },
     {
       "id": "pf08",
-      "text": "What type of institution do you prefer?",
+      "text": "What kind of college do you prefer?",
       "type": "single",
       "key": "college_type",
       "options": [
-        { "label": "Government/public college (lower fees)",  "value": "govt" },
-        { "label": "Private college (more seats)",            "value": "private" },
-        { "label": "Any, as long as it's good",              "value": "any" }
+        { "label": "Government college (lower fees)",   "value": "govt" },
+        { "label": "Private college (more seats)",      "value": "private" },
+        { "label": "Any good college",                  "value": "any" }
       ]
     },
     {
       "id": "pf09",
-      "text": "How do you prefer to learn?",
+      "text": "How do you learn best?",
       "type": "single",
       "key": "learning_style",
       "options": [
-        { "label": "Hands-on / practical (labs, workshops, building)",  "value": "practical" },
-        { "label": "Theoretical / reading & reasoning",                  "value": "theoretical" },
-        { "label": "Both equally",                                       "value": "any" }
+        { "label": "By doing things (labs, workshops, building)",   "value": "practical" },
+        { "label": "By reading and thinking",                       "value": "theoretical" },
+        { "label": "Both work equally well for me",                 "value": "any" }
       ]
     },
     {
       "id": "pf10",
-      "text": "What is the primary occupation of your parent/guardian?",
+      "text": "What does your parent or guardian do for work?",
       "type": "single",
       "key": "family_background",
       "options": [
-        { "label": "Government/public sector job",   "value": "govt" },
-        { "label": "Private sector/corporate job",   "value": "private" },
-        { "label": "Business/self-employed",         "value": "business" },
-        { "label": "Farming/agriculture",            "value": "farming" },
-        { "label": "Other/not applicable",           "value": "other" }
+        { "label": "Government job",         "value": "govt" },
+        { "label": "Private company job",    "value": "private" },
+        { "label": "Business / self-employed", "value": "business" },
+        { "label": "Farming",                "value": "farming" },
+        { "label": "Other",                  "value": "other" }
       ]
     }
   ],
   "career_quick": [
     {
       "id": "cq01",
-      "text": "Would you enjoy working with machines, tools, or your hands every day?",
+      "text": "Do you enjoy working with machines, tools, or using your hands?",
       "dimension": "R",
       "weight": 0.8,
       "options": [
@@ -174,7 +174,7 @@
     },
     {
       "id": "cq06",
-      "text": "Do you feel satisfied when everything is organized and in order?",
+      "text": "Do you feel happy when everything around you is neat and in order?",
       "dimension": "C",
       "weight": 0.8,
       "options": [
@@ -185,7 +185,7 @@
     },
     {
       "id": "cq07",
-      "text": "Would you prefer a job where you physically do things rather than mostly talk or write?",
+      "text": "Do you prefer a job where you do physical work, rather than mostly sitting and writing?",
       "dimension": "R",
       "weight": 0.8,
       "options": [
@@ -207,7 +207,7 @@
     },
     {
       "id": "cq09",
-      "text": "Do you genuinely care about helping people who are struggling?",
+      "text": "Do you truly care about helping people who are in difficulty?",
       "dimension": "S",
       "weight": 0.8,
       "options": [
@@ -218,7 +218,7 @@
     },
     {
       "id": "cq10",
-      "text": "Would you enjoy a job where you get to be creative every single day?",
+      "text": "Would you enjoy a job where you get to be creative every day?",
       "dimension": "A",
       "weight": 0.8,
       "options": [
@@ -229,7 +229,7 @@
     },
     {
       "id": "cq11",
-      "text": "Do you enjoy taking apart gadgets, appliances, or machines to see how they work?",
+      "text": "Do you enjoy opening up gadgets or machines to see how they work inside?",
       "dimension": "R",
       "weight": 0.8,
       "options": [
@@ -240,7 +240,7 @@
     },
     {
       "id": "cq12",
-      "text": "Would you rather learn a skill by physically practising it than by reading about it?",
+      "text": "Would you rather learn something by doing it than by reading about it?",
       "dimension": "R",
       "weight": 0.8,
       "options": [
@@ -262,7 +262,7 @@
     },
     {
       "id": "cq14",
-      "text": "Do you enjoy collecting data, finding patterns, or analysing information?",
+      "text": "Do you enjoy looking at numbers or information and finding patterns in them?",
       "dimension": "I",
       "weight": 0.8,
       "options": [
@@ -273,7 +273,7 @@
     },
     {
       "id": "cq15",
-      "text": "When something doesn't make sense to you, do you keep asking 'why' until you understand?",
+      "text": "When something does not make sense, do you keep asking 'why' until you understand?",
       "dimension": "I",
       "weight": 0.8,
       "options": [
@@ -284,7 +284,7 @@
     },
     {
       "id": "cq16",
-      "text": "Are you the kind of person who reads about science, technology, or discoveries for fun?",
+      "text": "Do you read about science, technology, or new discoveries just for fun?",
       "dimension": "I",
       "weight": 0.8,
       "options": [
@@ -295,7 +295,7 @@
     },
     {
       "id": "cq17",
-      "text": "Would you rather design something brand new than follow an existing template?",
+      "text": "Do you prefer making something completely new rather than copying an existing design?",
       "dimension": "A",
       "weight": 0.8,
       "options": [
@@ -306,7 +306,7 @@
     },
     {
       "id": "cq18",
-      "text": "Do you notice design flaws or aesthetic problems that other people tend to miss?",
+      "text": "Do you notice when something looks wrong or odd, even when others around you don't?",
       "dimension": "A",
       "weight": 0.8,
       "options": [
@@ -317,7 +317,7 @@
     },
     {
       "id": "cq19",
-      "text": "Does storytelling — through writing, images, film, or performance — excite you?",
+      "text": "Do you enjoy storytelling through writing, drawing, films, or acting?",
       "dimension": "A",
       "weight": 0.8,
       "options": [
@@ -328,7 +328,7 @@
     },
     {
       "id": "cq20",
-      "text": "Are you the kind of person friends come to when they need to talk or get advice?",
+      "text": "Do friends come to you when they need to talk or want advice?",
       "dimension": "S",
       "weight": 0.8,
       "options": [
@@ -339,7 +339,7 @@
     },
     {
       "id": "cq21",
-      "text": "Would you like a career that directly improves people's lives in your community?",
+      "text": "Would you like a career where you directly help people in your area?",
       "dimension": "S",
       "weight": 0.8,
       "options": [
@@ -350,7 +350,7 @@
     },
     {
       "id": "cq22",
-      "text": "Do you enjoy explaining things to others and making sure they truly understand?",
+      "text": "Do you enjoy explaining things to others until they fully understand?",
       "dimension": "S",
       "weight": 0.8,
       "options": [
@@ -361,7 +361,7 @@
     },
     {
       "id": "cq23",
-      "text": "Do you like the idea of starting something from scratch and watching it grow?",
+      "text": "Do you like starting something from zero and watching it grow?",
       "dimension": "E",
       "weight": 0.8,
       "options": [
@@ -372,7 +372,7 @@
     },
     {
       "id": "cq24",
-      "text": "Would you enjoy pitching ideas and getting people excited about them?",
+      "text": "Would you enjoy sharing your ideas and getting others excited about them?",
       "dimension": "E",
       "weight": 0.8,
       "options": [
@@ -383,7 +383,7 @@
     },
     {
       "id": "cq25",
-      "text": "Do you feel energised when you're in charge and driving a project forward?",
+      "text": "Do you feel excited when you are leading a group or project?",
       "dimension": "E",
       "weight": 0.8,
       "options": [
@@ -394,7 +394,7 @@
     },
     {
       "id": "cq26",
-      "text": "Does competing to achieve a goal — in business, sports, or school — appeal to you?",
+      "text": "Do you enjoy competing to reach a goal — in studies, sports, or business?",
       "dimension": "E",
       "weight": 0.8,
       "options": [
@@ -405,7 +405,7 @@
     },
     {
       "id": "cq27",
-      "text": "Do you feel uncomfortable or anxious when things around you are disorganised?",
+      "text": "Does it bother you when things around you are messy or out of order?",
       "dimension": "C",
       "weight": 0.8,
       "options": [
@@ -416,7 +416,7 @@
     },
     {
       "id": "cq28",
-      "text": "Would you enjoy a job involving spreadsheets, records, or carefully managing data?",
+      "text": "Would you enjoy a job where you keep records, manage files, or work with numbers?",
       "dimension": "C",
       "weight": 0.8,
       "options": [
@@ -427,7 +427,7 @@
     },
     {
       "id": "cq29",
-      "text": "Do you prefer jobs where there is a clear right way to do things?",
+      "text": "Do you prefer jobs where there is a clear and correct way to do things?",
       "dimension": "C",
       "weight": 0.8,
       "options": [
@@ -438,7 +438,7 @@
     },
     {
       "id": "cq30",
-      "text": "Are you good at carefully following instructions from start to finish without skipping steps?",
+      "text": "Are you good at following instructions step by step without skipping any?",
       "dimension": "C",
       "weight": 0.8,
       "options": [
@@ -455,50 +455,42 @@
       "dimension": "R",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd02",
-      "text": "I prefer practical work over reading books or writing reports.",
+      "text": "I prefer doing practical work over reading books or writing reports.",
       "dimension": "R",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd03",
-      "text": "I like working outdoors or in a physical environment rather than an office.",
+      "text": "I like working outdoors or in a physical place more than sitting in an office.",
       "dimension": "R",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd04",
-      "text": "I find it satisfying to see a tangible result — something I made or repaired.",
+      "text": "I feel happy when I can see the result of my work — like something I built or fixed.",
       "dimension": "R",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
@@ -507,11 +499,9 @@
       "dimension": "R",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
@@ -520,24 +510,20 @@
       "dimension": "I",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd07",
-      "text": "I can focus for long periods when trying to solve a complex problem.",
+      "text": "I can stay focused for a long time when trying to solve a tough problem.",
       "dimension": "I",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
@@ -546,76 +532,64 @@
       "dimension": "I",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd09",
-      "text": "I prefer to think through a problem carefully before acting.",
+      "text": "I like to think through a problem carefully before I act.",
       "dimension": "I",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd10",
-      "text": "I have a strong sense of style, design, colour, or aesthetics.",
+      "text": "I have a good eye for style, design, and colour.",
       "dimension": "A",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd11",
-      "text": "I enjoy expressing ideas through drawing, writing, music, dance, or acting.",
+      "text": "I enjoy sharing my ideas through drawing, writing, music, dance, or acting.",
       "dimension": "A",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd12",
-      "text": "I prefer work that allows me to be original rather than follow a fixed process.",
+      "text": "I prefer work where I can try new ideas, not just follow the same method every time.",
       "dimension": "A",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd13",
-      "text": "I get bored if I have to do the same task the same way every day.",
+      "text": "I get bored if I have to do the same task in the same way every single day.",
       "dimension": "A",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
@@ -624,11 +598,9 @@
       "dimension": "S",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
@@ -637,505 +609,427 @@
       "dimension": "S",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd16",
-      "text": "I feel a strong sense of purpose when I contribute to someone's well-being.",
+      "text": "I feel happy and purposeful when I do something that helps someone.",
       "dimension": "S",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd17",
-      "text": "I am patient with people who are slow to understand or need extra help.",
+      "text": "I am patient with people who take more time to understand or need extra help.",
       "dimension": "S",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd18",
-      "text": "Teaching, coaching, or mentoring others sounds appealing to me.",
+      "text": "I like the idea of teaching or guiding others.",
       "dimension": "S",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd19",
-      "text": "I enjoy taking charge and making decisions for a group.",
+      "text": "I enjoy being in charge and making decisions for a group.",
       "dimension": "E",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd20",
-      "text": "I find it exciting to try to persuade or motivate others.",
+      "text": "I enjoy convincing or inspiring others to take action.",
       "dimension": "E",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd21",
-      "text": "I am comfortable taking risks if I believe in what I am doing.",
+      "text": "I am okay with taking risks when I believe in what I am doing.",
       "dimension": "E",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd22",
-      "text": "I can imagine myself running my own business or leading a team someday.",
+      "text": "I can see myself running my own business or leading a team one day.",
       "dimension": "E",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd23",
-      "text": "I like tasks that have clear steps and a right answer.",
+      "text": "I like tasks that have clear steps and a correct answer.",
       "dimension": "C",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd24",
-      "text": "I am good at keeping records, managing data, or following detailed procedures.",
+      "text": "I am good at keeping records, managing files, or following step-by-step instructions.",
       "dimension": "C",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd25",
-      "text": "I feel comfortable working within a set of rules and processes.",
+      "text": "I am comfortable following rules and set processes at work.",
       "dimension": "C",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd26",
-      "text": "I enjoy using specialised tools, equipment, or machinery in my work.",
+      "text": "I enjoy using tools, machines, or equipment in my work.",
       "dimension": "R",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd27",
-      "text": "I am good at understanding how mechanical or electronic systems work together.",
+      "text": "I am good at understanding how machines or electronic devices work.",
       "dimension": "R",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd28",
-      "text": "I prefer work that produces a visible physical outcome over invisible knowledge work.",
+      "text": "I prefer work where I can see a physical result, like something built or repaired.",
       "dimension": "R",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd29",
-      "text": "Activities like carpentry, electronics tinkering, or working on vehicles appeal to me.",
+      "text": "I enjoy activities like woodwork, fixing electronics, or working on vehicles.",
       "dimension": "R",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd30",
-      "text": "I am comfortable working in environments like workshops, construction sites, or the field.",
+      "text": "I am comfortable working in places like workshops, construction sites, or open fields.",
       "dimension": "R",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd31",
-      "text": "I enjoy reading about discoveries in science, technology, or medicine in my spare time.",
+      "text": "I enjoy reading about new discoveries in science, technology, or medicine in my free time.",
       "dimension": "I",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd32",
-      "text": "I like collecting and analysing data to find patterns and draw conclusions.",
+      "text": "I like looking at information or numbers to find patterns and understand what they mean.",
       "dimension": "I",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd33",
-      "text": "I am drawn to problems that don't have an obvious answer.",
+      "text": "I enjoy working on problems that do not have a simple or obvious answer.",
       "dimension": "I",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd34",
-      "text": "I prefer to fully understand a topic before moving on to the next one.",
+      "text": "I like to fully understand a topic before I move on to the next one.",
       "dimension": "I",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd35",
-      "text": "I tend to question assumptions rather than simply accept things at face value.",
+      "text": "I like to question things rather than just accept them as they are.",
       "dimension": "I",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd36",
-      "text": "I enjoy designing experiments or testing hypotheses — in my mind or in practice.",
+      "text": "I enjoy trying out new ideas or small experiments to see if they work.",
       "dimension": "I",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd37",
-      "text": "I notice design flaws or aesthetic problems that others tend to miss.",
+      "text": "I notice when something looks off or wrong, even when others around me don't.",
       "dimension": "A",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd38",
-      "text": "I enjoy reinterpreting existing ideas into something fresh and personal.",
+      "text": "I enjoy taking an existing idea and giving it a fresh, personal touch.",
       "dimension": "A",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd39",
-      "text": "I feel a strong connection to music, visual art, film, or literature.",
+      "text": "I feel a deep connection to music, art, films, or books.",
       "dimension": "A",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd40",
-      "text": "I find it satisfying to come up with a creative idea and see it through to completion.",
+      "text": "I feel happy when I come up with a creative idea and finish it completely.",
       "dimension": "A",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd41",
-      "text": "I prefer environments that celebrate individual expression over rigid conformity.",
+      "text": "I prefer places where I can express myself freely, not just follow strict rules.",
       "dimension": "A",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd42",
-      "text": "Creating something unique gives me a sense of pride that repetitive tasks do not.",
+      "text": "Making something original makes me proud in a way that doing the same task every day does not.",
       "dimension": "A",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd43",
-      "text": "I am naturally empathetic — I often sense how others are feeling before they say it.",
+      "text": "I can often tell how someone is feeling even before they say anything.",
       "dimension": "S",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd44",
-      "text": "I find community service or volunteering personally fulfilling.",
+      "text": "I find it fulfilling to do community service or volunteer work.",
       "dimension": "S",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd45",
-      "text": "I am good at bringing people together and resolving disagreements between them.",
+      "text": "I am good at helping people get along and settle their disagreements.",
       "dimension": "S",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd46",
-      "text": "I believe the most meaningful work involves helping people directly.",
+      "text": "I believe the most meaningful work is the kind that helps people directly.",
       "dimension": "S",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd47",
-      "text": "I enjoy working in teams where everyone's contribution is valued.",
+      "text": "I enjoy working in teams where everyone's effort is valued.",
       "dimension": "S",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd48",
-      "text": "I enjoy setting ambitious goals and working hard to achieve them.",
+      "text": "I enjoy setting big goals and working hard to reach them.",
       "dimension": "E",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd49",
-      "text": "I am comfortable selling ideas, products, or my skills to other people.",
+      "text": "I am comfortable selling or promoting my ideas, products, or skills to others.",
       "dimension": "E",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd50",
-      "text": "I thrive in competitive environments where results are measured and rewarded.",
+      "text": "I do well in situations where performance is tracked and good results are rewarded.",
       "dimension": "E",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd51",
-      "text": "I am good at motivating people around me to give their best effort.",
+      "text": "I am good at pushing the people around me to give their best.",
       "dimension": "E",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd52",
-      "text": "I enjoy planning and executing strategies to achieve a target.",
+      "text": "I enjoy making a plan and then carrying it out step by step to reach a goal.",
       "dimension": "E",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd53",
-      "text": "I am comfortable speaking in front of groups or facilitating meetings.",
+      "text": "I am comfortable speaking in front of a group or leading a meeting.",
       "dimension": "E",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
@@ -1144,11 +1038,9 @@
       "dimension": "C",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
@@ -1157,76 +1049,64 @@
       "dimension": "C",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd56",
-      "text": "I like to double-check my work before submitting it to make sure it is accurate.",
+      "text": "I like to check my work again before submitting it to make sure it is correct.",
       "dimension": "C",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd57",
-      "text": "Working with numbers, tables, and structured data appeals to me.",
+      "text": "I enjoy working with numbers, tables, and organised data.",
       "dimension": "C",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd58",
-      "text": "I feel most productive when I have a clear schedule and stick to it.",
+      "text": "I feel most productive when I have a clear daily schedule and stick to it.",
       "dimension": "C",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd59",
-      "text": "I prefer established procedures over improvising solutions on the fly.",
+      "text": "I prefer following a set method rather than making things up as I go.",
       "dimension": "C",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     },
     {
       "id": "cd60",
-      "text": "I am reliable — when I commit to something, I follow through completely.",
+      "text": "I am dependable — when I say I will do something, I always follow through.",
       "dimension": "C",
       "weight": 1.0,
       "options": [
-        { "label": "Strongly disagree", "score": 1 },
         { "label": "Disagree",          "score": 2 },
         { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 },
-        { "label": "Strongly agree",    "score": 5 }
+        { "label": "Agree",             "score": 4 }
       ]
     }
   ]

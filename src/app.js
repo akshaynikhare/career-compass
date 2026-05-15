@@ -43,6 +43,10 @@
 
   var studentInfo   = null;  // { name, email, phone }
 
+  var SS_ANSWERS     = 'cat_progress_answers';
+  var SS_CONSTRAINTS = 'cat_progress_constraints';
+  var SS_INDEX       = 'cat_progress_index';
+
   var TOTAL = 45;
   var PF_COUNT = 10;   // personal_financial
   var CQ_COUNT = 10;   // career_quick
@@ -119,6 +123,21 @@
     return;
   }
 
+  // Restore in-progress answers from sessionStorage if available
+  (function() {
+    try {
+      var sa = sessionStorage.getItem(SS_ANSWERS);
+      var sc = sessionStorage.getItem(SS_CONSTRAINTS);
+      var si = sessionStorage.getItem(SS_INDEX);
+      if (sa) careerAnswers = JSON.parse(sa);
+      if (sc) constraints   = JSON.parse(sc);
+      if (si) {
+        var idx = parseInt(si, 10);
+        if (idx > 0 && idx < TOTAL) currentIndex = idx;
+      }
+    } catch(e) {}
+  })();
+
   // Stratified random selection from pools
   allQuestions = selectQuestions(questions);
 
@@ -129,6 +148,7 @@
       careerAnswers  = {};
       constraints    = {};
       currentIndex   = 0;
+      try { sessionStorage.removeItem(SS_ANSWERS); sessionStorage.removeItem(SS_CONSTRAINTS); sessionStorage.removeItem(SS_INDEX); } catch(e) {}
       studentInfo    = null;
       elSiName.value  = '';
       elSiEmail.value = '';
@@ -167,6 +187,11 @@
 
     studentInfo = { name: name, email: email, phone: phone };
 
+    if (currentIndex > 0) {
+      elBtnNext.textContent = 'Resume from Q' + (currentIndex + 1) + ' →';
+      setTimeout(function() { elBtnNext.textContent = currentIndex === TOTAL - 1 ? 'Submit ✓' : 'Next →'; }, 2500);
+    }
+
     // Transition to question phases
     elStudentPhase.classList.add('hidden');
     elProgressWrapper.classList.remove('hidden');
@@ -178,7 +203,7 @@
     elLoading.classList.add('hidden');
     elContent.classList.remove('hidden');
 
-    renderQuestion(0);
+    renderQuestion(currentIndex);
   });
 
   function showSiError(msg) {
@@ -225,6 +250,7 @@
   // ── Core render ───────────────────────────────────────────────────────────
   function renderQuestion(idx) {
     currentIndex = idx;
+    try { sessionStorage.setItem(SS_INDEX, String(idx)); } catch(e) {}
     var q = allQuestions[idx];
 
     // Determine section
@@ -283,6 +309,7 @@
         }
         input.addEventListener('change', function () {
           constraints[q.key] = opt.value;
+          try { sessionStorage.setItem(SS_CONSTRAINTS, JSON.stringify(constraints)); } catch(e) {}
           elBtnNext.disabled = false;
           clearError();
         });
@@ -293,6 +320,7 @@
         }
         input.addEventListener('change', function () {
           careerAnswers[q.id] = opt.score;
+          try { sessionStorage.setItem(SS_ANSWERS, JSON.stringify(careerAnswers)); } catch(e) {}
           elBtnNext.disabled = false;
           clearError();
         });
@@ -412,6 +440,7 @@
         window.Store.saveResult(studentInfo, result);
       }
 
+      try { sessionStorage.removeItem(SS_ANSWERS); sessionStorage.removeItem(SS_CONSTRAINTS); sessionStorage.removeItem(SS_INDEX); } catch(e) {}
       window.location.href = 'result.html';
     } catch (err) {
       elBtnNext.disabled    = false;

@@ -8,6 +8,7 @@
       "category": "Healthcare",
       "type": "Major",
       "summary": "Diagnoses and treats common illnesses; first point of medical contact",
+      "day_in_life": "You start the morning seeing 20+ patients in a clinic — runny noses, fevers, chest pains. Afternoons mean lab reports, prescriptions, and the occasional emergency call.",
       "path_india": "MBBS (5.5 yrs) → MD General Medicine",
       "years_min": 6,
       "annual_fee_range": [
@@ -31,6 +32,7 @@
       "category": "Healthcare",
       "type": "Major",
       "summary": "Performs operative procedures on organs, tissues, and trauma cases",
+      "day_in_life": "By 7am you're scrubbed in for a 4-hour abdominal operation. Precision, silence, and total focus — then a quick lunch before your next case.",
       "path_india": "MBBS → MS General Surgery",
       "years_min": 6,
       "annual_fee_range": [
@@ -69,7 +71,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review ECGs, interpret stress test results, and perform an angioplasty in the afternoon. Every decision you make directly affects whether someone's heart keeps beating."
     },
     {
       "id": "cardiothoracic_surgeon",
@@ -92,7 +95,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You configure a fleet of IoT sensors, debug a connectivity failure in a smart building installation, and analyse the time-series data for anomaly patterns."
     },
     {
       "id": "neurologist",
@@ -115,7 +119,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You assess a patient with sudden weakness, order an MRI, and diagnose a small stroke. The afternoon is spent in clinic reviewing epilepsy and Parkinson's cases."
     },
     {
       "id": "neurosurgeon",
@@ -138,7 +143,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "orthopedic_surgeon",
@@ -161,7 +167,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You perform a hip replacement in the morning, review post-op X-rays, then see 6 outpatients with joint pain and fractures in the afternoon."
     },
     {
       "id": "dermatologist",
@@ -184,7 +191,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You examine 15 patients — eczema, acne, a suspicious mole. You biopsy the mole, prescribe topical treatments, and document every case carefully."
     },
     {
       "id": "pediatrician",
@@ -207,7 +215,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You examine 12 children from newborns to teenagers — vaccinations, growth checks, fever workups. You explain diagnoses to worried parents as much as to young patients."
     },
     {
       "id": "neonatologist",
@@ -230,7 +239,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "gynecologist_obstetrician",
@@ -253,7 +263,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with two antenatal check-ups, assist a delivery, then hold an outpatient clinic for reproductive health consultations. No two days look the same."
     },
     {
       "id": "ophthalmologist",
@@ -276,7 +287,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You perform cataract surgeries in the morning and see patients with diabetic retinopathy and glaucoma in afternoon clinic — precision tools, millimetre accuracy."
     },
     {
       "id": "ent_specialist",
@@ -299,7 +311,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "psychiatrist",
@@ -322,7 +335,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You spend 45-minute sessions with patients struggling with depression, psychosis, and anxiety. You adjust medication, write detailed case notes, and coordinate with a social worker."
     },
     {
       "id": "radiologist",
@@ -330,6 +344,7 @@
       "category": "Healthcare",
       "type": "Major",
       "summary": "Reads X-rays, MRI, CT scans; interventional radiology procedures",
+      "day_in_life": "You read 50 X-rays and MRI scans during the day, flag two abnormalities for urgent follow-up, and consult with the oncology team on a complex case.",
       "path_india": "MBBS → MD Radiology",
       "years_min": 6,
       "annual_fee_range": [
@@ -368,7 +383,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "pathologist",
@@ -391,7 +407,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You examine tissue biopsies under a microscope, write reports for 20 specimens, and flag a malignancy for immediate clinical follow-up."
     },
     {
       "id": "endocrinologist",
@@ -414,7 +431,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review blood glucose logs, adjust insulin regimens for diabetic patients, and counsel a teenager newly diagnosed with Type 1 diabetes."
     },
     {
       "id": "oncologist",
@@ -437,7 +455,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You discuss a cancer diagnosis with a patient and their family, review chemotherapy response scans, and attend a tumour board meeting to plan a complex case."
     },
     {
       "id": "oncosurgeon",
@@ -460,7 +479,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "gastroenterologist",
@@ -483,7 +503,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You perform two colonoscopies, review biopsy results from last week, and consult on a patient with chronic liver disease in the afternoon."
     },
     {
       "id": "hepatologist",
@@ -506,7 +527,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "nephrologist",
@@ -529,7 +551,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "pulmonologist",
@@ -552,7 +575,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "rheumatologist",
@@ -575,7 +599,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "hematologist",
@@ -598,7 +623,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "infectious_disease_specialist",
@@ -621,7 +647,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "urologist",
@@ -644,7 +671,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "plastic_surgeon",
@@ -667,7 +695,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "geriatrician",
@@ -690,7 +719,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "palliative_care_specialist",
@@ -713,7 +743,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "sports_medicine_doctor",
@@ -736,7 +767,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "sleep_medicine_specialist",
@@ -759,7 +791,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "pain_management_specialist",
@@ -782,7 +815,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "hyperbaric_medicine_specialist",
@@ -805,7 +839,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "pharmacologist",
@@ -828,7 +863,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "toxicologist",
@@ -851,7 +887,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You run dose-response tests on cell cultures, analyse liver enzyme markers for chemical exposure, and write a safety assessment report for a new industrial compound."
     },
     {
       "id": "dentist",
@@ -859,6 +896,7 @@
       "category": "Healthcare",
       "type": "Major",
       "summary": "General oral care — fillings, extractions, root canals, crowns",
+      "day_in_life": "You see 8 patients — two cleanings, one root canal, one extraction. Each appointment is 30-60 minutes of focused, precise work inside someone's mouth.",
       "path_india": "BDS (5 yrs)",
       "years_min": 5,
       "annual_fee_range": [
@@ -897,7 +935,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You fit braces on a 14-year-old, adjust wires on three returning patients, and take X-rays to plan an adult's tooth alignment. Cases run 12–24 months each."
     },
     {
       "id": "periodontist",
@@ -920,7 +959,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You perform a gum graft for a patient with recession, then deep-clean another's roots under local anaesthesia. Precision and patience define every session."
     },
     {
       "id": "endodontist",
@@ -943,7 +983,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You perform 4 root canals today — cleaning, shaping, and sealing infected root systems under magnification. Patients walk out relieved rather than in pain."
     },
     {
       "id": "oral_maxillofacial_surgeon",
@@ -966,7 +1007,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "pharmacist",
@@ -974,6 +1016,7 @@
       "category": "Healthcare",
       "type": "Major",
       "summary": "Dispenses medication, counsels patients, ensures drug safety",
+      "day_in_life": "You dispense 80+ prescriptions, counsel patients on drug interactions, do a stock audit of controlled substances, and flag one dangerous drug combination before it reaches a patient.",
       "path_india": "B.Pharm (4 yrs) or Pharm.D (6 yrs)",
       "years_min": 4,
       "annual_fee_range": [
@@ -1012,7 +1055,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You dispense 80+ prescriptions, counsel patients on drug interactions, do a stock audit of controlled substances, and flag one dangerous drug combination."
     },
     {
       "id": "physiotherapist",
@@ -1020,6 +1064,7 @@
       "category": "Healthcare",
       "type": "Major",
       "summary": "Rehabilitates patients post-surgery, stroke, injury via exercises",
+      "day_in_life": "You see 6 patients across the day — a post-surgery knee, a tennis elbow, a lower back issue — guiding each through targeted exercise routines.",
       "path_india": "BPT (Bachelor of Physiotherapy, 4.5 yrs)",
       "years_min": 5,
       "annual_fee_range": [
@@ -1058,7 +1103,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You see 6 patients across the day — a post-surgery knee, a tennis elbow, a lower back issue — guiding each through targeted exercise routines."
     },
     {
       "id": "neurological_physiotherapist",
@@ -1081,7 +1127,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You see 6 patients across the day — a post-surgery knee, a tennis elbow, a lower back issue — guiding each through targeted exercise routines."
     },
     {
       "id": "occupational_therapist",
@@ -1089,6 +1136,7 @@
       "category": "Healthcare",
       "type": "Minor",
       "summary": "Helps disabled patients regain ability to perform daily activities",
+      "day_in_life": "You assess a post-injury patient's ability to perform daily tasks, design a tailored rehabilitation programme, and teach adaptive techniques for getting dressed.",
       "path_india": "BOT (Bachelor of Occupational Therapy, 4.5 yrs)",
       "years_min": 5,
       "annual_fee_range": [
@@ -1112,6 +1160,7 @@
       "category": "Healthcare",
       "type": "Minor",
       "summary": "Treats speech disorders — stuttering, aphasia, voice disorders",
+      "day_in_life": "You work with 5 patients — a child with a stutter, an adult recovering from a stroke — doing targeted articulation exercises and tracking progress.",
       "path_india": "B.Sc/M.Sc in Speech-Language Pathology (AIISH, Mysore)",
       "years_min": 3,
       "annual_fee_range": [
@@ -1150,7 +1199,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You perform hearing tests on 5 patients, fit a hearing aid for an elderly man, and counsel parents of a child with hearing loss on communication strategies."
     },
     {
       "id": "optometrist",
@@ -1173,7 +1223,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You conduct eye examinations for 10 patients, prescribe glasses, detect early signs of glaucoma in one patient, and refer them to a specialist."
     },
     {
       "id": "dietitian_clinical_nutritionist",
@@ -1196,7 +1247,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review a diabetic patient's food diary, create a meal plan for an athlete, and run a group session on portion control at a community health centre."
     },
     {
       "id": "veterinarian",
@@ -1204,6 +1256,7 @@
       "category": "Healthcare",
       "type": "Major",
       "summary": "Animal healthcare, surgery, vaccination, livestock disease control",
+      "day_in_life": "You examine a limping dog, vaccinate a litter of puppies, perform a spay surgery after lunch, and end with a farm call to check on a sick cattle.",
       "path_india": "BVSc & AH (5.5 yrs)",
       "years_min": 6,
       "annual_fee_range": [
@@ -1242,7 +1295,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You perform a hip replacement in the morning, review post-op X-rays, then see 6 outpatients with joint pain and fractures in the afternoon."
     },
     {
       "id": "midwife",
@@ -1265,7 +1319,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "nurse_registered",
@@ -1273,6 +1328,7 @@
       "category": "Healthcare",
       "type": "Major",
       "summary": "Patient bedside care, medication administration, monitoring",
+      "day_in_life": "You manage 6 patients' vitals every hour, administer IVs, coordinate with doctors on rounds, and comfort a nervous patient before their surgery.",
       "path_india": "B.Sc Nursing (4 yrs) or GNM",
       "years_min": 4,
       "annual_fee_range": [
@@ -1311,7 +1367,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You take vitals on 8 patients at shift start, administer IV medications, assist with a wound dressing, and comfort a patient anxious about their surgery."
     },
     {
       "id": "critical_care_nurse",
@@ -1334,7 +1391,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You take vitals on 8 patients at shift start, administer IV medications, assist with a wound dressing, and comfort a patient anxious about their surgery."
     },
     {
       "id": "paramedic_emergency_medical_technician",
@@ -1357,7 +1415,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "radiographer",
@@ -1380,7 +1439,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "medical_lab_technician",
@@ -1403,7 +1463,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "phlebotomist",
@@ -1426,7 +1487,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "prosthetist_orthotist",
@@ -1449,7 +1511,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You perform a hip replacement in the morning, review post-op X-rays, then see 6 outpatients with joint pain and fractures in the afternoon."
     },
     {
       "id": "hospital_administrator",
@@ -1472,7 +1535,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You chair the morning operations meeting, review bed occupancy data, resolve a staffing gap in the ICU, and prepare a report for the hospital board."
     },
     {
       "id": "health_informatics_specialist",
@@ -1495,7 +1559,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "perfusionist",
@@ -1518,7 +1583,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "ayurvedic_doctor_bams",
@@ -1541,7 +1607,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You conduct pulse diagnosis, prescribe herbal formulations, and guide patients through dietary and lifestyle changes rooted in traditional wellness principles."
     },
     {
       "id": "homeopathic_doctor_bhms",
@@ -1564,7 +1631,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You take a 45-minute detailed case history — symptoms, temperament, lifestyle — and prescribe constitutional remedies tailored to the whole person."
     },
     {
       "id": "naturopath_yoga_therapist",
@@ -1587,7 +1655,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "software_engineer",
@@ -1595,6 +1664,7 @@
       "category": "Technology",
       "type": "Major",
       "summary": "Designs, builds, and maintains software applications and systems",
+      "day_in_life": "You open your laptop to a queue of code reviews, fix a tricky bug before lunch, and spend the afternoon building a new feature that 10 million users will see next week.",
       "path_india": "B.Tech CSE / BCA / B.Sc CS → (optional) M.Tech",
       "years_min": 4,
       "annual_fee_range": [
@@ -1633,7 +1703,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You build a responsive login page, fix a broken API endpoint, review a colleague's code, and push your changes to the staging server by end of day."
     },
     {
       "id": "frontend_developer",
@@ -1656,7 +1727,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You build a responsive login page, fix a broken API endpoint, review a colleague's code, and push your changes to the staging server by end of day."
     },
     {
       "id": "full_stack_developer",
@@ -1679,7 +1751,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You build a responsive login page, fix a broken API endpoint, review a colleague's code, and push your changes to the staging server by end of day."
     },
     {
       "id": "data_scientist",
@@ -1687,6 +1760,7 @@
       "category": "Technology",
       "type": "Major",
       "summary": "Analyzes large datasets, builds predictive models using ML",
+      "day_in_life": "You clean a messy dataset in the morning, build a prediction model by afternoon, and present your findings to the product team over a short standup.",
       "path_india": "B.Tech CS/Stats + M.Tech DS or M.Sc Data Science (IITs, IISc)",
       "years_min": 4,
       "annual_fee_range": [
@@ -1725,7 +1799,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You build a data pipeline ingesting real-time sensor data, optimise a slow SQL query, and document the ETL architecture for the team's wiki."
     },
     {
       "id": "data_analyst",
@@ -1748,7 +1823,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You build a sales dashboard in the morning, investigate a sudden drop in user signups, and present your root-cause analysis to the marketing team."
     },
     {
       "id": "ai_ml_engineer",
@@ -1771,7 +1847,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You experiment with a new neural network architecture, debug a training pipeline that's producing skewed results, and deploy an updated recommendation model to production."
     },
     {
       "id": "mlops_engineer",
@@ -1794,7 +1871,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You automate a deployment pipeline that used to take 2 hours manually, respond to a server alert at noon, and review infrastructure costs with the finance team."
     },
     {
       "id": "prompt_engineer",
@@ -1817,7 +1895,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "computer_vision_engineer",
@@ -1840,7 +1919,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "nlp_engineer",
@@ -1863,7 +1943,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "cybersecurity_analyst",
@@ -1871,6 +1952,7 @@
       "category": "Technology",
       "type": "Major",
       "summary": "Monitors networks for threats, responds to breaches, manages SIEM",
+      "day_in_life": "You monitor security dashboards for anomalies, investigate a suspicious login from an overseas IP, patch a vulnerability before it's exploited, and write an incident report.",
       "path_india": "B.Tech CSE / BCA + CEH, CISSP certifications",
       "years_min": 4,
       "annual_fee_range": [
@@ -1909,7 +1991,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You run a penetration test on a client's web application, find a SQL injection vulnerability, document your findings, and present a remediation plan."
     },
     {
       "id": "security_architect",
@@ -1932,7 +2015,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You work on design development drawings for a 6-storey residential building, meet the client to review the floor plan, and liaise with the structural engineer on column placement."
     },
     {
       "id": "malware_analyst_reverse_engineer",
@@ -1955,7 +2039,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "digital_forensics_investigator",
@@ -1978,7 +2063,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "devops_engineer",
@@ -2001,7 +2087,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You automate a deployment pipeline that used to take 2 hours manually, respond to a server alert at noon, and review infrastructure costs with the finance team."
     },
     {
       "id": "site_reliability_engineer_sre",
@@ -2024,7 +2111,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You automate a deployment pipeline that used to take 2 hours manually, respond to a server alert at noon, and review infrastructure costs with the finance team."
     },
     {
       "id": "platform_engineer",
@@ -2047,7 +2135,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "cloud_architect",
@@ -2070,7 +2159,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You design the architecture for a new microservice on AWS, review a cost-optimization proposal, and troubleshoot a storage bottleneck in production."
     },
     {
       "id": "network_engineer",
@@ -2093,7 +2183,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You configure a new router, investigate packet loss on a client's VPN, and update firewall rules to close a newly discovered vulnerability."
     },
     {
       "id": "telecom_engineer",
@@ -2116,7 +2207,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You work on orbit simulation software, review telemetry data from a satellite in orbit, and attend a mission planning review meeting."
     },
     {
       "id": "database_administrator_dba",
@@ -2139,7 +2231,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "product_manager_tech",
@@ -2147,6 +2240,7 @@
       "category": "Technology",
       "type": "Major",
       "summary": "Owns product vision, roadmap, and prioritization for software products",
+      "day_in_life": "Your morning is a sprint planning session with developers, afternoon is user interviews about a new feature, and you close with a roadmap update for leadership.",
       "path_india": "B.Tech + MBA or PG in Product Management (ISB, IIM)",
       "years_min": 4,
       "annual_fee_range": [
@@ -2185,7 +2279,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "ux_ui_designer",
@@ -2193,6 +2288,7 @@
       "category": "Technology",
       "type": "Major",
       "summary": "Designs intuitive interfaces — wireframes, prototypes, usability testing",
+      "day_in_life": "Your morning is wireframes and user-flow diagrams, afternoon is running a usability test with 5 real users, then refining the design based on what you saw.",
       "path_india": "B.Des (NID, NIFT) or Diploma in UX; Figma, Adobe XD",
       "years_min": 4,
       "annual_fee_range": [
@@ -2231,7 +2327,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a usability test with 3 users in the morning, redesign a confusing onboarding flow based on their feedback, and present wireframes to the product team."
     },
     {
       "id": "qa_engineer_sdet",
@@ -2254,7 +2351,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "embedded_systems_engineer",
@@ -2277,7 +2375,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write C code for a microcontroller, debug a timing issue on the oscilloscope, and validate sensor readings against the hardware spec."
     },
     {
       "id": "iot_engineer",
@@ -2300,7 +2399,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You configure a fleet of IoT sensors, debug a connectivity failure in a smart building installation, and analyse the time-series data for anomaly patterns."
     },
     {
       "id": "blockchain_developer",
@@ -2323,7 +2423,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review a smart contract for security vulnerabilities, write unit tests, and prototype a new token mechanism on a test network."
     },
     {
       "id": "game_developer",
@@ -2346,7 +2447,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You implement a physics mechanic in the morning, playtest for bugs in the afternoon, and collaborate with an artist on particle effects for a new level."
     },
     {
       "id": "ar_vr_developer",
@@ -2369,7 +2471,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "quantum_computing_engineer",
@@ -2392,7 +2495,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "robotics_engineer",
@@ -2415,7 +2519,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You program a robotic arm on the assembly line, debug a sensor calibration error, and test an automated pick-and-place routine for the new product batch."
     },
     {
       "id": "it_support_technician",
@@ -2438,7 +2543,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "systems_analyst",
@@ -2461,7 +2567,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "technical_writer",
@@ -2484,7 +2591,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "scrum_master",
@@ -2507,7 +2615,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "school_teacher_primary",
@@ -2530,7 +2639,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You take three 40-minute classes, check 30 assignments, plan tomorrow's lesson using a new interactive method, and meet a student's parent after school."
     },
     {
       "id": "school_teacher_secondary",
@@ -2538,6 +2648,7 @@
       "category": "Education",
       "type": "Major",
       "summary": "Subject specialist teacher for grades 6–12",
+      "day_in_life": "You teach three 45-minute classes — one on quadratic equations, one on the French Revolution — then grade homework and plan tomorrow's lesson in the free period.",
       "path_india": "B.A./B.Sc + B.Ed; CTET / State TET",
       "years_min": 3,
       "annual_fee_range": [
@@ -2576,7 +2687,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You deliver a 90-minute undergraduate lecture, hold office hours for 4 students, review a postgraduate thesis chapter, and write a section of your research paper."
     },
     {
       "id": "school_principal",
@@ -2599,7 +2711,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review a Science syllabus for Grade 9, update learning outcomes to align with the new board guidelines, and pilot-test a lesson plan with a teacher."
     },
     {
       "id": "special_education_teacher",
@@ -2622,7 +2735,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You take three 40-minute classes, check 30 assignments, plan tomorrow's lesson using a new interactive method, and meet a student's parent after school."
     },
     {
       "id": "early_childhood_educator",
@@ -2645,7 +2759,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You teach classes, review and return student work, prepare tomorrow's lesson plan, and meet with students or parents to discuss progress."
     },
     {
       "id": "school_counselor",
@@ -2653,6 +2768,7 @@
       "category": "Education",
       "type": "Minor",
       "summary": "Supports students' emotional well-being, career decisions, and mental health",
+      "day_in_life": "You see 4 students one-on-one — academic stress, a friendship conflict, anxiety about board exams — offering structured support and referring one student to a specialist.",
       "path_india": "M.A. Psychology or Counseling + Diploma in Guidance & Counseling",
       "years_min": 2,
       "annual_fee_range": [
@@ -2691,7 +2807,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You teach classes, review and return student work, prepare tomorrow's lesson plan, and meet with students or parents to discuss progress."
     },
     {
       "id": "curriculum_developer",
@@ -2714,7 +2831,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review a Science syllabus for Grade 9, update learning outcomes to align with the new board guidelines, and pilot-test a lesson plan with a teacher."
     },
     {
       "id": "instructional_designer",
@@ -2737,7 +2855,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You teach classes, review and return student work, prepare tomorrow's lesson plan, and meet with students or parents to discuss progress."
     },
     {
       "id": "corporate_trainer",
@@ -2745,6 +2864,7 @@
       "category": "Education",
       "type": "Minor",
       "summary": "Delivers skill-based training to employees — leadership, tech, soft skills",
+      "day_in_life": "You conduct two job interviews in the morning, mediate a workplace conflict, review 10 performance appraisals, and run an onboarding session for 3 new joiners.",
       "path_india": "MBA / M.Ed + Training & Development certifications",
       "years_min": 3,
       "annual_fee_range": [
@@ -2783,7 +2903,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You teach classes, review and return student work, prepare tomorrow's lesson plan, and meet with students or parents to discuss progress."
     },
     {
       "id": "tutor_private_coach",
@@ -2806,7 +2927,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You teach classes, review and return student work, prepare tomorrow's lesson plan, and meet with students or parents to discuss progress."
     },
     {
       "id": "education_technology_specialist",
@@ -2829,7 +2951,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You teach classes, review and return student work, prepare tomorrow's lesson plan, and meet with students or parents to discuss progress."
     },
     {
       "id": "academic_researcher",
@@ -2852,7 +2975,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You teach classes, review and return student work, prepare tomorrow's lesson plan, and meet with students or parents to discuss progress."
     },
     {
       "id": "education_policy_analyst",
@@ -2875,7 +2999,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You analyse the impact of a proposed education regulation, draft a policy brief with recommendations, and present findings to the ministry's advisory committee."
     },
     {
       "id": "sign_language_interpreter",
@@ -2898,7 +3023,8 @@
         "any"
       ],
       "entrance_exam": "CTET/State TET",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You teach classes, review and return student work, prepare tomorrow's lesson plan, and meet with students or parents to discuss progress."
     },
     {
       "id": "lawyer_advocate",
@@ -2906,6 +3032,7 @@
       "category": "Law & Government",
       "type": "Major",
       "summary": "Represents clients in civil, criminal, or constitutional matters in court",
+      "day_in_life": "Your morning is drafting arguments for an upcoming court date, afternoon is cross-referencing case law, and you finish with a client call explaining the strategy.",
       "path_india": "LLB (3 yrs) or BA/BBA/B.Tech + LLB (5 yrs integrated); Bar Council enrollment",
       "years_min": 5,
       "annual_fee_range": [
@@ -2946,7 +3073,8 @@
         "arts"
       ],
       "entrance_exam": "CLAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You prepare case notes for a morning hearing, argue before the judge for 45 minutes, meet a new client to understand their property dispute, and research a precedent."
     },
     {
       "id": "criminal_lawyer",
@@ -2970,7 +3098,8 @@
         "arts"
       ],
       "entrance_exam": "CLAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You prepare case notes for a morning hearing, argue before the judge for 45 minutes, meet a new client to understand their property dispute, and research a precedent."
     },
     {
       "id": "constitutional_lawyer",
@@ -2994,7 +3123,8 @@
         "arts"
       ],
       "entrance_exam": "CLAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You prepare case notes for a morning hearing, argue before the judge for 45 minutes, meet a new client to understand their property dispute, and research a precedent."
     },
     {
       "id": "intellectual_property_ip_lawyer",
@@ -3018,7 +3148,8 @@
         "arts"
       ],
       "entrance_exam": "CLAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You prepare case notes for a morning hearing, argue before the judge for 45 minutes, meet a new client to understand their property dispute, and research a precedent."
     },
     {
       "id": "cyber_law_specialist",
@@ -3042,7 +3173,8 @@
         "arts"
       ],
       "entrance_exam": "CLAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review a data privacy compliance gap for a tech startup, advise on GDPR applicability, and draft a data processing agreement for a new vendor."
     },
     {
       "id": "family_law_attorney",
@@ -3066,7 +3198,8 @@
         "arts"
       ],
       "entrance_exam": "CLAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review case files or policy documents, attend hearings or meetings, draft written submissions or orders, and advise colleagues or clients on next steps."
     },
     {
       "id": "judge",
@@ -3090,7 +3223,8 @@
         "arts"
       ],
       "entrance_exam": "CLAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You preside over three hearings, read written arguments from both parties on a complex case, reserve your order, and review pending matters on your docket."
     },
     {
       "id": "public_prosecutor",
@@ -3114,7 +3248,8 @@
         "arts"
       ],
       "entrance_exam": "CLAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review case files or policy documents, attend hearings or meetings, draft written submissions or orders, and advise colleagues or clients on next steps."
     },
     {
       "id": "ias_officer",
@@ -3122,6 +3257,7 @@
       "category": "Law & Government",
       "type": "Major",
       "summary": "Administers districts and ministries; implements policy at state and national level",
+      "day_in_life": "You chair a district review meeting on road construction progress, review 40 files of citizen grievances, and sign off on an emergency flood relief order.",
       "path_india": "Any bachelor's degree + UPSC Civil Services Exam (CSE)",
       "years_min": 4,
       "annual_fee_range": [
@@ -3162,7 +3298,8 @@
         "arts"
       ],
       "entrance_exam": "UPSC",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You chair a district-level review meeting, review pending files on land acquisition, respond to a public grievance, and brief the senior officer on a developing situation."
     },
     {
       "id": "ifs_officer_indian_foreign_service",
@@ -3186,7 +3323,8 @@
         "arts"
       ],
       "entrance_exam": "UPSC",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You chair a district-level review meeting, review pending files on land acquisition, respond to a public grievance, and brief the senior officer on a developing situation."
     },
     {
       "id": "irs_officer",
@@ -3210,7 +3348,8 @@
         "arts"
       ],
       "entrance_exam": "UPSC",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review case files or policy documents, attend hearings or meetings, draft written submissions or orders, and advise colleagues or clients on next steps."
     },
     {
       "id": "state_civil_services_officer",
@@ -3234,7 +3373,8 @@
         "arts"
       ],
       "entrance_exam": "State PSC",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review case files or policy documents, attend hearings or meetings, draft written submissions or orders, and advise colleagues or clients on next steps."
     },
     {
       "id": "police_inspector_sub_inspector",
@@ -3258,7 +3398,8 @@
         "arts"
       ],
       "entrance_exam": "State PSC",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You conduct a witness interview, review CCTV footage for an investigation, attend a court hearing, and coordinate with a field team on an ongoing case."
     },
     {
       "id": "military_officer",
@@ -3282,7 +3423,8 @@
         "arts"
       ],
       "entrance_exam": "NDA/CDS",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You review case files or policy documents, attend hearings or meetings, draft written submissions or orders, and advise colleagues or clients on next steps."
     },
     {
       "id": "judge_advocate_general_jag",
@@ -3306,7 +3448,8 @@
         "arts"
       ],
       "entrance_exam": "CLAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You prepare case notes for a morning hearing, argue before the judge for 45 minutes, meet a new client to understand their property dispute, and research a precedent."
     },
     {
       "id": "forensic_scientist",
@@ -3314,6 +3457,7 @@
       "category": "Law & Government",
       "type": "Minor",
       "summary": "Analyzes physical crime scene evidence — fingerprints, DNA, ballistics",
+      "day_in_life": "You analyse fingerprints from a crime scene in the morning, run a DNA comparison test, and prepare court-admissible evidence documentation by afternoon.",
       "path_india": "M.Sc Forensic Science (Lok Nayak Jayaprakash University, Sagore, Osmania)",
       "years_min": 4,
       "annual_fee_range": [
@@ -3354,7 +3498,8 @@
         "arts"
       ],
       "entrance_exam": "State PSC",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You conduct a witness interview, review CCTV footage for an investigation, attend a court hearing, and coordinate with a field team on an ongoing case."
     },
     {
       "id": "paralegal",
@@ -3378,7 +3523,8 @@
         "arts"
       ],
       "entrance_exam": "State PSC",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You prepare case notes for a morning hearing, argue before the judge for 45 minutes, meet a new client to understand their property dispute, and research a precedent."
     },
     {
       "id": "notary",
@@ -3402,7 +3548,8 @@
         "arts"
       ],
       "entrance_exam": "CLAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review case files or policy documents, attend hearings or meetings, draft written submissions or orders, and advise colleagues or clients on next steps."
     },
     {
       "id": "customs_officer",
@@ -3426,7 +3573,8 @@
         "arts"
       ],
       "entrance_exam": "State PSC",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review case files or policy documents, attend hearings or meetings, draft written submissions or orders, and advise colleagues or clients on next steps."
     },
     {
       "id": "intelligence_analyst",
@@ -3450,7 +3598,8 @@
         "arts"
       ],
       "entrance_exam": "State PSC",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review case files or policy documents, attend hearings or meetings, draft written submissions or orders, and advise colleagues or clients on next steps."
     },
     {
       "id": "probation_officer",
@@ -3474,7 +3623,8 @@
         "arts"
       ],
       "entrance_exam": "State PSC",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review case files or policy documents, attend hearings or meetings, draft written submissions or orders, and advise colleagues or clients on next steps."
     },
     {
       "id": "diplomat",
@@ -3498,7 +3648,8 @@
         "arts"
       ],
       "entrance_exam": "UPSC",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You attend a bilateral meeting with a foreign counterpart, draft a cable to headquarters summarising key outcomes, and represent your country at an evening cultural event."
     },
     {
       "id": "public_policy_analyst",
@@ -3522,7 +3673,8 @@
         "arts"
       ],
       "entrance_exam": "State PSC",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You analyse the impact of a proposed education regulation, draft a policy brief with recommendations, and present findings to the ministry's advisory committee."
     },
     {
       "id": "regulatory_affairs_specialist",
@@ -3546,7 +3698,8 @@
         "arts"
       ],
       "entrance_exam": "State PSC",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review case files or policy documents, attend hearings or meetings, draft written submissions or orders, and advise colleagues or clients on next steps."
     },
     {
       "id": "rti_activist_social_auditor",
@@ -3570,7 +3723,8 @@
         "arts"
       ],
       "entrance_exam": "State PSC",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review case files or policy documents, attend hearings or meetings, draft written submissions or orders, and advise colleagues or clients on next steps."
     },
     {
       "id": "chartered_accountant_ca",
@@ -3578,6 +3732,7 @@
       "category": "Finance & Business",
       "type": "Major",
       "summary": "Audits financial statements, files taxes, advises on finance and compliance",
+      "day_in_life": "You audit a company's financial records in the morning, flag a discrepancy in their expense reports, and spend the afternoon preparing tax filing documents.",
       "path_india": "CA Foundation → Intermediate → Final (ICAI); ~4–5 yrs",
       "years_min": 5,
       "annual_fee_range": [
@@ -3618,7 +3773,8 @@
         "arts"
       ],
       "entrance_exam": "CMA Foundation",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "company_secretary_cs",
@@ -3642,7 +3798,8 @@
         "arts"
       ],
       "entrance_exam": "CS Foundation",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "accountant",
@@ -3666,7 +3823,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "financial_analyst",
@@ -3674,6 +3832,7 @@
       "category": "Finance & Business",
       "type": "Major",
       "summary": "Analyzes financial data to guide investment and business decisions",
+      "day_in_life": "You model three years of revenue projections for a company, build a DCF valuation, and present your buy/sell recommendation to the investment team.",
       "path_india": "B.Com / B.Tech + MBA Finance / CFA Level I–III",
       "years_min": 4,
       "annual_fee_range": [
@@ -3698,6 +3857,7 @@
       "category": "Finance & Business",
       "type": "Major",
       "summary": "Structures M&A deals, IPOs, private equity transactions for corporations",
+      "day_in_life": "Your morning is building a pitch deck for a company acquisition, afternoon is a call with legal, and late evening is refining financial models under a tight deadline.",
       "path_india": "MBA Finance (IIM, ISB) or CA + IB experience; CFA",
       "years_min": 3,
       "annual_fee_range": [
@@ -3738,7 +3898,8 @@
         "arts"
       ],
       "entrance_exam": "CFA Exam",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "portfolio_manager",
@@ -3762,7 +3923,8 @@
         "arts"
       ],
       "entrance_exam": "CFA Exam",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "actuary",
@@ -3770,6 +3932,7 @@
       "category": "Finance & Business",
       "type": "Major",
       "summary": "Uses math/statistics to assess financial risk for insurance and pensions",
+      "day_in_life": "You model mortality tables for a life insurance product, stress-test scenarios for extreme weather events, and present risk findings to the underwriting team.",
       "path_india": "B.Sc Math/Stats + Institute of Actuaries of India (IAI) exams",
       "years_min": 3,
       "annual_fee_range": [
@@ -3794,6 +3957,7 @@
       "category": "Finance & Business",
       "type": "Major",
       "summary": "Studies market behavior, inflation, policy, and macroeconomic systems",
+      "day_in_life": "You analyse inflation data from the morning news release, build a regression model, and draft a policy brief recommending interest rate adjustments.",
       "path_india": "BA/MA Economics (DSE, JNU, ISI) → PhD",
       "years_min": 4,
       "annual_fee_range": [
@@ -3834,7 +3998,8 @@
         "arts"
       ],
       "entrance_exam": "CA Foundation",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "risk_manager",
@@ -3858,7 +4023,8 @@
         "arts"
       ],
       "entrance_exam": "CAT/GMAT",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "tax_consultant",
@@ -3882,7 +4048,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You interview client stakeholders to diagnose an operational issue, structure your findings into a slide deck, and present recommendations to the C-suite."
     },
     {
       "id": "financial_planner_cfp",
@@ -3906,7 +4073,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "venture_capital_analyst",
@@ -3930,7 +4098,8 @@
         "arts"
       ],
       "entrance_exam": "CAT/GMAT",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "hedge_fund_analyst",
@@ -3954,7 +4123,8 @@
         "arts"
       ],
       "entrance_exam": "CFA Exam",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "stockbroker_dealer",
@@ -3978,7 +4148,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "insurance_underwriter",
@@ -4002,7 +4173,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "insurance_agent_irda_licensed",
@@ -4026,7 +4198,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "loan_officer",
@@ -4050,7 +4223,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "credit_analyst",
@@ -4074,7 +4248,8 @@
         "arts"
       ],
       "entrance_exam": "CAT/GMAT",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "anti_money_laundering_aml_analyst",
@@ -4098,7 +4273,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "real_estate_agent_rera_consultant",
@@ -4122,7 +4298,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You interview client stakeholders to diagnose an operational issue, structure your findings into a slide deck, and present recommendations to the C-suite."
     },
     {
       "id": "real_estate_appraiser",
@@ -4146,7 +4323,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "entrepreneur",
@@ -4170,7 +4348,8 @@
         "arts"
       ],
       "entrance_exam": "CAT/GMAT",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "management_consultant",
@@ -4178,6 +4357,7 @@
       "category": "Finance & Business",
       "type": "Major",
       "summary": "Advises organizations on strategy, operations, and restructuring",
+      "day_in_life": "Your morning is reviewing campaign analytics, afternoon is a brand strategy workshop, and you close the day writing a brief for next month's product launch.",
       "path_india": "MBA (IIM, ISB, XLRI) or CA + industry experience; McKinsey, BCG, Deloitte",
       "years_min": 3,
       "annual_fee_range": [
@@ -4218,7 +4398,8 @@
         "arts"
       ],
       "entrance_exam": "CAT/GMAT",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You track delayed shipments, renegotiate lead times with a supplier, and optimise the inventory reorder point using demand forecast data."
     },
     {
       "id": "payroll_specialist",
@@ -4242,7 +4423,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "civil_engineer",
@@ -4250,6 +4432,7 @@
       "category": "Engineering",
       "type": "Major",
       "summary": "Designs and supervises infrastructure — roads, bridges, dams, buildings",
+      "day_in_life": "You visit the construction site at 8am to check foundation work, come back to review structural calculations, and sign off on material orders by evening.",
       "path_india": "B.Tech Civil Engineering (4 yrs); M.Tech for specialization",
       "years_min": 4,
       "annual_fee_range": [
@@ -4288,7 +4471,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You check load calculations for a 10-storey building, review blueprints for stress points, and attend a site meeting where contractors raise questions about the beam design."
     },
     {
       "id": "geotechnical_engineer",
@@ -4311,7 +4495,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You analyse soil test bore logs, write a foundation recommendation report, and visit a hillside site to assess slope stability before construction begins."
     },
     {
       "id": "transportation_engineer",
@@ -4334,7 +4519,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You analyse traffic flow data, model the impact of a new flyover using simulation software, and present findings to the city municipal authority."
     },
     {
       "id": "water_resources_engineer",
@@ -4357,7 +4543,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review a dam discharge model, inspect a canal lining for seepage, and prepare an irrigation network design for a new agricultural zone."
     },
     {
       "id": "environmental_engineer",
@@ -4380,7 +4567,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You conduct a water quality audit at an industrial site, review effluent treatment data, and write a compliance report for the pollution control board."
     },
     {
       "id": "mechanical_engineer",
@@ -4388,6 +4576,7 @@
       "category": "Engineering",
       "type": "Major",
       "summary": "Designs machines, engines, manufacturing processes, and thermal systems",
+      "day_in_life": "You spend the morning reviewing CAD drawings of a machine component, then walk the factory floor to check if a prototype matches the specs.",
       "path_india": "B.Tech Mechanical Engineering; M.Tech for R&D",
       "years_min": 4,
       "annual_fee_range": [
@@ -4426,7 +4615,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You test a vehicle suspension component on a rig, analyse vibration data, and collaborate with designers on weight reduction for next year's model."
     },
     {
       "id": "aerospace_aeronautical_engineer",
@@ -4449,7 +4639,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You run aerodynamics simulations on a wing design, review test-flight telemetry data, and attend a safety review board meeting for a component redesign."
     },
     {
       "id": "electrical_engineer",
@@ -4457,6 +4648,7 @@
       "category": "Engineering",
       "type": "Major",
       "summary": "Designs power generation, transmission, and electrical systems",
+      "day_in_life": "You review circuit designs for a solar inverter, run simulations to test fault tolerance, attend a factory inspection, and approve a bill of materials.",
       "path_india": "B.Tech Electrical Engineering; M.Tech Power Systems",
       "years_min": 4,
       "annual_fee_range": [
@@ -4495,7 +4687,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You analyse solar irradiance data for a new farm site, size the panel array and inverter, and prepare a yield simulation report for the project investor."
     },
     {
       "id": "electronics_engineer",
@@ -4518,7 +4711,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You design a PCB layout, test a prototype for signal integrity issues, and write firmware to interface a new sensor with the main microcontroller."
     },
     {
       "id": "vlsi_design_engineer",
@@ -4541,7 +4735,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You spend the morning placing and routing a chip block in EDA tools, run timing analysis, and review simulation results to close a setup violation."
     },
     {
       "id": "rf_microwave_engineer",
@@ -4564,7 +4759,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You work on orbit simulation software, review telemetry data from a satellite in orbit, and attend a mission planning review meeting."
     },
     {
       "id": "chemical_engineer",
@@ -4587,7 +4783,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You monitor reactor temperatures on a production floor, troubleshoot an unexpected yield drop, and update the process control parameters to fix it."
     },
     {
       "id": "polymer_plastics_engineer",
@@ -4610,7 +4807,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review technical drawings, run calculations or simulations, visit a site or production floor to check progress, and write up your findings in a report."
     },
     {
       "id": "biomedical_engineer",
@@ -4618,6 +4816,7 @@
       "category": "Engineering",
       "type": "Major",
       "summary": "Designs medical devices — pacemakers, prosthetics, diagnostic equipment",
+      "day_in_life": "You run a cell culture experiment at 8am, analyse results under a microscope, record data, read two recent papers, and write up a section of your ongoing study.",
       "path_india": "B.Tech Biomedical Engineering; M.Tech Biomedical",
       "years_min": 4,
       "annual_fee_range": [
@@ -4656,7 +4855,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You rehearse lines in the morning, film a 3-scene dialogue sequence, review playback with the director, and do two more takes to nail the emotional beat."
     },
     {
       "id": "petroleum_engineer",
@@ -4679,7 +4879,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review well-log data from a new drill site, model reservoir pressure, and prepare a production optimisation plan for the offshore platform team."
     },
     {
       "id": "mining_engineer",
@@ -4702,7 +4903,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You inspect underground tunnels for structural integrity, review blast fragmentation results, and adjust the extraction plan for the next shift."
     },
     {
       "id": "marine_engineer",
@@ -4725,7 +4927,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You inspect an engine room on a vessel, diagnose a fuel pump fault, and supervise repairs before the ship's next voyage."
     },
     {
       "id": "naval_architect",
@@ -4748,7 +4951,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You work on the stability calculations for a new vessel design, review hull resistance test results from the towing tank, and update the ship's structural drawings."
     },
     {
       "id": "nuclear_engineer",
@@ -4771,7 +4975,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You monitor reactor performance data, conduct a safety system inspection, and update emergency protocols based on a recent regulatory audit."
     },
     {
       "id": "industrial_engineer",
@@ -4794,7 +4999,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You map a production workflow to find a bottleneck, redesign the workstation layout to reduce walking time, and present your efficiency findings to the plant manager."
     },
     {
       "id": "agricultural_engineer",
@@ -4817,7 +5023,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You inspect an irrigation pump system in a farm, redesign a sprinkler layout for better coverage, and test a new soil moisture sensor integration."
     },
     {
       "id": "mechatronics_engineer",
@@ -4840,7 +5047,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You program a robotic arm on the assembly line, debug a sensor calibration error, and test an automated pick-and-place routine for the new product batch."
     },
     {
       "id": "materials_science_engineer",
@@ -4863,7 +5071,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You prepare alloy specimens, run tensile strength tests, analyse fracture surfaces under an electron microscope, and update the material specification sheet."
     },
     {
       "id": "metallurgist",
@@ -4886,7 +5095,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You prepare alloy specimens, run tensile strength tests, analyse fracture surfaces under an electron microscope, and update the material specification sheet."
     },
     {
       "id": "surveyor_geomatics_engineer",
@@ -4909,7 +5119,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE/State CET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You set up total station equipment, take 200 survey measurements across a plot, process the data back in the office, and generate a topographic map."
     },
     {
       "id": "graphic_designer",
@@ -4917,6 +5128,7 @@
       "category": "Arts & Media",
       "type": "Major",
       "summary": "Creates visual assets — logos, brand identity, posters, digital graphics",
+      "day_in_life": "Your day starts with a client brief for a logo redesign, you sketch 6 concepts, refine two on screen, and share a PDF with the client by 5pm.",
       "path_india": "B.Des Communication Design (NID, NIFT) or Diploma in Graphic Design",
       "years_min": 4,
       "annual_fee_range": [
@@ -4957,7 +5169,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You sketch thumbnail compositions for a children's book spread, refine the chosen one in Procreate, and send a colour rough to the publisher for approval."
     },
     {
       "id": "motion_graphics_designer",
@@ -4981,7 +5194,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on a creative project in the morning, review feedback from a client or director, refine your output, and collaborate with your team on the next brief."
     },
     {
       "id": "typographer",
@@ -5005,7 +5219,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on a creative project in the morning, review feedback from a client or director, refine your output, and collaborate with your team on the next brief."
     },
     {
       "id": "journalist",
@@ -5013,6 +5228,7 @@
       "category": "Arts & Media",
       "type": "Major",
       "summary": "Investigates and reports news for print, broadcast, or digital outlets",
+      "day_in_life": "You chase a story lead with three phone calls before lunch, write a 600-word article under deadline pressure, and fact-check everything before it goes to the editor.",
       "path_india": "BA Journalism / BJMC (Bachelor of Journalism & Mass Communication)",
       "years_min": 3,
       "annual_fee_range": [
@@ -5053,7 +5269,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You cover a press briefing, interview a local official, write a 600-word story under deadline, and pitch your editor three story ideas for next week."
     },
     {
       "id": "data_journalist",
@@ -5077,7 +5294,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You cover a press briefing, interview a local official, write a 600-word story under deadline, and pitch your editor three story ideas for next week."
     },
     {
       "id": "photojournalist",
@@ -5101,7 +5319,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You cover a press briefing, interview a local official, write a 600-word story under deadline, and pitch your editor three story ideas for next week."
     },
     {
       "id": "filmmaker_director",
@@ -5125,7 +5344,8 @@
         "any"
       ],
       "entrance_exam": "FTII Entrance",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review yesterday's footage, give notes to the editor, scout a new location in the afternoon, and have a production meeting with the crew."
     },
     {
       "id": "screenwriter",
@@ -5149,7 +5369,8 @@
         "any"
       ],
       "entrance_exam": "FTII Entrance",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You work on a creative project in the morning, review feedback from a client or director, refine your output, and collaborate with your team on the next brief."
     },
     {
       "id": "documentary_filmmaker",
@@ -5173,7 +5394,8 @@
         "any"
       ],
       "entrance_exam": "FTII Entrance",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review yesterday's footage, give notes to the editor, scout a new location in the afternoon, and have a production meeting with the crew."
     },
     {
       "id": "cinematographer_dop",
@@ -5181,6 +5403,7 @@
       "category": "Arts & Media",
       "type": "Major",
       "summary": "Operates and frames camera shots; manages lighting for visual storytelling",
+      "day_in_life": "You block camera angles during morning rehearsals, manage lighting setups for 4 hours of shooting, and review footage with the director before the next day's plan.",
       "path_india": "FTII (Cinematography), Satyajit Ray FTI — Cinematography",
       "years_min": 4,
       "annual_fee_range": [
@@ -5221,7 +5444,8 @@
         "any"
       ],
       "entrance_exam": "FTII Entrance",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You work on a creative project in the morning, review feedback from a client or director, refine your output, and collaborate with your team on the next brief."
     },
     {
       "id": "colorist",
@@ -5245,7 +5469,8 @@
         "any"
       ],
       "entrance_exam": "FTII Entrance",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You work on a creative project in the morning, review feedback from a client or director, refine your output, and collaborate with your team on the next brief."
     },
     {
       "id": "sound_designer",
@@ -5269,7 +5494,8 @@
         "any"
       ],
       "entrance_exam": "FTII Entrance",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You work on a creative project in the morning, review feedback from a client or director, refine your output, and collaborate with your team on the next brief."
     },
     {
       "id": "foley_artist",
@@ -5293,7 +5519,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on a creative project in the morning, review feedback from a client or director, refine your output, and collaborate with your team on the next brief."
     },
     {
       "id": "music_composer",
@@ -5317,7 +5544,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You record a session musician's guitar parts, layer electronic beats, mix levels across 24 tracks, and bounce a demo for the artist to review."
     },
     {
       "id": "lyricist",
@@ -5341,7 +5569,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on a creative project in the morning, review feedback from a client or director, refine your output, and collaborate with your team on the next brief."
     },
     {
       "id": "musician_performer",
@@ -5365,7 +5594,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a 2-hour vocal and instrument practice session, record a demo track for an upcoming gig, and collaborate on lyrics with your bandmate."
     },
     {
       "id": "music_producer",
@@ -5389,7 +5619,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You record a session musician's guitar parts, layer electronic beats, mix levels across 24 tracks, and bounce a demo for the artist to review."
     },
     {
       "id": "actor",
@@ -5413,7 +5644,8 @@
         "any"
       ],
       "entrance_exam": "NSD Entrance",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You rehearse lines in the morning, film a 3-scene dialogue sequence, review playback with the director, and do two more takes to nail the emotional beat."
     },
     {
       "id": "stage_theatre_actor",
@@ -5437,7 +5669,8 @@
         "any"
       ],
       "entrance_exam": "FTII Entrance",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You rehearse lines in the morning, film a 3-scene dialogue sequence, review playback with the director, and do two more takes to nail the emotional beat."
     },
     {
       "id": "voice_actor",
@@ -5461,7 +5694,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You rehearse lines in the morning, film a 3-scene dialogue sequence, review playback with the director, and do two more takes to nail the emotional beat."
     },
     {
       "id": "standup_comedian",
@@ -5485,7 +5719,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on a creative project in the morning, review feedback from a client or director, refine your output, and collaborate with your team on the next brief."
     },
     {
       "id": "author_writer",
@@ -5509,7 +5744,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You write 1,000 words in the morning session, research a historical detail for your chapter, review editorial feedback on the previous chapter in the afternoon."
     },
     {
       "id": "content_creator_youtube_instagram",
@@ -5533,7 +5769,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You script a video, film three takes, edit the final cut in Premiere, write captions and hashtags, and respond to comments once it's live."
     },
     {
       "id": "podcast_producer",
@@ -5557,7 +5794,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on a creative project in the morning, review feedback from a client or director, refine your output, and collaborate with your team on the next brief."
     },
     {
       "id": "animator",
@@ -5581,7 +5819,8 @@
         "any"
       ],
       "entrance_exam": "NIFT/NID Entrance",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You rig a 3D character model, animate a 5-second walk cycle, review feedback from the art director, and clean up keyframes before the end of day."
     },
     {
       "id": "vfx_artist",
@@ -5605,7 +5844,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You composite a green-screen shot, track a camera move for a CG element, and render the final output for the director's approval."
     },
     {
       "id": "photographer",
@@ -5629,7 +5869,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You shoot a corporate headshot session in the morning, cull and edit 200 images in Lightroom, and deliver the final gallery to the client by evening."
     },
     {
       "id": "art_director",
@@ -5653,7 +5894,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You brief the design team on a campaign concept, review creative outputs, reject two directions, and refine the visual language with the lead designer."
     },
     {
       "id": "copywriter",
@@ -5677,7 +5919,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You write ad copy for three different campaigns, attend a creative brief with the client, and revise a tagline five times until it clicks."
     },
     {
       "id": "tattoo_artist",
@@ -5701,7 +5944,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on a creative project in the morning, review feedback from a client or director, refine your output, and collaborate with your team on the next brief."
     },
     {
       "id": "calligrapher",
@@ -5725,7 +5969,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on a creative project in the morning, review feedback from a client or director, refine your output, and collaborate with your team on the next brief."
     },
     {
       "id": "cartoonist",
@@ -5749,7 +5994,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on a creative project in the morning, review feedback from a client or director, refine your output, and collaborate with your team on the next brief."
     },
     {
       "id": "electrician",
@@ -5772,7 +6018,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You install wiring in a new apartment block, fault-find a tripping circuit breaker in a commercial kitchen, and test all installations against safety standards."
     },
     {
       "id": "plumber",
@@ -5795,7 +6042,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You fix a burst pipe in a residential building, install a new bathroom fitting, and quote a client for a hot water system upgrade."
     },
     {
       "id": "carpenter",
@@ -5818,7 +6066,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You measure and cut timber for a new staircase, fit kitchen cabinet frames, sand and finish a solid wood tabletop, and check the job against the architectural drawings."
     },
     {
       "id": "welder",
@@ -5841,7 +6090,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You read fabrication drawings, prep and weld structural steel joints, inspect your welds visually and with a gauge, and grind them smooth before final inspection."
     },
     {
       "id": "mason_bricklayer",
@@ -5864,7 +6114,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You lay 500 bricks for a load-bearing wall, check alignment with a spirit level, mix mortar to the right consistency, and prep the next course for tomorrow."
     },
     {
       "id": "hvac_technician",
@@ -5887,7 +6138,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You arrive on site, review the day's work order, complete your trade tasks to specification, inspect your work against safety standards, and update the job log."
     },
     {
       "id": "roofer",
@@ -5910,7 +6162,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You arrive on site, review the day's work order, complete your trade tasks to specification, inspect your work against safety standards, and update the job log."
     },
     {
       "id": "painter_industrial_decorative",
@@ -5933,7 +6186,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You arrive on site, review the day's work order, complete your trade tasks to specification, inspect your work against safety standards, and update the job log."
     },
     {
       "id": "pipefitter",
@@ -5956,7 +6210,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You arrive on site, review the day's work order, complete your trade tasks to specification, inspect your work against safety standards, and update the job log."
     },
     {
       "id": "glazier",
@@ -5979,7 +6234,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You arrive on site, review the day's work order, complete your trade tasks to specification, inspect your work against safety standards, and update the job log."
     },
     {
       "id": "ironworker_fabricator",
@@ -6002,7 +6258,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You arrive on site, review the day's work order, complete your trade tasks to specification, inspect your work against safety standards, and update the job log."
     },
     {
       "id": "boilermaker",
@@ -6025,7 +6282,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You arrive on site, review the day's work order, complete your trade tasks to specification, inspect your work against safety standards, and update the job log."
     },
     {
       "id": "elevator_mechanic",
@@ -6048,7 +6306,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You arrive on site, review the day's work order, complete your trade tasks to specification, inspect your work against safety standards, and update the job log."
     },
     {
       "id": "fire_protection_engineer",
@@ -6071,7 +6330,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You arrive on site, review the day's work order, complete your trade tasks to specification, inspect your work against safety standards, and update the job log."
     },
     {
       "id": "quantity_surveyor",
@@ -6094,7 +6354,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You set up total station equipment, take 200 survey measurements across a plot, process the data back in the office, and generate a topographic map."
     },
     {
       "id": "site_supervisor_foreman",
@@ -6117,7 +6378,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You lead the morning toolbox talk, inspect scaffolding safety, resolve a material delivery delay, and update the project manager on daily progress."
     },
     {
       "id": "crane_operator",
@@ -6140,7 +6402,8 @@
         "any"
       ],
       "entrance_exam": "ITI Admission/NCVT",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You arrive on site, review the day's work order, complete your trade tasks to specification, inspect your work against safety standards, and update the job log."
     },
     {
       "id": "biologist",
@@ -6164,7 +6427,8 @@
         "pcb"
       ],
       "entrance_exam": "JEE/JEST/CSIR NET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You culture bacterial samples, stain slides for microscopy, run a PCR assay, and interpret the results against your experimental control group."
     },
     {
       "id": "molecular_biologist",
@@ -6188,7 +6452,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You culture bacterial samples, stain slides for microscopy, run a PCR assay, and interpret the results against your experimental control group."
     },
     {
       "id": "microbiologist",
@@ -6212,7 +6477,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You culture bacterial samples, stain slides for microscopy, run a PCR assay, and interpret the results against your experimental control group."
     },
     {
       "id": "virologist",
@@ -6236,7 +6502,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You work with attenuated virus samples in a biosafety cabinet, run plaque assays to measure viral load, and review sequencing data for mutation patterns."
     },
     {
       "id": "immunologist",
@@ -6260,7 +6527,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You run experiments in the lab, analyse data from the previous run, update your research notes, and discuss findings with your supervisor or research group."
     },
     {
       "id": "biochemist",
@@ -6268,6 +6536,7 @@
       "category": "Science & Research",
       "type": "Major",
       "summary": "Studies chemical processes in living organisms — metabolism, enzymes, proteins",
+      "day_in_life": "You run PCR tests on bacterial samples, analyse gene expression data, troubleshoot a failed experiment, and read a newly published paper in your field.",
       "path_india": "B.Sc/M.Sc Biochemistry → PhD",
       "years_min": 3,
       "annual_fee_range": [
@@ -6308,7 +6577,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You extract plant compounds using solvent techniques, run chromatography to identify active phytochemicals, and document findings for herbal medicine research."
     },
     {
       "id": "bioinformatician",
@@ -6332,7 +6602,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You write a Python pipeline to process 10GB of RNA-seq data, run differential expression analysis, and visualise the results in R for the lab meeting."
     },
     {
       "id": "chemist",
@@ -6356,7 +6627,8 @@
         "pcb"
       ],
       "entrance_exam": "JEE/JEST/CSIR NET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You synthesise a new compound, run NMR spectroscopy, analyse the results against your hypothesis, and update your lab notebook for peer review."
     },
     {
       "id": "analytical_chemist",
@@ -6380,7 +6652,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You synthesise a new compound, run NMR spectroscopy, analyse the results against your hypothesis, and update your lab notebook for peer review."
     },
     {
       "id": "computational_chemist",
@@ -6404,7 +6677,8 @@
         "pcb"
       ],
       "entrance_exam": "JEE/JEST/CSIR NET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You synthesise a new compound, run NMR spectroscopy, analyse the results against your hypothesis, and update your lab notebook for peer review."
     },
     {
       "id": "physicist",
@@ -6428,7 +6702,8 @@
         "pcb"
       ],
       "entrance_exam": "JEE/JEST/CSIR NET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You run experiments on a quantum optics bench, analyse spectroscopy data, write a section of your research paper, and attend a journal club discussion."
     },
     {
       "id": "astrophysicist",
@@ -6452,7 +6727,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You run experiments on a quantum optics bench, analyse spectroscopy data, write a section of your research paper, and attend a journal club discussion."
     },
     {
       "id": "geophysicist",
@@ -6476,7 +6752,8 @@
         "pcb"
       ],
       "entrance_exam": "JEE/JEST/CSIR NET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You run experiments on a quantum optics bench, analyse spectroscopy data, write a section of your research paper, and attend a journal club discussion."
     },
     {
       "id": "geologist",
@@ -6484,6 +6761,7 @@
       "category": "Science & Research",
       "type": "Major",
       "summary": "Studies Earth's structure, rocks, and minerals; works in mining, oil, disaster",
+      "day_in_life": "You spend 3 hours in the field mapping rock formations, collect samples, bring them back to the lab for thin-section analysis, and log findings into a geological survey report.",
       "path_india": "B.Sc → M.Sc Geology → PhD; GSI (Geological Survey of India) recruitment",
       "years_min": 3,
       "annual_fee_range": [
@@ -6524,7 +6802,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You log rock core samples from a drilling site, map geological formations, and use seismic data to build a subsurface model for a mining client."
     },
     {
       "id": "soil_scientist",
@@ -6548,7 +6827,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You take soil samples from a degraded farmland plot, run pH and nutrient tests, and recommend a soil restoration treatment for the farmer."
     },
     {
       "id": "seismologist",
@@ -6572,7 +6852,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You review overnight seismograph data, locate a minor tremor's epicentre, and update the earthquake hazard model for a new construction project."
     },
     {
       "id": "astronomer",
@@ -6596,7 +6877,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You process telescope observation data collected overnight, model galaxy formation parameters, and present preliminary results at your department's weekly seminar."
     },
     {
       "id": "meteorologist",
@@ -6620,7 +6902,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You analyse atmospheric pressure maps, run weather prediction models, brief the aviation authority on tomorrow's conditions, and issue a storm alert."
     },
     {
       "id": "oceanographer",
@@ -6644,7 +6927,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You synthesise a new compound, run NMR spectroscopy, analyse the results against your hypothesis, and update your lab notebook for peer review."
     },
     {
       "id": "ecologist",
@@ -6652,6 +6936,7 @@
       "category": "Science & Research",
       "type": "Minor",
       "summary": "Studies ecosystem relationships between organisms and their environments",
+      "day_in_life": "You collect water samples from a river near a factory site, test for heavy metals in the lab, and write a pollution report for the state pollution board.",
       "path_india": "M.Sc Ecology → PhD (WII, NCBS, ATREE)",
       "years_min": 4,
       "annual_fee_range": [
@@ -6692,7 +6977,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You analyse disease outbreak data from 3 districts, identify the exposure source, and brief the district health officer on containment recommendations."
     },
     {
       "id": "biostatistician",
@@ -6716,7 +7002,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You design a clinical trial's statistical analysis plan, run survival analysis on patient data, and advise the research team on sample size requirements."
     },
     {
       "id": "archaeologist",
@@ -6740,7 +7027,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You lead a field excavation, document and photograph artefacts, record stratigraphy layers, and bring finds back to the lab for cleaning and cataloguing."
     },
     {
       "id": "anthropologist",
@@ -6764,7 +7052,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You conduct interviews in a rural community, transcribe field notes, and analyse how changing land use affects traditional social structures."
     },
     {
       "id": "neuroscientist",
@@ -6788,7 +7077,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You perform immunohistochemistry on brain tissue slides, analyse synaptic density data under a confocal microscope, and review your postdoc's experiment design."
     },
     {
       "id": "geneticist",
@@ -6812,7 +7102,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You analyse whole-genome sequencing output, identify a novel variant linked to a metabolic disorder, and draft a section of your research paper."
     },
     {
       "id": "toxicologist__science_research",
@@ -6836,7 +7127,8 @@
         "pcb"
       ],
       "entrance_exam": "CUET/State Board",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You run dose-response tests on cell cultures, analyse liver enzyme markers for chemical exposure, and write a safety assessment report for a new industrial compound."
     },
     {
       "id": "materials_scientist",
@@ -6860,7 +7152,8 @@
         "pcb"
       ],
       "entrance_exam": "JEE/JEST/CSIR NET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You synthesise a new polymer composite, run thermal analysis tests, and compare the results against current industry materials to justify the improvement."
     },
     {
       "id": "nanotechnologist",
@@ -6884,7 +7177,8 @@
         "pcb"
       ],
       "entrance_exam": "JEE/JEST/CSIR NET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You prepare nanoparticle samples in a cleanroom, run electron microscopy characterisation, and test drug delivery efficacy in a cell culture model."
     },
     {
       "id": "climate_scientist",
@@ -6908,7 +7202,8 @@
         "pcb"
       ],
       "entrance_exam": "JEE/JEST/CSIR NET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You run a climate simulation model, analyse 50-year temperature trend data, and contribute a section to an IPCC working group report."
     },
     {
       "id": "chef_executive",
@@ -6916,6 +7211,7 @@
       "category": "Hospitality & Food",
       "type": "Major",
       "summary": "Leads kitchen operations, creates menus, manages kitchen staff and food costs",
+      "day_in_life": "You're prepping mise en place from 10am, cooking 100+ covers during dinner service, plating every dish with precision, and reviewing menu ideas at midnight.",
       "path_india": "BHM (Bachelor of Hotel Management, 4 yrs) — IHM; Culinary Arts programs",
       "years_min": 4,
       "annual_fee_range": [
@@ -6954,7 +7250,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You arrive at 10am to prep mise en place, develop a new seasonal dish for the menu, supervise the dinner service, and give feedback to the junior kitchen team."
     },
     {
       "id": "pastry_chef_p_tissier",
@@ -6977,7 +7274,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You arrive at 10am to prep mise en place, develop a new seasonal dish for the menu, supervise the dinner service, and give feedback to the junior kitchen team."
     },
     {
       "id": "baker",
@@ -7000,7 +7298,8 @@
         "any"
       ],
       "entrance_exam": "NCHMCT JEE",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You prepare croissant dough at 5am, bake 8 varieties of bread and pastry before opening, train a new apprentice on tempering chocolate, and cost next week's menu."
     },
     {
       "id": "chocolatier",
@@ -7023,7 +7322,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You oversee preparation and service, manage your team through a busy period, resolve any guest or customer issues, and review the day's quality and costs."
     },
     {
       "id": "food_stylist",
@@ -7046,7 +7346,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You oversee preparation and service, manage your team through a busy period, resolve any guest or customer issues, and review the day's quality and costs."
     },
     {
       "id": "food_scientist",
@@ -7069,7 +7370,8 @@
         "any"
       ],
       "entrance_exam": "NIFT/NID Entrance",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You oversee preparation and service, manage your team through a busy period, resolve any guest or customer issues, and review the day's quality and costs."
     },
     {
       "id": "nutritionist",
@@ -7092,7 +7394,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review a diabetic patient's food diary, create a meal plan for an athlete, and run a group session on portion control at a community health centre."
     },
     {
       "id": "barista",
@@ -7115,7 +7418,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You oversee preparation and service, manage your team through a busy period, resolve any guest or customer issues, and review the day's quality and costs."
     },
     {
       "id": "sommelier",
@@ -7138,7 +7442,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You taste and score 12 new wine samples for the cellar, advise a guest on a food-pairing choice, and update the wine list with detailed tasting notes."
     },
     {
       "id": "tea_sommelier",
@@ -7161,7 +7466,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a usability test with 3 users in the morning, redesign a confusing onboarding flow based on their feedback, and present wireframes to the product team."
     },
     {
       "id": "mixologist_bartender",
@@ -7184,7 +7490,8 @@
         "any"
       ],
       "entrance_exam": "NCHMCT JEE",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You oversee preparation and service, manage your team through a busy period, resolve any guest or customer issues, and review the day's quality and costs."
     },
     {
       "id": "hotel_general_manager",
@@ -7207,7 +7514,8 @@
         "any"
       ],
       "entrance_exam": "NCHMCT JEE",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You oversee preparation and service, manage your team through a busy period, resolve any guest or customer issues, and review the day's quality and costs."
     },
     {
       "id": "revenue_manager_hospitality",
@@ -7230,7 +7538,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You oversee preparation and service, manage your team through a busy period, resolve any guest or customer issues, and review the day's quality and costs."
     },
     {
       "id": "event_manager",
@@ -7238,6 +7547,7 @@
       "category": "Hospitality & Food",
       "type": "Minor",
       "summary": "Plans and executes corporate, social, and wedding events",
+      "day_in_life": "You coordinate 8 vendors for a wedding, manage a last-minute stage collapse scare, keep 300 guests happy, and debrief the team at midnight.",
       "path_india": "BHM / BEM (Bachelor of Event Management) or MBA Events",
       "years_min": 3,
       "annual_fee_range": [
@@ -7276,7 +7586,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You oversee preparation and service, manage your team through a busy period, resolve any guest or customer issues, and review the day's quality and costs."
     },
     {
       "id": "catering_manager",
@@ -7299,7 +7610,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You oversee preparation and service, manage your team through a busy period, resolve any guest or customer issues, and review the day's quality and costs."
     },
     {
       "id": "food_critic_food_blogger",
@@ -7322,7 +7634,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You oversee preparation and service, manage your team through a busy period, resolve any guest or customer issues, and review the day's quality and costs."
     },
     {
       "id": "resort_manager",
@@ -7345,7 +7658,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You oversee preparation and service, manage your team through a busy period, resolve any guest or customer issues, and review the day's quality and costs."
     },
     {
       "id": "commercial_pilot",
@@ -7353,6 +7667,7 @@
       "category": "Transport & Logistics",
       "type": "Major",
       "summary": "Flies passenger or cargo aircraft on scheduled or charter routes",
+      "day_in_life": "Pre-flight checks at 5:30am, a 2-hour flight to Mumbai, layover, then a return flight — between landings you coordinate with ATC and monitor weather systems.",
       "path_india": "10+2 Science + CPL (Commercial Pilot License) from DGCA-approved ATO",
       "years_min": 4,
       "annual_fee_range": [
@@ -7391,7 +7706,8 @@
         "pcm"
       ],
       "entrance_exam": "NDA/CDS",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You complete pre-flight checks, brief your co-pilot on the route and weather, fly 200 passengers across a 2-hour sector, and debrief the cabin crew after landing."
     },
     {
       "id": "drone_pilot",
@@ -7414,7 +7730,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You complete pre-flight checks, brief your co-pilot on the route and weather, fly 200 passengers across a 2-hour sector, and debrief the cabin crew after landing."
     },
     {
       "id": "ship_captain",
@@ -7437,7 +7754,8 @@
         "pcm"
       ],
       "entrance_exam": "IMU CET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You review the navigation plan for the voyage, conduct a safety drill with the crew, navigate through a shipping lane, and log the day's operations."
     },
     {
       "id": "air_traffic_controller_atc",
@@ -7460,7 +7778,8 @@
         "any"
       ],
       "entrance_exam": "AAI ATC Exam",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You manage 15 aircraft in your sector simultaneously, sequence approaches to the runway, issue a go-around instruction for a spacing conflict, and hand off to the next shift."
     },
     {
       "id": "train_driver_loco_pilot",
@@ -7483,7 +7802,8 @@
         "pcm"
       ],
       "entrance_exam": "RRB ALP/JE",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You complete pre-flight checks, brief your co-pilot on the route and weather, fly 200 passengers across a 2-hour sector, and debrief the cabin crew after landing."
     },
     {
       "id": "logistics_manager",
@@ -7491,6 +7811,7 @@
       "category": "Transport & Logistics",
       "type": "Major",
       "summary": "Coordinates end-to-end supply chain from procurement to delivery",
+      "day_in_life": "You track 200 shipments on a dashboard, resolve a customs delay for a critical order, reroute a truck around a road closure, and review tonight's delivery schedule.",
       "path_india": "BBA / B.Tech → MBA Operations / PGDSCM; APICS CPIM",
       "years_min": 4,
       "annual_fee_range": [
@@ -7529,7 +7850,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You track delayed shipments, renegotiate lead times with a supplier, and optimise the inventory reorder point using demand forecast data."
     },
     {
       "id": "customs_broker",
@@ -7552,7 +7874,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review the day's operations data, coordinate with field teams to resolve delays, update tracking systems, and ensure delivery or movement schedules stay on track."
     },
     {
       "id": "freight_forwarding_agent",
@@ -7575,7 +7898,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review the day's operations data, coordinate with field teams to resolve delays, update tracking systems, and ensure delivery or movement schedules stay on track."
     },
     {
       "id": "dispatch_controller",
@@ -7598,7 +7922,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review the day's operations data, coordinate with field teams to resolve delays, update tracking systems, and ensure delivery or movement schedules stay on track."
     },
     {
       "id": "warehouse_manager",
@@ -7621,7 +7946,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review the day's operations data, coordinate with field teams to resolve delays, update tracking systems, and ensure delivery or movement schedules stay on track."
     },
     {
       "id": "fleet_manager",
@@ -7644,7 +7970,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review the day's operations data, coordinate with field teams to resolve delays, update tracking systems, and ensure delivery or movement schedules stay on track."
     },
     {
       "id": "railway_engineer",
@@ -7667,7 +7994,8 @@
         "any"
       ],
       "entrance_exam": "RRB ALP/JE",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You complete a safety inspection of the locomotive, drive a 4-hour intercity route, stop at 8 stations on schedule, and file an incident report for a signal anomaly."
     },
     {
       "id": "port_harbor_manager",
@@ -7690,7 +8018,8 @@
         "any"
       ],
       "entrance_exam": "IMU CET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You review the day's operations data, coordinate with field teams to resolve delays, update tracking systems, and ensure delivery or movement schedules stay on track."
     },
     {
       "id": "delivery_courier_last_mile_exec",
@@ -7713,7 +8042,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review the day's operations data, coordinate with field teams to resolve delays, update tracking systems, and ensure delivery or movement schedules stay on track."
     },
     {
       "id": "astronaut",
@@ -7736,7 +8066,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You complete pre-flight checks, brief your co-pilot on the route and weather, fly 200 passengers across a 2-hour sector, and debrief the cabin crew after landing."
     },
     {
       "id": "social_worker",
@@ -7744,6 +8075,7 @@
       "category": "Social & Welfare",
       "type": "Major",
       "summary": "Supports individuals and families facing poverty, abuse, disability, or addiction",
+      "day_in_life": "You visit 3 families in the morning to assess welfare needs, attend a case conference at the district office, then help a family navigate their housing support application.",
       "path_india": "BSW (Bachelor of Social Work) → MSW; TISS, Delhi University",
       "years_min": 3,
       "annual_fee_range": [
@@ -7768,6 +8100,7 @@
       "category": "Social & Welfare",
       "type": "Major",
       "summary": "Assesses and treats mental health disorders through therapy (not medication)",
+      "day_in_life": "You see 4 therapy sessions of 50 minutes each, maintain clinical notes after each one, and end the day reviewing research for a challenging case.",
       "path_india": "MA/M.Sc Psychology → MPhil Clinical Psychology (RCI recognized) → PhD",
       "years_min": 4,
       "annual_fee_range": [
@@ -7808,7 +8141,8 @@
         "any"
       ],
       "entrance_exam": "TISS NET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You chair a district-level review meeting, review pending files on land acquisition, respond to a public grievance, and brief the senior officer on a developing situation."
     },
     {
       "id": "community_organizer",
@@ -7832,7 +8166,8 @@
         "any"
       ],
       "entrance_exam": "TISS NET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You facilitate a self-help group session, connect a family to a government scheme they were unaware of, and follow up on a child's school enrolment."
     },
     {
       "id": "caseworker",
@@ -7856,7 +8191,8 @@
         "any"
       ],
       "entrance_exam": "TISS NET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You meet clients or community members, assess their needs, connect them to services or resources, and document your casework to track progress over time."
     },
     {
       "id": "substance_abuse_counselor",
@@ -7880,7 +8216,8 @@
         "any"
       ],
       "entrance_exam": "TISS NET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You meet clients or community members, assess their needs, connect them to services or resources, and document your casework to track progress over time."
     },
     {
       "id": "crisis_counselor",
@@ -7904,7 +8241,8 @@
         "any"
       ],
       "entrance_exam": "TISS NET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You meet clients or community members, assess their needs, connect them to services or resources, and document your casework to track progress over time."
     },
     {
       "id": "child_welfare_specialist",
@@ -7928,7 +8266,8 @@
         "any"
       ],
       "entrance_exam": "TISS NET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You prepare case notes for a morning hearing, argue before the judge for 45 minutes, meet a new client to understand their property dispute, and research a precedent."
     },
     {
       "id": "human_rights_activist",
@@ -7952,7 +8291,8 @@
         "any"
       ],
       "entrance_exam": "CLAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You prepare case notes for a morning hearing, argue before the judge for 45 minutes, meet a new client to understand their property dispute, and research a precedent."
     },
     {
       "id": "rehabilitation_specialist",
@@ -7976,7 +8316,8 @@
         "any"
       ],
       "entrance_exam": "TISS NET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You meet clients or community members, assess their needs, connect them to services or resources, and document your casework to track progress over time."
     },
     {
       "id": "life_coach",
@@ -8000,7 +8341,8 @@
         "any"
       ],
       "entrance_exam": "TISS NET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You meet clients or community members, assess their needs, connect them to services or resources, and document your casework to track progress over time."
     },
     {
       "id": "school_social_worker",
@@ -8024,7 +8366,8 @@
         "any"
       ],
       "entrance_exam": "TISS NET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit a family flagged for child welfare concerns, assess living conditions, coordinate with the school and local authority, and document your case notes."
     },
     {
       "id": "grief_counselor",
@@ -8048,7 +8391,8 @@
         "any"
       ],
       "entrance_exam": "TISS NET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You meet clients or community members, assess their needs, connect them to services or resources, and document your casework to track progress over time."
     },
     {
       "id": "farmer_modern",
@@ -8072,7 +8416,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You calibrate a drone's sensors, fly a photogrammetry survey mission over an agricultural field, process the images into a 3D map, and report the crop health index."
     },
     {
       "id": "agronomist",
@@ -8096,7 +8441,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit an experimental plot, collect crop samples, run soil nutrient tests in the lab, and analyse yield data to refine your fertiliser recommendation."
     },
     {
       "id": "agricultural_scientist",
@@ -8120,7 +8466,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit an experimental plot, collect crop samples, run soil nutrient tests in the lab, and analyse yield data to refine your fertiliser recommendation."
     },
     {
       "id": "plant_breeder",
@@ -8144,7 +8491,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit a field or site, collect samples or data, analyse results in the lab or office, and write recommendations for farmers, clients, or the regulatory authority."
     },
     {
       "id": "plant_pathologist",
@@ -8168,7 +8516,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You examine tissue biopsies under a microscope, write reports for 20 specimens, and flag a malignancy for immediate clinical follow-up."
     },
     {
       "id": "entomologist",
@@ -8192,7 +8541,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit a field or site, collect samples or data, analyse results in the lab or office, and write recommendations for farmers, clients, or the regulatory authority."
     },
     {
       "id": "agricultural_extension_officer",
@@ -8216,7 +8566,8 @@
         "pcm"
       ],
       "entrance_exam": "IBPS AFO",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit a field or site, collect samples or data, analyse results in the lab or office, and write recommendations for farmers, clients, or the regulatory authority."
     },
     {
       "id": "horticulturist",
@@ -8240,7 +8591,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You inspect greenhouse crops for pests, adjust irrigation schedules based on weather data, and advise a client on variety selection for the coming season."
     },
     {
       "id": "floriculturist",
@@ -8264,7 +8616,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit a field or site, collect samples or data, analyse results in the lab or office, and write recommendations for farmers, clients, or the regulatory authority."
     },
     {
       "id": "hydroponics_vertical_farm_specialist",
@@ -8288,7 +8641,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit a field or site, collect samples or data, analyse results in the lab or office, and write recommendations for farmers, clients, or the regulatory authority."
     },
     {
       "id": "aquaculture_farmer",
@@ -8312,7 +8666,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You collect fish samples from a farm pond, test water oxygen and pH levels, analyse growth data, and recommend feed adjustments for the farm operator."
     },
     {
       "id": "fisheries_scientist",
@@ -8336,7 +8691,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You collect fish samples from a farm pond, test water oxygen and pH levels, analyse growth data, and recommend feed adjustments for the farm operator."
     },
     {
       "id": "forester_forest_officer",
@@ -8360,7 +8716,8 @@
         "pcm"
       ],
       "entrance_exam": "UPSC",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You patrol a forest section, document signs of illegal felling, collect biodiversity samples, and update the forest management plan."
     },
     {
       "id": "wildlife_biologist_ecologist",
@@ -8368,6 +8725,7 @@
       "category": "Agriculture & Environment",
       "type": "Minor",
       "summary": "Studies and conserves wildlife populations and habitats in protected areas",
+      "day_in_life": "You dive for 2 hours collecting coral samples, spend the afternoon in the lab preserving specimens, and update your research journal before evening.",
       "path_india": "M.Sc Wildlife Science (WII, Aligarh, Hyderabad) → PhD",
       "years_min": 4,
       "annual_fee_range": [
@@ -8408,7 +8766,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit a field or site, collect samples or data, analyse results in the lab or office, and write recommendations for farmers, clients, or the regulatory authority."
     },
     {
       "id": "environmental_consultant",
@@ -8432,7 +8791,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You interview client stakeholders to diagnose an operational issue, structure your findings into a slide deck, and present recommendations to the C-suite."
     },
     {
       "id": "climate_change_analyst",
@@ -8456,7 +8816,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit a field or site, collect samples or data, analyse results in the lab or office, and write recommendations for farmers, clients, or the regulatory authority."
     },
     {
       "id": "sustainability_manager",
@@ -8480,7 +8841,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit a field or site, collect samples or data, analyse results in the lab or office, and write recommendations for farmers, clients, or the regulatory authority."
     },
     {
       "id": "soil_scientist__agriculture_environment",
@@ -8504,7 +8866,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You take soil samples from a degraded farmland plot, run pH and nutrient tests, and recommend a soil restoration treatment for the farmer."
     },
     {
       "id": "landscape_architect",
@@ -8528,7 +8891,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You work on design development drawings for a 6-storey residential building, meet the client to review the floor plan, and liaise with the structural engineer on column placement."
     },
     {
       "id": "beekeeper_apiarist",
@@ -8552,7 +8916,8 @@
         "pcm"
       ],
       "entrance_exam": "ICAR AIEEA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit a field or site, collect samples or data, analyse results in the lab or office, and write recommendations for farmers, clients, or the regulatory authority."
     },
     {
       "id": "architect",
@@ -8560,6 +8925,7 @@
       "category": "Architecture & Design",
       "type": "Major",
       "summary": "Designs buildings — form, function, structure, and regulatory compliance",
+      "day_in_life": "You spend the morning in a client meeting reviewing floor plan revisions, afternoon on 3D modelling, and a quick site visit to check the elevation looks right.",
       "path_india": "B.Arch (5 yrs) — SPA, IIT Kharagpur, CEPT; COA registration mandatory",
       "years_min": 5,
       "annual_fee_range": [
@@ -8600,7 +8966,8 @@
         "arts"
       ],
       "entrance_exam": "NATA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You work on design drawings or renders, present concepts to clients, coordinate with engineers or contractors on technical details, and refine based on feedback."
     },
     {
       "id": "urban_planner",
@@ -8608,6 +8975,7 @@
       "category": "Architecture & Design",
       "type": "Major",
       "summary": "Develops land use, zoning, and infrastructure plans for cities and regions",
+      "day_in_life": "You review land-use proposals for a new township, attend a public consultation meeting, and map transit routes using GIS software.",
       "path_india": "B.Arch or B.Planning → M.Planning (SPA, CEPT)",
       "years_min": 4,
       "annual_fee_range": [
@@ -8648,7 +9016,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on design development drawings for a 6-storey residential building, meet the client to review the floor plan, and liaise with the structural engineer on column placement."
     },
     {
       "id": "interior_designer",
@@ -8672,7 +9041,8 @@
         "arts"
       ],
       "entrance_exam": "NIFT/NID Entrance",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit a site to take measurements, present a mood board and material palette to the client, and coordinate with the furniture vendor on delivery timelines."
     },
     {
       "id": "spatial_designer",
@@ -8696,7 +9066,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on design drawings or renders, present concepts to clients, coordinate with engineers or contractors on technical details, and refine based on feedback."
     },
     {
       "id": "industrial_designer",
@@ -8720,7 +9091,8 @@
         "arts"
       ],
       "entrance_exam": "JEE",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You sketch product form concepts, build a foam prototype, test ergonomics with 3 users, and refine the design based on grip feedback."
     },
     {
       "id": "product_designer",
@@ -8744,7 +9116,8 @@
         "arts"
       ],
       "entrance_exam": "JEE",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You run a usability test with 3 users in the morning, redesign a confusing onboarding flow based on their feedback, and present wireframes to the product team."
     },
     {
       "id": "fashion_designer",
@@ -8752,6 +9125,7 @@
       "category": "Architecture & Design",
       "type": "Minor",
       "summary": "Creates clothing collections for retail, film, or luxury brands",
+      "day_in_life": "You sketch three dress concepts, meet the tailor to check fabric samples, attend a fit session with a model, and finalize a lookbook for an upcoming showcase.",
       "path_india": "B.Des Fashion Design (NIFT — 7 campuses, NID)",
       "years_min": 4,
       "annual_fee_range": [
@@ -8792,7 +9166,8 @@
         "any"
       ],
       "entrance_exam": "NIFT/NID Entrance",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You work on design drawings or renders, present concepts to clients, coordinate with engineers or contractors on technical details, and refine based on feedback."
     },
     {
       "id": "accessory_designer",
@@ -8816,7 +9191,8 @@
         "any"
       ],
       "entrance_exam": "NIFT/NID Entrance",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You work on design drawings or renders, present concepts to clients, coordinate with engineers or contractors on technical details, and refine based on feedback."
     },
     {
       "id": "jewelry_designer",
@@ -8840,7 +9216,8 @@
         "any"
       ],
       "entrance_exam": "NIFT/NID Entrance",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You work on design drawings or renders, present concepts to clients, coordinate with engineers or contractors on technical details, and refine based on feedback."
     },
     {
       "id": "set_production_designer",
@@ -8864,7 +9241,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on design drawings or renders, present concepts to clients, coordinate with engineers or contractors on technical details, and refine based on feedback."
     },
     {
       "id": "exhibition_designer",
@@ -8888,7 +9266,8 @@
         "arts"
       ],
       "entrance_exam": "NIFT/NID Entrance",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You work on design drawings or renders, present concepts to clients, coordinate with engineers or contractors on technical details, and refine based on feedback."
     },
     {
       "id": "lighting_designer",
@@ -8912,7 +9291,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on design development drawings for a 6-storey residential building, meet the client to review the floor plan, and liaise with the structural engineer on column placement."
     },
     {
       "id": "parametric_computational_designer",
@@ -8936,7 +9316,8 @@
         "arts"
       ],
       "entrance_exam": "NATA",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You work on design drawings or renders, present concepts to clients, coordinate with engineers or contractors on technical details, and refine based on feedback."
     },
     {
       "id": "professional_athlete",
@@ -8959,7 +9340,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You train for 3 hours — fitness, ball work, tactics — attend a press conference, and review footage of the next opponent's last match with the coaching staff."
     },
     {
       "id": "cricket_player",
@@ -8982,7 +9364,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a training session, review performance data, work with athletes on specific weaknesses, and coordinate with the support team on conditioning and recovery."
     },
     {
       "id": "football_player",
@@ -9005,7 +9388,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You train for 3 hours — fitness, ball work, tactics — attend a press conference, and review footage of the next opponent's last match with the coaching staff."
     },
     {
       "id": "badminton_player",
@@ -9028,7 +9412,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a training session, review performance data, work with athletes on specific weaknesses, and coordinate with the support team on conditioning and recovery."
     },
     {
       "id": "sports_coach",
@@ -9051,7 +9436,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You plan and run a morning strength conditioning session, review an athlete's performance data, and tweak their training programme for the upcoming competition."
     },
     {
       "id": "strength_conditioning_coach",
@@ -9074,7 +9460,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a training session, review performance data, work with athletes on specific weaknesses, and coordinate with the support team on conditioning and recovery."
     },
     {
       "id": "personal_trainer",
@@ -9097,7 +9484,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You lead 4 personal training sessions back-to-back, design a nutrition plan for a client, and review a client's progress against their 3-month goal."
     },
     {
       "id": "sports_psychologist",
@@ -9120,7 +9508,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You conduct 4 therapy sessions — grief, anxiety, relationship issues — write detailed case notes, and consult with a psychiatrist on a complex referral."
     },
     {
       "id": "sports_nutritionist",
@@ -9143,7 +9532,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review a diabetic patient's food diary, create a meal plan for an athlete, and run a group session on portion control at a community health centre."
     },
     {
       "id": "sports_physiotherapist__sports_fitness",
@@ -9166,7 +9556,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You see 6 patients across the day — a post-surgery knee, a tennis elbow, a lower back issue — guiding each through targeted exercise routines."
     },
     {
       "id": "athletic_trainer",
@@ -9189,7 +9580,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a training session, review performance data, work with athletes on specific weaknesses, and coordinate with the support team on conditioning and recovery."
     },
     {
       "id": "yoga_instructor",
@@ -9212,7 +9604,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You lead two morning yoga classes, create a new restorative sequence for an evening class, and counsel a student on managing stress through breathwork."
     },
     {
       "id": "dance_instructor",
@@ -9235,7 +9628,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a training session, review performance data, work with athletes on specific weaknesses, and coordinate with the support team on conditioning and recovery."
     },
     {
       "id": "physical_education_teacher",
@@ -9243,6 +9637,7 @@
       "category": "Sports & Fitness",
       "type": "Minor",
       "summary": "Teaches sports and fitness in schools",
+      "day_in_life": "You run morning PT sessions for 60 students, coach the inter-school cricket team during lunch, and file fitness assessment reports in the afternoon.",
       "path_india": "B.P.Ed (Bachelor of Physical Education) + CTET/TET",
       "years_min": 3,
       "annual_fee_range": [
@@ -9281,7 +9676,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a training session, review performance data, work with athletes on specific weaknesses, and coordinate with the support team on conditioning and recovery."
     },
     {
       "id": "referee_umpire",
@@ -9304,7 +9700,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You train for 3 hours — fitness, ball work, tactics — attend a press conference, and review footage of the next opponent's last match with the coaching staff."
     },
     {
       "id": "esports_player_coach",
@@ -9327,7 +9724,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You train 6 hours — individual mechanics, team scrimmages, and VOD reviews. You attend a strategy meeting with the coaching staff and stream 2 hours for your community."
     },
     {
       "id": "sports_agent",
@@ -9350,7 +9748,8 @@
         "any"
       ],
       "entrance_exam": "CLAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You run a training session, review performance data, work with athletes on specific weaknesses, and coordinate with the support team on conditioning and recovery."
     },
     {
       "id": "golf_course_manager",
@@ -9373,7 +9772,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a training session, review performance data, work with athletes on specific weaknesses, and coordinate with the support team on conditioning and recovery."
     },
     {
       "id": "psychiatrist__mental_health_wellness",
@@ -9396,7 +9796,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You spend 45-minute sessions with patients struggling with depression, psychosis, and anxiety. You adjust medication, write detailed case notes, and coordinate with a social worker."
     },
     {
       "id": "clinical_psychologist",
@@ -9419,7 +9820,8 @@
         "pcb"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You conduct 4 therapy sessions — grief, anxiety, relationship issues — write detailed case notes, and consult with a psychiatrist on a complex referral."
     },
     {
       "id": "counseling_psychologist",
@@ -9442,7 +9844,8 @@
         "pcb"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You chair a district-level review meeting, review pending files on land acquisition, respond to a public grievance, and brief the senior officer on a developing situation."
     },
     {
       "id": "child_psychologist",
@@ -9465,7 +9868,8 @@
         "pcb"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You conduct 4 therapy sessions — grief, anxiety, relationship issues — write detailed case notes, and consult with a psychiatrist on a complex referral."
     },
     {
       "id": "neuropsychologist",
@@ -9488,7 +9892,8 @@
         "pcb"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You chair a district-level review meeting, review pending files on land acquisition, respond to a public grievance, and brief the senior officer on a developing situation."
     },
     {
       "id": "rehabilitation_psychologist",
@@ -9511,7 +9916,8 @@
         "pcb"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You conduct 4 therapy sessions — grief, anxiety, relationship issues — write detailed case notes, and consult with a psychiatrist on a complex referral."
     },
     {
       "id": "industrial_organizational_psychologist",
@@ -9534,7 +9940,8 @@
         "pcb"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You conduct 4 therapy sessions — grief, anxiety, relationship issues — write detailed case notes, and consult with a psychiatrist on a complex referral."
     },
     {
       "id": "art_therapist",
@@ -9557,7 +9964,8 @@
         "pcb"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a therapeutic art session with a group of children with trauma history, observe and interpret their creative expressions, and document clinical observations."
     },
     {
       "id": "public_health_officer",
@@ -9580,7 +9988,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You analyse district disease surveillance data, coordinate a vaccination camp logistics, brief community health workers, and report outbreak metrics to the state health authority."
     },
     {
       "id": "epidemiologist__public_health_policy",
@@ -9603,7 +10012,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You analyse disease outbreak data from 3 districts, identify the exposure source, and brief the district health officer on containment recommendations."
     },
     {
       "id": "health_policy_analyst",
@@ -9626,7 +10036,8 @@
         "pcb"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You analyse the impact of a proposed education regulation, draft a policy brief with recommendations, and present findings to the ministry's advisory committee."
     },
     {
       "id": "biostatistician__public_health_policy",
@@ -9649,7 +10060,8 @@
         "pcb"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You design a clinical trial's statistical analysis plan, run survival analysis on patient data, and advise the research team on sample size requirements."
     },
     {
       "id": "environmental_health_specialist",
@@ -9672,7 +10084,8 @@
         "pcb"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You rehearse lines in the morning, film a 3-scene dialogue sequence, review playback with the director, and do two more takes to nail the emotional beat."
     },
     {
       "id": "healthcare_administrator",
@@ -9695,7 +10108,8 @@
         "pcb"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You analyse health data, write briefs or reports for the health authority, coordinate with field health workers, and present findings to government or community stakeholders."
     },
     {
       "id": "cfa_charterholder",
@@ -9719,7 +10133,8 @@
         "arts"
       ],
       "entrance_exam": "CFA Exam",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You analyse market data and financial instruments, model risk and return scenarios, prepare research notes, and brief the portfolio or risk management team."
     },
     {
       "id": "frm_holder",
@@ -9743,7 +10158,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You analyse market data and financial instruments, model risk and return scenarios, prepare research notes, and brief the portfolio or risk management team."
     },
     {
       "id": "quantitative_analyst_quant",
@@ -9767,7 +10183,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You analyse market data and financial instruments, model risk and return scenarios, prepare research notes, and brief the portfolio or risk management team."
     },
     {
       "id": "algorithmic_trader",
@@ -9791,7 +10208,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You analyse market data and financial instruments, model risk and return scenarios, prepare research notes, and brief the portfolio or risk management team."
     },
     {
       "id": "treasury_manager",
@@ -9815,7 +10233,8 @@
         "arts"
       ],
       "entrance_exam": "CAT/GMAT",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You chair a district-level review meeting, review pending files on land acquisition, respond to a public grievance, and brief the senior officer on a developing situation."
     },
     {
       "id": "transfer_pricing_specialist",
@@ -9839,7 +10258,8 @@
         "arts"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You analyse market data and financial instruments, model risk and return scenarios, prepare research notes, and brief the portfolio or risk management team."
     },
     {
       "id": "ethical_hacker_penetration_tester",
@@ -9862,7 +10282,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a penetration test on a client's web application, find a SQL injection vulnerability, document your findings, and present a remediation plan."
     },
     {
       "id": "ai_safety_researcher",
@@ -9885,7 +10306,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "digital_twin_engineer",
@@ -9908,7 +10330,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "cyber_threat_intelligence_analyst",
@@ -9931,7 +10354,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "space_systems_engineer",
@@ -9954,7 +10378,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on orbit simulation software, review telemetry data from a satellite in orbit, and attend a mission planning review meeting."
     },
     {
       "id": "satellite_imagery_analyst",
@@ -9977,7 +10402,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work on orbit simulation software, review telemetry data from a satellite in orbit, and attend a mission planning review meeting."
     },
     {
       "id": "geospatial_data_scientist",
@@ -10000,7 +10426,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You pull a messy dataset, clean it, run a predictive model, and present your findings to the product team — who immediately want two more questions answered."
     },
     {
       "id": "sustainability_esg_consultant",
@@ -10023,7 +10450,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You interview client stakeholders to diagnose an operational issue, structure your findings into a slide deck, and present recommendations to the C-suite."
     },
     {
       "id": "carbon_credit_trader",
@@ -10046,7 +10474,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "ocean_energy_engineer",
@@ -10069,7 +10498,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You analyse solar irradiance data for a new farm site, size the panel array and inverter, and prepare a yield simulation report for the project investor."
     },
     {
       "id": "hydrogen_energy_specialist",
@@ -10092,7 +10522,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "nuclear_medicine_technologist",
@@ -10115,7 +10546,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "medical_physicist",
@@ -10139,7 +10571,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run experiments on a quantum optics bench, analyse spectroscopy data, write a section of your research paper, and attend a journal club discussion."
     },
     {
       "id": "health_informatician",
@@ -10163,7 +10596,8 @@
         "pcm"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You screen 15 job applications, conduct two interviews, run an onboarding session for new joiners, and mediate a workplace dispute."
     },
     {
       "id": "voice_chatbot_designer",
@@ -10186,7 +10620,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "genealogist",
@@ -10209,7 +10644,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "private_investigator",
@@ -10232,7 +10668,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "funeral_director_mortician",
@@ -10255,7 +10692,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "aroma_therapist",
@@ -10278,7 +10716,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "color_consultant",
@@ -10301,7 +10740,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You interview client stakeholders to diagnose an operational issue, structure your findings into a slide deck, and present recommendations to the C-suite."
     },
     {
       "id": "cryonics_technician",
@@ -10324,7 +10764,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "handwriting_analyst_graphologist",
@@ -10347,7 +10788,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "sexologist",
@@ -10370,7 +10812,8 @@
         "any"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "cruise_director",
@@ -10393,7 +10836,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You chair a district-level review meeting, review pending files on land acquisition, respond to a public grievance, and brief the senior officer on a developing situation."
     },
     {
       "id": "yacht_captain",
@@ -10416,7 +10860,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "drone_uav_engineer",
@@ -10439,7 +10884,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You complete pre-flight checks, brief your co-pilot on the route and weather, fly 200 passengers across a 2-hour sector, and debrief the cabin crew after landing."
     },
     {
       "id": "cybersecurity_policy_advisor",
@@ -10462,7 +10908,8 @@
         "pcm"
       ],
       "entrance_exam": "CLAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You run a penetration test on a client's web application, find a SQL injection vulnerability, document your findings, and present a remediation plan."
     },
     {
       "id": "luthier_instrument_maker",
@@ -10485,7 +10932,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "aquarist_marine_biologist_public_aquariu",
@@ -10508,7 +10956,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You culture bacterial samples, stain slides for microscopy, run a PCR assay, and interpret the results against your experimental control group."
     },
     {
       "id": "esports_commentator_caster",
@@ -10531,7 +10980,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You train 6 hours — individual mechanics, team scrimmages, and VOD reviews. You attend a strategy meeting with the coaching staff and stream 2 hours for your community."
     },
     {
       "id": "nft_crypto_artist",
@@ -10554,7 +11004,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review a smart contract for security vulnerabilities, write unit tests, and prototype a new token mechanism on a test network."
     },
     {
       "id": "forklift_operator",
@@ -10577,7 +11028,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You rehearse lines in the morning, film a 3-scene dialogue sequence, review playback with the director, and do two more takes to nail the emotional beat."
     },
     {
       "id": "locksmith",
@@ -10600,7 +11052,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "animal_trainer",
@@ -10623,7 +11076,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "pet_groomer",
@@ -10646,7 +11100,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "financial_independence_coach",
@@ -10669,7 +11124,8 @@
         "any"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You work at the cutting edge of your field — experimenting, building prototypes, analysing results, and collaborating with a cross-disciplinary team on new problems."
     },
     {
       "id": "k_12_edtech_content_creator",
@@ -10692,7 +11148,8 @@
         "pcm"
       ],
       "entrance_exam": "None/State Board",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review a Science syllabus for Grade 9, update learning outcomes to align with the new board guidelines, and pilot-test a lesson plan with a teacher."
     },
     {
       "id": "devops_sre_engineer",
@@ -10715,7 +11172,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE / State CET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You automate a deployment pipeline that used to take 2 hours manually, respond to a server alert at noon, and review infrastructure costs with the finance team."
     },
     {
       "id": "prompt_engineer_new",
@@ -10739,7 +11197,8 @@
         "any"
       ],
       "entrance_exam": "JEE / State CET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "mlops_engineer_new",
@@ -10762,7 +11221,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE / State CET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You experiment with a new neural network architecture, debug a training pipeline that's producing skewed results, and deploy an updated recommendation model to production."
     },
     {
       "id": "embedded_systems_engineer_new",
@@ -10785,7 +11245,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE / State CET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You write C code for a microcontroller, debug a timing issue on the oscilloscope, and validate sensor readings against the hardware spec."
     },
     {
       "id": "blockchain_developer_new",
@@ -10808,7 +11269,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE / State CET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You review a smart contract for security vulnerabilities, write unit tests, and prototype a new token mechanism on a test network."
     },
     {
       "id": "game_developer_new",
@@ -10832,7 +11294,8 @@
         "any"
       ],
       "entrance_exam": "JEE / Portfolio-based admission",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You implement a physics mechanic in the morning, playtest for bugs in the afternoon, and collaborate with an artist on particle effects for a new level."
     },
     {
       "id": "ar_vr_developer_new",
@@ -10856,7 +11319,8 @@
         "any"
       ],
       "entrance_exam": "JEE / Portfolio",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "database_administrator_new",
@@ -10880,7 +11344,8 @@
         "commerce"
       ],
       "entrance_exam": "JEE / State CET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You write and review code in the morning, attend a team standup, debug an issue that's been blocking a colleague, and plan the next sprint's features."
     },
     {
       "id": "cloud_solutions_architect",
@@ -10903,7 +11368,8 @@
         "pcm"
       ],
       "entrance_exam": "JEE / State CET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You work on design development drawings for a 6-storey residential building, meet the client to review the floor plan, and liaise with the structural engineer on column placement."
     },
     {
       "id": "technical_writer_software",
@@ -10911,6 +11377,7 @@
       "category": "Technology",
       "type": "Minor",
       "summary": "Creates developer documentation, API references, and user guides for software products",
+      "day_in_life": "You research and draft a 1500-word article on fintech trends, revise a client's blog post, respond to editorial feedback, and pitch three new story ideas.",
       "path_india": "B.Tech / BA English → Technical writing certification",
       "years_min": 3,
       "annual_fee_range": [
@@ -10951,7 +11418,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You conduct 4 therapy sessions — grief, anxiety, relationship issues — write detailed case notes, and consult with a psychiatrist on a complex referral."
     },
     {
       "id": "palliative_care_specialist_new",
@@ -10974,7 +11442,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "sleep_medicine_specialist_new",
@@ -10997,7 +11466,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "telemedicine_doctor",
@@ -11020,7 +11490,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "medical_transcriptionist",
@@ -11044,7 +11515,8 @@
         "any"
       ],
       "entrance_exam": "None",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "healthcare_quality_analyst",
@@ -11067,7 +11539,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET / Direct",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "clinical_pharmacologist",
@@ -11090,7 +11563,8 @@
         "pcb"
       ],
       "entrance_exam": "NEET",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "sterile_processing_technician",
@@ -11114,7 +11588,8 @@
         "any"
       ],
       "entrance_exam": "None",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You start with morning ward rounds, examine patients, update treatment plans, and consult with colleagues on complex cases before afternoon outpatient clinic."
     },
     {
       "id": "school_principal_new",
@@ -11137,7 +11612,8 @@
         "any"
       ],
       "entrance_exam": "B.Ed entrance",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review a Science syllabus for Grade 9, update learning outcomes to align with the new board guidelines, and pilot-test a lesson plan with a teacher."
     },
     {
       "id": "special_education_teacher_new",
@@ -11160,7 +11636,8 @@
         "any"
       ],
       "entrance_exam": "State B.Ed entrance",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You take three 40-minute classes, check 30 assignments, plan tomorrow's lesson using a new interactive method, and meet a student's parent after school."
     },
     {
       "id": "educational_psychologist",
@@ -11184,7 +11661,8 @@
         "any"
       ],
       "entrance_exam": "PU / State entrance",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You conduct 4 therapy sessions — grief, anxiety, relationship issues — write detailed case notes, and consult with a psychiatrist on a complex referral."
     },
     {
       "id": "curriculum_designer_k12",
@@ -11207,7 +11685,8 @@
         "any"
       ],
       "entrance_exam": "B.Ed entrance",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You review a Science syllabus for Grade 9, update learning outcomes to align with the new board guidelines, and pilot-test a lesson plan with a teacher."
     },
     {
       "id": "corporate_trainer_ld",
@@ -11230,7 +11709,8 @@
         "any"
       ],
       "entrance_exam": "CAT / Direct admission",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You teach classes, review and return student work, prepare tomorrow's lesson plan, and meet with students or parents to discuss progress."
     },
     {
       "id": "language_teacher_foreign",
@@ -11254,7 +11734,8 @@
         "any"
       ],
       "entrance_exam": "University entrance",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You take three 40-minute classes, check 30 assignments, plan tomorrow's lesson using a new interactive method, and meet a student's parent after school."
     },
     {
       "id": "academic_librarian",
@@ -11277,7 +11758,8 @@
         "any"
       ],
       "entrance_exam": "University entrance",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You teach classes, review and return student work, prepare tomorrow's lesson plan, and meet with students or parents to discuss progress."
     },
     {
       "id": "education_policy_analyst_new",
@@ -11301,7 +11783,8 @@
         "any"
       ],
       "entrance_exam": "University entrance",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You analyse the impact of a proposed education regulation, draft a policy brief with recommendations, and present findings to the ministry's advisory committee."
     },
     {
       "id": "community_development_officer",
@@ -11325,7 +11808,8 @@
         "any"
       ],
       "entrance_exam": "SSC / UPSC / State PSC",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You facilitate a self-help group session, connect a family to a government scheme they were unaware of, and follow up on a child's school enrolment."
     },
     {
       "id": "child_welfare_officer",
@@ -11349,7 +11833,8 @@
         "any"
       ],
       "entrance_exam": "SSC / State exam",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You meet clients or community members, assess their needs, connect them to services or resources, and document your casework to track progress over time."
     },
     {
       "id": "ngo_programme_manager",
@@ -11373,7 +11858,8 @@
         "any"
       ],
       "entrance_exam": "Direct / entrance",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a community meeting in a village, collect feedback on a water sanitation scheme, and write a donor progress report in the afternoon."
     },
     {
       "id": "disability_rehabilitation_specialist",
@@ -11397,7 +11883,8 @@
         "any"
       ],
       "entrance_exam": "State entrance",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You meet clients or community members, assess their needs, connect them to services or resources, and document your casework to track progress over time."
     },
     {
       "id": "disaster_relief_coordinator",
@@ -11420,7 +11907,8 @@
         "any"
       ],
       "entrance_exam": "UPSC / University entrance",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You meet clients or community members, assess their needs, connect them to services or resources, and document your casework to track progress over time."
     },
     {
       "id": "labour_welfare_officer",
@@ -11445,7 +11933,8 @@
         "any"
       ],
       "entrance_exam": "SSC / State exam",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You meet clients or community members, assess their needs, connect them to services or resources, and document your casework to track progress over time."
     },
     {
       "id": "prison_counsellor",
@@ -11469,7 +11958,8 @@
         "any"
       ],
       "entrance_exam": "State PSC / SSC",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You conduct 4 therapy sessions — grief, anxiety, relationship issues — write detailed case notes, and consult with a psychiatrist on a complex referral."
     },
     {
       "id": "addiction_counsellor",
@@ -11493,7 +11983,8 @@
         "any"
       ],
       "entrance_exam": "University entrance",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You conduct 4 therapy sessions — grief, anxiety, relationship issues — write detailed case notes, and consult with a psychiatrist on a complex referral."
     },
     {
       "id": "art_therapist_new",
@@ -11517,7 +12008,8 @@
         "any"
       ],
       "entrance_exam": "Portfolio / University entrance",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You run a therapeutic art session with a group of children with trauma history, observe and interpret their creative expressions, and document clinical observations."
     },
     {
       "id": "play_therapist",
@@ -11541,7 +12033,8 @@
         "any"
       ],
       "entrance_exam": "University entrance",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You hold therapy or counselling sessions, write case notes, consult with clinical colleagues on complex cases, and develop or update client treatment plans."
     },
     {
       "id": "crisis_intervention_specialist",
@@ -11566,7 +12059,8 @@
         "any"
       ],
       "entrance_exam": "University entrance",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You hold therapy or counselling sessions, write case notes, consult with clinical colleagues on complex cases, and develop or update client treatment plans."
     },
     {
       "id": "neuropsychologist_new",
@@ -11590,7 +12084,8 @@
         "arts"
       ],
       "entrance_exam": "NEET / University entrance",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You conduct 4 therapy sessions — grief, anxiety, relationship issues — write detailed case notes, and consult with a psychiatrist on a complex referral."
     },
     {
       "id": "eap_counsellor",
@@ -11614,7 +12109,8 @@
         "any"
       ],
       "entrance_exam": "University entrance",
-      "exam_intensity": 1
+      "exam_intensity": 1,
+      "day_in_life": "You conduct 4 therapy sessions — grief, anxiety, relationship issues — write detailed case notes, and consult with a psychiatrist on a complex referral."
     },
     {
       "id": "actuarial_analyst",
@@ -11638,7 +12134,8 @@
         "commerce"
       ],
       "entrance_exam": "ACET (IAI)",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You review financial reports in the morning, model scenarios for a client decision, attend meetings with stakeholders, and prepare a presentation for the afternoon."
     },
     {
       "id": "credit_rating_analyst",
@@ -11662,7 +12159,8 @@
         "pcm"
       ],
       "entrance_exam": "CAT / GMAT",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You analyse market data and financial instruments, model risk and return scenarios, prepare research notes, and brief the portfolio or risk management team."
     },
     {
       "id": "pension_fund_manager",
@@ -11686,7 +12184,8 @@
         "pcm"
       ],
       "entrance_exam": "CAT / CFA exam",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You analyse market data and financial instruments, model risk and return scenarios, prepare research notes, and brief the portfolio or risk management team."
     },
     {
       "id": "sebi_compliance_officer",
@@ -11710,7 +12209,8 @@
         "pcm"
       ],
       "entrance_exam": "SEBI exam / CAT",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You analyse market data and financial instruments, model risk and return scenarios, prepare research notes, and brief the portfolio or risk management team."
     },
     {
       "id": "venture_capital_analyst_new",
@@ -11734,7 +12234,8 @@
         "commerce"
       ],
       "entrance_exam": "CAT / GMAT",
-      "exam_intensity": 3
+      "exam_intensity": 3,
+      "day_in_life": "You analyse market data and financial instruments, model risk and return scenarios, prepare research notes, and brief the portfolio or risk management team."
     },
     {
       "id": "wealthtech_analyst",
@@ -11758,7 +12259,8 @@
         "commerce"
       ],
       "entrance_exam": "CAT / JEE",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You review API logs for a failed payment transaction, work with the backend team to fix the issue, and run compliance checks on a new feature before launch."
     },
     {
       "id": "aquaculture_specialist",
@@ -11782,7 +12284,8 @@
         "pcm"
       ],
       "entrance_exam": "State AgriCET / ICAR",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You collect fish samples from a farm pond, test water oxygen and pH levels, analyse growth data, and recommend feed adjustments for the farm operator."
     },
     {
       "id": "organic_farming_consultant",
@@ -11806,7 +12309,8 @@
         "pcm"
       ],
       "entrance_exam": "State AgriCET / ICAR",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You interview client stakeholders to diagnose an operational issue, structure your findings into a slide deck, and present recommendations to the C-suite."
     },
     {
       "id": "carbon_credit_analyst",
@@ -11831,7 +12335,8 @@
         "any"
       ],
       "entrance_exam": "University entrance",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You visit a field or site, collect samples or data, analyse results in the lab or office, and write recommendations for farmers, clients, or the regulatory authority."
     },
     {
       "id": "wildlife_conservation_officer",
@@ -11839,6 +12344,7 @@
       "category": "Agriculture & Environment",
       "type": "Major",
       "summary": "Protects endangered species and manages wildlife sanctuaries and national park ecosystems",
+      "day_in_life": "You monitor camera trap footage for tiger movement, update a species distribution database, and prepare a habitat protection proposal for the forest department.",
       "path_india": "B.Sc Zoology/Forestry → M.Sc Wildlife Science → Forest Service (IFS) exam",
       "years_min": 4,
       "annual_fee_range": [
@@ -11878,7 +12384,8 @@
         "pcb"
       ],
       "entrance_exam": "ICAR / JEE / State CET",
-      "exam_intensity": 2
+      "exam_intensity": 2,
+      "day_in_life": "You calibrate a drone's sensors, fly a photogrammetry survey mission over an agricultural field, process the images into a 3D map, and report the crop health index."
     }
   ]
 }
