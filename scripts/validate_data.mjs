@@ -99,16 +99,16 @@ if (questionsResult.data) {
     fail('personal_financial question count: 10', `got ${personal_financial.length}`);
   }
 
-  if (career_quick.length === 10) {
-    pass('career_quick question count: 10');
+  if (career_quick.length >= 10 && career_quick.length % 6 === 0) {
+    pass(`career_quick pool size valid (${career_quick.length})`);
   } else {
-    fail('career_quick question count: 10', `got ${career_quick.length}`);
+    fail('career_quick pool size', `expected multiple of 6 >= 10, got ${career_quick.length}`);
   }
 
-  if (career_deep.length === 25) {
-    pass('career_deep question count: 25');
+  if (career_deep.length >= 25 && career_deep.length % 6 === 0) {
+    pass(`career_deep pool size valid (${career_deep.length})`);
   } else {
-    fail('career_deep question count: 25', `got ${career_deep.length}`);
+    fail('career_deep pool size', `expected multiple of 6 >= 25, got ${career_deep.length}`);
   }
 
   // career_quick dimension validity
@@ -128,6 +128,21 @@ if (questionsResult.data) {
     fail('All career_deep dimensions valid',
       `invalid dimension(s) on: ${badDeepDims.map(q => q.id).join(', ')}`);
   }
+
+  // RIASEC balance — each dimension must appear equally in each pool
+  function checkDimBalance(pool, poolName) {
+    const counts = {};
+    pool.forEach(q => { counts[q.dimension] = (counts[q.dimension] || 0) + 1; });
+    const vals = Object.values(counts);
+    const allEqual = vals.every(v => v === vals[0]);
+    if (allEqual) {
+      pass(`${poolName} RIASEC dimension balance valid`);
+    } else {
+      fail(`${poolName} RIASEC dimension balance`, `unequal counts: ${JSON.stringify(counts)}`);
+    }
+  }
+  checkDimBalance(career_quick, 'career_quick');
+  checkDimBalance(career_deep, 'career_deep');
 
   // personal_financial key field presence
   const missingKeyField = personal_financial.filter(q => !('key' in q));
@@ -155,7 +170,7 @@ if (questionsResult.data) {
 // ── 3. Profession integrity ────────────────────────────────────────────────
 
 const REQUIRED_FIELDS  = ['id', 'name', 'category', 'type', 'summary', 'path_india',
-                           'years_min', 'annual_fee_range', 'streams', 'entrance_exam', 'exam_intensity'];
+                           'years_min', 'annual_fee_range', 'salary_lpa', 'streams', 'entrance_exam', 'exam_intensity'];
 const VALID_TYPES      = new Set(['Major', 'Minor', 'Niche']);
 const VALID_STREAMS    = new Set(['pcm', 'pcb', 'commerce', 'arts', 'any']);
 const VALID_INTENSITIES = new Set([1, 2, 3]);
@@ -204,6 +219,22 @@ if (professions.length > 0) {
   } else {
     fail('All profession annual_fee_range valid',
       `${badFee.length} invalid, e.g. id="${badFee[0].id}"`);
+  }
+
+  // salary_lpa: { entry, mid, senior } — positive integers, entry <= mid <= senior
+  const badSalary = professions.filter(p => {
+    const s = p.salary_lpa;
+    if (!s || typeof s !== 'object') return true;
+    if (!Number.isInteger(s.entry) || !Number.isInteger(s.mid) || !Number.isInteger(s.senior)) return true;
+    if (s.entry < 1 || s.mid < 1 || s.senior < 1) return true;
+    if (s.entry > s.mid || s.mid > s.senior) return true;
+    return false;
+  });
+  if (badSalary.length === 0) {
+    pass('All profession salary_lpa valid');
+  } else {
+    fail('All profession salary_lpa valid',
+      `${badSalary.length} invalid, e.g. id="${badSalary[0].id}"`);
   }
 
   // streams — array with at least one valid value

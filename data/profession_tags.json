@@ -1,0 +1,4073 @@
+{
+  "physician_doctor_general": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "clinical"
+  ],
+  "surgeon_general": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "clinical"
+  ],
+  "cardiologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "specialist_medical"
+  ],
+  "cardiothoracic_surgeon": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "clinical",
+    "infra_sub",
+    "specialist_medical"
+  ],
+  "neurologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "specialist_medical"
+  ],
+  "neurosurgeon": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "clinical",
+    "specialist_medical"
+  ],
+  "orthopedic_surgeon": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "clinical",
+    "specialist_medical"
+  ],
+  "dermatologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "specialist_medical"
+  ],
+  "pediatrician": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "specialist_medical"
+  ],
+  "neonatologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "gynecologist_obstetrician": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "ophthalmologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "specialist_medical"
+  ],
+  "ent_specialist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "psychiatrist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "mental_health_sub"
+  ],
+  "radiologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "specialist_medical"
+  ],
+  "anesthesiologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "pathologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "endocrinologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "specialist_medical"
+  ],
+  "oncologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "specialist_medical"
+  ],
+  "oncosurgeon": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "clinical"
+  ],
+  "gastroenterologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "specialist_medical"
+  ],
+  "hepatologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "nephrologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "pulmonologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "rheumatologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "hematologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "infectious_disease_specialist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "urologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "specialist_medical"
+  ],
+  "plastic_surgeon": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "clinical"
+  ],
+  "geriatrician": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "palliative_care_specialist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "sports_medicine_doctor": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "clinical"
+  ],
+  "sleep_medicine_specialist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "pain_management_specialist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "hyperbaric_medicine_specialist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "pharmacologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "pcb_stream"
+  ],
+  "toxicologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "pcb_stream"
+  ],
+  "dentist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "high_earning",
+    "pcb_stream",
+    "clinical"
+  ],
+  "orthodontist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "high_earning",
+    "pcb_stream",
+    "specialist_medical"
+  ],
+  "periodontist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "endodontist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "oral_maxillofacial_surgeon": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "high_earning",
+    "pcb_stream",
+    "clinical"
+  ],
+  "pharmacist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream"
+  ],
+  "clinical_pharmacist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream",
+    "clinical"
+  ],
+  "physiotherapist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream",
+    "clinical",
+    "infra_sub"
+  ],
+  "sports_physiotherapist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream",
+    "clinical",
+    "infra_sub"
+  ],
+  "neurological_physiotherapist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream",
+    "clinical",
+    "infra_sub",
+    "specialist_medical"
+  ],
+  "occupational_therapist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream",
+    "clinical"
+  ],
+  "speech_language_therapist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream",
+    "clinical"
+  ],
+  "audiologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream"
+  ],
+  "optometrist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream"
+  ],
+  "dietitian_clinical_nutritionist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream",
+    "clinical"
+  ],
+  "veterinarian": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "pcb_stream"
+  ],
+  "veterinary_surgeon": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "pcb_stream",
+    "clinical"
+  ],
+  "midwife": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream"
+  ],
+  "nurse_registered": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream",
+    "clinical"
+  ],
+  "nurse_anesthetist_crna": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream",
+    "clinical"
+  ],
+  "critical_care_nurse": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream",
+    "clinical"
+  ],
+  "paramedic_emergency_medical_technician": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream"
+  ],
+  "radiographer": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream"
+  ],
+  "medical_lab_technician": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "phlebotomist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream"
+  ],
+  "prosthetist_orthotist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream",
+    "specialist_medical"
+  ],
+  "hospital_administrator": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "structured",
+    "competitive_exam",
+    "high_earning",
+    "pcb_stream",
+    "clinical",
+    "policy_sub"
+  ],
+  "health_informatics_specialist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "perfusionist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "pcb_stream"
+  ],
+  "ayurvedic_doctor_bams": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "pcb_stream",
+    "clinical"
+  ],
+  "homeopathic_doctor_bhms": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "pcb_stream",
+    "clinical"
+  ],
+  "naturopath_yoga_therapist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "pcb_stream",
+    "clinical"
+  ],
+  "software_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "software_sub"
+  ],
+  "backend_developer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "software_sub"
+  ],
+  "frontend_developer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "software_sub"
+  ],
+  "full_stack_developer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "software_sub"
+  ],
+  "data_scientist": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "research_sub",
+    "data_sub"
+  ],
+  "data_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "data_sub"
+  ],
+  "data_analyst": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "data_sub",
+    "finance_analytical"
+  ],
+  "ai_ml_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "data_sub"
+  ],
+  "mlops_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "prompt_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "computer_vision_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "nlp_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "cybersecurity_analyst": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "infra_sub",
+    "finance_analytical"
+  ],
+  "penetration_tester_ethical_hacker": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "security_architect": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "infra_sub"
+  ],
+  "malware_analyst_reverse_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "finance_analytical"
+  ],
+  "digital_forensics_investigator": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "finance_analytical"
+  ],
+  "devops_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "software_sub"
+  ],
+  "site_reliability_engineer_sre": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "platform_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "cloud_architect": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "infra_sub"
+  ],
+  "network_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "infra_sub"
+  ],
+  "telecom_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "database_administrator_dba": [
+    "tech",
+    "analytical",
+    "structured",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "data_sub",
+    "policy_sub"
+  ],
+  "product_manager_tech": [
+    "tech",
+    "analytical",
+    "entrepreneurial",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "leadership_sub"
+  ],
+  "technical_program_manager": [
+    "tech",
+    "analytical",
+    "entrepreneurial",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "leadership_sub"
+  ],
+  "ux_ui_designer": [
+    "tech",
+    "analytical",
+    "expressive",
+    "high_earning",
+    "pcm_stream",
+    "design_sub"
+  ],
+  "ux_researcher": [
+    "tech",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "research_sub",
+    "design_sub"
+  ],
+  "qa_engineer_sdet": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "embedded_systems_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "infra_sub"
+  ],
+  "iot_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "infra_sub"
+  ],
+  "blockchain_developer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "software_sub"
+  ],
+  "game_developer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "software_sub"
+  ],
+  "ar_vr_developer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "software_sub"
+  ],
+  "quantum_computing_engineer": [
+    "tech",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "finance_analytical"
+  ],
+  "robotics_engineer": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "it_support_technician": [
+    "tech",
+    "analytical",
+    "pcm_stream"
+  ],
+  "systems_analyst": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "finance_analytical"
+  ],
+  "technical_writer": [
+    "tech",
+    "analytical",
+    "expressive",
+    "competitive_exam",
+    "pcm_stream",
+    "written_sub"
+  ],
+  "scrum_master": [
+    "tech",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "school_teacher_primary": [
+    "education",
+    "expressive",
+    "people_focused",
+    "any_stream",
+    "teaching_sub"
+  ],
+  "school_teacher_secondary": [
+    "education",
+    "expressive",
+    "people_focused",
+    "any_stream",
+    "teaching_sub"
+  ],
+  "professor_lecturer": [
+    "education",
+    "expressive",
+    "people_focused",
+    "any_stream",
+    "teaching_sub"
+  ],
+  "school_principal": [
+    "education",
+    "people_focused",
+    "any_stream"
+  ],
+  "special_education_teacher": [
+    "education",
+    "expressive",
+    "people_focused",
+    "any_stream",
+    "teaching_sub"
+  ],
+  "early_childhood_educator": [
+    "education",
+    "expressive",
+    "people_focused",
+    "any_stream",
+    "teaching_sub"
+  ],
+  "school_counselor": [
+    "education",
+    "people_focused",
+    "any_stream",
+    "mental_health_sub"
+  ],
+  "career_counselor": [
+    "education",
+    "people_focused",
+    "any_stream",
+    "mental_health_sub"
+  ],
+  "curriculum_developer": [
+    "education",
+    "people_focused",
+    "any_stream",
+    "software_sub"
+  ],
+  "instructional_designer": [
+    "education",
+    "expressive",
+    "people_focused",
+    "any_stream"
+  ],
+  "corporate_trainer": [
+    "education",
+    "people_focused",
+    "any_stream",
+    "teaching_sub"
+  ],
+  "librarian": [
+    "education",
+    "people_focused",
+    "any_stream"
+  ],
+  "tutor_private_coach": [
+    "education",
+    "people_focused",
+    "any_stream",
+    "teaching_sub"
+  ],
+  "education_technology_specialist": [
+    "education",
+    "people_focused",
+    "any_stream"
+  ],
+  "academic_researcher": [
+    "education",
+    "analytical",
+    "people_focused",
+    "any_stream",
+    "research_sub"
+  ],
+  "education_policy_analyst": [
+    "education",
+    "analytical",
+    "people_focused",
+    "any_stream",
+    "finance_analytical",
+    "policy_sub"
+  ],
+  "sign_language_interpreter": [
+    "education",
+    "people_focused",
+    "any_stream"
+  ],
+  "lawyer_advocate": [
+    "legal",
+    "governance",
+    "entrepreneurial",
+    "competitive_exam",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "legal_sub"
+  ],
+  "corporate_lawyer": [
+    "legal",
+    "governance",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "competitive_exam",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "legal_sub"
+  ],
+  "criminal_lawyer": [
+    "legal",
+    "governance",
+    "entrepreneurial",
+    "competitive_exam",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "legal_sub"
+  ],
+  "constitutional_lawyer": [
+    "legal",
+    "governance",
+    "entrepreneurial",
+    "competitive_exam",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "legal_sub"
+  ],
+  "intellectual_property_ip_lawyer": [
+    "legal",
+    "governance",
+    "entrepreneurial",
+    "competitive_exam",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "legal_sub"
+  ],
+  "cyber_law_specialist": [
+    "legal",
+    "governance",
+    "analytical",
+    "people_focused",
+    "entrepreneurial",
+    "competitive_exam",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "family_law_attorney": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "competitive_exam",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "judge": [
+    "legal",
+    "governance",
+    "entrepreneurial",
+    "competitive_exam",
+    "commerce_stream",
+    "arts_stream",
+    "legal_sub"
+  ],
+  "public_prosecutor": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "competitive_exam",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "ias_officer": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "competitive_exam",
+    "commerce_stream",
+    "arts_stream",
+    "policy_sub"
+  ],
+  "ips_officer": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "competitive_exam",
+    "commerce_stream",
+    "arts_stream",
+    "policy_sub"
+  ],
+  "ifs_officer_indian_foreign_service": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "competitive_exam",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "irs_officer": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "competitive_exam",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "state_civil_services_officer": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream",
+    "policy_sub"
+  ],
+  "police_inspector_sub_inspector": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "military_officer": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "judge_advocate_general_jag": [
+    "legal",
+    "governance",
+    "entrepreneurial",
+    "competitive_exam",
+    "commerce_stream",
+    "arts_stream",
+    "legal_sub"
+  ],
+  "forensic_scientist": [
+    "legal",
+    "governance",
+    "analytical",
+    "people_focused",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream",
+    "research_sub"
+  ],
+  "forensic_psychologist": [
+    "legal",
+    "governance",
+    "people_focused",
+    "commerce_stream",
+    "arts_stream",
+    "mental_health_sub"
+  ],
+  "paralegal": [
+    "legal",
+    "governance",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream",
+    "legal_sub"
+  ],
+  "notary": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "competitive_exam",
+    "commerce_stream",
+    "arts_stream",
+    "legal_sub"
+  ],
+  "customs_officer": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "intelligence_analyst": [
+    "legal",
+    "governance",
+    "analytical",
+    "people_focused",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream",
+    "finance_analytical"
+  ],
+  "probation_officer": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "diplomat": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "competitive_exam",
+    "commerce_stream",
+    "arts_stream",
+    "policy_sub"
+  ],
+  "public_policy_analyst": [
+    "legal",
+    "governance",
+    "analytical",
+    "people_focused",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream",
+    "finance_analytical",
+    "policy_sub"
+  ],
+  "regulatory_affairs_specialist": [
+    "legal",
+    "governance",
+    "people_focused",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "rti_activist_social_auditor": [
+    "legal",
+    "governance",
+    "people_focused",
+    "structured",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "chartered_accountant_ca": [
+    "business",
+    "finance",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "competitive_exam",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "cost_management_accountant_cma": [
+    "business",
+    "finance",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "competitive_exam",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "company_secretary_cs": [
+    "business",
+    "finance",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "competitive_exam",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "accountant": [
+    "business",
+    "finance",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "financial_analyst": [
+    "business",
+    "finance",
+    "analytical",
+    "entrepreneurial",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "finance_analytical"
+  ],
+  "investment_banker": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "finance_analytical"
+  ],
+  "equity_research_analyst": [
+    "business",
+    "finance",
+    "analytical",
+    "entrepreneurial",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "research_sub",
+    "finance_analytical"
+  ],
+  "portfolio_manager": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "structured",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "leadership_sub",
+    "finance_analytical"
+  ],
+  "actuary": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "finance_analytical"
+  ],
+  "economist": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "finance_analytical"
+  ],
+  "auditor": [
+    "business",
+    "finance",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "competitive_exam",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "risk_manager": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "structured",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "leadership_sub",
+    "finance_analytical"
+  ],
+  "tax_consultant": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "leadership_sub"
+  ],
+  "financial_planner_cfp": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "venture_capital_analyst": [
+    "business",
+    "finance",
+    "analytical",
+    "entrepreneurial",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "finance_analytical"
+  ],
+  "hedge_fund_analyst": [
+    "business",
+    "finance",
+    "analytical",
+    "entrepreneurial",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "finance_analytical"
+  ],
+  "stockbroker_dealer": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "insurance_underwriter": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream",
+    "written_sub"
+  ],
+  "insurance_agent_irda_licensed": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "loan_officer": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "credit_analyst": [
+    "business",
+    "finance",
+    "analytical",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream",
+    "finance_analytical"
+  ],
+  "anti_money_laundering_aml_analyst": [
+    "business",
+    "finance",
+    "analytical",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream",
+    "finance_analytical"
+  ],
+  "real_estate_agent_rera_consultant": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "leadership_sub"
+  ],
+  "real_estate_appraiser": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "entrepreneur": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "structured",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "leadership_sub"
+  ],
+  "management_consultant": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "leadership_sub"
+  ],
+  "supply_chain_manager": [
+    "business",
+    "finance",
+    "entrepreneurial",
+    "structured",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "leadership_sub"
+  ],
+  "payroll_specialist": [
+    "business",
+    "finance",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "civil_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "structural_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "geotechnical_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "transportation_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "water_resources_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "environmental_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream",
+    "mental_health_sub"
+  ],
+  "mechanical_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "automotive_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "aerospace_aeronautical_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "electrical_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "power_systems_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "electronics_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "vlsi_design_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "rf_microwave_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "chemical_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "polymer_plastics_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "biomedical_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "bioprocess_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "petroleum_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "mining_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream",
+    "field_work"
+  ],
+  "marine_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "field_work"
+  ],
+  "naval_architect": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "nuclear_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "industrial_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "agricultural_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "mechatronics_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "materials_science_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "metallurgist": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream"
+  ],
+  "surveyor_geomatics_engineer": [
+    "engineering",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream",
+    "field_work"
+  ],
+  "graphic_designer": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream",
+    "visual_sub"
+  ],
+  "illustrator": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream",
+    "visual_sub"
+  ],
+  "motion_graphics_designer": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream",
+    "visual_sub"
+  ],
+  "typographer": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream"
+  ],
+  "journalist": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream",
+    "written_sub"
+  ],
+  "investigative_journalist": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream",
+    "written_sub",
+    "finance_analytical"
+  ],
+  "data_journalist": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream",
+    "data_sub",
+    "written_sub"
+  ],
+  "photojournalist": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream",
+    "visual_sub",
+    "written_sub"
+  ],
+  "filmmaker_director": [
+    "creative",
+    "arts",
+    "expressive",
+    "entrepreneurial",
+    "competitive_exam",
+    "high_earning",
+    "any_stream",
+    "arts_stream",
+    "visual_sub",
+    "leadership_sub"
+  ],
+  "screenwriter": [
+    "creative",
+    "arts",
+    "expressive",
+    "competitive_exam",
+    "high_earning",
+    "any_stream",
+    "arts_stream",
+    "written_sub"
+  ],
+  "documentary_filmmaker": [
+    "creative",
+    "arts",
+    "expressive",
+    "competitive_exam",
+    "high_earning",
+    "any_stream",
+    "arts_stream",
+    "visual_sub"
+  ],
+  "cinematographer_dop": [
+    "creative",
+    "arts",
+    "expressive",
+    "competitive_exam",
+    "high_earning",
+    "any_stream",
+    "arts_stream"
+  ],
+  "film_editor": [
+    "creative",
+    "arts",
+    "expressive",
+    "competitive_exam",
+    "high_earning",
+    "any_stream",
+    "arts_stream",
+    "visual_sub",
+    "written_sub"
+  ],
+  "colorist": [
+    "creative",
+    "arts",
+    "expressive",
+    "competitive_exam",
+    "any_stream",
+    "arts_stream"
+  ],
+  "sound_designer": [
+    "creative",
+    "arts",
+    "expressive",
+    "competitive_exam",
+    "any_stream",
+    "arts_stream"
+  ],
+  "foley_artist": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream"
+  ],
+  "music_composer": [
+    "creative",
+    "arts",
+    "expressive",
+    "high_earning",
+    "any_stream",
+    "arts_stream"
+  ],
+  "lyricist": [
+    "creative",
+    "arts",
+    "expressive",
+    "high_earning",
+    "any_stream",
+    "arts_stream"
+  ],
+  "musician_performer": [
+    "creative",
+    "arts",
+    "expressive",
+    "high_earning",
+    "any_stream",
+    "arts_stream",
+    "performing_sub"
+  ],
+  "music_producer": [
+    "creative",
+    "arts",
+    "expressive",
+    "high_earning",
+    "any_stream",
+    "arts_stream"
+  ],
+  "actor": [
+    "creative",
+    "arts",
+    "expressive",
+    "competitive_exam",
+    "high_earning",
+    "any_stream",
+    "arts_stream",
+    "performing_sub"
+  ],
+  "stage_theatre_actor": [
+    "creative",
+    "arts",
+    "expressive",
+    "competitive_exam",
+    "any_stream",
+    "arts_stream",
+    "performing_sub"
+  ],
+  "voice_actor": [
+    "creative",
+    "arts",
+    "expressive",
+    "high_earning",
+    "any_stream",
+    "arts_stream",
+    "performing_sub"
+  ],
+  "standup_comedian": [
+    "creative",
+    "arts",
+    "expressive",
+    "high_earning",
+    "any_stream",
+    "arts_stream"
+  ],
+  "author_writer": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream",
+    "written_sub"
+  ],
+  "content_creator_youtube_instagram": [
+    "creative",
+    "arts",
+    "expressive",
+    "high_earning",
+    "any_stream",
+    "arts_stream",
+    "written_sub"
+  ],
+  "podcast_producer": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream"
+  ],
+  "animator": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream",
+    "visual_sub"
+  ],
+  "vfx_artist": [
+    "creative",
+    "arts",
+    "expressive",
+    "high_earning",
+    "any_stream",
+    "arts_stream"
+  ],
+  "photographer": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream",
+    "visual_sub"
+  ],
+  "art_director": [
+    "creative",
+    "arts",
+    "expressive",
+    "entrepreneurial",
+    "high_earning",
+    "any_stream",
+    "arts_stream",
+    "leadership_sub"
+  ],
+  "copywriter": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream",
+    "written_sub"
+  ],
+  "tattoo_artist": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream"
+  ],
+  "calligrapher": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream"
+  ],
+  "cartoonist": [
+    "creative",
+    "arts",
+    "expressive",
+    "any_stream",
+    "arts_stream"
+  ],
+  "electrician": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "plumber": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "carpenter": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "welder": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "mason_bricklayer": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "hvac_technician": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "roofer": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "painter_industrial_decorative": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "pipefitter": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "glazier": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "ironworker_fabricator": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "boilermaker": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "elevator_mechanic": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "fire_protection_engineer": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "quantity_surveyor": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream",
+    "field_work",
+    "finance_analytical"
+  ],
+  "site_supervisor_foreman": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "crane_operator": [
+    "trades",
+    "construction",
+    "hands_on",
+    "any_stream"
+  ],
+  "biologist": [
+    "research",
+    "science",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "molecular_biologist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "microbiologist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "virologist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "immunologist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "biochemist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "pharmacognosist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "bioinformatician": [
+    "research",
+    "science",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "chemist": [
+    "research",
+    "science",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "analytical_chemist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "computational_chemist": [
+    "research",
+    "science",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "physicist": [
+    "research",
+    "science",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "astrophysicist": [
+    "research",
+    "science",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "geophysicist": [
+    "research",
+    "science",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "geologist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub",
+    "field_work"
+  ],
+  "hydrogeologist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub",
+    "field_work"
+  ],
+  "soil_scientist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "seismologist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "astronomer": [
+    "research",
+    "science",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "meteorologist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "oceanographer": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "ecologist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "epidemiologist": [
+    "research",
+    "science",
+    "analytical",
+    "competitive_exam",
+    "long_study",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "biostatistician": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "data_sub"
+  ],
+  "archaeologist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "anthropologist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "neuroscientist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub",
+    "specialist_medical"
+  ],
+  "geneticist": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "toxicologist__science_research": [
+    "research",
+    "science",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "materials_scientist": [
+    "research",
+    "science",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "nanotechnologist": [
+    "research",
+    "science",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "climate_scientist": [
+    "research",
+    "science",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "chef_executive": [
+    "hospitality",
+    "expressive",
+    "entrepreneurial",
+    "competitive_exam",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "sous_chef": [
+    "hospitality",
+    "expressive",
+    "people_focused",
+    "any_stream"
+  ],
+  "pastry_chef_p_tissier": [
+    "hospitality",
+    "expressive",
+    "people_focused",
+    "any_stream"
+  ],
+  "baker": [
+    "hospitality",
+    "expressive",
+    "people_focused",
+    "competitive_exam",
+    "any_stream"
+  ],
+  "chocolatier": [
+    "hospitality",
+    "expressive",
+    "people_focused",
+    "any_stream"
+  ],
+  "food_stylist": [
+    "hospitality",
+    "expressive",
+    "people_focused",
+    "any_stream"
+  ],
+  "food_scientist": [
+    "hospitality",
+    "expressive",
+    "people_focused",
+    "any_stream",
+    "research_sub"
+  ],
+  "nutritionist": [
+    "hospitality",
+    "expressive",
+    "people_focused",
+    "any_stream"
+  ],
+  "barista": [
+    "hospitality",
+    "expressive",
+    "people_focused",
+    "any_stream"
+  ],
+  "sommelier": [
+    "hospitality",
+    "expressive",
+    "people_focused",
+    "any_stream"
+  ],
+  "tea_sommelier": [
+    "hospitality",
+    "expressive",
+    "people_focused",
+    "any_stream"
+  ],
+  "mixologist_bartender": [
+    "hospitality",
+    "expressive",
+    "people_focused",
+    "competitive_exam",
+    "any_stream"
+  ],
+  "hotel_general_manager": [
+    "hospitality",
+    "expressive",
+    "entrepreneurial",
+    "competitive_exam",
+    "high_earning",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "revenue_manager_hospitality": [
+    "hospitality",
+    "expressive",
+    "entrepreneurial",
+    "any_stream",
+    "clinical",
+    "leadership_sub"
+  ],
+  "event_manager": [
+    "hospitality",
+    "expressive",
+    "entrepreneurial",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "travel_tourism_manager": [
+    "hospitality",
+    "expressive",
+    "entrepreneurial",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "catering_manager": [
+    "hospitality",
+    "expressive",
+    "entrepreneurial",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "food_critic_food_blogger": [
+    "hospitality",
+    "expressive",
+    "people_focused",
+    "any_stream"
+  ],
+  "resort_manager": [
+    "hospitality",
+    "expressive",
+    "entrepreneurial",
+    "high_earning",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "commercial_pilot": [
+    "transport",
+    "hands_on",
+    "structured",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "fighter_pilot_iaf": [
+    "transport",
+    "hands_on",
+    "structured",
+    "pcm_stream"
+  ],
+  "drone_pilot": [
+    "transport",
+    "hands_on",
+    "structured",
+    "pcm_stream"
+  ],
+  "ship_captain": [
+    "transport",
+    "hands_on",
+    "structured",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "air_traffic_controller_atc": [
+    "transport",
+    "hands_on",
+    "any_stream"
+  ],
+  "train_driver_loco_pilot": [
+    "transport",
+    "hands_on",
+    "structured",
+    "pcm_stream"
+  ],
+  "logistics_manager": [
+    "transport",
+    "hands_on",
+    "entrepreneurial",
+    "structured",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "supply_chain_analyst": [
+    "transport",
+    "hands_on",
+    "analytical",
+    "any_stream",
+    "finance_analytical"
+  ],
+  "customs_broker": [
+    "transport",
+    "hands_on",
+    "any_stream"
+  ],
+  "freight_forwarding_agent": [
+    "transport",
+    "hands_on",
+    "any_stream",
+    "clinical"
+  ],
+  "dispatch_controller": [
+    "transport",
+    "hands_on",
+    "any_stream"
+  ],
+  "warehouse_manager": [
+    "transport",
+    "hands_on",
+    "entrepreneurial",
+    "structured",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "fleet_manager": [
+    "transport",
+    "hands_on",
+    "entrepreneurial",
+    "structured",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "railway_engineer": [
+    "transport",
+    "hands_on",
+    "any_stream"
+  ],
+  "port_harbor_manager": [
+    "transport",
+    "hands_on",
+    "entrepreneurial",
+    "structured",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "delivery_courier_last_mile_exec": [
+    "transport",
+    "hands_on",
+    "any_stream"
+  ],
+  "astronaut": [
+    "transport",
+    "hands_on",
+    "structured",
+    "high_earning",
+    "any_stream"
+  ],
+  "social_worker": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream"
+  ],
+  "psychologist_clinical": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream",
+    "clinical",
+    "mental_health_sub"
+  ],
+  "counselor_therapist": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream",
+    "clinical",
+    "mental_health_sub"
+  ],
+  "community_organizer": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream"
+  ],
+  "caseworker": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream"
+  ],
+  "substance_abuse_counselor": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream",
+    "mental_health_sub"
+  ],
+  "crisis_counselor": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream",
+    "mental_health_sub"
+  ],
+  "child_welfare_specialist": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream"
+  ],
+  "human_rights_activist": [
+    "social",
+    "welfare",
+    "people_focused",
+    "competitive_exam",
+    "any_stream",
+    "arts_stream"
+  ],
+  "rehabilitation_specialist": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream"
+  ],
+  "life_coach": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream"
+  ],
+  "school_social_worker": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream"
+  ],
+  "grief_counselor": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream",
+    "mental_health_sub"
+  ],
+  "farmer_modern": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "field_work"
+  ],
+  "agronomist": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "agricultural_scientist": [
+    "agriculture",
+    "environment",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "plant_breeder": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "plant_pathologist": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "entomologist": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "agricultural_extension_officer": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "horticulturist": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "floriculturist": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "hydroponics_vertical_farm_specialist": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "field_work"
+  ],
+  "aquaculture_farmer": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "field_work"
+  ],
+  "fisheries_scientist": [
+    "agriculture",
+    "environment",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "forester_forest_officer": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcm_stream",
+    "pcb_stream",
+    "field_work"
+  ],
+  "wildlife_biologist_ecologist": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub",
+    "field_work"
+  ],
+  "conservation_scientist": [
+    "agriculture",
+    "environment",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "environmental_consultant": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "structured",
+    "pcm_stream",
+    "pcb_stream",
+    "mental_health_sub",
+    "leadership_sub"
+  ],
+  "climate_change_analyst": [
+    "agriculture",
+    "environment",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "finance_analytical"
+  ],
+  "sustainability_manager": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "entrepreneurial",
+    "pcm_stream",
+    "pcb_stream",
+    "leadership_sub"
+  ],
+  "soil_scientist__agriculture_environment": [
+    "agriculture",
+    "environment",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "landscape_architect": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "beekeeper_apiarist": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "architect": [
+    "architecture",
+    "design",
+    "expressive",
+    "structured",
+    "high_earning",
+    "pcm_stream",
+    "arts_stream"
+  ],
+  "urban_designer": [
+    "architecture",
+    "design",
+    "expressive",
+    "pcm_stream",
+    "arts_stream"
+  ],
+  "urban_planner": [
+    "architecture",
+    "design",
+    "expressive",
+    "pcm_stream",
+    "arts_stream"
+  ],
+  "landscape_architect__architecture_design": [
+    "architecture",
+    "design",
+    "expressive",
+    "pcm_stream",
+    "arts_stream"
+  ],
+  "interior_designer": [
+    "architecture",
+    "design",
+    "expressive",
+    "pcm_stream",
+    "arts_stream"
+  ],
+  "spatial_designer": [
+    "architecture",
+    "design",
+    "expressive",
+    "pcm_stream",
+    "arts_stream"
+  ],
+  "industrial_designer": [
+    "architecture",
+    "design",
+    "expressive",
+    "competitive_exam",
+    "pcm_stream",
+    "arts_stream"
+  ],
+  "product_designer": [
+    "architecture",
+    "design",
+    "expressive",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "arts_stream",
+    "design_sub"
+  ],
+  "fashion_designer": [
+    "architecture",
+    "design",
+    "expressive",
+    "any_stream",
+    "arts_stream"
+  ],
+  "textile_designer": [
+    "architecture",
+    "design",
+    "expressive",
+    "any_stream",
+    "arts_stream"
+  ],
+  "accessory_designer": [
+    "architecture",
+    "design",
+    "expressive",
+    "any_stream",
+    "arts_stream"
+  ],
+  "jewelry_designer": [
+    "architecture",
+    "design",
+    "expressive",
+    "any_stream",
+    "arts_stream"
+  ],
+  "set_production_designer": [
+    "architecture",
+    "design",
+    "expressive",
+    "high_earning",
+    "pcm_stream",
+    "arts_stream"
+  ],
+  "exhibition_designer": [
+    "architecture",
+    "design",
+    "expressive",
+    "pcm_stream",
+    "arts_stream"
+  ],
+  "lighting_designer": [
+    "architecture",
+    "design",
+    "expressive",
+    "pcm_stream",
+    "arts_stream"
+  ],
+  "parametric_computational_designer": [
+    "architecture",
+    "design",
+    "expressive",
+    "high_earning",
+    "pcm_stream",
+    "arts_stream"
+  ],
+  "professional_athlete": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "high_earning",
+    "any_stream"
+  ],
+  "cricket_player": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "high_earning",
+    "any_stream"
+  ],
+  "football_player": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "high_earning",
+    "any_stream"
+  ],
+  "badminton_player": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "high_earning",
+    "any_stream",
+    "policy_sub"
+  ],
+  "sports_coach": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "any_stream"
+  ],
+  "strength_conditioning_coach": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "any_stream"
+  ],
+  "personal_trainer": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "any_stream",
+    "teaching_sub"
+  ],
+  "sports_psychologist": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "people_focused",
+    "any_stream",
+    "mental_health_sub"
+  ],
+  "sports_nutritionist": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "any_stream"
+  ],
+  "sports_physiotherapist__sports_fitness": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "people_focused",
+    "any_stream",
+    "clinical",
+    "infra_sub"
+  ],
+  "athletic_trainer": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "any_stream",
+    "teaching_sub"
+  ],
+  "yoga_instructor": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "any_stream"
+  ],
+  "dance_instructor": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "any_stream"
+  ],
+  "physical_education_teacher": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "people_focused",
+    "any_stream",
+    "teaching_sub"
+  ],
+  "sports_analyst": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "any_stream",
+    "finance_analytical"
+  ],
+  "referee_umpire": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "any_stream"
+  ],
+  "esports_player_coach": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "high_earning",
+    "any_stream"
+  ],
+  "sports_agent": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "competitive_exam",
+    "high_earning",
+    "any_stream"
+  ],
+  "golf_course_manager": [
+    "sports",
+    "fitness",
+    "hands_on",
+    "entrepreneurial",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "psychiatrist__mental_health_wellness": [
+    "mental_health",
+    "wellness",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "mental_health_sub"
+  ],
+  "clinical_psychologist": [
+    "mental_health",
+    "wellness",
+    "people_focused",
+    "pcb_stream",
+    "clinical",
+    "mental_health_sub"
+  ],
+  "counseling_psychologist": [
+    "mental_health",
+    "wellness",
+    "people_focused",
+    "pcb_stream",
+    "mental_health_sub"
+  ],
+  "child_psychologist": [
+    "mental_health",
+    "wellness",
+    "people_focused",
+    "pcb_stream",
+    "mental_health_sub"
+  ],
+  "neuropsychologist": [
+    "mental_health",
+    "wellness",
+    "people_focused",
+    "high_earning",
+    "pcb_stream",
+    "mental_health_sub",
+    "specialist_medical"
+  ],
+  "rehabilitation_psychologist": [
+    "mental_health",
+    "wellness",
+    "people_focused",
+    "pcb_stream",
+    "mental_health_sub"
+  ],
+  "industrial_organizational_psychologist": [
+    "mental_health",
+    "wellness",
+    "people_focused",
+    "pcb_stream",
+    "mental_health_sub"
+  ],
+  "art_therapist": [
+    "mental_health",
+    "wellness",
+    "expressive",
+    "people_focused",
+    "pcb_stream",
+    "clinical"
+  ],
+  "public_health_officer": [
+    "policy",
+    "healthcare",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "pcb_stream"
+  ],
+  "epidemiologist__public_health_policy": [
+    "policy",
+    "healthcare",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "pcb_stream"
+  ],
+  "health_policy_analyst": [
+    "policy",
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "pcb_stream",
+    "finance_analytical",
+    "policy_sub"
+  ],
+  "biostatistician__public_health_policy": [
+    "policy",
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "pcb_stream",
+    "data_sub"
+  ],
+  "environmental_health_specialist": [
+    "policy",
+    "healthcare",
+    "people_focused",
+    "pcb_stream",
+    "mental_health_sub"
+  ],
+  "healthcare_administrator": [
+    "policy",
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "structured",
+    "high_earning",
+    "pcb_stream",
+    "policy_sub"
+  ],
+  "cfa_charterholder": [
+    "finance",
+    "specialized",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "frm_holder": [
+    "finance",
+    "specialized",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "quantitative_analyst_quant": [
+    "finance",
+    "specialized",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "finance_analytical"
+  ],
+  "algorithmic_trader": [
+    "finance",
+    "specialized",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "finance_analytical"
+  ],
+  "treasury_manager": [
+    "finance",
+    "specialized",
+    "entrepreneurial",
+    "structured",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream",
+    "leadership_sub"
+  ],
+  "transfer_pricing_specialist": [
+    "finance",
+    "specialized",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "high_earning",
+    "commerce_stream",
+    "arts_stream"
+  ],
+  "ethical_hacker_penetration_tester": [
+    "niche",
+    "emerging",
+    "analytical",
+    "high_earning",
+    "any_stream"
+  ],
+  "ai_safety_researcher": [
+    "niche",
+    "emerging",
+    "analytical",
+    "high_earning",
+    "any_stream",
+    "research_sub"
+  ],
+  "digital_twin_engineer": [
+    "niche",
+    "emerging",
+    "analytical",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "cyber_threat_intelligence_analyst": [
+    "niche",
+    "emerging",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "finance_analytical"
+  ],
+  "space_systems_engineer": [
+    "niche",
+    "emerging",
+    "analytical",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "satellite_imagery_analyst": [
+    "niche",
+    "emerging",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "finance_analytical"
+  ],
+  "geospatial_data_scientist": [
+    "niche",
+    "emerging",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "research_sub",
+    "data_sub"
+  ],
+  "sustainability_esg_consultant": [
+    "niche",
+    "emerging",
+    "analytical",
+    "high_earning",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "carbon_credit_trader": [
+    "niche",
+    "emerging",
+    "analytical",
+    "structured",
+    "high_earning",
+    "any_stream",
+    "finance_analytical"
+  ],
+  "ocean_energy_engineer": [
+    "niche",
+    "emerging",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "hydrogen_energy_specialist": [
+    "niche",
+    "emerging",
+    "analytical",
+    "high_earning",
+    "any_stream"
+  ],
+  "nuclear_medicine_technologist": [
+    "niche",
+    "emerging",
+    "analytical",
+    "pcm_stream"
+  ],
+  "medical_physicist": [
+    "niche",
+    "emerging",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "research_sub"
+  ],
+  "health_informatician": [
+    "niche",
+    "emerging",
+    "analytical",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "voice_chatbot_designer": [
+    "niche",
+    "emerging",
+    "analytical",
+    "expressive",
+    "high_earning",
+    "any_stream"
+  ],
+  "genealogist": [
+    "niche",
+    "emerging",
+    "analytical",
+    "any_stream"
+  ],
+  "private_investigator": [
+    "niche",
+    "emerging",
+    "analytical",
+    "any_stream",
+    "finance_analytical"
+  ],
+  "funeral_director_mortician": [
+    "niche",
+    "emerging",
+    "analytical",
+    "entrepreneurial",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "aroma_therapist": [
+    "niche",
+    "emerging",
+    "analytical",
+    "people_focused",
+    "any_stream",
+    "clinical"
+  ],
+  "color_consultant": [
+    "niche",
+    "emerging",
+    "analytical",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "cryonics_technician": [
+    "niche",
+    "emerging",
+    "analytical",
+    "pcm_stream"
+  ],
+  "handwriting_analyst_graphologist": [
+    "niche",
+    "emerging",
+    "analytical",
+    "any_stream",
+    "finance_analytical"
+  ],
+  "sexologist": [
+    "niche",
+    "emerging",
+    "analytical",
+    "competitive_exam",
+    "long_study",
+    "any_stream"
+  ],
+  "cruise_director": [
+    "niche",
+    "emerging",
+    "analytical",
+    "entrepreneurial",
+    "any_stream",
+    "leadership_sub"
+  ],
+  "yacht_captain": [
+    "niche",
+    "emerging",
+    "analytical",
+    "high_earning",
+    "any_stream"
+  ],
+  "drone_uav_engineer": [
+    "niche",
+    "emerging",
+    "analytical",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "cybersecurity_policy_advisor": [
+    "niche",
+    "emerging",
+    "analytical",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "infra_sub",
+    "policy_sub"
+  ],
+  "luthier_instrument_maker": [
+    "niche",
+    "emerging",
+    "analytical",
+    "any_stream"
+  ],
+  "aquarist_marine_biologist_public_aquariu": [
+    "niche",
+    "emerging",
+    "analytical",
+    "any_stream",
+    "research_sub",
+    "field_work"
+  ],
+  "esports_commentator_caster": [
+    "niche",
+    "emerging",
+    "analytical",
+    "any_stream"
+  ],
+  "nft_crypto_artist": [
+    "niche",
+    "emerging",
+    "analytical",
+    "expressive",
+    "high_earning",
+    "any_stream"
+  ],
+  "forklift_operator": [
+    "niche",
+    "emerging",
+    "analytical",
+    "any_stream"
+  ],
+  "locksmith": [
+    "niche",
+    "emerging",
+    "analytical",
+    "any_stream"
+  ],
+  "animal_trainer": [
+    "niche",
+    "emerging",
+    "analytical",
+    "any_stream",
+    "teaching_sub"
+  ],
+  "pet_groomer": [
+    "niche",
+    "emerging",
+    "analytical",
+    "any_stream"
+  ],
+  "financial_independence_coach": [
+    "niche",
+    "emerging",
+    "analytical",
+    "any_stream"
+  ],
+  "k_12_edtech_content_creator": [
+    "niche",
+    "emerging",
+    "analytical",
+    "pcm_stream",
+    "written_sub"
+  ],
+  "devops_sre_engineer": [
+    "tech",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "software_sub"
+  ],
+  "prompt_engineer_new": [
+    "tech",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "any_stream"
+  ],
+  "mlops_engineer_new": [
+    "tech",
+    "analytical",
+    "high_earning",
+    "pcm_stream"
+  ],
+  "embedded_systems_engineer_new": [
+    "tech",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "infra_sub"
+  ],
+  "blockchain_developer_new": [
+    "tech",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "software_sub"
+  ],
+  "game_developer_new": [
+    "tech",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "any_stream",
+    "software_sub"
+  ],
+  "ar_vr_developer_new": [
+    "tech",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "any_stream",
+    "software_sub"
+  ],
+  "database_administrator_new": [
+    "tech",
+    "analytical",
+    "structured",
+    "high_earning",
+    "pcm_stream",
+    "commerce_stream",
+    "data_sub",
+    "policy_sub"
+  ],
+  "cloud_solutions_architect": [
+    "tech",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "infra_sub"
+  ],
+  "technical_writer_software": [
+    "tech",
+    "analytical",
+    "expressive",
+    "pcm_stream",
+    "any_stream",
+    "arts_stream",
+    "software_sub",
+    "written_sub"
+  ],
+  "genetics_counsellor": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "high_earning",
+    "pcb_stream",
+    "mental_health_sub"
+  ],
+  "palliative_care_specialist_new": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "sleep_medicine_specialist_new": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream"
+  ],
+  "telemedicine_doctor": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "clinical"
+  ],
+  "medical_transcriptionist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "pcb_stream",
+    "any_stream"
+  ],
+  "healthcare_quality_analyst": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "pcb_stream",
+    "finance_analytical"
+  ],
+  "clinical_pharmacologist": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "competitive_exam",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "clinical"
+  ],
+  "sterile_processing_technician": [
+    "healthcare",
+    "analytical",
+    "people_focused",
+    "pcb_stream",
+    "any_stream"
+  ],
+  "school_principal_new": [
+    "education",
+    "people_focused",
+    "any_stream"
+  ],
+  "special_education_teacher_new": [
+    "education",
+    "expressive",
+    "people_focused",
+    "any_stream",
+    "teaching_sub"
+  ],
+  "educational_psychologist": [
+    "education",
+    "people_focused",
+    "any_stream",
+    "arts_stream",
+    "mental_health_sub"
+  ],
+  "curriculum_designer_k12": [
+    "education",
+    "expressive",
+    "people_focused",
+    "any_stream"
+  ],
+  "corporate_trainer_ld": [
+    "education",
+    "people_focused",
+    "any_stream",
+    "teaching_sub"
+  ],
+  "language_teacher_foreign": [
+    "education",
+    "expressive",
+    "people_focused",
+    "any_stream",
+    "arts_stream",
+    "teaching_sub"
+  ],
+  "academic_librarian": [
+    "education",
+    "people_focused",
+    "any_stream"
+  ],
+  "education_policy_analyst_new": [
+    "education",
+    "analytical",
+    "people_focused",
+    "any_stream",
+    "arts_stream",
+    "finance_analytical",
+    "policy_sub"
+  ],
+  "community_development_officer": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream"
+  ],
+  "child_welfare_officer": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream"
+  ],
+  "ngo_programme_manager": [
+    "social",
+    "welfare",
+    "people_focused",
+    "entrepreneurial",
+    "any_stream",
+    "arts_stream",
+    "leadership_sub"
+  ],
+  "disability_rehabilitation_specialist": [
+    "social",
+    "welfare",
+    "people_focused",
+    "pcb_stream",
+    "any_stream"
+  ],
+  "disaster_relief_coordinator": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream"
+  ],
+  "labour_welfare_officer": [
+    "social",
+    "welfare",
+    "people_focused",
+    "structured",
+    "any_stream",
+    "commerce_stream",
+    "arts_stream",
+    "research_sub"
+  ],
+  "prison_counsellor": [
+    "social",
+    "welfare",
+    "people_focused",
+    "any_stream",
+    "arts_stream",
+    "mental_health_sub"
+  ],
+  "addiction_counsellor": [
+    "mental_health",
+    "wellness",
+    "people_focused",
+    "any_stream",
+    "arts_stream",
+    "mental_health_sub"
+  ],
+  "art_therapist_new": [
+    "mental_health",
+    "wellness",
+    "expressive",
+    "people_focused",
+    "any_stream",
+    "arts_stream",
+    "clinical"
+  ],
+  "play_therapist": [
+    "mental_health",
+    "wellness",
+    "people_focused",
+    "any_stream",
+    "arts_stream",
+    "clinical"
+  ],
+  "crisis_intervention_specialist": [
+    "mental_health",
+    "wellness",
+    "people_focused",
+    "pcb_stream",
+    "any_stream",
+    "arts_stream"
+  ],
+  "neuropsychologist_new": [
+    "mental_health",
+    "wellness",
+    "people_focused",
+    "long_study",
+    "high_earning",
+    "pcb_stream",
+    "arts_stream",
+    "mental_health_sub",
+    "specialist_medical"
+  ],
+  "eap_counsellor": [
+    "mental_health",
+    "wellness",
+    "people_focused",
+    "any_stream",
+    "arts_stream",
+    "mental_health_sub"
+  ],
+  "actuarial_analyst": [
+    "business",
+    "finance",
+    "analytical",
+    "entrepreneurial",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "commerce_stream",
+    "finance_analytical"
+  ],
+  "credit_rating_analyst": [
+    "finance",
+    "specialized",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "high_earning",
+    "pcm_stream",
+    "commerce_stream",
+    "finance_analytical"
+  ],
+  "pension_fund_manager": [
+    "finance",
+    "specialized",
+    "entrepreneurial",
+    "structured",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "commerce_stream",
+    "leadership_sub",
+    "finance_analytical"
+  ],
+  "sebi_compliance_officer": [
+    "finance",
+    "specialized",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "high_earning",
+    "pcm_stream",
+    "commerce_stream"
+  ],
+  "venture_capital_analyst_new": [
+    "finance",
+    "specialized",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "competitive_exam",
+    "high_earning",
+    "pcm_stream",
+    "commerce_stream",
+    "finance_analytical"
+  ],
+  "wealthtech_analyst": [
+    "finance",
+    "specialized",
+    "analytical",
+    "entrepreneurial",
+    "structured",
+    "high_earning",
+    "pcm_stream",
+    "commerce_stream",
+    "finance_analytical"
+  ],
+  "aquaculture_specialist": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream"
+  ],
+  "organic_farming_consultant": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "field_work",
+    "leadership_sub"
+  ],
+  "carbon_credit_analyst": [
+    "agriculture",
+    "environment",
+    "analytical",
+    "high_earning",
+    "pcm_stream",
+    "pcb_stream",
+    "any_stream",
+    "finance_analytical"
+  ],
+  "wildlife_conservation_officer": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "competitive_exam",
+    "pcb_stream",
+    "field_work"
+  ],
+  "precision_agriculture_specialist": [
+    "agriculture",
+    "environment",
+    "hands_on",
+    "analytical",
+    "pcm_stream",
+    "pcb_stream",
+    "field_work"
+  ]
+}

@@ -55,6 +55,43 @@
     { end: 44, section: 'Personality Profile',  total: 25 }
   ];
 
+  // ── Question selection (stratified random sampling) ───────────────────────
+  var DIMS_ORDER   = ['A', 'C', 'E', 'I', 'R', 'S'];
+  var QUICK_SELECT = 10;
+  var DEEP_SELECT  = 25;
+
+  function shuffle(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+    }
+    return a;
+  }
+
+  function selectQuestions(questions) {
+    function groupByDim(pool) {
+      var buckets = {};
+      DIMS_ORDER.forEach(function (d) { buckets[d] = []; });
+      pool.forEach(function (q) { if (buckets[q.dimension]) buckets[q.dimension].push(q); });
+      return buckets;
+    }
+    function stratifiedSelect(pool, total) {
+      var buckets = groupByDim(pool);
+      var base  = Math.floor(total / 6);
+      var extra = total - base * 6;
+      var selected = [];
+      DIMS_ORDER.forEach(function (d, i) {
+        var take = base + (i < extra ? 1 : 0);
+        selected = selected.concat(shuffle(buckets[d]).slice(0, take));
+      });
+      return selected;
+    }
+    var quick = stratifiedSelect(questions.career_quick, QUICK_SELECT);
+    var deep  = stratifiedSelect(questions.career_deep, DEEP_SELECT);
+    return questions.personal_financial.concat(quick).concat(deep);
+  }
+
   // ── Load data (sessionStorage cache — no re-fetch on retake) ─────────────
   function cachedFetch(url, cacheKey) {
     var cached = sessionStorage.getItem(cacheKey);
@@ -70,7 +107,7 @@
 
   try {
     var results = await Promise.all([
-      cachedFetch('./data/questions.json',   'cat_data_questions'),
+      cachedFetch('./data/questions.json',   'cat_data_questions_v2'),
       cachedFetch('./data/professions.json', 'cat_data_professions'),
       cachedFetch('./data/riasec_edges.json','cat_data_edges')
     ]);
@@ -82,10 +119,8 @@
     return;
   }
 
-  // Flatten: personal_financial → career_quick → career_deep
-  allQuestions = questions.personal_financial
-    .concat(questions.career_quick)
-    .concat(questions.career_deep);
+  // Stratified random selection from pools
+  allQuestions = selectQuestions(questions);
 
   // ── bfcache reset — clears stale radio state on back/retake navigation ────
   window.addEventListener('pageshow', function (e) {
@@ -105,6 +140,7 @@
       elNavButtons.classList.add('hidden');
       elContent.classList.add('hidden');
       elLoading.classList.remove('hidden');
+      allQuestions = selectQuestions(questions);
     }
   });
 
@@ -163,9 +199,24 @@
       highlightRequired();
       return;
     }
+    var nextIndex = currentIndex + 1;
     if (currentIndex < TOTAL - 1) {
-      currentIndex++;
-      renderQuestion(currentIndex);
+      if (currentIndex === PF_COUNT - 1) {
+        currentIndex = nextIndex;
+        showInterstitial(
+          '<strong>Section 1 complete!</strong><br><br>Section 2 of 3: Career Interests<br><span style="font-size:0.875rem; color:var(--muted);">10 quick questions about what kind of work appeals to you. There are no right or wrong answers.</span>',
+          function() { renderQuestion(currentIndex); }
+        );
+      } else if (currentIndex === PF_COUNT + CQ_COUNT - 1) {
+        currentIndex = nextIndex;
+        showInterstitial(
+          '<strong>Section 2 complete!</strong><br><br>Section 3 of 3: About Your Personality<br><span style="font-size:0.875rem; color:var(--muted);">25 short questions. Answer as you actually are — not how you think you should be.</span>',
+          function() { renderQuestion(currentIndex); }
+        );
+      } else {
+        currentIndex = nextIndex;
+        renderQuestion(currentIndex);
+      }
     } else {
       submitTest();
     }
@@ -285,6 +336,45 @@
     elErrorMsg.classList.add('hidden');
   }
 
+  function showInterstitial(message, onContinue) {
+    elContent.classList.add('hidden');
+    elNavButtons.classList.add('hidden');
+
+    var pct = Math.round(((currentIndex) / TOTAL) * 100);
+    elProgressPct.textContent  = pct + '%';
+    elProgressFill.style.width = pct + '%';
+    elProgressText.textContent = 'Section complete — read and continue';
+
+    var card = document.createElement('div');
+    card.style.textAlign = 'center';
+    card.style.padding = '1rem 0.5rem';
+
+    var icon = document.createElement('div');
+    icon.textContent = '✓';
+    icon.style.cssText = 'font-size:2rem; color:#10B981; margin-bottom:0.75rem;';
+
+    var msg = document.createElement('p');
+    msg.style.cssText = 'color:var(--text); font-size:0.9375rem; line-height:1.6; margin-bottom:1.25rem;';
+    msg.innerHTML = message;
+
+    var btn = document.createElement('button');
+    btn.className = 'btn-primary';
+    btn.textContent = 'Continue →';
+    btn.style.cssText = 'max-width:200px; margin:0 auto; display:block;';
+    btn.addEventListener('click', function() {
+      card.remove();
+      elContent.classList.remove('hidden');
+      elNavButtons.classList.remove('hidden');
+      onContinue();
+    });
+
+    card.appendChild(icon);
+    card.appendChild(msg);
+    card.appendChild(btn);
+    elQuestionCard.appendChild(card);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   // ── Submit ────────────────────────────────────────────────────────────────
   function submitTest() {
     // Validate all 45 answered
@@ -304,7 +394,7 @@
     try {
       // Combine career_quick and career_deep answers together
       var syntheticQuestions = {
-        personality: questions.career_quick.concat(questions.career_deep),
+        personality: allQuestions.slice(PF_COUNT),
         constraints: questions.personal_financial
       };
 

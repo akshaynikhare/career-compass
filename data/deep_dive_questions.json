@@ -1,0 +1,1760 @@
+{
+  "schema_version": 1,
+  "questions": [
+    {
+      "id": "dd001",
+      "area": "problem_solving",
+      "text": "When you face a hard problem, you naturally want to...",
+      "options": [
+        {
+          "label": "Collect data and analyse it systematically",
+          "boosts": ["analytical", "research", "data_sub", "finance_analytical"],
+          "suppresses": ["hands_on", "expressive"]
+        },
+        {
+          "label": "Jump in and experiment hands-on until it works",
+          "boosts": ["hands_on", "engineering", "trades", "clinical"],
+          "suppresses": ["analytical"]
+        },
+        {
+          "label": "Talk it through with people and get different views",
+          "boosts": ["people_focused", "social", "education", "mental_health"],
+          "suppresses": []
+        },
+        {
+          "label": "Step back and imagine a completely new approach",
+          "boosts": ["expressive", "creative", "design_sub", "research_sub"],
+          "suppresses": ["structured"]
+        }
+      ]
+    },
+    {
+      "id": "dd002",
+      "area": "problem_solving",
+      "text": "When the answer is unclear and you have to make a decision, you usually...",
+      "options": [
+        {
+          "label": "Look for rules or frameworks that apply to the situation",
+          "boosts": ["structured", "legal", "policy", "finance"],
+          "suppresses": ["expressive", "entrepreneurial"]
+        },
+        {
+          "label": "Trust your gut and act quickly",
+          "boosts": ["entrepreneurial", "hands_on", "sports"],
+          "suppresses": ["structured", "analytical"]
+        },
+        {
+          "label": "Research until you feel confident enough to decide",
+          "boosts": ["analytical", "research_sub", "data_sub"],
+          "suppresses": ["entrepreneurial"]
+        },
+        {
+          "label": "Ask someone with more experience and defer to them",
+          "boosts": ["people_focused", "teaching_sub", "social"],
+          "suppresses": ["leadership_sub", "entrepreneurial"]
+        }
+      ]
+    },
+    {
+      "id": "dd003",
+      "area": "problem_solving",
+      "text": "When you learn something new, you pick it up fastest by...",
+      "options": [
+        {
+          "label": "Reading and taking notes on your own",
+          "boosts": ["analytical", "research_sub", "written_sub"],
+          "suppresses": ["hands_on", "people_focused"]
+        },
+        {
+          "label": "Watching someone do it and then copying them",
+          "boosts": ["hands_on", "clinical", "trades"],
+          "suppresses": []
+        },
+        {
+          "label": "Discussing it with others and asking questions",
+          "boosts": ["people_focused", "education", "teaching_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Just trying it out and figuring it out as you go",
+          "boosts": ["entrepreneurial", "software_sub", "design_sub", "hands_on"],
+          "suppresses": ["structured"]
+        }
+      ]
+    },
+    {
+      "id": "dd004",
+      "area": "problem_solving",
+      "text": "Which of these achievements would make you feel most proud?",
+      "options": [
+        {
+          "label": "Publishing a discovery or finding that changes how people think",
+          "boosts": ["research_sub", "analytical", "research", "science"],
+          "suppresses": ["hands_on"]
+        },
+        {
+          "label": "Building something that thousands of people use every day",
+          "boosts": ["software_sub", "engineering", "entrepreneurial", "high_earning"],
+          "suppresses": []
+        },
+        {
+          "label": "Helping a person through a crisis and seeing them recover",
+          "boosts": ["clinical", "mental_health_sub", "people_focused", "social"],
+          "suppresses": []
+        },
+        {
+          "label": "Creating a piece of work that moves or inspires people",
+          "boosts": ["expressive", "creative", "performing_sub", "visual_sub"],
+          "suppresses": ["analytical"]
+        }
+      ]
+    },
+    {
+      "id": "dd005",
+      "area": "problem_solving",
+      "text": "What would frustrate you most in a work setting?",
+      "options": [
+        {
+          "label": "Doing the same routine task every day with no variety",
+          "boosts": ["entrepreneurial", "creative", "research_sub"],
+          "suppresses": ["structured"]
+        },
+        {
+          "label": "Having to work alone with no one to talk to",
+          "boosts": ["people_focused", "social", "teaching_sub", "clinical"],
+          "suppresses": []
+        },
+        {
+          "label": "Unclear goals — never knowing if my work is good enough",
+          "boosts": ["structured", "analytical", "finance"],
+          "suppresses": []
+        },
+        {
+          "label": "Being forced to follow rules I think are wrong or outdated",
+          "boosts": ["entrepreneurial", "expressive", "legal_sub"],
+          "suppresses": ["structured", "policy_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd006",
+      "area": "problem_solving",
+      "text": "When you have a deadline coming up, you most naturally...",
+      "options": [
+        {
+          "label": "Break it into a detailed schedule and follow it step by step",
+          "boosts": ["structured", "analytical", "finance_analytical"],
+          "suppresses": ["expressive", "entrepreneurial"]
+        },
+        {
+          "label": "Push hard at the end — pressure makes me more focused",
+          "boosts": ["entrepreneurial", "sports", "performing_sub"],
+          "suppresses": ["structured"]
+        },
+        {
+          "label": "Start early so I have time to review and refine",
+          "boosts": ["analytical", "research_sub", "written_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Get others involved so we can split the work",
+          "boosts": ["people_focused", "leadership_sub", "social"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd007",
+      "area": "work_environment",
+      "text": "Which work setting sounds most appealing to you?",
+      "options": [
+        {
+          "label": "A hospital ward or clinic — busy, full of patients and colleagues",
+          "boosts": ["clinical", "healthcare", "people_focused"],
+          "suppresses": ["research_sub", "software_sub"]
+        },
+        {
+          "label": "A quiet research lab — focused, methodical, mostly solo",
+          "boosts": ["research_sub", "analytical", "science"],
+          "suppresses": ["people_focused", "hands_on"]
+        },
+        {
+          "label": "A modern office or remote desk — structured, predictable, digital",
+          "boosts": ["structured", "software_sub", "finance", "business"],
+          "suppresses": ["field_work", "hands_on"]
+        },
+        {
+          "label": "Outdoors — forests, fields, construction sites, or the sea",
+          "boosts": ["field_work", "hands_on", "agriculture", "environment"],
+          "suppresses": ["structured", "software_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd008",
+      "area": "work_environment",
+      "text": "Which type of workspace would feel most like yours?",
+      "options": [
+        {
+          "label": "A creative studio full of screens, sketchbooks, and music",
+          "boosts": ["expressive", "creative", "design_sub", "visual_sub"],
+          "suppresses": ["structured", "clinical"]
+        },
+        {
+          "label": "A courtroom, government office, or formal boardroom",
+          "boosts": ["legal_sub", "policy_sub", "structured", "governance"],
+          "suppresses": ["expressive", "field_work"]
+        },
+        {
+          "label": "A workshop or factory floor with machines and tools",
+          "boosts": ["trades", "hands_on", "engineering"],
+          "suppresses": ["research_sub", "software_sub"]
+        },
+        {
+          "label": "A stage, studio, or performance venue",
+          "boosts": ["performing_sub", "expressive", "creative"],
+          "suppresses": ["structured", "analytical"]
+        }
+      ]
+    },
+    {
+      "id": "dd009",
+      "area": "work_environment",
+      "text": "Which sounds most like your ideal typical workday?",
+      "options": [
+        {
+          "label": "Meeting lots of different people and solving their problems",
+          "boosts": ["people_focused", "social", "clinical", "education"],
+          "suppresses": ["research_sub", "data_sub"]
+        },
+        {
+          "label": "Deep focus on a single complex task for hours at a time",
+          "boosts": ["analytical", "research_sub", "software_sub", "data_sub"],
+          "suppresses": ["people_focused"]
+        },
+        {
+          "label": "Managing a team, making decisions, and directing projects",
+          "boosts": ["leadership_sub", "entrepreneurial", "business"],
+          "suppresses": []
+        },
+        {
+          "label": "Moving around — travelling, visiting sites, meeting different groups",
+          "boosts": ["field_work", "transport", "policy_sub", "social"],
+          "suppresses": ["structured"]
+        }
+      ]
+    },
+    {
+      "id": "dd010",
+      "area": "work_environment",
+      "text": "How important is it to you that your workspace is physically comfortable and predictable?",
+      "options": [
+        {
+          "label": "Very — I work best in a calm, organised, controlled setting",
+          "boosts": ["structured", "analytical", "finance", "research_sub"],
+          "suppresses": ["field_work", "entrepreneurial"]
+        },
+        {
+          "label": "Not important — I thrive in dynamic, sometimes unpredictable environments",
+          "boosts": ["entrepreneurial", "field_work", "sports", "clinical"],
+          "suppresses": ["structured"]
+        },
+        {
+          "label": "Somewhat — I like variety but with some structure",
+          "boosts": ["business", "social", "education"],
+          "suppresses": []
+        },
+        {
+          "label": "I prefer the outdoors or working with my hands regardless of comfort",
+          "boosts": ["field_work", "hands_on", "trades", "agriculture"],
+          "suppresses": ["software_sub", "finance"]
+        }
+      ]
+    },
+    {
+      "id": "dd011",
+      "area": "work_environment",
+      "text": "Would you be okay with irregular hours — night shifts, on-call duties, or unpredictable schedules?",
+      "options": [
+        {
+          "label": "Yes, that kind of urgency gives me energy",
+          "boosts": ["clinical", "hands_on", "sports", "entrepreneurial"],
+          "suppresses": ["structured"]
+        },
+        {
+          "label": "I can handle it short-term but I want predictable hours long-term",
+          "boosts": ["business", "finance", "education"],
+          "suppresses": []
+        },
+        {
+          "label": "No — I want clear work-life separation",
+          "boosts": ["structured", "finance_analytical", "research_sub"],
+          "suppresses": ["clinical", "entrepreneurial"]
+        },
+        {
+          "label": "I want flexibility to set my own schedule, not someone else's shifts",
+          "boosts": ["entrepreneurial", "written_sub", "design_sub", "expressive"],
+          "suppresses": ["policy_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd012",
+      "area": "work_environment",
+      "text": "Does the idea of working in another city or even another country appeal to you?",
+      "options": [
+        {
+          "label": "Absolutely — I want an international career",
+          "boosts": ["business", "policy_sub", "high_earning", "entrepreneurial"],
+          "suppresses": []
+        },
+        {
+          "label": "I am open to it if the opportunity is good",
+          "boosts": ["software_sub", "research_sub", "finance_analytical"],
+          "suppresses": []
+        },
+        {
+          "label": "I prefer to stay in my home city — roots matter to me",
+          "boosts": ["education", "social", "clinical", "trades"],
+          "suppresses": []
+        },
+        {
+          "label": "I want to work across India — rural and urban both",
+          "boosts": ["policy_sub", "agriculture", "social", "field_work"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd013",
+      "area": "people_interaction",
+      "text": "How much do you want to interact with other people as part of your daily work?",
+      "options": [
+        {
+          "label": "A lot — I feel most alive when talking, teaching, or helping others",
+          "boosts": ["people_focused", "social", "teaching_sub", "clinical"],
+          "suppresses": ["research_sub", "data_sub"]
+        },
+        {
+          "label": "Some — I like working with a small trusted team",
+          "boosts": ["software_sub", "design_sub", "business"],
+          "suppresses": []
+        },
+        {
+          "label": "Minimal — I prefer working with data, tools, or systems",
+          "boosts": ["analytical", "data_sub", "research_sub", "infra_sub"],
+          "suppresses": ["people_focused"]
+        },
+        {
+          "label": "It depends on the day — I want a mix",
+          "boosts": ["entrepreneurial", "leadership_sub"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd014",
+      "area": "people_interaction",
+      "text": "Would you prefer a job where you are the face people see, or one where you work behind the scenes?",
+      "options": [
+        {
+          "label": "Definitely front-facing — I like being the person others come to",
+          "boosts": ["clinical", "people_focused", "leadership_sub", "performing_sub"],
+          "suppresses": ["data_sub", "infra_sub"]
+        },
+        {
+          "label": "Behind the scenes — I want my work to speak, not me",
+          "boosts": ["research_sub", "data_sub", "infra_sub", "written_sub"],
+          "suppresses": ["people_focused", "performing_sub"]
+        },
+        {
+          "label": "I want to influence decisions without being in the spotlight",
+          "boosts": ["policy_sub", "finance_analytical", "legal_sub", "analytical"],
+          "suppresses": []
+        },
+        {
+          "label": "I want to build a brand and be publicly known in my field",
+          "boosts": ["entrepreneurial", "performing_sub", "written_sub", "expressive"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd015",
+      "area": "people_interaction",
+      "text": "Does the idea of teaching or training others appeal to you?",
+      "options": [
+        {
+          "label": "Yes — explaining things and watching people understand is deeply satisfying",
+          "boosts": ["teaching_sub", "education", "people_focused"],
+          "suppresses": []
+        },
+        {
+          "label": "Sometimes — I can mentor but I don't want it to be my whole job",
+          "boosts": ["leadership_sub", "clinical", "business"],
+          "suppresses": []
+        },
+        {
+          "label": "Not really — I'd rather be the expert doing the work myself",
+          "boosts": ["analytical", "research_sub", "specialist_medical", "software_sub"],
+          "suppresses": ["teaching_sub"]
+        },
+        {
+          "label": "No — I prefer creating things over explaining them",
+          "boosts": ["expressive", "creative", "design_sub", "visual_sub"],
+          "suppresses": ["teaching_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd016",
+      "area": "people_interaction",
+      "text": "How comfortable are you with helping people who are emotionally distressed or in crisis?",
+      "options": [
+        {
+          "label": "Very comfortable — I stay calm and feel called to help",
+          "boosts": ["clinical", "mental_health_sub", "social", "people_focused"],
+          "suppresses": []
+        },
+        {
+          "label": "Comfortable in structured situations, like a hospital or counselling room",
+          "boosts": ["clinical", "mental_health_sub", "structured"],
+          "suppresses": ["field_work"]
+        },
+        {
+          "label": "I prefer helping people in practical, non-emotional ways",
+          "boosts": ["engineering", "trades", "data_sub", "structured"],
+          "suppresses": ["mental_health_sub", "people_focused"]
+        },
+        {
+          "label": "I find it draining — I prefer working with systems or ideas",
+          "boosts": ["research_sub", "data_sub", "infra_sub", "finance_analytical"],
+          "suppresses": ["clinical", "mental_health_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd017",
+      "area": "people_interaction",
+      "text": "Imagine you are working in a team. Which role do you naturally drift towards?",
+      "options": [
+        {
+          "label": "The one who does deep research and brings the facts",
+          "boosts": ["analytical", "research_sub", "data_sub"],
+          "suppresses": ["leadership_sub"]
+        },
+        {
+          "label": "The one who keeps the team aligned and motivated",
+          "boosts": ["leadership_sub", "people_focused", "business"],
+          "suppresses": []
+        },
+        {
+          "label": "The one who generates the ideas and sparks creativity",
+          "boosts": ["expressive", "creative", "entrepreneurial"],
+          "suppresses": ["structured"]
+        },
+        {
+          "label": "The one who gets things done reliably without drama",
+          "boosts": ["structured", "hands_on", "trades", "engineering"],
+          "suppresses": ["expressive"]
+        }
+      ]
+    },
+    {
+      "id": "dd018",
+      "area": "people_interaction",
+      "text": "Would you want clients or patients to know you personally and build a long relationship with you?",
+      "options": [
+        {
+          "label": "Yes — ongoing relationships are the most meaningful part of work",
+          "boosts": ["people_focused", "clinical", "mental_health_sub", "education"],
+          "suppresses": []
+        },
+        {
+          "label": "Somewhat — I like connecting but I don't want it to consume my work",
+          "boosts": ["social", "business", "legal_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "No — I prefer each interaction to be task-specific and brief",
+          "boosts": ["analytical", "structured", "finance_analytical", "research_sub"],
+          "suppresses": ["people_focused"]
+        },
+        {
+          "label": "I want to reach many people at scale, not just one at a time",
+          "boosts": ["policy_sub", "entrepreneurial", "written_sub", "performing_sub"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd019",
+      "area": "stakes_and_risk",
+      "text": "How do you feel about work where a small mistake could seriously harm someone?",
+      "options": [
+        {
+          "label": "I welcome that responsibility — it keeps me sharp and focused",
+          "boosts": ["clinical", "specialist_medical", "competitive_exam", "long_study"],
+          "suppresses": []
+        },
+        {
+          "label": "I can handle it in certain conditions — like surgery or air traffic control",
+          "boosts": ["clinical", "engineering", "transport"],
+          "suppresses": []
+        },
+        {
+          "label": "I'd prefer work where mistakes are recoverable and I can learn from them",
+          "boosts": ["software_sub", "design_sub", "business", "research_sub"],
+          "suppresses": ["clinical", "specialist_medical"]
+        },
+        {
+          "label": "I'd rather work in a low-stakes, steady environment",
+          "boosts": ["structured", "education", "finance", "agriculture"],
+          "suppresses": ["clinical", "entrepreneurial"]
+        }
+      ]
+    },
+    {
+      "id": "dd020",
+      "area": "stakes_and_risk",
+      "text": "Which type of pressure sounds most motivating to you?",
+      "options": [
+        {
+          "label": "Competition — rankings, exams, performance metrics",
+          "boosts": ["competitive_exam", "sports", "finance_analytical", "high_earning"],
+          "suppresses": ["social"]
+        },
+        {
+          "label": "Creative deadlines — a film, an exhibition, a product launch",
+          "boosts": ["expressive", "design_sub", "visual_sub", "performing_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Humanitarian urgency — lives or communities at stake",
+          "boosts": ["clinical", "social", "policy_sub", "mental_health"],
+          "suppresses": []
+        },
+        {
+          "label": "Business pressure — revenue, growth, market share",
+          "boosts": ["entrepreneurial", "business", "finance", "leadership_sub"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd021",
+      "area": "stakes_and_risk",
+      "text": "Would you be willing to spend 6–8 years in intense education before earning well, if the payoff is significant?",
+      "options": [
+        {
+          "label": "Yes, absolutely — the long game is worth it",
+          "boosts": ["long_study", "competitive_exam", "specialist_medical", "legal_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Only if the career is one of my top passions",
+          "boosts": ["clinical", "research_sub", "policy_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "I prefer a faster route to earning and growing",
+          "boosts": ["software_sub", "entrepreneurial", "business", "trades"],
+          "suppresses": ["long_study", "competitive_exam"]
+        },
+        {
+          "label": "I want to earn while I learn — through internships or skill-building",
+          "boosts": ["entrepreneurial", "design_sub", "software_sub"],
+          "suppresses": ["long_study"]
+        }
+      ]
+    },
+    {
+      "id": "dd022",
+      "area": "stakes_and_risk",
+      "text": "Building something from scratch — your own business or practice — is something you...",
+      "options": [
+        {
+          "label": "Dream about — I want to create something that is truly mine",
+          "boosts": ["entrepreneurial", "leadership_sub", "business", "high_earning"],
+          "suppresses": ["policy_sub", "structured"]
+        },
+        {
+          "label": "Would consider once I have enough experience and savings",
+          "boosts": ["entrepreneurial", "business", "clinical"],
+          "suppresses": []
+        },
+        {
+          "label": "Am not interested in — I want to excel in an established field",
+          "boosts": ["specialist_medical", "research_sub", "legal_sub", "policy_sub"],
+          "suppresses": ["entrepreneurial"]
+        },
+        {
+          "label": "Find too risky — I value job security over ownership",
+          "boosts": ["structured", "education", "policy_sub", "finance"],
+          "suppresses": ["entrepreneurial"]
+        }
+      ]
+    },
+    {
+      "id": "dd023",
+      "area": "stakes_and_risk",
+      "text": "How do you feel about government or public sector jobs — secure, pensioned, service-oriented?",
+      "options": [
+        {
+          "label": "Very appealing — stability and public service are important to me",
+          "boosts": ["policy_sub", "legal_sub", "education", "governance"],
+          "suppresses": ["entrepreneurial", "high_earning"]
+        },
+        {
+          "label": "Good as a foundation — but I want to move to private sector eventually",
+          "boosts": ["business", "finance", "clinical"],
+          "suppresses": []
+        },
+        {
+          "label": "Not for me — I want faster growth and higher income",
+          "boosts": ["entrepreneurial", "high_earning", "software_sub", "finance_analytical"],
+          "suppresses": ["policy_sub"]
+        },
+        {
+          "label": "Maybe for the impact on society, not for stability or pay",
+          "boosts": ["social", "policy_sub", "agriculture", "mental_health"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd024",
+      "area": "healthcare_subdomain",
+      "text": "Which part of medicine excites you most?",
+      "options": [
+        {
+          "label": "Performing surgeries and procedures with my hands",
+          "boosts": ["clinical", "hands_on", "specialist_medical", "competitive_exam"],
+          "suppresses": ["research_sub"]
+        },
+        {
+          "label": "Diagnosing complex cases and figuring out what is wrong",
+          "boosts": ["analytical", "clinical", "specialist_medical"],
+          "suppresses": []
+        },
+        {
+          "label": "Understanding the mind — mental illness, behaviour, emotions",
+          "boosts": ["mental_health_sub", "analytical", "people_focused"],
+          "suppresses": ["hands_on"]
+        },
+        {
+          "label": "Improving health systems and preventing disease across populations",
+          "boosts": ["policy_sub", "research_sub", "social", "analytical"],
+          "suppresses": ["clinical", "hands_on"]
+        }
+      ]
+    },
+    {
+      "id": "dd025",
+      "area": "healthcare_subdomain",
+      "text": "Emergency situations — a patient coding, a trauma case — make you feel...",
+      "options": [
+        {
+          "label": "Focused and energised — I was built for this",
+          "boosts": ["clinical", "hands_on", "specialist_medical"],
+          "suppresses": ["research_sub"]
+        },
+        {
+          "label": "Capable but relieved when it is over — I prefer planned work",
+          "boosts": ["clinical", "structured"],
+          "suppresses": []
+        },
+        {
+          "label": "I would rather prevent emergencies than respond to them",
+          "boosts": ["research_sub", "policy_sub", "analytical"],
+          "suppresses": ["clinical"]
+        },
+        {
+          "label": "Very anxious — I do not want high-pressure emergency work",
+          "boosts": ["mental_health_sub", "teaching_sub", "research_sub"],
+          "suppresses": ["clinical", "specialist_medical"]
+        }
+      ]
+    },
+    {
+      "id": "dd026",
+      "area": "healthcare_subdomain",
+      "text": "Long-term patient relationships — knowing your patients over years and following their journey — sounds...",
+      "options": [
+        {
+          "label": "Wonderful — that continuity of care is why I want to be in medicine",
+          "boosts": ["people_focused", "clinical", "mental_health_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Nice but I'd prefer to specialise and see cases rather than people",
+          "boosts": ["specialist_medical", "analytical", "structured"],
+          "suppresses": ["mental_health_sub"]
+        },
+        {
+          "label": "I prefer acute interactions — intense but time-limited",
+          "boosts": ["clinical", "hands_on", "competitive_exam"],
+          "suppresses": []
+        },
+        {
+          "label": "Not for me — I want to work in research or administration",
+          "boosts": ["research_sub", "policy_sub", "analytical"],
+          "suppresses": ["clinical", "people_focused"]
+        }
+      ]
+    },
+    {
+      "id": "dd027",
+      "area": "healthcare_subdomain",
+      "text": "Which healthcare role feels most like you?",
+      "options": [
+        {
+          "label": "A nurse — hands-on care, direct patient contact, day-to-day impact",
+          "boosts": ["clinical", "people_focused", "hands_on"],
+          "suppresses": ["research_sub", "analytical"]
+        },
+        {
+          "label": "A specialist doctor — deep expertise in one system or organ",
+          "boosts": ["specialist_medical", "analytical", "long_study", "competitive_exam"],
+          "suppresses": []
+        },
+        {
+          "label": "A psychiatrist or counsellor — the emotional and mental side of health",
+          "boosts": ["mental_health_sub", "people_focused", "analytical"],
+          "suppresses": ["hands_on"]
+        },
+        {
+          "label": "A hospital administrator or health policy expert",
+          "boosts": ["policy_sub", "leadership_sub", "structured"],
+          "suppresses": ["clinical", "hands_on"]
+        }
+      ]
+    },
+    {
+      "id": "dd028",
+      "area": "healthcare_subdomain",
+      "text": "Reading medical research papers and running clinical trials sounds...",
+      "options": [
+        {
+          "label": "Fascinating — I want to contribute to medical knowledge",
+          "boosts": ["research_sub", "analytical", "science"],
+          "suppresses": ["clinical", "hands_on"]
+        },
+        {
+          "label": "Useful but I want to apply findings, not generate them",
+          "boosts": ["clinical", "specialist_medical"],
+          "suppresses": ["research_sub"]
+        },
+        {
+          "label": "Boring — I want to be with patients, not papers",
+          "boosts": ["clinical", "people_focused", "mental_health_sub"],
+          "suppresses": ["research_sub", "analytical"]
+        },
+        {
+          "label": "Interesting from a policy angle — how findings become guidelines",
+          "boosts": ["policy_sub", "analytical", "research_sub"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd029",
+      "area": "healthcare_subdomain",
+      "text": "Which would bother you more over a long career?",
+      "options": [
+        {
+          "label": "Seeing too much death and suffering — emotional burnout",
+          "boosts": ["research_sub", "policy_sub", "data_sub"],
+          "suppresses": ["clinical", "specialist_medical"]
+        },
+        {
+          "label": "Being stuck in an office doing paperwork and administration",
+          "boosts": ["clinical", "hands_on", "people_focused"],
+          "suppresses": ["policy_sub"]
+        },
+        {
+          "label": "Knowing I am never cutting-edge — always using the same old methods",
+          "boosts": ["research_sub", "analytical", "specialist_medical"],
+          "suppresses": []
+        },
+        {
+          "label": "Not being recognised or respected by patients and colleagues",
+          "boosts": ["clinical", "teaching_sub", "leadership_sub"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd030",
+      "area": "healthcare_subdomain",
+      "text": "The dentistry and physiotherapy path — independent practice, technical skill, direct patient care — sounds...",
+      "options": [
+        {
+          "label": "Very appealing — precise, hands-on, and I can build my own clinic",
+          "boosts": ["clinical", "hands_on", "entrepreneurial"],
+          "suppresses": ["research_sub"]
+        },
+        {
+          "label": "Decent — but I want broader impact than one patient at a time",
+          "boosts": ["policy_sub", "research_sub", "social"],
+          "suppresses": []
+        },
+        {
+          "label": "Not for me — I want something more intellectually complex",
+          "boosts": ["specialist_medical", "analytical", "research_sub"],
+          "suppresses": ["clinical"]
+        },
+        {
+          "label": "I have not thought about it — health careers feel too intense for me",
+          "boosts": ["software_sub", "business", "creative"],
+          "suppresses": ["healthcare", "clinical"]
+        }
+      ]
+    },
+    {
+      "id": "dd031",
+      "area": "tech_engineering_subdomain",
+      "text": "What sounds most exciting about technology to you?",
+      "options": [
+        {
+          "label": "Writing code and building apps that millions of people use",
+          "boosts": ["software_sub", "tech", "entrepreneurial"],
+          "suppresses": ["hands_on", "field_work"]
+        },
+        {
+          "label": "Analysing huge datasets to find patterns no one has seen before",
+          "boosts": ["data_sub", "analytical", "research_sub"],
+          "suppresses": ["expressive"]
+        },
+        {
+          "label": "Designing how apps and websites look and feel to users",
+          "boosts": ["design_sub", "expressive", "creative"],
+          "suppresses": ["infra_sub", "analytical"]
+        },
+        {
+          "label": "The hardware side — chips, circuits, servers, physical systems",
+          "boosts": ["infra_sub", "engineering", "hands_on"],
+          "suppresses": ["design_sub", "expressive"]
+        }
+      ]
+    },
+    {
+      "id": "dd032",
+      "area": "tech_engineering_subdomain",
+      "text": "In a tech company, which team would you most want to be on?",
+      "options": [
+        {
+          "label": "Product — deciding what gets built and why",
+          "boosts": ["leadership_sub", "entrepreneurial", "business", "design_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Backend engineering — the systems that power everything",
+          "boosts": ["software_sub", "infra_sub", "structured", "analytical"],
+          "suppresses": ["design_sub", "expressive"]
+        },
+        {
+          "label": "Data science or AI — making the product smarter",
+          "boosts": ["data_sub", "analytical", "research_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Security — protecting systems from attacks",
+          "boosts": ["infra_sub", "analytical", "structured"],
+          "suppresses": ["expressive"]
+        }
+      ]
+    },
+    {
+      "id": "dd033",
+      "area": "tech_engineering_subdomain",
+      "text": "Does the idea of physical engineering — building bridges, designing engines, planning cities — appeal to you?",
+      "options": [
+        {
+          "label": "Yes — I want to build things you can touch and see in the real world",
+          "boosts": ["engineering", "hands_on", "architecture", "trades"],
+          "suppresses": ["software_sub", "data_sub"]
+        },
+        {
+          "label": "Somewhat — but I'm more interested in the software side",
+          "boosts": ["software_sub", "tech"],
+          "suppresses": ["hands_on", "field_work"]
+        },
+        {
+          "label": "Only if it involves cutting-edge technology, like aerospace or robotics",
+          "boosts": ["engineering", "research_sub", "analytical"],
+          "suppresses": []
+        },
+        {
+          "label": "No — I prefer digital and abstract systems",
+          "boosts": ["data_sub", "software_sub", "finance_analytical"],
+          "suppresses": ["engineering", "hands_on"]
+        }
+      ]
+    },
+    {
+      "id": "dd034",
+      "area": "tech_engineering_subdomain",
+      "text": "How do you feel about cybersecurity and network infrastructure?",
+      "options": [
+        {
+          "label": "Genuinely exciting — protecting systems is like a puzzle and a mission",
+          "boosts": ["infra_sub", "analytical", "structured"],
+          "suppresses": []
+        },
+        {
+          "label": "Important but not my focus — I want to build things, not protect them",
+          "boosts": ["software_sub", "engineering", "entrepreneurial"],
+          "suppresses": ["infra_sub"]
+        },
+        {
+          "label": "I would like it at a policy level — digital governance and law",
+          "boosts": ["policy_sub", "legal_sub", "structured"],
+          "suppresses": []
+        },
+        {
+          "label": "I have not thought much about it — tech infrastructure sounds dry to me",
+          "boosts": ["creative", "expressive", "social"],
+          "suppresses": ["infra_sub", "tech"]
+        }
+      ]
+    },
+    {
+      "id": "dd035",
+      "area": "tech_engineering_subdomain",
+      "text": "Which best describes your relationship with maths and logic?",
+      "options": [
+        {
+          "label": "I love it — the more abstract and complex, the better",
+          "boosts": ["data_sub", "analytical", "research_sub", "finance_analytical"],
+          "suppresses": ["expressive", "social"]
+        },
+        {
+          "label": "I am good at it and use it practically, but it is not a passion",
+          "boosts": ["engineering", "software_sub", "structured"],
+          "suppresses": []
+        },
+        {
+          "label": "I prefer logic in the form of design or storytelling",
+          "boosts": ["design_sub", "expressive", "creative"],
+          "suppresses": ["data_sub"]
+        },
+        {
+          "label": "Maths is not my strong suit — I prefer words, people, or physical work",
+          "boosts": ["written_sub", "social", "trades", "performing_sub"],
+          "suppresses": ["data_sub", "engineering", "finance_analytical"]
+        }
+      ]
+    },
+    {
+      "id": "dd036",
+      "area": "tech_engineering_subdomain",
+      "text": "Artificial intelligence and machine learning — which role interests you most?",
+      "options": [
+        {
+          "label": "Building and training the models",
+          "boosts": ["data_sub", "research_sub", "analytical", "pcm_stream"],
+          "suppresses": ["expressive"]
+        },
+        {
+          "label": "Applying AI to solve real-world problems in a specific domain",
+          "boosts": ["software_sub", "entrepreneurial", "business"],
+          "suppresses": []
+        },
+        {
+          "label": "The ethics and policy side — who controls AI and how",
+          "boosts": ["policy_sub", "legal_sub", "social"],
+          "suppresses": ["data_sub"]
+        },
+        {
+          "label": "I am more interested in other fields — AI does not excite me particularly",
+          "boosts": ["creative", "clinical", "trades", "social"],
+          "suppresses": ["data_sub", "software_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd037",
+      "area": "tech_engineering_subdomain",
+      "text": "If you were building a startup, what kind would it be?",
+      "options": [
+        {
+          "label": "A software product or app",
+          "boosts": ["software_sub", "entrepreneurial", "tech"],
+          "suppresses": []
+        },
+        {
+          "label": "A hardware or deep-tech company",
+          "boosts": ["engineering", "research_sub", "infra_sub"],
+          "suppresses": ["expressive"]
+        },
+        {
+          "label": "A design or creative agency",
+          "boosts": ["design_sub", "expressive", "creative", "visual_sub"],
+          "suppresses": ["infra_sub"]
+        },
+        {
+          "label": "I would not start a startup — I want to work in an established organisation",
+          "boosts": ["structured", "policy_sub", "research_sub"],
+          "suppresses": ["entrepreneurial"]
+        }
+      ]
+    },
+    {
+      "id": "dd038",
+      "area": "business_finance_subdomain",
+      "text": "Which part of the business world interests you most?",
+      "options": [
+        {
+          "label": "Starting and growing a company — the whole entrepreneurial journey",
+          "boosts": ["entrepreneurial", "leadership_sub", "business", "high_earning"],
+          "suppresses": ["structured"]
+        },
+        {
+          "label": "Analysing companies and markets — investing and valuing assets",
+          "boosts": ["finance_analytical", "analytical", "data_sub"],
+          "suppresses": ["people_focused"]
+        },
+        {
+          "label": "Auditing, accounting, and making sure the numbers are right",
+          "boosts": ["structured", "finance", "analytical"],
+          "suppresses": ["entrepreneurial", "expressive"]
+        },
+        {
+          "label": "Marketing — understanding what people want and persuading them",
+          "boosts": ["expressive", "business", "people_focused", "creative"],
+          "suppresses": ["structured"]
+        }
+      ]
+    },
+    {
+      "id": "dd039",
+      "area": "business_finance_subdomain",
+      "text": "The idea of working in a bank or financial institution sounds...",
+      "options": [
+        {
+          "label": "Ideal — structured, prestigious, and high-earning",
+          "boosts": ["finance", "structured", "high_earning", "competitive_exam"],
+          "suppresses": ["expressive", "field_work"]
+        },
+        {
+          "label": "Interesting if it is trading or investment analysis",
+          "boosts": ["finance_analytical", "entrepreneurial", "high_earning"],
+          "suppresses": []
+        },
+        {
+          "label": "Too rigid — I want something with more creativity or purpose",
+          "boosts": ["creative", "social", "expressive"],
+          "suppresses": ["finance", "structured"]
+        },
+        {
+          "label": "I would consider fintech — combining finance with technology",
+          "boosts": ["software_sub", "finance_analytical", "entrepreneurial"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd040",
+      "area": "business_finance_subdomain",
+      "text": "Management consulting — flying to different cities, solving business problems for large companies — sounds...",
+      "options": [
+        {
+          "label": "Exciting — variety, high impact, smart colleagues",
+          "boosts": ["leadership_sub", "analytical", "business", "high_earning"],
+          "suppresses": []
+        },
+        {
+          "label": "Appealing but I would rather build one thing than advise many",
+          "boosts": ["entrepreneurial", "software_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Too corporate and shallow — I want work with deeper meaning",
+          "boosts": ["social", "policy_sub", "research_sub", "clinical"],
+          "suppresses": ["business"]
+        },
+        {
+          "label": "Too much travel and instability for my taste",
+          "boosts": ["structured", "education", "research_sub"],
+          "suppresses": ["leadership_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd041",
+      "area": "business_finance_subdomain",
+      "text": "How do you feel about following strict financial regulations and compliance rules?",
+      "options": [
+        {
+          "label": "Fine with it — rules create systems I can master and work within",
+          "boosts": ["structured", "finance", "legal_sub", "analytical"],
+          "suppresses": ["entrepreneurial"]
+        },
+        {
+          "label": "I respect the rules but want to find creative solutions within them",
+          "boosts": ["finance_analytical", "entrepreneurial", "business"],
+          "suppresses": []
+        },
+        {
+          "label": "I prefer roles where I set the direction rather than follow compliance",
+          "boosts": ["entrepreneurial", "leadership_sub"],
+          "suppresses": ["structured"]
+        },
+        {
+          "label": "Rules matter but I want the role where I design the regulations",
+          "boosts": ["policy_sub", "legal_sub", "governance"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd042",
+      "area": "business_finance_subdomain",
+      "text": "Economics as a field — understanding how economies work at a country or global scale — interests you...",
+      "options": [
+        {
+          "label": "A lot — it is one of the most powerful lenses for understanding the world",
+          "boosts": ["finance_analytical", "research_sub", "policy_sub", "analytical"],
+          "suppresses": ["hands_on"]
+        },
+        {
+          "label": "In a practical applied way — I want to use it, not study it academically",
+          "boosts": ["business", "finance_analytical", "entrepreneurial"],
+          "suppresses": ["research_sub"]
+        },
+        {
+          "label": "As part of a broader social science interest",
+          "boosts": ["social", "policy_sub", "education"],
+          "suppresses": []
+        },
+        {
+          "label": "Not much — I prefer more concrete fields",
+          "boosts": ["engineering", "clinical", "trades", "creative"],
+          "suppresses": ["finance_analytical"]
+        }
+      ]
+    },
+    {
+      "id": "dd043",
+      "area": "business_finance_subdomain",
+      "text": "If you had ten lakh rupees to use, you would most likely...",
+      "options": [
+        {
+          "label": "Invest it across stocks, mutual funds, and bonds",
+          "boosts": ["finance_analytical", "analytical", "structured"],
+          "suppresses": ["expressive"]
+        },
+        {
+          "label": "Start a small business or fund a side project",
+          "boosts": ["entrepreneurial", "leadership_sub", "business"],
+          "suppresses": ["structured"]
+        },
+        {
+          "label": "Fund my education or skill development",
+          "boosts": ["research_sub", "long_study", "education"],
+          "suppresses": []
+        },
+        {
+          "label": "Use it for a creative project or experience",
+          "boosts": ["expressive", "creative", "performing_sub"],
+          "suppresses": ["finance_analytical"]
+        }
+      ]
+    },
+    {
+      "id": "dd044",
+      "area": "arts_media_education",
+      "text": "Which creative format excites you most?",
+      "options": [
+        {
+          "label": "Visual — illustration, graphic design, photography",
+          "boosts": ["visual_sub", "design_sub", "expressive", "creative"],
+          "suppresses": ["analytical", "structured"]
+        },
+        {
+          "label": "Written — stories, journalism, essays, scripts",
+          "boosts": ["written_sub", "expressive", "creative"],
+          "suppresses": ["hands_on"]
+        },
+        {
+          "label": "Performance — acting, music, dance, standup",
+          "boosts": ["performing_sub", "expressive", "people_focused"],
+          "suppresses": ["research_sub", "analytical"]
+        },
+        {
+          "label": "Film and video — direction, cinematography, editing",
+          "boosts": ["visual_sub", "expressive", "leadership_sub", "creative"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd045",
+      "area": "arts_media_education",
+      "text": "In creative work, do you prefer creating something alone or collaborating with a team?",
+      "options": [
+        {
+          "label": "Alone — I have a clear vision and I want to execute it myself",
+          "boosts": ["written_sub", "visual_sub", "expressive"],
+          "suppresses": ["leadership_sub", "people_focused"]
+        },
+        {
+          "label": "With a team — great creative work comes from diverse inputs",
+          "boosts": ["performing_sub", "leadership_sub", "expressive", "design_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "I direct a team — my vision, their skills",
+          "boosts": ["leadership_sub", "visual_sub", "expressive"],
+          "suppresses": []
+        },
+        {
+          "label": "I prefer co-creation — building something together with no single owner",
+          "boosts": ["performing_sub", "people_focused", "teaching_sub"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd046",
+      "area": "arts_media_education",
+      "text": "Does teaching or educating others feel like a calling to you?",
+      "options": [
+        {
+          "label": "Yes — few things are as meaningful as shaping how someone thinks",
+          "boosts": ["teaching_sub", "education", "people_focused"],
+          "suppresses": []
+        },
+        {
+          "label": "Yes, but at a higher level — university, research, or policy",
+          "boosts": ["teaching_sub", "research_sub", "policy_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Somewhat — I might teach, but I want creative freedom too",
+          "boosts": ["teaching_sub", "expressive", "creative"],
+          "suppresses": []
+        },
+        {
+          "label": "Not particularly — I'd rather create than teach",
+          "boosts": ["visual_sub", "written_sub", "performing_sub", "software_sub"],
+          "suppresses": ["teaching_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd047",
+      "area": "arts_media_education",
+      "text": "Journalism — investigating stories, interviewing people, writing under deadline — sounds...",
+      "options": [
+        {
+          "label": "Exciting — I want to be the person who uncovers and tells the truth",
+          "boosts": ["written_sub", "expressive", "social", "people_focused"],
+          "suppresses": ["structured"]
+        },
+        {
+          "label": "Interesting but I'd focus on analysis — data journalism or long-form",
+          "boosts": ["written_sub", "analytical", "data_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Too stressful — I prefer creative work with fewer hard deadlines",
+          "boosts": ["visual_sub", "design_sub", "expressive"],
+          "suppresses": ["written_sub"]
+        },
+        {
+          "label": "Not my path — I'm more interested in doing things than reporting them",
+          "boosts": ["engineering", "clinical", "business", "research_sub"],
+          "suppresses": ["written_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd048",
+      "area": "arts_media_education",
+      "text": "The music industry — performing, producing, composing — is something you...",
+      "options": [
+        {
+          "label": "Are deeply passionate about and could see as a career",
+          "boosts": ["performing_sub", "expressive", "creative"],
+          "suppresses": ["analytical", "structured"]
+        },
+        {
+          "label": "Love as a hobby but would not pursue professionally",
+          "boosts": ["expressive"],
+          "suppresses": ["performing_sub"]
+        },
+        {
+          "label": "Could see from the technical or production side — audio engineering",
+          "boosts": ["performing_sub", "hands_on", "tech"],
+          "suppresses": []
+        },
+        {
+          "label": "Have little interest in",
+          "boosts": ["analytical", "structured", "research_sub"],
+          "suppresses": ["performing_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd049",
+      "area": "arts_media_education",
+      "text": "A graphic designer vs a UX designer vs an architect — which appeals most?",
+      "options": [
+        {
+          "label": "Graphic designer — visual aesthetics, brand identity, and illustration",
+          "boosts": ["visual_sub", "expressive", "creative"],
+          "suppresses": ["analytical"]
+        },
+        {
+          "label": "UX designer — how digital products feel to use, human-centred design",
+          "boosts": ["design_sub", "analytical", "people_focused", "software_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Architect — blending art, engineering, and space to build the physical world",
+          "boosts": ["architecture", "expressive", "hands_on", "engineering"],
+          "suppresses": []
+        },
+        {
+          "label": "None of these — I prefer a different path",
+          "boosts": [],
+          "suppresses": ["design_sub", "visual_sub", "architecture"]
+        }
+      ]
+    },
+    {
+      "id": "dd050",
+      "area": "science_law_government",
+      "text": "Pure research — spending years on a single question, writing papers, working in labs — sounds...",
+      "options": [
+        {
+          "label": "Deeply fulfilling — I want to be at the frontier of human knowledge",
+          "boosts": ["research_sub", "analytical", "science", "long_study"],
+          "suppresses": ["entrepreneurial", "hands_on"]
+        },
+        {
+          "label": "Interesting but I want faster real-world impact",
+          "boosts": ["engineering", "clinical", "business", "policy_sub"],
+          "suppresses": ["research_sub"]
+        },
+        {
+          "label": "Too solitary and slow for me",
+          "boosts": ["people_focused", "social", "entrepreneurial", "clinical"],
+          "suppresses": ["research_sub"]
+        },
+        {
+          "label": "I like the research but want to apply it in industry, not academia",
+          "boosts": ["data_sub", "software_sub", "business", "research_sub"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd051",
+      "area": "science_law_government",
+      "text": "The law — courtrooms, contracts, rights, and justice — interests you because...",
+      "options": [
+        {
+          "label": "I find arguing and debating deeply satisfying",
+          "boosts": ["legal_sub", "people_focused", "expressive"],
+          "suppresses": ["research_sub", "structured"]
+        },
+        {
+          "label": "I believe in a just system and want to work within it",
+          "boosts": ["legal_sub", "policy_sub", "governance", "social"],
+          "suppresses": []
+        },
+        {
+          "label": "Corporate law and business transactions interest me more",
+          "boosts": ["legal_sub", "finance", "structured", "high_earning"],
+          "suppresses": ["social"]
+        },
+        {
+          "label": "It does not particularly interest me",
+          "boosts": ["creative", "engineering", "clinical", "research_sub"],
+          "suppresses": ["legal_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd052",
+      "area": "science_law_government",
+      "text": "The IAS or IPS — leading districts, managing crises, shaping policy — sounds...",
+      "options": [
+        {
+          "label": "Like one of the most meaningful careers an Indian can have",
+          "boosts": ["policy_sub", "leadership_sub", "governance", "social"],
+          "suppresses": ["entrepreneurial"]
+        },
+        {
+          "label": "Appealing for the power and respect, but the preparation is too intense",
+          "boosts": ["policy_sub"],
+          "suppresses": ["competitive_exam", "long_study"]
+        },
+        {
+          "label": "Not for me — I want private sector freedom and earnings",
+          "boosts": ["entrepreneurial", "high_earning", "business", "software_sub"],
+          "suppresses": ["policy_sub"]
+        },
+        {
+          "label": "I would prefer policy without the IAS — think tanks, NGOs, or international orgs",
+          "boosts": ["policy_sub", "social", "research_sub"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd053",
+      "area": "science_law_government",
+      "text": "Environmental science and conservation — protecting ecosystems, studying climate, working in the field — sounds...",
+      "options": [
+        {
+          "label": "Exactly the kind of work I find meaningful",
+          "boosts": ["field_work", "research_sub", "agriculture", "science"],
+          "suppresses": ["software_sub", "finance"]
+        },
+        {
+          "label": "Important but I would address it from a policy or tech angle",
+          "boosts": ["policy_sub", "software_sub", "data_sub"],
+          "suppresses": ["field_work"]
+        },
+        {
+          "label": "Interesting but too low-paying for my goals",
+          "boosts": ["finance", "high_earning", "business"],
+          "suppresses": ["agriculture", "field_work"]
+        },
+        {
+          "label": "Not a priority for me in career terms",
+          "boosts": ["clinical", "engineering", "software_sub"],
+          "suppresses": ["agriculture", "environment"]
+        }
+      ]
+    },
+    {
+      "id": "dd054",
+      "area": "science_law_government",
+      "text": "Social work and welfare — working in communities, NGOs, or with marginalised groups — sounds...",
+      "options": [
+        {
+          "label": "Deeply fulfilling — this is the kind of impact I want",
+          "boosts": ["social", "people_focused", "welfare", "mental_health"],
+          "suppresses": ["high_earning", "finance"]
+        },
+        {
+          "label": "Good but I want systemic change — policy rather than direct service",
+          "boosts": ["policy_sub", "social", "legal_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Admirable but not for me — I need financial security",
+          "boosts": ["finance", "engineering", "business"],
+          "suppresses": ["social"]
+        },
+        {
+          "label": "I want to do this alongside another career — not as my main job",
+          "boosts": ["social"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd055",
+      "area": "science_law_government",
+      "text": "Diplomacy and international relations — representing India abroad, negotiating treaties — sounds...",
+      "options": [
+        {
+          "label": "Exciting — I love the idea of combining language, culture, and strategy",
+          "boosts": ["policy_sub", "governance", "leadership_sub", "expressive"],
+          "suppresses": []
+        },
+        {
+          "label": "Interesting but I would prefer international business over government service",
+          "boosts": ["business", "entrepreneurial", "finance"],
+          "suppresses": ["policy_sub"]
+        },
+        {
+          "label": "Worth considering if I join through the IFS",
+          "boosts": ["policy_sub", "competitive_exam", "long_study"],
+          "suppresses": []
+        },
+        {
+          "label": "Not appealing — too political and slow-moving",
+          "boosts": ["entrepreneurial", "software_sub", "creative"],
+          "suppresses": ["policy_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd056",
+      "area": "lifestyle_priorities",
+      "text": "Which matters most to you in a career, right now?",
+      "options": [
+        {
+          "label": "High income — I want to earn well and build financial security fast",
+          "boosts": ["high_earning", "finance_analytical", "entrepreneurial", "software_sub"],
+          "suppresses": ["social", "education"]
+        },
+        {
+          "label": "Meaning and social impact — I want my work to matter",
+          "boosts": ["social", "policy_sub", "clinical", "mental_health"],
+          "suppresses": ["high_earning"]
+        },
+        {
+          "label": "Mastery — becoming the best in the world at one specific thing",
+          "boosts": ["specialist_medical", "research_sub", "competitive_exam", "long_study"],
+          "suppresses": []
+        },
+        {
+          "label": "Freedom and autonomy — control over my time and how I work",
+          "boosts": ["entrepreneurial", "expressive", "written_sub", "design_sub"],
+          "suppresses": ["structured", "policy_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd057",
+      "area": "lifestyle_priorities",
+      "text": "Job stability versus opportunity — which side do you lean?",
+      "options": [
+        {
+          "label": "Stability — I want a secure career with guaranteed income",
+          "boosts": ["structured", "education", "policy_sub", "governance"],
+          "suppresses": ["entrepreneurial"]
+        },
+        {
+          "label": "Opportunity — I am willing to take risks for bigger rewards",
+          "boosts": ["entrepreneurial", "finance_analytical", "high_earning"],
+          "suppresses": ["structured"]
+        },
+        {
+          "label": "A balance — stable foundation in early career, then take calculated risks",
+          "boosts": ["business", "clinical", "engineering"],
+          "suppresses": []
+        },
+        {
+          "label": "Growth and learning matter more than stability or risk right now",
+          "boosts": ["research_sub", "software_sub", "design_sub"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd058",
+      "area": "lifestyle_priorities",
+      "text": "Deep specialist versus broad generalist — which describes your ambition?",
+      "options": [
+        {
+          "label": "Specialist — I want to be the go-to expert in one narrow area",
+          "boosts": ["specialist_medical", "research_sub", "finance_analytical", "infra_sub"],
+          "suppresses": ["leadership_sub"]
+        },
+        {
+          "label": "Generalist — I want to connect ideas across many fields",
+          "boosts": ["leadership_sub", "entrepreneurial", "business", "policy_sub"],
+          "suppresses": ["specialist_medical", "research_sub"]
+        },
+        {
+          "label": "Deep in one area, but with a broad strategic view",
+          "boosts": ["leadership_sub", "analytical", "business"],
+          "suppresses": []
+        },
+        {
+          "label": "I have not decided yet — I am still exploring",
+          "boosts": [],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd059",
+      "area": "lifestyle_priorities",
+      "text": "How much does public recognition matter to you?",
+      "options": [
+        {
+          "label": "A lot — I want to be known and respected in my field",
+          "boosts": ["performing_sub", "leadership_sub", "entrepreneurial", "policy_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Somewhat — recognition within my industry or community",
+          "boosts": ["clinical", "education", "research_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "Not much — I want personal satisfaction over fame",
+          "boosts": ["research_sub", "data_sub", "written_sub", "structured"],
+          "suppresses": ["performing_sub"]
+        },
+        {
+          "label": "I want to be known for results, not personality",
+          "boosts": ["finance_analytical", "engineering", "software_sub"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd060",
+      "area": "lifestyle_priorities",
+      "text": "City life versus rural or remote work — where do you see yourself?",
+      "options": [
+        {
+          "label": "Major Indian city or abroad — I want urban energy and opportunity",
+          "boosts": ["software_sub", "finance", "performing_sub", "high_earning"],
+          "suppresses": ["agriculture", "field_work"]
+        },
+        {
+          "label": "Smaller city — good quality of life with a real career",
+          "boosts": ["education", "clinical", "trades"],
+          "suppresses": []
+        },
+        {
+          "label": "I would happily work in rural or remote areas for the right mission",
+          "boosts": ["field_work", "agriculture", "social", "policy_sub"],
+          "suppresses": ["software_sub", "finance"]
+        },
+        {
+          "label": "Wherever the work takes me — location is not a priority",
+          "boosts": ["entrepreneurial", "research_sub", "business"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd061",
+      "area": "lifestyle_priorities",
+      "text": "Which would bother you more after 10 years in a career?",
+      "options": [
+        {
+          "label": "Not having earned enough to be financially comfortable",
+          "boosts": ["high_earning", "finance_analytical", "entrepreneurial"],
+          "suppresses": ["social", "education"]
+        },
+        {
+          "label": "Feeling like my work made no real difference to anyone",
+          "boosts": ["social", "clinical", "policy_sub", "mental_health"],
+          "suppresses": ["finance"]
+        },
+        {
+          "label": "Never reaching mastery — still feeling like a beginner",
+          "boosts": ["specialist_medical", "research_sub", "competitive_exam"],
+          "suppresses": []
+        },
+        {
+          "label": "Feeling trapped — no creativity, no autonomy, no growth",
+          "boosts": ["entrepreneurial", "expressive", "creative"],
+          "suppresses": ["structured", "policy_sub"]
+        }
+      ]
+    },
+    {
+      "id": "dd062",
+      "area": "lifestyle_priorities",
+      "text": "How important is it that your work contributes to something bigger than yourself — a cause, a mission, or a movement?",
+      "options": [
+        {
+          "label": "Essential — I cannot imagine a career without a larger purpose",
+          "boosts": ["social", "policy_sub", "mental_health", "clinical"],
+          "suppresses": ["finance"]
+        },
+        {
+          "label": "Important but I also need the work to be personally fulfilling",
+          "boosts": ["education", "research_sub", "clinical"],
+          "suppresses": []
+        },
+        {
+          "label": "Nice to have, but not a deciding factor",
+          "boosts": ["software_sub", "finance", "engineering"],
+          "suppresses": []
+        },
+        {
+          "label": "I prefer to define my own mission — not follow someone else's cause",
+          "boosts": ["entrepreneurial", "expressive", "leadership_sub"],
+          "suppresses": []
+        }
+      ]
+    },
+    {
+      "id": "dd063",
+      "area": "lifestyle_priorities",
+      "text": "How do you feel about continuous learning — updating your skills and knowledge throughout your career?",
+      "options": [
+        {
+          "label": "I thrive on it — I want a career where the learning never stops",
+          "boosts": ["research_sub", "software_sub", "data_sub", "analytical"],
+          "suppresses": []
+        },
+        {
+          "label": "I am willing to do it but I want deep mastery first",
+          "boosts": ["specialist_medical", "legal_sub", "structured"],
+          "suppresses": []
+        },
+        {
+          "label": "I prefer once I master something, to keep doing it excellently",
+          "boosts": ["trades", "clinical", "performing_sub"],
+          "suppresses": ["data_sub"]
+        },
+        {
+          "label": "I want to learn broadly — many fields, not just one",
+          "boosts": ["entrepreneurial", "leadership_sub", "policy_sub"],
+          "suppresses": ["specialist_medical"]
+        }
+      ]
+    },
+    {
+      "id": "dd064",
+      "area": "lifestyle_priorities",
+      "text": "Which of these future versions of yourself sounds most right?",
+      "options": [
+        {
+          "label": "A respected expert who is the first call when the problem is hard",
+          "boosts": ["specialist_medical", "legal_sub", "research_sub", "analytical"],
+          "suppresses": []
+        },
+        {
+          "label": "A leader who has built something — a company, institution, or movement",
+          "boosts": ["entrepreneurial", "leadership_sub", "business", "policy_sub"],
+          "suppresses": []
+        },
+        {
+          "label": "A person known for their creative work — writing, art, performance, or design",
+          "boosts": ["expressive", "creative", "written_sub", "performing_sub"],
+          "suppresses": ["structured", "analytical"]
+        },
+        {
+          "label": "Someone quietly doing great work and living a fulfilling, balanced life",
+          "boosts": ["education", "clinical", "social", "structured"],
+          "suppresses": ["entrepreneurial", "high_earning"]
+        }
+      ]
+    },
+    {
+      "id": "dd065",
+      "area": "lifestyle_priorities",
+      "text": "Your parents and family's expectations for your career — how much do they influence you?",
+      "options": [
+        {
+          "label": "A lot — I want to make them proud and follow a respected path",
+          "boosts": ["clinical", "legal_sub", "engineering", "competitive_exam"],
+          "suppresses": []
+        },
+        {
+          "label": "Somewhat — I respect their input but the final call is mine",
+          "boosts": ["business", "software_sub", "finance"],
+          "suppresses": []
+        },
+        {
+          "label": "Minimally — I want to follow what genuinely excites me",
+          "boosts": ["expressive", "creative", "research_sub", "entrepreneurial"],
+          "suppresses": []
+        },
+        {
+          "label": "It depends — I want to balance my passion with a practical career",
+          "boosts": ["education", "clinical", "engineering"],
+          "suppresses": []
+        }
+      ]
+    }
+  ]
+}

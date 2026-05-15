@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Advisor — Deep Dive</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="test-header">
+      <a href="result.html" class="app-logo btn-ghost" style="padding-left:0; color:var(--primary); font-weight:700; font-size:1rem; text-decoration:none;">
+        &#9711; Career Advisor
+      </a>
+    </div>
+
+    <!-- No-result fallback (shown if no first-test result in localStorage) -->
+    <div id="no-result" class="hidden card text-center" style="padding:2rem;">
+      <p style="font-size:2rem;">&#128214;</p>
+      <h2 class="mt-1">Complete the first test first</h2>
+      <p class="mt-1">The deep dive narrows down from your top 10 matches.</p>
+      <a href="test.html" class="btn-primary mt-2" style="margin-top:1rem; display:block;">Take the Career Test &rarr;</a>
+    </div>
+
+    <!-- Progress bar (hidden until engine starts) -->
+    <div class="progress-wrapper hidden" id="progress-wrapper">
+      <div class="progress-label">
+        <span id="progress-text">Narrowing down your best match…</span>
+        <span id="progress-pct">0%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+      </div>
+      <!-- Candidates remaining indicator -->
+      <div id="candidates-indicator" style="text-align:right; font-size:0.75rem; color:var(--muted); margin-top:0.25rem;">
+        <span id="candidates-count">10</span> careers in focus
+      </div>
+    </div>
+
+    <!-- Question card -->
+    <div class="card hidden" id="question-card">
+      <div id="loading-state" class="loading-state">
+        <div class="spinner"></div>
+        <p class="mt-2 text-muted">Loading…</p>
+      </div>
+      <div id="question-content" class="hidden">
+        <span class="question-type-label" id="question-type-label">Deep Dive</span>
+        <p class="question-number" id="question-number"></p>
+        <p class="question-text" id="question-text"></p>
+        <div class="options-list options-personality" id="options-list"></div>
+      </div>
+    </div>
+
+    <!-- Navigation (Prev is hidden — adaptive test can't go back) -->
+    <div class="nav-buttons hidden" id="nav-buttons">
+      <button class="btn-ghost" id="btn-prev" style="visibility:hidden;" disabled>&#8592; Prev</button>
+      <button class="btn-primary" id="btn-next" disabled>Next &rarr;</button>
+    </div>
+
+    <!-- Error message -->
+    <p id="error-msg" class="hidden text-center mt-2" style="color:#DC2626; font-size:0.875rem;"></p>
+
+  </div>
+
+  <script src="src/deep_dive_engine.js"></script>
+  <script src="src/deepdive_app.js"></script>
+</body>
+</html>

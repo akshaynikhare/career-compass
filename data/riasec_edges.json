@@ -4113,6 +4113,456 @@
       "S": 0.1,
       "E": 0.15,
       "C": 0.1
+    },
+    {
+      "profession_id": "devops_sre_engineer",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "prompt_engineer_new",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "mlops_engineer_new",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "embedded_systems_engineer_new",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "blockchain_developer_new",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "game_developer_new",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "ar_vr_developer_new",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "database_administrator_new",
+      "R": 0.12,
+      "I": 0.57,
+      "A": 0.04,
+      "S": 0.04,
+      "E": 0,
+      "C": 0.23
+    },
+    {
+      "profession_id": "cloud_solutions_architect",
+      "R": 0.2,
+      "I": 0.5,
+      "A": 0.05,
+      "S": 0.05,
+      "E": 0.1,
+      "C": 0.1
+    },
+    {
+      "profession_id": "technical_writer_software",
+      "R": 0.09,
+      "I": 0.47,
+      "A": 0.22,
+      "S": 0.04,
+      "E": 0.09,
+      "C": 0.09
+    },
+    {
+      "profession_id": "genetics_counsellor",
+      "R": 0.08,
+      "I": 0.37,
+      "A": 0,
+      "S": 0.51,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "palliative_care_specialist_new",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "sleep_medicine_specialist_new",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "telemedicine_doctor",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "medical_transcriptionist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "healthcare_quality_analyst",
+      "R": 0.04,
+      "I": 0.47,
+      "A": 0,
+      "S": 0.3,
+      "E": 0,
+      "C": 0.19
+    },
+    {
+      "profession_id": "clinical_pharmacologist",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "sterile_processing_technician",
+      "R": 0.1,
+      "I": 0.4,
+      "A": 0,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "school_principal_new",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.2,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "special_education_teacher_new",
+      "R": 0,
+      "I": 0.17,
+      "A": 0.22,
+      "S": 0.57,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "educational_psychologist",
+      "R": 0,
+      "I": 0.21,
+      "A": 0.17,
+      "S": 0.58,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "curriculum_designer_k12",
+      "R": 0,
+      "I": 0.14,
+      "A": 0.36,
+      "S": 0.4,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "corporate_trainer_ld",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.2,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "language_teacher_foreign",
+      "R": 0,
+      "I": 0.17,
+      "A": 0.22,
+      "S": 0.57,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "academic_librarian",
+      "R": 0,
+      "I": 0.2,
+      "A": 0.2,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "education_policy_analyst_new",
+      "R": 0,
+      "I": 0.35,
+      "A": 0.17,
+      "S": 0.44,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "community_development_officer",
+      "R": 0,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.65,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "child_welfare_officer",
+      "R": 0,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.65,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "ngo_programme_manager",
+      "R": 0,
+      "I": 0.09,
+      "A": 0.09,
+      "S": 0.47,
+      "E": 0.26,
+      "C": 0.09
+    },
+    {
+      "profession_id": "disability_rehabilitation_specialist",
+      "R": 0,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.65,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "disaster_relief_coordinator",
+      "R": 0,
+      "I": 0.1,
+      "A": 0.1,
+      "S": 0.65,
+      "E": 0.1,
+      "C": 0.05
+    },
+    {
+      "profession_id": "labour_welfare_officer",
+      "R": 0,
+      "I": 0.13,
+      "A": 0.09,
+      "S": 0.56,
+      "E": 0,
+      "C": 0.22
+    },
+    {
+      "profession_id": "prison_counsellor",
+      "R": 0,
+      "I": 0.13,
+      "A": 0.09,
+      "S": 0.74,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "addiction_counsellor",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.13,
+      "S": 0.58,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "art_therapist_new",
+      "R": 0,
+      "I": 0.19,
+      "A": 0.27,
+      "S": 0.5,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "play_therapist",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.13,
+      "S": 0.58,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "crisis_intervention_specialist",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.15,
+      "S": 0.5,
+      "E": 0.05,
+      "C": 0.05
+    },
+    {
+      "profession_id": "neuropsychologist_new",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.13,
+      "S": 0.58,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "eap_counsellor",
+      "R": 0,
+      "I": 0.25,
+      "A": 0.13,
+      "S": 0.58,
+      "E": 0,
+      "C": 0.04
+    },
+    {
+      "profession_id": "actuarial_analyst",
+      "R": 0,
+      "I": 0.4,
+      "A": 0.04,
+      "S": 0.09,
+      "E": 0.3,
+      "C": 0.17
+    },
+    {
+      "profession_id": "credit_rating_analyst",
+      "R": 0,
+      "I": 0.44,
+      "A": 0,
+      "S": 0.04,
+      "E": 0.26,
+      "C": 0.26
+    },
+    {
+      "profession_id": "pension_fund_manager",
+      "R": 0,
+      "I": 0.25,
+      "A": 0,
+      "S": 0,
+      "E": 0.46,
+      "C": 0.29
+    },
+    {
+      "profession_id": "sebi_compliance_officer",
+      "R": 0,
+      "I": 0.3,
+      "A": 0,
+      "S": 0.04,
+      "E": 0.22,
+      "C": 0.44
+    },
+    {
+      "profession_id": "venture_capital_analyst_new",
+      "R": 0,
+      "I": 0.44,
+      "A": 0,
+      "S": 0.04,
+      "E": 0.26,
+      "C": 0.26
+    },
+    {
+      "profession_id": "wealthtech_analyst",
+      "R": 0,
+      "I": 0.44,
+      "A": 0,
+      "S": 0.04,
+      "E": 0.26,
+      "C": 0.26
+    },
+    {
+      "profession_id": "aquaculture_specialist",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "organic_farming_consultant",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "carbon_credit_analyst",
+      "R": 0.23,
+      "I": 0.44,
+      "A": 0.05,
+      "S": 0.09,
+      "E": 0.05,
+      "C": 0.14
+    },
+    {
+      "profession_id": "wildlife_conservation_officer",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
+    },
+    {
+      "profession_id": "precision_agriculture_specialist",
+      "R": 0.3,
+      "I": 0.3,
+      "A": 0.05,
+      "S": 0.1,
+      "E": 0.1,
+      "C": 0.15
     }
   ]
 }

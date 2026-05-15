@@ -19,6 +19,8 @@
   --radius-sm: 8px;
   --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
   --shadow-md: 0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.06);
+  --border-interactive: 2px;
+  --border-structural: 1px;
 }
 
 /* ===== BASE ===== */
@@ -102,7 +104,7 @@ p  { color: var(--muted); }
   gap: 0.375rem;
   background: transparent;
   color: var(--primary);
-  border: 1.5px solid var(--primary);
+  border: var(--border-interactive) solid var(--primary);
   border-radius: var(--radius-sm);
   padding: 0.625rem 1.25rem;
   font-size: 0.9375rem;
@@ -156,7 +158,7 @@ p  { color: var(--muted); }
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  border: 2px solid var(--border);
+  border: var(--border-interactive) solid var(--border);
   border-radius: var(--radius-sm);
   padding: 0.75rem 1rem;
   cursor: pointer;
@@ -188,7 +190,7 @@ p  { color: var(--muted); }
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  border: 2px solid var(--border);
+  border: var(--border-interactive) solid var(--border);
   background: var(--white);
   transition: border-color 0.15s ease, background 0.15s ease;
 }
@@ -253,7 +255,7 @@ p  { color: var(--muted); }
   font-size: 0.75rem;
   color: var(--muted);
   background: var(--bg);
-  border: 1px solid var(--border);
+  border: var(--border-structural) solid var(--border);
   border-radius: 999px;
   padding: 0.125rem 0.625rem;
   margin-bottom: 0.75rem;
@@ -384,7 +386,7 @@ p  { color: var(--muted); }
 
 .career-card {
   background: var(--white);
-  border: 1px solid var(--border);
+  border: var(--border-structural) solid var(--border);
   border-radius: var(--radius);
   padding: 1rem 1.125rem;
   box-shadow: var(--shadow);
@@ -545,7 +547,7 @@ p  { color: var(--muted); }
 }
 
 .form-field input {
-  border: 1.5px solid var(--border);
+  border: var(--border-interactive) solid var(--border);
   border-radius: var(--radius-sm);
   padding: 0.6875rem 0.875rem;
   font-size: 1rem;
@@ -644,5 +646,219 @@ p  { color: var(--muted); }
   .nav-buttons .btn-primary {
     width: auto;
     flex: 1;
+  }
+}
+
+/* Career card layout — rank inline, badge below name */
+.career-name-block {
+  flex: 1;
+}
+
+.career-name-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.career-rank {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.career-summary {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 0.375rem;
+  margin-top: 0.375rem;
+}
+
+/* ===== EXPLORE (GRAPH) PAGE ===== */
+.graph-canvas {
+  width: 100%;
+  height: 70vh;
+  min-height: 400px;
+  display: block;
+  background: var(--bg);
+  border-radius: var(--radius);
+  border: var(--border-structural) solid var(--border);
+  overflow: hidden;
+  cursor: grab;
+}
+
+.graph-canvas:active { cursor: grabbing; }
+
+.graph-node {
+  cursor: pointer;
+}
+
+.graph-node circle {
+  stroke: var(--white);
+  stroke-width: 2px;
+  transition: r 0.15s ease;
+}
+
+.graph-node text {
+  font-size: 11px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  fill: var(--text);
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+.graph-link {
+  stroke: var(--border);
+  stroke-opacity: 0.7;
+  stroke-width: 1.5px;
+  fill: none;
+}
+
+.graph-tooltip {
+  position: absolute;
+  background: var(--white);
+  border: var(--border-structural) solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  padding: 0.75rem 1rem;
+  max-width: 240px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  z-index: 10;
+}
+
+.graph-tooltip.visible { opacity: 1; pointer-events: auto; }
+
+.graph-tooltip-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.375rem;
+}
+
+.graph-tooltip-summary {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+}
+
+.graph-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.graph-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.graph-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ===== TIMELINE PAGE ===== */
+.timeline-scroll-wrap {
+  overflow-x: auto;
+  overflow-y: visible;
+  padding: 1rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.timeline-svg {
+  display: block;
+  min-width: 100%;
+}
+
+.timeline-stage {
+  cursor: default;
+}
+
+.timeline-stage circle {
+  fill: var(--white);
+  stroke: var(--primary);
+  stroke-width: 2.5px;
+  transition: r 0.15s ease;
+}
+
+.timeline-stage.active circle {
+  fill: var(--primary);
+}
+
+.timeline-stage-label {
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  fill: var(--text);
+  font-weight: 500;
+  text-anchor: middle;
+}
+
+.timeline-year-label {
+  font-size: 11px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  fill: var(--muted);
+  text-anchor: middle;
+}
+
+.timeline-connector {
+  stroke: var(--primary);
+  stroke-width: 2px;
+  stroke-opacity: 0.4;
+  fill: none;
+}
+
+.timeline-select-wrap {
+  margin-bottom: 1rem;
+}
+
+.timeline-select-wrap label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.375rem;
+}
+
+.timeline-select {
+  border: var(--border-interactive) solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--text);
+  background: var(--white);
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.timeline-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  body * { visibility: hidden; }
+  #print-summary, #print-summary * { visibility: visible; }
+  #print-summary {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 2rem;
+    border: none !important;
+    background: white !important;
   }
 }
