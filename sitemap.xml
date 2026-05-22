@@ -2,31 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://akshaynikhare.github.io/career-compass/</loc>
+    <lastmod>2026-05-22</lastmod>
     <priority>1.0</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://akshaynikhare.github.io/career-compass/test.html</loc>
+    <lastmod>2026-05-22</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://akshaynikhare.github.io/career-compass/result.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/result2.html</loc>
+    <lastmod>2026-05-22</lastmod>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://akshaynikhare.github.io/career-compass/explore.html</loc>
+    <lastmod>2026-05-22</lastmod>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://akshaynikhare.github.io/career-compass/timeline.html</loc>
+    <lastmod>2026-05-22</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://akshaynikhare.github.io/career-compass/deepdive.html</loc>
+    <lastmod>2026-05-22</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
