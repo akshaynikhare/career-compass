@@ -4,8 +4,9 @@ version = "1.0.0"
 description = "Career Compass backend — Neon Postgres result capture + Gemini AI proxy"
 requires-python = ">=3.11"
 dependencies = [
-    "fastapi>=0.115",
-    "uvicorn[standard]>=0.30",
+    # [standard] pulls in fastapi-cli + uvicorn[standard]; FastAPI Cloud starts the
+    # app with `fastapi run`, which requires it (else: "install fastapi[standard]").
+    "fastapi[standard]>=0.115",
     "asyncpg>=0.29",
     "google-genai>=0.3",
     "slowapi>=0.1.9",
