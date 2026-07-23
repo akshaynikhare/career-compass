@@ -9,6 +9,12 @@
 (function () {
   'use strict';
 
+  function apiHeaders(cfg) {
+    var h = { 'Content-Type': 'application/json' };
+    if (cfg.API_KEY) h['X-Api-Key'] = cfg.API_KEY;
+    return h;
+  }
+
   function buildPayload(studentInfo, result) {
     return {
       student_name:  studentInfo.name  || null,
@@ -33,7 +39,7 @@
     try {
       var res = await fetch(cfg.API_BASE_URL + '/api/results', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: apiHeaders(cfg),
         body: JSON.stringify(buildPayload(studentInfo, result))
       });
       return { ok: res.ok, status: res.status };
@@ -109,7 +115,7 @@
 
     fetch(cfg.API_BASE_URL + '/api/results', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: apiHeaders(cfg),
       body: JSON.stringify(buildPayload(studentInfo, result))
     }).catch(function () {});
   }

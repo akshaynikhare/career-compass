@@ -10,10 +10,13 @@
   async function postJSON(path, body) {
     var base = apiBase();
     if (!base) return null;
+    var cfg = window.__CFG || {};
+    var headers = { 'Content-Type': 'application/json' };
+    if (cfg.API_KEY) headers['X-Api-Key'] = cfg.API_KEY;
     try {
       var res = await fetch(base + path, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: headers,
         body: JSON.stringify(body)
       });
       if (!res.ok) return null;

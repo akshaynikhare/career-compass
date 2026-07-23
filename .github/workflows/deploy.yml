@@ -28,7 +28,7 @@ jobs:
         # Only the public backend URL ships to the browser now — no DB/AI keys.
         run: |
           mkdir -p src
-          echo "window.__CFG = { API_BASE_URL: '${{ secrets.API_BASE_URL }}' };" > src/config.js
+          echo "window.__CFG = { API_BASE_URL: '${{ secrets.API_BASE_URL }}', API_KEY: '${{ secrets.API_KEY }}' };" > src/config.js
       - name: Generate SEO profession pages + sitemap
         run: |
           node scripts/build_profession_pages.mjs

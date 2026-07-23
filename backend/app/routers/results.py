@@ -11,10 +11,12 @@ from __future__ import annotations
 
 import json
 
-from fastapi import APIRouter, Depends, Header, HTTPException, Query
+from fastapi import APIRouter, Depends, Header, HTTPException, Query, Request
 
 from .. import config, db
+from ..deps import require_site_key
 from ..models import ResultIn, ResultRow
+from ..ratelimit import limiter
 
 router = APIRouter(prefix="/api", tags=["results"])
 
@@ -27,8 +29,26 @@ async def require_admin(authorization: str | None = Header(default=None)) -> Non
         raise HTTPException(status_code=401, detail="Unauthorized")
 
 
-@router.post("/results")
-async def create_result(payload: ResultIn) -> dict:
+def _verify_origin(request: Request) -> None:
+    """Reject cross-site / non-browser writes. CORS only blocks the *response* from
+    being read — the request still reaches the DB — so we enforce the allowlist here."""
+    if not config.ENFORCE_ORIGIN:
+        return
+    origin = request.headers.get("origin")
+    if origin is not None:
+        if origin in config.ALLOWED_ORIGINS:
+            return
+    else:
+        referer = request.headers.get("referer", "")
+        if any(referer.startswith(o) for o in config.ALLOWED_ORIGINS):
+            return
+    raise HTTPException(status_code=403, detail="Forbidden")
+
+
+@router.post("/results", dependencies=[Depends(require_site_key)])
+@limiter.limit(config.RESULTS_RATE_LIMIT)
+async def create_result(request: Request, payload: ResultIn) -> dict:
+    _verify_origin(request)
     top_matches = [m.model_dump(exclude_none=True) for m in payload.top_matches]
     try:
         await db.pool().execute(
