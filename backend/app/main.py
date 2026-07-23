@@ -8,6 +8,7 @@ calls this service instead of hitting Supabase/Gemini directly.
 Run locally:   uvicorn app.main:app --reload
 Deploy:        fastapi deploy   (see backend/README.md)
 """
+import logging
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
@@ -19,10 +20,17 @@ from . import config, db
 from .ratelimit import limiter
 from .routers import ai, results
 
+logger = logging.getLogger("career-compass")
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    await db.connect()
+    # Don't let a DB hiccup crash startup — the app boots, /health responds, and
+    # DB-backed routes surface a clean 502 until the pool is available.
+    try:
+        await db.connect()
+    except Exception as exc:  # noqa: BLE001
+        logger.error("Database pool init failed at startup: %s", exc)
     yield
     await db.disconnect()
 
