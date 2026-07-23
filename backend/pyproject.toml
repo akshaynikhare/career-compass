@@ -13,12 +13,16 @@ dependencies = [
     "pydantic>=2.7",
 ]
 
-# This is an application, not an installable library: tell uv NOT to build/install
-# the project itself (only its dependencies). Without this, setuptools tries to
-# package the source and fails with "Multiple top-level packages discovered in a
-# flat-layout: ['app', 'migrations']".
-[tool.uv]
-package = false
+# FastAPI Cloud's build installs this project, so give setuptools an explicit
+# build backend and package list. Without this, its flat-layout auto-discovery
+# sees both app/ and migrations/ and aborts with
+# "Multiple top-level packages discovered in a flat-layout: ['app', 'migrations']".
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["app", "app.routers", "app.services"]
 
 # Pin the ASGI entrypoint so FastAPI Cloud runs the right app object.
 [tool.fastapi]
