@@ -12,8 +12,9 @@ exactly as the old client-side code did (return null on error).
 """
 from __future__ import annotations
 
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, Depends, Request
 
+from ..deps import require_site_key
 from ..models import (
     ChatIn,
     RankDomainsIn,
@@ -25,7 +26,7 @@ from ..models import (
 from ..ratelimit import AI_LIMIT, limiter
 from ..services import gemini
 
-router = APIRouter(prefix="/api/ai", tags=["ai"])
+router = APIRouter(prefix="/api/ai", tags=["ai"], dependencies=[Depends(require_site_key)])
 
 
 @router.post("/rank-domains")

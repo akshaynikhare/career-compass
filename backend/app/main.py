@@ -35,7 +35,15 @@ async def lifespan(app: FastAPI):
     await db.disconnect()
 
 
-app = FastAPI(title="Career Compass API", version="1.0.0", lifespan=lifespan)
+app = FastAPI(
+    title="Career Compass API",
+    version="1.0.0",
+    lifespan=lifespan,
+    # Hide the interactive API explorer + schema in production (re-enable with ENABLE_DOCS=1).
+    docs_url="/docs" if config.ENABLE_DOCS else None,
+    redoc_url="/redoc" if config.ENABLE_DOCS else None,
+    openapi_url="/openapi.json" if config.ENABLE_DOCS else None,
+)
 
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
@@ -45,7 +53,7 @@ app.add_middleware(
     allow_origins=config.ALLOWED_ORIGINS,
     allow_credentials=False,
     allow_methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["Content-Type", "Authorization"],
+    allow_headers=["Content-Type", "Authorization", "X-Api-Key"],
 )
 
 app.include_router(results.router)
