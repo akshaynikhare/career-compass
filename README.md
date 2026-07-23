@@ -41,7 +41,7 @@ Students take a 45-question assessment and the browser matches their personality
 4. Answers 25 deep RIASEC personality questions (the core psychometric test)
 5. Browser computes a RIASEC score vector and filters professions by constraints
 6. Top 10 career matches are displayed, plus 5 stretch goals
-7. Result (RIASEC profile + student info) is saved anonymously to Supabase
+7. Result (RIASEC profile + student info) is saved via the backend API to Neon Postgres
 
 ---
 
@@ -70,11 +70,17 @@ career-compass/
 │   ├── app.js          # Test state machine
 │   ├── match.js        # RIASEC scoring + career matching
 │   ├── render.js       # Results rendering
-│   └── store.js        # Supabase save
+│   ├── ai.js           # AI calls → backend API
+│   ├── ai_ui.js        # AI summary + "ask a career" chat UI
+│   └── store.js        # Save result → backend API
+├── backend/            # FastAPI service (Neon Postgres + Gemini proxy)
+├── careers/            # Generated SEO pages (build output, gitignored)
 ├── data/               # Git-tracked JSON data
-├── scripts/            # Data generation + validation scripts
+├── scripts/            # Data + SEO page generation, migration
 │   ├── parse_professions.mjs
-│   ├── gen_riasec_edges.mjs
+│   ├── build_profession_pages.mjs   # 507 SEO pages + sitemap
+│   ├── gen_og_image.py              # social share PNG
+│   ├── migrate_supabase_to_neon.sh
 │   └── validate_data.mjs
 └── .github/workflows/
     ├── validate.yml    # CI on every PR
@@ -89,8 +95,11 @@ career-compass/
 git clone https://github.com/akshaynikhare/career-compass.git
 cd career-compass
 
-# Create local Supabase config (gitignored)
-echo "window.__CFG = { SUPABASE_URL: '', SUPABASE_ANON_KEY: '' };" > src/config.js
+# Create local frontend config (gitignored) — points at your backend
+echo "window.__CFG = { API_BASE_URL: 'http://127.0.0.1:8000' };" > src/config.js
+
+# Generate the SEO career pages
+node scripts/build_profession_pages.mjs
 
 # Serve locally
 npx serve .
@@ -107,7 +116,9 @@ node --test src/match.test.mjs
 
 ## Deployment
 
-See [docs/DEPLOY.md](docs/DEPLOY.md) for the full GitHub Pages + Supabase setup guide.
+See [docs/DEPLOY.md](docs/DEPLOY.md) for the GitHub Pages frontend, and
+[docs/MIGRATION.md](docs/MIGRATION.md) for the backend (FastAPI Cloud + Neon),
+data migration, and SEO/Search Console go-live steps.
 
 ---
 

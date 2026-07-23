@@ -11,7 +11,9 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="manifest" href="/manifest.json">
+  <!-- Google Search Console: paste the meta tag from Settings > Ownership verification here.
+       Example: <meta name="google-site-verification" content="YOUR_TOKEN"> -->
+  <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#4F46E5">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="description" content="Free RIASEC career aptitude test for Indian Class 9–10 students. Discover your best career path from 507 Indian professions in 10 minutes.">
@@ -23,13 +25,13 @@
   <meta property="og:title" content="Career Compass — Free Career Aptitude Test for Class 10 Students">
   <meta property="og:description" content="Free RIASEC career aptitude test for Indian Class 9–10 students. Discover your best career path from 507 Indian professions in 10 minutes.">
   <meta property="og:url" content="https://akshaynikhare.github.io/career-compass/">
-  <meta property="og:image" content="https://akshaynikhare.github.io/career-compass/icons/og-image.svg">
+  <meta property="og:image" content="https://akshaynikhare.github.io/career-compass/icons/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Career Compass — Free Career Aptitude Test for Class 10 Students">
   <meta name="twitter:description" content="Free RIASEC career aptitude test for Indian Class 9–10 students. Discover your best career path from 507 Indian professions in 10 minutes.">
-  <meta name="twitter:image" content="https://akshaynikhare.github.io/career-compass/icons/og-image.svg">
+  <meta name="twitter:image" content="https://akshaynikhare.github.io/career-compass/icons/og-image.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -55,6 +57,31 @@
       "Offline-capable PWA",
       "Free, no signup required"
     ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Career Compass",
+    "url": "https://akshaynikhare.github.io/career-compass/",
+    "inLanguage": "en-IN",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://akshaynikhare.github.io/career-compass/careers/index.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Career Compass",
+    "url": "https://akshaynikhare.github.io/career-compass/",
+    "logo": "https://akshaynikhare.github.io/career-compass/icons/og-image.png",
+    "description": "Free RIASEC career aptitude test and career guidance for Indian Class 9-10 students.",
+    "founder": { "@type": "Person", "name": "Akshay Nikhare" }
   }
   </script>
   <title>Career Compass — Free Career Aptitude Test for Class 10 Students</title>
@@ -146,12 +173,14 @@
 
       <a href="test.html" class="btn-primary start-link">Start Test &rarr;</a>
 
+      <p style="margin-top:0.75rem;"><a href="careers/index.html" style="color:var(--primary); font-size:0.875rem; text-decoration:none;">Or browse all 507 careers by field &rarr;</a></p>
+
       <p class="footer-note">Free. No sign-up needed. Results saved on your device.</p>
     </div>
   </div>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js').catch(function(){});
+      navigator.serviceWorker.register('sw.js').catch(function(){});
     }
   </script>
   <script src="src/i18n.js"></script>

@@ -11,7 +11,8 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="manifest" href="/manifest.json">
+  <meta name="robots" content="noindex, follow">
+  <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#4F46E5">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="description" content="Your Career Compass results — top career matches, domain analysis, and a personalised path from Class 10 to your dream job.">
@@ -23,13 +24,13 @@
   <meta property="og:title" content="Career Compass — Your Results">
   <meta property="og:description" content="Your Career Compass results — top career matches, domain analysis, and a personalised path from Class 10 to your dream job.">
   <meta property="og:url" content="https://akshaynikhare.github.io/career-compass/result.html">
-  <meta property="og:image" content="https://akshaynikhare.github.io/career-compass/icons/og-image.svg">
+  <meta property="og:image" content="https://akshaynikhare.github.io/career-compass/icons/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Career Compass — Your Results">
   <meta name="twitter:description" content="Your Career Compass results — top career matches, domain analysis, and a personalised path from Class 10 to your dream job.">
-  <meta name="twitter:image" content="https://akshaynikhare.github.io/career-compass/icons/og-image.svg">
+  <meta name="twitter:image" content="https://akshaynikhare.github.io/career-compass/icons/og-image.png">
   <title>Career Compass — Your Results</title>
   <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -64,6 +65,12 @@
         <p style="font-size:0.8125rem; color:var(--muted); margin-top:0.625rem; padding:0.5rem 0.75rem; background:var(--bg); border-radius:var(--radius-sm); border-left:3px solid var(--primary);">
           Remember: stream choice is not permanent. Many successful people reached their careers through unexpected routes. Use this as a starting point, not a life sentence.
         </p>
+      </div>
+
+      <!-- AI personalized summary (populated by src/ai_ui.js; hidden until ready) -->
+      <div id="ai-summary-card" class="card mb-2 hidden" style="margin-bottom:1rem; border-left:3px solid var(--primary);">
+        <h2 class="section-title" style="display:flex; align-items:center; gap:0.4rem;">&#10024; Your Personalised Summary</h2>
+        <p id="ai-summary-text" style="font-size:0.9375rem; line-height:1.65; color:var(--text);"></p>
       </div>
 
       <!-- RIASEC Chart -->
@@ -110,6 +117,19 @@
             <a href="timeline.html" class="btn-secondary" style="flex:1; justify-content:center; text-align:center;">Career Timeline &#8594;</a>
           </div>
         </div>
+      </div>
+
+      <!-- AI: Ask about a career + roadmap (populated by src/ai_ui.js) -->
+      <div id="ai-ask-card" class="card mb-2 hidden" style="margin-bottom:1rem;">
+        <h2 class="section-title" style="display:flex; align-items:center; gap:0.4rem;">&#128172; Ask About a Career</h2>
+        <p class="text-muted" style="font-size:0.875rem; margin-bottom:0.75rem;">Pick one of your matches and ask anything — exams, salary, daily work, or get a step-by-step roadmap.</p>
+        <select id="ai-ask-profession" style="width:100%; padding:0.55rem 0.75rem; border:1px solid var(--border); border-radius:var(--radius-sm); font-size:0.9375rem; margin-bottom:0.625rem; background:var(--white); color:var(--text);"></select>
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+          <input id="ai-ask-input" type="text" placeholder="e.g. Which entrance exams do I need?" style="flex:1; min-width:180px; padding:0.55rem 0.75rem; border:1px solid var(--border); border-radius:var(--radius-sm); font-size:0.9375rem;">
+          <button id="ai-ask-btn" class="btn-primary" style="min-width:90px; justify-content:center;">Ask</button>
+        </div>
+        <button id="ai-roadmap-btn" class="btn-secondary" style="margin-top:0.625rem; width:100%; justify-content:center;">&#128506; Get a step-by-step roadmap</button>
+        <div id="ai-ask-thread" style="margin-top:1rem; display:flex; flex-direction:column; gap:0.75rem;"></div>
       </div>
 
       <!-- Next 3 Steps -->
@@ -297,6 +317,7 @@
   </script>
   <script src="src/share_card.js"></script>
   <script src="src/render.js"></script>
+  <script src="src/ai_ui.js"></script>
   <script src="src/i18n.js"></script>
 </body>
 </html>

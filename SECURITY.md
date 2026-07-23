@@ -1,13 +1,15 @@
 # Security Policy
 
-## Client-side key safety
+## Key safety
 
-The frontend includes a Supabase **publishable (anon) key** — this is intentional and safe. Supabase anon keys are designed to be shipped in client code.
+**No database or AI keys are shipped to the browser.** The only value in the
+client config (`window.__CFG.API_BASE_URL`) is the public URL of the backend.
 
-The key is locked down with Row Level Security (RLS):
-
-- **INSERT only** — browsers can submit results but cannot read other students' data
-- No SELECT, UPDATE, or DELETE access from the client
+- The **Neon Postgres** connection string and the **Gemini API key** live only in
+  the FastAPI backend's server-side environment (FastAPI Cloud env vars).
+- The frontend can only **write** results via `POST /api/results`. Reading stored
+  results (`GET /api/results`) requires a server-side admin bearer token.
+- AI endpoints are per-IP rate-limited and CORS is restricted to the site origin.
 
 ## Reporting a security issue
 
