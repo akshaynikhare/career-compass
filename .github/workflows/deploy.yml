@@ -21,10 +21,21 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Inject config secrets
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Inject frontend config
+        # Only the public backend URL ships to the browser now — no DB/AI keys.
         run: |
           mkdir -p src
-          echo "window.__CFG = { SUPABASE_URL: '${{ secrets.SUPABASE_URL }}', SUPABASE_ANON_KEY: '${{ secrets.SUPABASE_ANON_KEY }}', GEMINI_KEY: '${{ secrets.GEMINI_KEY }}' };" > src/config.js
+          echo "window.__CFG = { API_BASE_URL: '${{ secrets.API_BASE_URL }}' };" > src/config.js
+      - name: Generate SEO profession pages + sitemap
+        run: |
+          node scripts/build_profession_pages.mjs
+      - name: Prune non-web files from the Pages artifact
+        # The backend is a separate service (FastAPI Cloud); never publish it.
+        run: |
+          rm -rf backend scripts professions.md
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

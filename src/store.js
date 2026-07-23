@@ -1,19 +1,16 @@
 /**
- * store.js — Supabase save + download fallback
- * Exported as window.Store = { saveResult, downloadResult }
+ * store.js — backend save + download fallback
+ * Exported as window.Store = { saveResult, downloadResult, saveProfile }
  * No import/export — vanilla globals.
+ *
+ * Results are POSTed to the Career Compass backend (FastAPI + Neon Postgres) at
+ * window.__CFG.API_BASE_URL. No database keys are present in the browser.
  */
 (function () {
   'use strict';
 
-  async function saveResult(studentInfo, result) {
-    var cfg = window.__CFG || {};
-
-    if (!cfg.SUPABASE_URL || !cfg.SUPABASE_ANON_KEY) {
-      return { ok: false, reason: 'no_config' };
-    }
-
-    var payload = {
+  function buildPayload(studentInfo, result) {
+    return {
       student_name:  studentInfo.name  || null,
       student_email: studentInfo.email || null,
       student_phone: studentInfo.phone || null,
@@ -24,16 +21,20 @@
       }),
       user_agent: navigator.userAgent
     };
+  }
+
+  async function saveResult(studentInfo, result) {
+    var cfg = window.__CFG || {};
+
+    if (!cfg.API_BASE_URL) {
+      return { ok: false, reason: 'no_config' };
+    }
 
     try {
-      var res = await fetch(cfg.SUPABASE_URL + '/rest/v1/career_test_results', {
+      var res = await fetch(cfg.API_BASE_URL + '/api/results', {
         method: 'POST',
-        headers: {
-          'apikey':       cfg.SUPABASE_ANON_KEY,
-          'Content-Type': 'application/json',
-          'Prefer':       'return=minimal'
-        },
-        body: JSON.stringify(payload)
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(buildPayload(studentInfo, result))
       });
       return { ok: res.ok, status: res.status };
     } catch (err) {
@@ -100,31 +101,16 @@
     }, 100);
   }
 
+  // Fire-and-forget save used on the test page; never blocks navigation.
   function saveProfile(studentInfo, result) {
     var cfg = window.__CFG || {};
 
-    if (!cfg.SUPABASE_URL || !cfg.SUPABASE_ANON_KEY) return;
+    if (!cfg.API_BASE_URL) return;
 
-    var payload = {
-      student_name:  studentInfo.name  || null,
-      student_email: studentInfo.email || null,
-      student_phone: studentInfo.phone || null,
-      riasec_vector: result.riasec,
-      constraints:   result.constraints || {},
-      top_matches: (result.top10 || []).map(function (m) {
-        return { id: m.profession.id, name: m.profession.name, score: +m.score.toFixed(3) };
-      }),
-      user_agent: navigator.userAgent
-    };
-
-    fetch(cfg.SUPABASE_URL + '/rest/v1/career_test_results', {
+    fetch(cfg.API_BASE_URL + '/api/results', {
       method: 'POST',
-      headers: {
-        'apikey':       cfg.SUPABASE_ANON_KEY,
-        'Content-Type': 'application/json',
-        'Prefer':       'return=minimal'
-      },
-      body: JSON.stringify(payload)
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(buildPayload(studentInfo, result))
     }).catch(function () {});
   }
 

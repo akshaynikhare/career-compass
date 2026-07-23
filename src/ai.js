@@ -1,92 +1,97 @@
 (function (root) {
   'use strict';
 
-  var GEMINI_ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
-
-  function getKey() {
-    return (window.__CFG && window.__CFG.GEMINI_KEY) || '';
+  // All AI now goes through the Career Compass backend (FastAPI on FastAPI Cloud),
+  // which holds the Gemini key server-side. No API key is present in the browser.
+  function apiBase() {
+    return (window.__CFG && window.__CFG.API_BASE_URL) || '';
   }
 
-  // ── Domain ranking ──────────────────────────────────────────────────────────
-  // Sends topByDomain + student RIASEC + constraints to Gemini.
-  // Returns an array of { category, reason } objects in ranked order,
-  // or null if the key is missing / the call fails.
-  async function rankDomains(topByDomain, riasec, constraints) {
-    var key = getKey();
-    if (!key) return null;
-
-    // Build a compact summary of each domain for the prompt
-    var domainSummaries = topByDomain.slice(0, 10).map(function (d) {
-      var careers = d.matches.map(function (m) {
-        return m.profession.name + ' (' + Math.round(m.score * 100) + '% match)';
-      }).join(', ');
-      return d.category + ': ' + careers;
-    }).join('\n');
-
-    // Top RIASEC dimensions
-    var sortedDims = Object.entries(riasec)
-      .sort(function (a, b) { return b[1] - a[1]; })
-      .slice(0, 3)
-      .map(function (e) {
-        var labels = { R: 'Realistic (hands-on)', I: 'Investigative (analytical)', A: 'Artistic (creative)', S: 'Social (people-focused)', E: 'Enterprising (leadership)', C: 'Conventional (structured)' };
-        return labels[e[0]] || e[0];
-      });
-
-    var streamLabel = { pcm: 'Science PCM', pcb: 'Science PCB', commerce: 'Commerce', arts: 'Arts/Humanities', any: 'Not decided' };
-
-    var prompt = [
-      'You are a career counsellor helping an Indian Class 10 student (age 14-16) understand their career options.',
-      '',
-      'Student profile:',
-      '- Top personality traits: ' + sortedDims.join(', '),
-      '- Preferred stream: ' + (streamLabel[constraints.stream_pref] || constraints.stream_pref || 'Not decided'),
-      '- Years available for study: ' + (constraints.years_available || 'Not specified'),
-      '- Exam intensity preference: ' + (['', 'Low', 'Moderate', 'High'][constraints.exam_intensity] || 'Not specified'),
-      '',
-      'Their top matching career domains (from a RIASEC assessment):',
-      domainSummaries,
-      '',
-      'Task: Pick the TOP 4 domains that best fit this student. For each, write ONE short sentence (max 15 words) explaining WHY it fits — be specific to their traits, not generic.',
-      '',
-      'Respond in this exact JSON format (no markdown, no extra text):',
-      '[',
-      '  {"category": "Domain Name", "reason": "One sentence why it fits."},',
-      '  ...',
-      ']'
-    ].join('\n');
-
+  async function postJSON(path, body) {
+    var base = apiBase();
+    if (!base) return null;
     try {
-      var res = await fetch(GEMINI_ENDPOINT + '?key=' + key, {
+      var res = await fetch(base + path, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { temperature: 0.4, maxOutputTokens: 300 }
-        })
+        body: JSON.stringify(body)
       });
-
       if (!res.ok) return null;
-
-      var data = await res.json();
-      var text = data.candidates &&
-                 data.candidates[0] &&
-                 data.candidates[0].content &&
-                 data.candidates[0].content.parts &&
-                 data.candidates[0].content.parts[0].text;
-
-      if (!text) return null;
-
-      // Strip markdown code fences if Gemini wraps the JSON
-      text = text.trim().replace(/^```json\s*/i, '').replace(/\s*```$/, '').trim();
-
-      var parsed = JSON.parse(text);
-      if (!Array.isArray(parsed)) return null;
-      return parsed;
+      return await res.json();
     } catch (e) {
       return null;
     }
   }
 
-  root.CareerAI = { rankDomains: rankDomains };
+  // ── Domain ranking ──────────────────────────────────────────────────────────
+  // Same signature and return shape as before: resolves to an array of
+  // { category, reason } in ranked order, or null on any failure/missing config.
+  async function rankDomains(topByDomain, riasec, constraints) {
+    var domains = (topByDomain || []).slice(0, 10).map(function (d) {
+      var careers = d.matches.map(function (m) {
+        return m.profession.name + ' (' + Math.round(m.score * 100) + '% match)';
+      }).join(', ');
+      return { category: d.category, careers: careers };
+    });
+
+    var data = await postJSON('/api/ai/rank-domains', {
+      riasec: riasec || {},
+      constraints: constraints || {},
+      domains: domains
+    });
+
+    if (!Array.isArray(data)) return null;
+    return data;
+  }
+
+  // ── Personalized summary ─────────────────────────────────────────────────────
+  // Resolves to a plain-text string, or '' on failure.
+  async function summary(riasec, constraints, topMatches) {
+    var data = await postJSON('/api/ai/summary', {
+      riasec: riasec || {},
+      constraints: constraints || {},
+      top_matches: (topMatches || []).map(function (m) {
+        return { id: m.profession.id, name: m.profession.name, score: m.score };
+      })
+    });
+    return (data && data.text) || '';
+  }
+
+  // ── "Ask about this career" Q&A ──────────────────────────────────────────────
+  async function chat(profession, question) {
+    var context = profession
+      ? [profession.summary, profession.path_india, profession.day_in_life]
+          .filter(Boolean).join(' ')
+      : '';
+    var data = await postJSON('/api/ai/chat', {
+      profession_id: profession && profession.id,
+      profession_name: profession && profession.name,
+      profession_context: context,
+      question: question
+    });
+    return (data && data.text) || '';
+  }
+
+  // ── On-demand roadmap ────────────────────────────────────────────────────────
+  async function roadmap(profession, constraints) {
+    var context = profession
+      ? [profession.summary, profession.path_india, profession.entrance_exam]
+          .filter(Boolean).join(' ')
+      : '';
+    var data = await postJSON('/api/ai/roadmap', {
+      profession_id: profession && profession.id,
+      profession_name: profession && profession.name,
+      profession_context: context,
+      constraints: constraints || {}
+    });
+    return (data && data.text) || '';
+  }
+
+  root.CareerAI = {
+    rankDomains: rankDomains,
+    summary: summary,
+    chat: chat,
+    roadmap: roadmap
+  };
 
 })(typeof window !== 'undefined' ? window : this);

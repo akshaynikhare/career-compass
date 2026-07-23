@@ -1,32 +1,36 @@
-var CACHE = 'career-compass-v1';
+// Paths are RELATIVE to the service-worker scope (career-compass/) so the PWA
+// works under the GitHub Pages project subpath, not just a root domain.
+var CACHE = 'career-compass-v2';
 var ASSETS = [
-  '/',
-  '/index.html',
-  '/test.html',
-  '/result.html',
-  '/explore.html',
-  '/timeline.html',
-  '/deepdive.html',
-  '/result2.html',
-  '/styles/main.css',
-  '/src/config.js',
-  '/src/match.js',
-  '/src/store.js',
-  '/src/app.js',
-  '/src/render.js',
-  '/src/deep_dive_engine.js',
-  '/src/deepdive_app.js',
-  '/src/path_parse.js',
-  '/src/timeline.js',
-  '/src/explore.js',
-  '/src/share_card.js',
-  '/src/i18n.js',
-  '/data/questions.json',
-  '/data/professions.json',
-  '/data/riasec_edges.json',
-  '/data/profession_tags.json',
-  '/data/deep_dive_questions.json',
-  '/data/riasec_people.json'
+  './',
+  'index.html',
+  'test.html',
+  'result.html',
+  'explore.html',
+  'timeline.html',
+  'deepdive.html',
+  'result2.html',
+  'styles/main.css',
+  'src/config.js',
+  'src/match.js',
+  'src/store.js',
+  'src/ai.js',
+  'src/ai_ui.js',
+  'src/app.js',
+  'src/render.js',
+  'src/deep_dive_engine.js',
+  'src/deepdive_app.js',
+  'src/path_parse.js',
+  'src/timeline.js',
+  'src/explore.js',
+  'src/share_card.js',
+  'src/i18n.js',
+  'data/questions.json',
+  'data/professions.json',
+  'data/riasec_edges.json',
+  'data/profession_tags.json',
+  'data/deep_dive_questions.json',
+  'data/riasec_people.json'
 ];
 
 self.addEventListener('install', function(e) {
@@ -51,16 +55,17 @@ self.addEventListener('activate', function(e) {
 
 self.addEventListener('fetch', function(e) {
   if (e.request.method !== 'GET') return;
+  // Only serve from cache for same-origin GETs; let API/AI calls hit the network.
   e.respondWith(
     caches.match(e.request).then(function(cached) {
       if (cached) return cached;
       return fetch(e.request).then(function(response) {
-        if (response && response.status === 200) {
+        if (response && response.status === 200 && e.request.url.indexOf(self.registration.scope) === 0) {
           var clone = response.clone();
           caches.open(CACHE).then(function(cache) { cache.put(e.request, clone); });
         }
         return response;
-      }).catch(function() { return caches.match('/index.html'); });
+      }).catch(function() { return caches.match('index.html'); });
     })
   );
 });

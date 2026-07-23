@@ -1,42 +1,45 @@
 # Deployment Guide
 
-## A. GitHub repo setup
+> **Architecture note (updated):** The app now uses a **FastAPI backend on FastAPI
+> Cloud** with a **Neon Postgres** database, and all AI calls are proxied
+> server-side. Supabase and the browser-side Gemini key are gone. For the full
+> migration/go-live sequence see **[MIGRATION.md](MIGRATION.md)**. This file
+> covers the frontend (GitHub Pages) only.
+
+## A. GitHub Pages setup
 
 1. Create repo on GitHub, push all code to `main`.
-2. Go to **Settings → Pages → Source** → select **"GitHub Actions"**.
-3. Go to **Settings → Secrets and variables → Actions → New repository secret**. Add:
-   - `SUPABASE_URL` — your Supabase project URL (e.g. `https://abcdef.supabase.co`)
-   - `SUPABASE_ANON_KEY` — your Supabase anon/public key
-4. Push to `main` — the `Deploy to GitHub Pages` Action runs automatically.
-5. Your app is live at `https://<your-username>.github.io/<repo-name>/`.
+2. **Settings → Pages → Source** → select **"GitHub Actions"**.
+3. **Settings → Secrets and variables → Actions → New repository secret**. Add:
+   - `API_BASE_URL` — the deployed FastAPI Cloud URL (e.g.
+     `https://career-compass-api-xxxx.fastapicloud.app`, no trailing slash).
+   - (Remove any old `SUPABASE_URL` / `SUPABASE_ANON_KEY` / `GEMINI_KEY` secrets —
+     they are no longer used.)
+4. Push to `main` — the `Deploy to GitHub Pages` Action injects the config,
+   generates the 507 SEO pages + sitemap, and publishes.
+5. Live at `https://<your-username>.github.io/<repo-name>/`.
 
-## B. Supabase project setup
+## B. Backend + database
 
-1. Go to [supabase.com](https://supabase.com) → New Project (free tier works).
-2. Once project is ready: **SQL Editor** → paste contents of `supabase_schema.sql` → Run.
-3. Verify: **Table Editor** → you should see `career_test_results` table.
-4. Go to **Settings → API** → copy:
-   - "Project URL" → `SUPABASE_URL` GitHub secret
-   - "anon public" key → `SUPABASE_ANON_KEY` GitHub secret
-5. The RLS policy in the SQL ensures browser users can only INSERT (not read other students' results).
+See **[MIGRATION.md](MIGRATION.md)** — create Neon, deploy `backend/` to FastAPI
+Cloud, set its env vars, and (optionally) migrate existing Supabase rows.
 
-## C. Local development
+## C. Local frontend development
 
 1. Clone the repo.
-2. Create `src/config.js` locally:
+2. Create `src/config.js` locally (gitignored):
    ```js
-   window.__CFG = {
-     SUPABASE_URL: 'https://your-project.supabase.co',
-     SUPABASE_ANON_KEY: 'your-anon-key'
-   };
+   window.__CFG = { API_BASE_URL: 'http://127.0.0.1:8000' };
    ```
-   (This file is gitignored — never commit real keys.)
-3. Serve locally: `npx serve .` or use VS Code Live Server.
-4. Run data validation: `node scripts/validate_data.mjs`
+   (Run the backend locally with `uvicorn app.main:app --reload` from `backend/`.)
+3. Generate the SEO pages once: `node scripts/build_profession_pages.mjs`
+4. Serve locally: `npx serve .` or VS Code Live Server.
+5. Validate data: `node scripts/validate_data.mjs`
 
 ## D. Smoke test after deploy
 
-- Open the live GitHub Pages URL.
-- Complete all 25 questions.
-- On the results page, fill name/email/phone and click "Save my result".
-- Open Supabase dashboard → **Table Editor** → `career_test_results` → confirm your row appears.
+- Open the live URL, complete the test.
+- Confirm the row landed in Neon:
+  `psql "<NEON_DB_URL>" -c "select count(*) from career_test_results;"`
+- On the results page, confirm the AI summary + "Ask About a Career" chat work.
+- View source → only `API_BASE_URL` is present (no secret keys).
