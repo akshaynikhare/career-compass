@@ -8,25 +8,57 @@
       "options": [
         {
           "label": "Break it down step by step — collect facts and study them carefully",
-          "boosts": ["analytical", "research", "data_sub", "finance_analytical"],
-          "suppresses": ["hands_on", "expressive"]
+          "boosts": [
+            "analytical",
+            "research",
+            "data_sub",
+            "finance_analytical"
+          ],
+          "suppresses": [
+            "hands_on",
+            "expressive"
+          ],
+          "label_hi": "समस्या को step by step तोड़ना — facts इकट्ठा करके ध्यान से समझना"
         },
         {
           "label": "Get hands-on — try things out until something works",
-          "boosts": ["hands_on", "engineering", "trades", "clinical"],
-          "suppresses": ["analytical"]
+          "boosts": [
+            "hands_on",
+            "engineering",
+            "trades",
+            "clinical"
+          ],
+          "suppresses": [
+            "analytical"
+          ],
+          "label_hi": "खुद हाथ आज़माना — जब तक कुछ काम न करे, तब तक try करते रहना"
         },
         {
           "label": "Talk it through — ask people and hear different views",
-          "boosts": ["people_focused", "social", "education", "mental_health"],
-          "suppresses": []
+          "boosts": [
+            "people_focused",
+            "social",
+            "education",
+            "mental_health"
+          ],
+          "suppresses": [],
+          "label_hi": "बात करके सुलझाना — लोगों से पूछना और अलग-अलग राय सुनना"
         },
         {
           "label": "Think of a completely different idea that no one has tried",
-          "boosts": ["expressive", "creative", "design_sub", "research_sub"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "expressive",
+            "creative",
+            "design_sub",
+            "research_sub"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "कोई बिल्कुल नया idea सोचना, जो पहले किसी ने नहीं आज़माया"
         }
-      ]
+      ],
+      "text_hi": "जब आपके सामने कोई मुश्किल समस्या आती है, तो आप आमतौर पर क्या करते हैं?"
     },
     {
       "id": "dd002",
@@ -35,25 +67,53 @@
       "options": [
         {
           "label": "Read about it and look it up until I feel confident",
-          "boosts": ["analytical", "research_sub", "written_sub", "science"],
-          "suppresses": ["hands_on", "performing_sub"]
+          "boosts": [
+            "analytical",
+            "research_sub",
+            "written_sub",
+            "science"
+          ],
+          "suppresses": [
+            "hands_on",
+            "performing_sub"
+          ],
+          "label_hi": "उसके बारे में पढ़ना और तब तक जानकारी जुटाना, जब तक confident महसूस न हो"
         },
         {
           "label": "Just try it out and learn as I go",
-          "boosts": ["hands_on", "entrepreneurial", "trades", "software_sub"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "hands_on",
+            "entrepreneurial",
+            "trades",
+            "software_sub"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "बस try करना और करते-करते सीखना"
         },
         {
           "label": "Ask someone who already knows how",
-          "boosts": ["people_focused", "social", "teaching_sub"],
-          "suppresses": []
+          "boosts": [
+            "people_focused",
+            "social",
+            "teaching_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "किसी ऐसे व्यक्ति से पूछना जिसे पहले से आता हो"
         },
         {
           "label": "Watch someone else do it first, then copy and improve",
-          "boosts": ["clinical", "design_sub", "visual_sub"],
-          "suppresses": []
+          "boosts": [
+            "clinical",
+            "design_sub",
+            "visual_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "पहले किसी और को करते देखना, फिर वैसा करके उसे और बेहतर बनाना"
         }
-      ]
+      ],
+      "text_hi": "जब आपको कोई नई चीज़ करनी नहीं आती, तो आप क्या करना पसंद करते हैं?"
     },
     {
       "id": "dd003",
@@ -62,25 +122,59 @@
       "options": [
         {
           "label": "I solved a hard problem that no one else could figure out",
-          "boosts": ["analytical", "research_sub", "data_sub", "specialist_medical"],
-          "suppresses": ["expressive", "hands_on"]
+          "boosts": [
+            "analytical",
+            "research_sub",
+            "data_sub",
+            "specialist_medical"
+          ],
+          "suppresses": [
+            "expressive",
+            "hands_on"
+          ],
+          "label_hi": "कोई ऐसी मुश्किल समस्या सुलझाना, जिसे कोई और हल नहीं कर पाया"
         },
         {
           "label": "I built or fixed something real that you can see and touch",
-          "boosts": ["hands_on", "engineering", "trades", "architecture"],
-          "suppresses": ["research_sub"]
+          "boosts": [
+            "hands_on",
+            "engineering",
+            "trades",
+            "architecture"
+          ],
+          "suppresses": [
+            "research_sub"
+          ],
+          "label_hi": "कुछ असली बनाना या ठीक करना — जिसे देखा और छुआ जा सके"
         },
         {
           "label": "I helped someone through a tough situation",
-          "boosts": ["people_focused", "clinical", "social", "mental_health_sub"],
-          "suppresses": ["infra_sub"]
+          "boosts": [
+            "people_focused",
+            "clinical",
+            "social",
+            "mental_health_sub"
+          ],
+          "suppresses": [
+            "infra_sub"
+          ],
+          "label_hi": "किसी को मुश्किल हालात से निकलने में मदद करना"
         },
         {
           "label": "I made something original that didn't exist before",
-          "boosts": ["expressive", "creative", "visual_sub", "written_sub"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "expressive",
+            "creative",
+            "visual_sub",
+            "written_sub"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "कुछ ऐसा original बनाना जो पहले कभी नहीं था"
         }
-      ]
+      ],
+      "text_hi": "किस तरह का काम आपको सबसे ज़्यादा गर्व महसूस कराता है?"
     },
     {
       "id": "dd004",
@@ -89,25 +183,58 @@
       "options": [
         {
           "label": "Messy, unclear tasks — I never know what is expected",
-          "boosts": ["structured", "analytical", "finance", "research_sub"],
-          "suppresses": ["entrepreneurial"]
+          "boosts": [
+            "structured",
+            "analytical",
+            "finance",
+            "research_sub"
+          ],
+          "suppresses": [
+            "entrepreneurial"
+          ],
+          "label_hi": "गड़बड़, अस्पष्ट काम — कभी समझ नहीं आता कि क्या करना है"
         },
         {
           "label": "Boring, repeated tasks — doing the same thing again and again",
-          "boosts": ["entrepreneurial", "creative", "research_sub"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "entrepreneurial",
+            "creative",
+            "research_sub"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "बोरिंग, दोहराए जाने वाले काम — बार-बार वही चीज़ करना"
         },
         {
           "label": "Working alone for too long with no one to talk to",
-          "boosts": ["people_focused", "social", "teaching_sub", "clinical"],
-          "suppresses": ["data_sub"]
+          "boosts": [
+            "people_focused",
+            "social",
+            "teaching_sub",
+            "clinical"
+          ],
+          "suppresses": [
+            "data_sub"
+          ],
+          "label_hi": "बहुत देर तक अकेले काम करना, जब बात करने वाला कोई न हो"
         },
         {
           "label": "Strict rules that stop me from being creative",
-          "boosts": ["expressive", "creative", "entrepreneurial", "design_sub"],
-          "suppresses": ["structured", "policy_sub"]
+          "boosts": [
+            "expressive",
+            "creative",
+            "entrepreneurial",
+            "design_sub"
+          ],
+          "suppresses": [
+            "structured",
+            "policy_sub"
+          ],
+          "label_hi": "सख्त नियम जो creativity में रुकावट डालते हैं"
         }
-      ]
+      ],
+      "text_hi": "काम या पढ़ाई में आपको सबसे ज़्यादा चिड़चिड़ाहट किस बात से होती है?"
     },
     {
       "id": "dd005",
@@ -116,25 +243,59 @@
       "options": [
         {
           "label": "Reading and thinking about ideas on my own",
-          "boosts": ["analytical", "research_sub", "written_sub", "science"],
-          "suppresses": ["hands_on", "performing_sub"]
+          "boosts": [
+            "analytical",
+            "research_sub",
+            "written_sub",
+            "science"
+          ],
+          "suppresses": [
+            "hands_on",
+            "performing_sub"
+          ],
+          "label_hi": "अकेले बैठकर पढ़ना और विचारों पर सोचना"
         },
         {
           "label": "Doing experiments or physical activities",
-          "boosts": ["hands_on", "engineering", "field_work", "clinical"],
-          "suppresses": ["written_sub"]
+          "boosts": [
+            "hands_on",
+            "engineering",
+            "field_work",
+            "clinical"
+          ],
+          "suppresses": [
+            "written_sub"
+          ],
+          "label_hi": "experiments करना या physical activities में हिस्सा लेना"
         },
         {
           "label": "Discussing and debating with others",
-          "boosts": ["people_focused", "education", "teaching_sub", "legal_sub"],
-          "suppresses": ["data_sub"]
+          "boosts": [
+            "people_focused",
+            "education",
+            "teaching_sub",
+            "legal_sub"
+          ],
+          "suppresses": [
+            "data_sub"
+          ],
+          "label_hi": "दूसरों के साथ चर्चा और बहस करना"
         },
         {
           "label": "Drawing, building models, or making things",
-          "boosts": ["visual_sub", "design_sub", "architecture", "expressive"],
-          "suppresses": ["research_sub"]
+          "boosts": [
+            "visual_sub",
+            "design_sub",
+            "architecture",
+            "expressive"
+          ],
+          "suppresses": [
+            "research_sub"
+          ],
+          "label_hi": "चित्र बनाना, models तैयार करना, या कुछ बनाना"
         }
-      ]
+      ],
+      "text_hi": "आपको सीखना सबसे अच्छा कैसे लगता है?"
     },
     {
       "id": "dd006",
@@ -143,25 +304,57 @@
       "options": [
         {
           "label": "It was logically correct and done very carefully",
-          "boosts": ["analytical", "structured", "finance_analytical", "research_sub"],
-          "suppresses": ["expressive", "performing_sub"]
+          "boosts": [
+            "analytical",
+            "structured",
+            "finance_analytical",
+            "research_sub"
+          ],
+          "suppresses": [
+            "expressive",
+            "performing_sub"
+          ],
+          "label_hi": "यह logically सही था और बहुत ध्यान से किया गया था"
         },
         {
           "label": "It was genuinely useful to the people who needed it",
-          "boosts": ["people_focused", "clinical", "social", "teaching_sub"],
-          "suppresses": []
+          "boosts": [
+            "people_focused",
+            "clinical",
+            "social",
+            "teaching_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "यह उन लोगों के लिए सच में उपयोगी था जिन्हें इसकी ज़रूरत थी"
         },
         {
           "label": "It looked or sounded great — it was well-made",
-          "boosts": ["expressive", "creative", "visual_sub", "design_sub"],
-          "suppresses": ["analytical"]
+          "boosts": [
+            "expressive",
+            "creative",
+            "visual_sub",
+            "design_sub"
+          ],
+          "suppresses": [
+            "analytical"
+          ],
+          "label_hi": "यह देखने या सुनने में शानदार लगा — अच्छी तरह से बना था"
         },
         {
           "label": "You built it yourself — with your own hands and effort",
-          "boosts": ["hands_on", "trades", "engineering", "architecture"],
-          "suppresses": ["research_sub"]
+          "boosts": [
+            "hands_on",
+            "trades",
+            "engineering",
+            "architecture"
+          ],
+          "suppresses": [
+            "research_sub"
+          ],
+          "label_hi": "आपने इसे खुद बनाया — अपने हाथों और मेहनत से"
         }
-      ]
+      ],
+      "text_hi": "जब आप कोई बड़ा project पूरा करते हैं, तो आपके लिए सबसे ज़्यादा क्या मायने रखता है?"
     },
     {
       "id": "dd007",
@@ -170,25 +363,61 @@
       "options": [
         {
           "label": "A lab or research centre — quiet, step-by-step, focused on discovery",
-          "boosts": ["research_sub", "analytical", "science", "data_sub"],
-          "suppresses": ["people_focused", "hands_on"]
+          "boosts": [
+            "research_sub",
+            "analytical",
+            "science",
+            "data_sub"
+          ],
+          "suppresses": [
+            "people_focused",
+            "hands_on"
+          ],
+          "label_hi": "एक lab या research centre — शांत, step-by-step, खोज पर केंद्रित"
         },
         {
           "label": "An office or desk — organised, digital, professional",
-          "boosts": ["structured", "finance", "business", "software_sub"],
-          "suppresses": ["field_work", "hands_on"]
+          "boosts": [
+            "structured",
+            "finance",
+            "business",
+            "software_sub"
+          ],
+          "suppresses": [
+            "field_work",
+            "hands_on"
+          ],
+          "label_hi": "एक office या desk — व्यवस्थित, digital, professional"
         },
         {
           "label": "Outdoors — forests, fields, building sites, or local communities",
-          "boosts": ["field_work", "hands_on", "agriculture", "environment"],
-          "suppresses": ["structured", "software_sub"]
+          "boosts": [
+            "field_work",
+            "hands_on",
+            "agriculture",
+            "environment"
+          ],
+          "suppresses": [
+            "structured",
+            "software_sub"
+          ],
+          "label_hi": "बाहर खुले में — जंगल, खेत, construction sites, या स्थानीय समुदाय"
         },
         {
           "label": "A studio or creative space — screens, sketchbooks, and music",
-          "boosts": ["expressive", "creative", "visual_sub", "design_sub"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "expressive",
+            "creative",
+            "visual_sub",
+            "design_sub"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "एक studio या creative space — screens, sketchbooks, और music"
         }
-      ]
+      ],
+      "text_hi": "कौन सी जगह आपको सबसे ज़्यादा उत्साहित करती है?"
     },
     {
       "id": "dd008",
@@ -197,25 +426,62 @@
       "options": [
         {
           "label": "In a hospital or clinic — with patients and fellow staff",
-          "boosts": ["clinical", "healthcare", "people_focused", "hands_on"],
-          "suppresses": ["research_sub", "software_sub"]
+          "boosts": [
+            "clinical",
+            "healthcare",
+            "people_focused",
+            "hands_on"
+          ],
+          "suppresses": [
+            "research_sub",
+            "software_sub"
+          ],
+          "label_hi": "किसी hospital या clinic में — patients और साथी staff के साथ"
         },
         {
           "label": "In a tech office — writing code, studying data, or designing products",
-          "boosts": ["software_sub", "data_sub", "tech", "design_sub"],
-          "suppresses": ["field_work", "clinical"]
+          "boosts": [
+            "software_sub",
+            "data_sub",
+            "tech",
+            "design_sub"
+          ],
+          "suppresses": [
+            "field_work",
+            "clinical"
+          ],
+          "label_hi": "किसी tech office में — code लिखते हुए, data पढ़ते हुए, या products design करते हुए"
         },
         {
           "label": "In a courtroom or government office — law, policy, or running the government",
-          "boosts": ["legal_sub", "policy_sub", "governance", "structured"],
-          "suppresses": ["expressive", "hands_on"]
+          "boosts": [
+            "legal_sub",
+            "policy_sub",
+            "governance",
+            "structured"
+          ],
+          "suppresses": [
+            "expressive",
+            "hands_on"
+          ],
+          "label_hi": "किसी courtroom या government office में — law, policy, या सरकार चलाने का काम"
         },
         {
           "label": "In a classroom or community space — teaching and working with people",
-          "boosts": ["teaching_sub", "education", "people_focused", "social"],
-          "suppresses": ["data_sub", "research_sub"]
+          "boosts": [
+            "teaching_sub",
+            "education",
+            "people_focused",
+            "social"
+          ],
+          "suppresses": [
+            "data_sub",
+            "research_sub"
+          ],
+          "label_hi": "किसी classroom या community space में — पढ़ाते हुए और लोगों के साथ काम करते हुए"
         }
-      ]
+      ],
+      "text_hi": "अपने सबसे अच्छे दिन की कल्पना कीजिए — आप कहां होंगे?"
     },
     {
       "id": "dd009",
@@ -224,25 +490,61 @@
       "options": [
         {
           "label": "A workshop — building, fixing, and making things",
-          "boosts": ["trades", "hands_on", "engineering", "architecture"],
-          "suppresses": ["research_sub", "software_sub"]
+          "boosts": [
+            "trades",
+            "hands_on",
+            "engineering",
+            "architecture"
+          ],
+          "suppresses": [
+            "research_sub",
+            "software_sub"
+          ],
+          "label_hi": "एक workshop — बनाना, ठीक करना, और चीज़ें तैयार करना"
         },
         {
           "label": "A stage or studio — performing, recording, or directing",
-          "boosts": ["performing_sub", "expressive", "creative"],
-          "suppresses": ["structured", "analytical"]
+          "boosts": [
+            "performing_sub",
+            "expressive",
+            "creative"
+          ],
+          "suppresses": [
+            "structured",
+            "analytical"
+          ],
+          "label_hi": "एक stage या studio — perform करना, record करना, या direct करना"
         },
         {
           "label": "Nature or the field — forests, farms, rivers, or villages",
-          "boosts": ["field_work", "agriculture", "environment", "social"],
-          "suppresses": ["structured", "finance"]
+          "boosts": [
+            "field_work",
+            "agriculture",
+            "environment",
+            "social"
+          ],
+          "suppresses": [
+            "structured",
+            "finance"
+          ],
+          "label_hi": "प्रकृति या खेत-खलिहान — जंगल, खेत, नदियां, या गांव"
         },
         {
           "label": "A library or research space — deep in books and knowledge",
-          "boosts": ["research_sub", "analytical", "written_sub", "science"],
-          "suppresses": ["hands_on", "performing_sub"]
+          "boosts": [
+            "research_sub",
+            "analytical",
+            "written_sub",
+            "science"
+          ],
+          "suppresses": [
+            "hands_on",
+            "performing_sub"
+          ],
+          "label_hi": "एक library या research space — किताबों और ज्ञान में डूबे रहना"
         }
-      ]
+      ],
+      "text_hi": "कौन सी जगह आपको सबसे ज़्यादा संतोष देगी?"
     },
     {
       "id": "dd010",
@@ -251,25 +553,59 @@
       "options": [
         {
           "label": "Clear results — numbers and data that show what I achieved",
-          "boosts": ["analytical", "finance_analytical", "data_sub", "structured"],
-          "suppresses": ["expressive"]
+          "boosts": [
+            "analytical",
+            "finance_analytical",
+            "data_sub",
+            "structured"
+          ],
+          "suppresses": [
+            "expressive"
+          ],
+          "label_hi": "साफ़ results से — ऐसे numbers और data से जो बताएं कि क्या हासिल हुआ"
         },
         {
           "label": "The trust and good relationships I build with people",
-          "boosts": ["people_focused", "social", "clinical", "mental_health_sub"],
-          "suppresses": ["data_sub"]
+          "boosts": [
+            "people_focused",
+            "social",
+            "clinical",
+            "mental_health_sub"
+          ],
+          "suppresses": [
+            "data_sub"
+          ],
+          "label_hi": "लोगों के साथ बने भरोसे और अच्छे रिश्तों से"
         },
         {
           "label": "The creativity and originality of what I make",
-          "boosts": ["expressive", "creative", "visual_sub", "performing_sub"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "expressive",
+            "creative",
+            "visual_sub",
+            "performing_sub"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "जो बनाया उसकी creativity और originality से"
         },
         {
           "label": "Whether I followed the right process and rules correctly",
-          "boosts": ["structured", "legal_sub", "policy_sub", "finance"],
-          "suppresses": ["entrepreneurial", "expressive"]
+          "boosts": [
+            "structured",
+            "legal_sub",
+            "policy_sub",
+            "finance"
+          ],
+          "suppresses": [
+            "entrepreneurial",
+            "expressive"
+          ],
+          "label_hi": "सही process और नियमों का ठीक से पालन करने से"
         }
-      ]
+      ],
+      "text_hi": "आप चाहते हैं कि आपके काम को कैसे परखा जाए?"
     },
     {
       "id": "dd011",
@@ -278,25 +614,60 @@
       "options": [
         {
           "label": "Fast and unpredictable — emergencies, quick decisions",
-          "boosts": ["clinical", "entrepreneurial", "sports", "hands_on"],
-          "suppresses": ["structured", "research_sub"]
+          "boosts": [
+            "clinical",
+            "entrepreneurial",
+            "sports",
+            "hands_on"
+          ],
+          "suppresses": [
+            "structured",
+            "research_sub"
+          ],
+          "label_hi": "तेज़ और अनिश्चित — emergencies, फटाफट फैसले"
         },
         {
           "label": "Slow and steady — deep projects that go on for months",
-          "boosts": ["research_sub", "analytical", "specialist_medical", "long_study"],
-          "suppresses": ["entrepreneurial"]
+          "boosts": [
+            "research_sub",
+            "analytical",
+            "specialist_medical",
+            "long_study"
+          ],
+          "suppresses": [
+            "entrepreneurial"
+          ],
+          "label_hi": "धीमी और स्थिर — महीनों तक चलने वाले गहरे projects"
         },
         {
           "label": "Creative and varied — bursts of energy and time to think",
-          "boosts": ["expressive", "creative", "design_sub", "written_sub"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "expressive",
+            "creative",
+            "design_sub",
+            "written_sub"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "creative और विविध — ऊर्जा के उतार-चढ़ाव और सोचने का समय"
         },
         {
           "label": "Organised and predictable — clear routine, fixed hours",
-          "boosts": ["structured", "finance", "education", "policy_sub"],
-          "suppresses": ["entrepreneurial", "clinical"]
+          "boosts": [
+            "structured",
+            "finance",
+            "education",
+            "policy_sub"
+          ],
+          "suppresses": [
+            "entrepreneurial",
+            "clinical"
+          ],
+          "label_hi": "व्यवस्थित और तय — साफ़ routine, तय घंटे"
         }
-      ]
+      ],
+      "text_hi": "काम की कौन सी रफ़्तार आपको सबसे ज़्यादा सूट करती है?"
     },
     {
       "id": "dd012",
@@ -305,25 +676,61 @@
       "options": [
         {
           "label": "Around machines, tools, or systems — working with my hands",
-          "boosts": ["hands_on", "trades", "engineering", "infra_sub"],
-          "suppresses": ["people_focused", "written_sub"]
+          "boosts": [
+            "hands_on",
+            "trades",
+            "engineering",
+            "infra_sub"
+          ],
+          "suppresses": [
+            "people_focused",
+            "written_sub"
+          ],
+          "label_hi": "मशीनों, tools, या systems के आसपास — अपने हाथों से काम करते हुए"
         },
         {
           "label": "Around people in need — patients, students, or communities",
-          "boosts": ["people_focused", "clinical", "social", "teaching_sub"],
-          "suppresses": ["infra_sub", "data_sub"]
+          "boosts": [
+            "people_focused",
+            "clinical",
+            "social",
+            "teaching_sub"
+          ],
+          "suppresses": [
+            "infra_sub",
+            "data_sub"
+          ],
+          "label_hi": "ज़रूरतमंद लोगों के आसपास — patients, students, या communities"
         },
         {
           "label": "In front of an audience — performing, presenting, inspiring",
-          "boosts": ["performing_sub", "expressive", "leadership_sub"],
-          "suppresses": ["structured", "research_sub"]
+          "boosts": [
+            "performing_sub",
+            "expressive",
+            "leadership_sub"
+          ],
+          "suppresses": [
+            "structured",
+            "research_sub"
+          ],
+          "label_hi": "किसी audience के सामने — perform करते हुए, present करते हुए, प्रेरित करते हुए"
         },
         {
           "label": "Deep in a research problem — alone with ideas and data",
-          "boosts": ["analytical", "research_sub", "data_sub", "science"],
-          "suppresses": ["performing_sub", "people_focused"]
+          "boosts": [
+            "analytical",
+            "research_sub",
+            "data_sub",
+            "science"
+          ],
+          "suppresses": [
+            "performing_sub",
+            "people_focused"
+          ],
+          "label_hi": "किसी research problem में डूबे हुए — अकेले, विचारों और data के साथ"
         }
-      ]
+      ],
+      "text_hi": "आप सबसे ज़्यादा ऊर्जावान और ज़िंदादिल कहां महसूस करते हैं?"
     },
     {
       "id": "dd013",
@@ -332,25 +739,52 @@
       "options": [
         {
           "label": "I love it — it is the best part of work for me",
-          "boosts": ["people_focused", "social", "teaching_sub", "clinical"],
-          "suppresses": ["research_sub", "data_sub"]
+          "boosts": [
+            "people_focused",
+            "social",
+            "teaching_sub",
+            "clinical"
+          ],
+          "suppresses": [
+            "research_sub",
+            "data_sub"
+          ],
+          "label_hi": "बहुत पसंद है — यह काम का सबसे अच्छा हिस्सा लगता है"
         },
         {
           "label": "A mix — sometimes with people, sometimes working alone",
-          "boosts": ["business", "software_sub", "design_sub"],
-          "suppresses": []
+          "boosts": [
+            "business",
+            "software_sub",
+            "design_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "मिला-जुला — कभी लोगों के साथ, कभी अकेले काम करना"
         },
         {
           "label": "I prefer working behind the scenes — with tools, data, or systems",
-          "boosts": ["analytical", "data_sub", "research_sub", "infra_sub"],
-          "suppresses": ["people_focused"]
+          "boosts": [
+            "analytical",
+            "data_sub",
+            "research_sub",
+            "infra_sub"
+          ],
+          "suppresses": [
+            "people_focused"
+          ],
+          "label_hi": "मुझे पर्दे के पीछे काम करना पसंद है — tools, data, या systems के साथ"
         },
         {
           "label": "Depends on the task — I do not have a strong preference",
-          "boosts": ["entrepreneurial", "leadership_sub"],
-          "suppresses": []
+          "boosts": [
+            "entrepreneurial",
+            "leadership_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "काम पर निर्भर करता है — कोई खास पसंद नहीं है"
         }
-      ]
+      ],
+      "text_hi": "आप हर दिन लोगों के साथ सीधे काम करना कितना पसंद करते हैं?"
     },
     {
       "id": "dd014",
@@ -359,25 +793,56 @@
       "options": [
         {
           "label": "Helping people in need — patients, those in crisis, or struggling communities",
-          "boosts": ["clinical", "mental_health_sub", "social", "welfare"],
-          "suppresses": ["finance_analytical", "data_sub"]
+          "boosts": [
+            "clinical",
+            "mental_health_sub",
+            "social",
+            "welfare"
+          ],
+          "suppresses": [
+            "finance_analytical",
+            "data_sub"
+          ],
+          "label_hi": "ज़रूरतमंद लोगों की मदद करना — patients, संकट में फंसे लोग, या संघर्ष कर रहे समुदाय"
         },
         {
           "label": "Teaching and guiding others to grow",
-          "boosts": ["teaching_sub", "education", "people_focused"],
-          "suppresses": []
+          "boosts": [
+            "teaching_sub",
+            "education",
+            "people_focused"
+          ],
+          "suppresses": [],
+          "label_hi": "दूसरों को सिखाना और आगे बढ़ने में मार्गदर्शन देना"
         },
         {
           "label": "Convincing and selling — persuading people about ideas or products",
-          "boosts": ["entrepreneurial", "business", "expressive", "performing_sub"],
-          "suppresses": ["research_sub"]
+          "boosts": [
+            "entrepreneurial",
+            "business",
+            "expressive",
+            "performing_sub"
+          ],
+          "suppresses": [
+            "research_sub"
+          ],
+          "label_hi": "समझाना और बेचना — लोगों को ideas या products के बारे में मनाना"
         },
         {
           "label": "Working with teammates on a shared technical goal",
-          "boosts": ["software_sub", "engineering", "research_sub", "data_sub"],
-          "suppresses": ["performing_sub"]
+          "boosts": [
+            "software_sub",
+            "engineering",
+            "research_sub",
+            "data_sub"
+          ],
+          "suppresses": [
+            "performing_sub"
+          ],
+          "label_hi": "साथी teammates के साथ किसी साझा technical लक्ष्य पर काम करना"
         }
-      ]
+      ],
+      "text_hi": "लोगों के साथ किस तरह का काम आपको पसंद है?"
     },
     {
       "id": "dd015",
@@ -386,25 +851,54 @@
       "options": [
         {
           "label": "The leader — I organise everyone and keep us on track",
-          "boosts": ["leadership_sub", "entrepreneurial", "business", "policy_sub"],
-          "suppresses": []
+          "boosts": [
+            "leadership_sub",
+            "entrepreneurial",
+            "business",
+            "policy_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "leader की भूमिका — सबको organise करना और track पर बनाए रखना"
         },
         {
           "label": "The idea person — I come up with the creative sparks",
-          "boosts": ["expressive", "creative", "design_sub", "entrepreneurial"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "expressive",
+            "creative",
+            "design_sub",
+            "entrepreneurial"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "idea person की भूमिका — creative सुझाव देना"
         },
         {
           "label": "The doer — I put my head down and get it done",
-          "boosts": ["structured", "hands_on", "trades", "engineering"],
-          "suppresses": ["expressive"]
+          "boosts": [
+            "structured",
+            "hands_on",
+            "trades",
+            "engineering"
+          ],
+          "suppresses": [
+            "expressive"
+          ],
+          "label_hi": "करने वाले की भूमिका — चुपचाप सिर झुकाकर काम पूरा करना"
         },
         {
           "label": "The communicator — I make sure everyone is on the same page",
-          "boosts": ["people_focused", "social", "teaching_sub", "written_sub"],
-          "suppresses": []
+          "boosts": [
+            "people_focused",
+            "social",
+            "teaching_sub",
+            "written_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "communicator की भूमिका — यह पक्का करना कि सब एक ही पेज पर हों"
         }
-      ]
+      ],
+      "text_hi": "किसी group project में, कौन सी भूमिका आपको स्वाभाविक रूप से सूट करती है?"
     },
     {
       "id": "dd016",
@@ -413,25 +907,54 @@
       "options": [
         {
           "label": "Directly — as a patient, student, or client you personally serve",
-          "boosts": ["people_focused", "clinical", "teaching_sub", "mental_health_sub"],
-          "suppresses": ["data_sub", "infra_sub"]
+          "boosts": [
+            "people_focused",
+            "clinical",
+            "teaching_sub",
+            "mental_health_sub"
+          ],
+          "suppresses": [
+            "data_sub",
+            "infra_sub"
+          ],
+          "label_hi": "सीधे — जैसे किसी patient, student, या client की सीधे सेवा करना"
         },
         {
           "label": "Through products, systems, or policies that reach many people",
-          "boosts": ["software_sub", "policy_sub", "engineering", "research_sub"],
-          "suppresses": []
+          "boosts": [
+            "software_sub",
+            "policy_sub",
+            "engineering",
+            "research_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "products, systems, या policies के ज़रिए, जो बहुत सारे लोगों तक पहुंचें"
         },
         {
           "label": "Both — I want to see the personal impact and the big picture",
-          "boosts": ["social", "business", "leadership_sub"],
-          "suppresses": []
+          "boosts": [
+            "social",
+            "business",
+            "leadership_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "दोनों — निजी असर भी देखना है और बड़ी तस्वीर भी"
         },
         {
           "label": "I prefer working with data or ideas more than with people directly",
-          "boosts": ["analytical", "data_sub", "research_sub", "finance_analytical"],
-          "suppresses": ["people_focused"]
+          "boosts": [
+            "analytical",
+            "data_sub",
+            "research_sub",
+            "finance_analytical"
+          ],
+          "suppresses": [
+            "people_focused"
+          ],
+          "label_hi": "data या ideas के साथ काम करना, सीधे लोगों के साथ काम करने से ज़्यादा पसंद है"
         }
-      ]
+      ],
+      "text_hi": "आप चाहेंगे कि आपका काम लोगों की मदद करे...?"
     },
     {
       "id": "dd017",
@@ -440,25 +963,55 @@
       "options": [
         {
           "label": "I love it — being in front of an audience gives me energy",
-          "boosts": ["performing_sub", "expressive", "leadership_sub", "teaching_sub"],
-          "suppresses": ["data_sub"]
+          "boosts": [
+            "performing_sub",
+            "expressive",
+            "leadership_sub",
+            "teaching_sub"
+          ],
+          "suppresses": [
+            "data_sub"
+          ],
+          "label_hi": "बहुत पसंद है — audience के सामने होने से ऊर्जा मिलती है"
         },
         {
           "label": "I can do it when needed — it does not bother me",
-          "boosts": ["business", "clinical", "policy_sub"],
-          "suppresses": []
+          "boosts": [
+            "business",
+            "clinical",
+            "policy_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "ज़रूरत पड़ने पर कर सकते हैं — इससे कोई परेशानी नहीं होती"
         },
         {
           "label": "I avoid it if I can — I prefer writing or working behind the scenes",
-          "boosts": ["written_sub", "research_sub", "data_sub", "infra_sub"],
-          "suppresses": ["performing_sub"]
+          "boosts": [
+            "written_sub",
+            "research_sub",
+            "data_sub",
+            "infra_sub"
+          ],
+          "suppresses": [
+            "performing_sub"
+          ],
+          "label_hi": "जितना हो सके बचते हैं — लिखना या पर्दे के पीछे काम करना ज़्यादा पसंद है"
         },
         {
           "label": "I prefer one-on-one conversations over talking to a crowd",
-          "boosts": ["clinical", "mental_health_sub", "social", "teaching_sub"],
-          "suppresses": ["performing_sub"]
+          "boosts": [
+            "clinical",
+            "mental_health_sub",
+            "social",
+            "teaching_sub"
+          ],
+          "suppresses": [
+            "performing_sub"
+          ],
+          "label_hi": "भीड़ से बात करने के बजाय एक-एक व्यक्ति से बात करना ज़्यादा पसंद है"
         }
-      ]
+      ],
+      "text_hi": "किसी group के सामने बोलने के बारे में आपको कैसा लगता है?"
     },
     {
       "id": "dd018",
@@ -467,25 +1020,54 @@
       "options": [
         {
           "label": "Deep and long-term — same people, strong bonds built over years",
-          "boosts": ["clinical", "mental_health_sub", "education", "people_focused"],
-          "suppresses": []
+          "boosts": [
+            "clinical",
+            "mental_health_sub",
+            "education",
+            "people_focused"
+          ],
+          "suppresses": [],
+          "label_hi": "गहरे और लंबे समय तक चलने वाले — वही लोग, सालों से बने मज़बूत रिश्ते"
         },
         {
           "label": "Varied — meeting new people often, different clients and teams",
-          "boosts": ["entrepreneurial", "business", "policy_sub", "social"],
-          "suppresses": []
+          "boosts": [
+            "entrepreneurial",
+            "business",
+            "policy_sub",
+            "social"
+          ],
+          "suppresses": [],
+          "label_hi": "विविध — अक्सर नए लोगों से मिलना, अलग-अलग clients और teams"
         },
         {
           "label": "Mostly professional and task-based",
-          "boosts": ["structured", "finance_analytical", "research_sub", "legal_sub"],
-          "suppresses": ["people_focused"]
+          "boosts": [
+            "structured",
+            "finance_analytical",
+            "research_sub",
+            "legal_sub"
+          ],
+          "suppresses": [
+            "people_focused"
+          ],
+          "label_hi": "ज़्यादातर professional और काम तक सीमित"
         },
         {
           "label": "Online or digital — remote work, online tools",
-          "boosts": ["software_sub", "data_sub", "written_sub"],
-          "suppresses": ["clinical", "field_work"]
+          "boosts": [
+            "software_sub",
+            "data_sub",
+            "written_sub"
+          ],
+          "suppresses": [
+            "clinical",
+            "field_work"
+          ],
+          "label_hi": "online या digital — remote काम, online tools"
         }
-      ]
+      ],
+      "text_hi": "आप काम के रिश्तों को कैसा चाहते हैं?"
     },
     {
       "id": "dd019",
@@ -494,25 +1076,53 @@
       "options": [
         {
           "label": "I do well under pressure — it brings out the best in me",
-          "boosts": ["clinical", "specialist_medical", "competitive_exam", "sports"],
-          "suppresses": ["research_sub"]
+          "boosts": [
+            "clinical",
+            "specialist_medical",
+            "competitive_exam",
+            "sports"
+          ],
+          "suppresses": [
+            "research_sub"
+          ],
+          "label_hi": "दबाव में अच्छा प्रदर्शन होता है — यह मुझमें से सबसे अच्छा निकालता है"
         },
         {
           "label": "Okay if it happens sometimes — not every single day",
-          "boosts": ["engineering", "business", "legal_sub"],
-          "suppresses": []
+          "boosts": [
+            "engineering",
+            "business",
+            "legal_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "कभी-कभार ठीक है — रोज़ नहीं"
         },
         {
           "label": "I prefer calm, low-pressure work",
-          "boosts": ["structured", "education", "finance", "research_sub"],
-          "suppresses": ["clinical", "entrepreneurial"]
+          "boosts": [
+            "structured",
+            "education",
+            "finance",
+            "research_sub"
+          ],
+          "suppresses": [
+            "clinical",
+            "entrepreneurial"
+          ],
+          "label_hi": "शांत, कम दबाव वाला काम पसंद है"
         },
         {
           "label": "I need a balance — challenging but not always stressful",
-          "boosts": ["social", "software_sub", "design_sub"],
-          "suppresses": []
+          "boosts": [
+            "social",
+            "software_sub",
+            "design_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "संतुलन चाहिए — चुनौतीपूर्ण हो लेकिन हमेशा तनावभरा न हो"
         }
-      ]
+      ],
+      "text_hi": "मुश्किल और high-pressure situations में आपको कैसा लगता है?"
     },
     {
       "id": "dd020",
@@ -521,25 +1131,51 @@
       "options": [
         {
           "label": "Saving lives or making decisions that directly affect people",
-          "boosts": ["clinical", "specialist_medical", "people_focused", "mental_health"],
-          "suppresses": ["finance"]
+          "boosts": [
+            "clinical",
+            "specialist_medical",
+            "people_focused",
+            "mental_health"
+          ],
+          "suppresses": [
+            "finance"
+          ],
+          "label_hi": "जानें बचाना या ऐसे फैसले लेना जो सीधे लोगों को प्रभावित करें"
         },
         {
           "label": "Building products or systems that millions of people use",
-          "boosts": ["software_sub", "entrepreneurial", "engineering", "high_earning"],
-          "suppresses": []
+          "boosts": [
+            "software_sub",
+            "entrepreneurial",
+            "engineering",
+            "high_earning"
+          ],
+          "suppresses": [],
+          "label_hi": "ऐसे products या systems बनाना जिन्हें लाखों-करोड़ों लोग इस्तेमाल करें"
         },
         {
           "label": "Teaching and shaping the next generation",
-          "boosts": ["teaching_sub", "education", "people_focused"],
-          "suppresses": []
+          "boosts": [
+            "teaching_sub",
+            "education",
+            "people_focused"
+          ],
+          "suppresses": [],
+          "label_hi": "अगली पीढ़ी को पढ़ाना और गढ़ना"
         },
         {
           "label": "Advising businesses or governments on big decisions",
-          "boosts": ["policy_sub", "finance_analytical", "legal_sub", "leadership_sub"],
-          "suppresses": []
+          "boosts": [
+            "policy_sub",
+            "finance_analytical",
+            "legal_sub",
+            "leadership_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "व्यवसायों या सरकारों को बड़े फैसलों पर सलाह देना"
         }
-      ]
+      ],
+      "text_hi": "इनमें से आपको कौन सा ज़्यादा आकर्षित करता है?"
     },
     {
       "id": "dd021",
@@ -548,25 +1184,61 @@
       "options": [
         {
           "label": "Less pay but work that makes a real difference to society",
-          "boosts": ["social", "welfare", "policy_sub", "mental_health"],
-          "suppresses": ["high_earning", "finance"]
+          "boosts": [
+            "social",
+            "welfare",
+            "policy_sub",
+            "mental_health"
+          ],
+          "suppresses": [
+            "high_earning",
+            "finance"
+          ],
+          "label_hi": "कम कमाई, लेकिन ऐसा काम जो समाज में सच में फर्क लाए"
         },
         {
           "label": "High pay in a company or professional setting",
-          "boosts": ["high_earning", "finance", "business", "finance_analytical"],
-          "suppresses": ["social"]
+          "boosts": [
+            "high_earning",
+            "finance",
+            "business",
+            "finance_analytical"
+          ],
+          "suppresses": [
+            "social"
+          ],
+          "label_hi": "किसी company या professional setup में ज़्यादा कमाई"
         },
         {
           "label": "Freedom to be creative — even if the income is uncertain",
-          "boosts": ["expressive", "creative", "entrepreneurial", "written_sub"],
-          "suppresses": ["structured", "high_earning"]
+          "boosts": [
+            "expressive",
+            "creative",
+            "entrepreneurial",
+            "written_sub"
+          ],
+          "suppresses": [
+            "structured",
+            "high_earning"
+          ],
+          "label_hi": "creative होने की आज़ादी — भले ही आमदनी अनिश्चित हो"
         },
         {
           "label": "A stable government job — security and public service",
-          "boosts": ["structured", "governance", "policy_sub", "education"],
-          "suppresses": ["entrepreneurial", "high_earning"]
+          "boosts": [
+            "structured",
+            "governance",
+            "policy_sub",
+            "education"
+          ],
+          "suppresses": [
+            "entrepreneurial",
+            "high_earning"
+          ],
+          "label_hi": "एक स्थिर सरकारी नौकरी — सुरक्षा और जनसेवा"
         }
-      ]
+      ],
+      "text_hi": "आप कौन सा career trade-off चुनेंगे?"
     },
     {
       "id": "dd022",
@@ -575,25 +1247,57 @@
       "options": [
         {
           "label": "A deep expert — the top person in one specific area",
-          "boosts": ["specialist_medical", "research_sub", "finance_analytical", "long_study"],
-          "suppresses": ["leadership_sub"]
+          "boosts": [
+            "specialist_medical",
+            "research_sub",
+            "finance_analytical",
+            "long_study"
+          ],
+          "suppresses": [
+            "leadership_sub"
+          ],
+          "label_hi": "एक गहरा expert — किसी एक खास क्षेत्र का सबसे ऊपर का व्यक्ति"
         },
         {
           "label": "Someone good at many things — connecting ideas from different fields",
-          "boosts": ["entrepreneurial", "leadership_sub", "business", "policy_sub"],
-          "suppresses": ["specialist_medical"]
+          "boosts": [
+            "entrepreneurial",
+            "leadership_sub",
+            "business",
+            "policy_sub"
+          ],
+          "suppresses": [
+            "specialist_medical"
+          ],
+          "label_hi": "कई चीज़ों में अच्छा व्यक्ति — अलग-अलग क्षेत्रों के ideas को जोड़ने वाला"
         },
         {
           "label": "A leader who manages experts",
-          "boosts": ["leadership_sub", "business", "entrepreneurial"],
-          "suppresses": ["research_sub"]
+          "boosts": [
+            "leadership_sub",
+            "business",
+            "entrepreneurial"
+          ],
+          "suppresses": [
+            "research_sub"
+          ],
+          "label_hi": "experts को manage करने वाला leader"
         },
         {
           "label": "A researcher who discovers things no one has found before",
-          "boosts": ["research_sub", "analytical", "science", "long_study"],
-          "suppresses": ["hands_on"]
+          "boosts": [
+            "research_sub",
+            "analytical",
+            "science",
+            "long_study"
+          ],
+          "suppresses": [
+            "hands_on"
+          ],
+          "label_hi": "एक researcher जो ऐसी चीज़ें खोजता है जो पहले किसी ने नहीं खोजीं"
         }
-      ]
+      ],
+      "text_hi": "आप एक गहरे expert के तौर पर जाने जाना चाहेंगे या कई चीज़ों में अच्छे व्यक्ति के तौर पर?"
     },
     {
       "id": "dd023",
@@ -602,25 +1306,51 @@
       "options": [
         {
           "label": "A patient or client gets hurt directly",
-          "boosts": ["clinical", "specialist_medical", "mental_health_sub", "long_study"],
-          "suppresses": ["software_sub"]
+          "boosts": [
+            "clinical",
+            "specialist_medical",
+            "mental_health_sub",
+            "long_study"
+          ],
+          "suppresses": [
+            "software_sub"
+          ],
+          "label_hi": "कोई patient या client को सीधे नुकसान पहुंचे"
         },
         {
           "label": "A product bug that thousands of users face",
-          "boosts": ["software_sub", "infra_sub", "data_sub", "structured"],
-          "suppresses": []
+          "boosts": [
+            "software_sub",
+            "infra_sub",
+            "data_sub",
+            "structured"
+          ],
+          "suppresses": [],
+          "label_hi": "एक product bug जिसका सामना हज़ारों users को करना पड़े"
         },
         {
           "label": "A student's learning or confidence gets hurt",
-          "boosts": ["teaching_sub", "education", "people_focused"],
-          "suppresses": []
+          "boosts": [
+            "teaching_sub",
+            "education",
+            "people_focused"
+          ],
+          "suppresses": [],
+          "label_hi": "किसी student की पढ़ाई या आत्मविश्वास को नुकसान पहुंचे"
         },
         {
           "label": "The company loses money or its good name",
-          "boosts": ["finance", "business", "legal_sub", "finance_analytical"],
-          "suppresses": []
+          "boosts": [
+            "finance",
+            "business",
+            "legal_sub",
+            "finance_analytical"
+          ],
+          "suppresses": [],
+          "label_hi": "company को पैसे या अपनी अच्छी साख का नुकसान हो"
         }
-      ]
+      ],
+      "text_hi": "अगर आपके काम में कोई गलती हो जाए, तो कौन सी बात आपको सबसे गंभीर लगेगी?"
     },
     {
       "id": "dd024",
@@ -629,25 +1359,61 @@
       "options": [
         {
           "label": "Direct patient care — checking, treating, and following up with patients",
-          "boosts": ["clinical", "people_focused", "healthcare", "pcb_stream"],
-          "suppresses": ["research_sub", "data_sub"]
+          "boosts": [
+            "clinical",
+            "people_focused",
+            "healthcare",
+            "pcb_stream"
+          ],
+          "suppresses": [
+            "research_sub",
+            "data_sub"
+          ],
+          "label_hi": "सीधे patient care — जांच करना, इलाज करना, और patients का follow-up लेना"
         },
         {
           "label": "Surgery and procedures — careful, hands-on operations",
-          "boosts": ["clinical", "specialist_medical", "hands_on", "competitive_exam"],
-          "suppresses": ["mental_health_sub"]
+          "boosts": [
+            "clinical",
+            "specialist_medical",
+            "hands_on",
+            "competitive_exam"
+          ],
+          "suppresses": [
+            "mental_health_sub"
+          ],
+          "label_hi": "surgery और procedures — ध्यान से, हाथों से किए जाने वाले operations"
         },
         {
           "label": "Research — understanding diseases and finding new cures",
-          "boosts": ["research_sub", "analytical", "science", "long_study"],
-          "suppresses": ["clinical", "hands_on"]
+          "boosts": [
+            "research_sub",
+            "analytical",
+            "science",
+            "long_study"
+          ],
+          "suppresses": [
+            "clinical",
+            "hands_on"
+          ],
+          "label_hi": "research — बीमारियों को समझना और नए इलाज खोजना"
         },
         {
           "label": "Mental health support — understanding and helping heal the mind",
-          "boosts": ["mental_health_sub", "people_focused", "analytical", "welfare"],
-          "suppresses": ["hands_on", "specialist_medical"]
+          "boosts": [
+            "mental_health_sub",
+            "people_focused",
+            "analytical",
+            "welfare"
+          ],
+          "suppresses": [
+            "hands_on",
+            "specialist_medical"
+          ],
+          "label_hi": "mental health support — मन को समझना और उसे ठीक होने में मदद करना"
         }
-      ]
+      ],
+      "text_hi": "healthcare में आपको सबसे ज़्यादा क्या आकर्षित करता है?"
     },
     {
       "id": "dd025",
@@ -656,25 +1422,59 @@
       "options": [
         {
           "label": "Treating a very sick patient who fully recovers",
-          "boosts": ["clinical", "people_focused", "specialist_medical"],
-          "suppresses": ["research_sub"]
+          "boosts": [
+            "clinical",
+            "people_focused",
+            "specialist_medical"
+          ],
+          "suppresses": [
+            "research_sub"
+          ],
+          "label_hi": "किसी बहुत बीमार patient का इलाज करना, जो पूरी तरह ठीक हो जाए"
         },
         {
           "label": "Publishing a research paper that changes how doctors treat a disease",
-          "boosts": ["research_sub", "analytical", "science", "long_study"],
-          "suppresses": ["clinical", "hands_on"]
+          "boosts": [
+            "research_sub",
+            "analytical",
+            "science",
+            "long_study"
+          ],
+          "suppresses": [
+            "clinical",
+            "hands_on"
+          ],
+          "label_hi": "एक research paper छपवाना जो बदल दे कि डॉक्टर किसी बीमारी का इलाज कैसे करते हैं"
         },
         {
           "label": "Designing a programme that stops disease from spreading across a whole region",
-          "boosts": ["policy_sub", "social", "research_sub", "analytical"],
-          "suppresses": ["clinical"]
+          "boosts": [
+            "policy_sub",
+            "social",
+            "research_sub",
+            "analytical"
+          ],
+          "suppresses": [
+            "clinical"
+          ],
+          "label_hi": "एक ऐसा programme बनाना जो पूरे इलाके में बीमारी फैलने से रोक दे"
         },
         {
           "label": "Talking with someone going through a mental health crisis until they feel safe",
-          "boosts": ["mental_health_sub", "people_focused", "social", "welfare"],
-          "suppresses": ["hands_on", "specialist_medical"]
+          "boosts": [
+            "mental_health_sub",
+            "people_focused",
+            "social",
+            "welfare"
+          ],
+          "suppresses": [
+            "hands_on",
+            "specialist_medical"
+          ],
+          "label_hi": "किसी mental health crisis से गुज़र रहे व्यक्ति से तब तक बात करना जब तक वह सुरक्षित महसूस न करे"
         }
-      ]
+      ],
+      "text_hi": "healthcare की कौन सी स्थिति आपको सबसे ज़्यादा उत्साहित करती है?"
     },
     {
       "id": "dd026",
@@ -683,25 +1483,57 @@
       "options": [
         {
           "label": "That is fine — repeating builds skill and I want to be the best at it",
-          "boosts": ["specialist_medical", "clinical", "structured", "long_study"],
-          "suppresses": ["research_sub"]
+          "boosts": [
+            "specialist_medical",
+            "clinical",
+            "structured",
+            "long_study"
+          ],
+          "suppresses": [
+            "research_sub"
+          ],
+          "label_hi": "कोई दिक्कत नहीं — दोहराने से हुनर बढ़ता है और इसमें सबसे बेहतर बनना है"
         },
         {
           "label": "I prefer variety — different kinds of patient cases each day",
-          "boosts": ["clinical", "people_focused", "healthcare"],
-          "suppresses": ["specialist_medical"]
+          "boosts": [
+            "clinical",
+            "people_focused",
+            "healthcare"
+          ],
+          "suppresses": [
+            "specialist_medical"
+          ],
+          "label_hi": "variety पसंद है — हर दिन अलग तरह के patient cases"
         },
         {
           "label": "I would prefer research where each problem is different",
-          "boosts": ["research_sub", "analytical", "science"],
-          "suppresses": ["clinical", "hands_on"]
+          "boosts": [
+            "research_sub",
+            "analytical",
+            "science"
+          ],
+          "suppresses": [
+            "clinical",
+            "hands_on"
+          ],
+          "label_hi": "research ज़्यादा पसंद आएगा, जहां हर समस्या अलग हो"
         },
         {
           "label": "I prefer the management or admin side of healthcare",
-          "boosts": ["leadership_sub", "policy_sub", "structured"],
-          "suppresses": ["clinical", "specialist_medical"]
+          "boosts": [
+            "leadership_sub",
+            "policy_sub",
+            "structured"
+          ],
+          "suppresses": [
+            "clinical",
+            "specialist_medical"
+          ],
+          "label_hi": "healthcare के management या admin वाले हिस्से में ज़्यादा दिलचस्पी है"
         }
-      ]
+      ],
+      "text_hi": "एक ही तरह की procedure या check-up बार-बार करने के बारे में आपको कैसा लगता है?"
     },
     {
       "id": "dd027",
@@ -710,25 +1542,56 @@
       "options": [
         {
           "label": "It excites me — I want to be the first one to respond",
-          "boosts": ["clinical", "hands_on", "specialist_medical", "competitive_exam"],
-          "suppresses": ["research_sub", "mental_health_sub"]
+          "boosts": [
+            "clinical",
+            "hands_on",
+            "specialist_medical",
+            "competitive_exam"
+          ],
+          "suppresses": [
+            "research_sub",
+            "mental_health_sub"
+          ],
+          "label_hi": "उत्साहित करता है — सबसे पहले पहुंचने वाला बनना है"
         },
         {
           "label": "Important, but I would prefer planned surgeries with more control",
-          "boosts": ["specialist_medical", "structured", "clinical"],
-          "suppresses": []
+          "boosts": [
+            "specialist_medical",
+            "structured",
+            "clinical"
+          ],
+          "suppresses": [],
+          "label_hi": "ज़रूरी है, लेकिन ज़्यादा control वाली planned surgeries पसंद आएंगी"
         },
         {
           "label": "I would rather focus on long-term care and prevention",
-          "boosts": ["clinical", "people_focused", "research_sub"],
-          "suppresses": ["competitive_exam"]
+          "boosts": [
+            "clinical",
+            "people_focused",
+            "research_sub"
+          ],
+          "suppresses": [
+            "competitive_exam"
+          ],
+          "label_hi": "long-term care और बीमारी रोकने पर ध्यान देना ज़्यादा पसंद है"
         },
         {
           "label": "I prefer non-emergency health education and mental health work",
-          "boosts": ["mental_health_sub", "teaching_sub", "welfare", "social"],
-          "suppresses": ["clinical", "specialist_medical"]
+          "boosts": [
+            "mental_health_sub",
+            "teaching_sub",
+            "welfare",
+            "social"
+          ],
+          "suppresses": [
+            "clinical",
+            "specialist_medical"
+          ],
+          "label_hi": "non-emergency health education और mental health का काम ज़्यादा पसंद है"
         }
-      ]
+      ],
+      "text_hi": "medical emergencies — आपकी प्रतिक्रिया क्या होती है?"
     },
     {
       "id": "dd028",
@@ -737,25 +1600,61 @@
       "options": [
         {
           "label": "Being the doctor patients know by name — a trusted family doctor",
-          "boosts": ["clinical", "people_focused", "healthcare", "pcb_stream"],
-          "suppresses": ["research_sub", "data_sub"]
+          "boosts": [
+            "clinical",
+            "people_focused",
+            "healthcare",
+            "pcb_stream"
+          ],
+          "suppresses": [
+            "research_sub",
+            "data_sub"
+          ],
+          "label_hi": "वह डॉक्टर बनना जिसे patients नाम से जानते हैं — एक भरोसेमंद family doctor"
         },
         {
           "label": "A surgeon who performs difficult, life-saving operations",
-          "boosts": ["specialist_medical", "clinical", "hands_on", "long_study"],
-          "suppresses": ["mental_health_sub"]
+          "boosts": [
+            "specialist_medical",
+            "clinical",
+            "hands_on",
+            "long_study"
+          ],
+          "suppresses": [
+            "mental_health_sub"
+          ],
+          "label_hi": "एक surgeon बनना जो मुश्किल, जान बचाने वाले operations करे"
         },
         {
           "label": "A scientist who discovers new treatments and cures",
-          "boosts": ["research_sub", "science", "analytical", "long_study"],
-          "suppresses": ["clinical", "people_focused"]
+          "boosts": [
+            "research_sub",
+            "science",
+            "analytical",
+            "long_study"
+          ],
+          "suppresses": [
+            "clinical",
+            "people_focused"
+          ],
+          "label_hi": "एक scientist बनना जो नए इलाज और cures खोजे"
         },
         {
           "label": "A public health officer who shapes healthcare policy for millions",
-          "boosts": ["policy_sub", "leadership_sub", "social", "analytical"],
-          "suppresses": ["clinical", "hands_on"]
+          "boosts": [
+            "policy_sub",
+            "leadership_sub",
+            "social",
+            "analytical"
+          ],
+          "suppresses": [
+            "clinical",
+            "hands_on"
+          ],
+          "label_hi": "एक public health officer बनना जो लाखों लोगों के लिए healthcare policy तय करे"
         }
-      ]
+      ],
+      "text_hi": "कौन सा medical career path आपको सबसे सार्थक लगता है?"
     },
     {
       "id": "dd029",
@@ -764,25 +1663,55 @@
       "options": [
         {
           "label": "A patient suffering needlessly when treatment is available",
-          "boosts": ["clinical", "people_focused", "specialist_medical", "welfare"],
-          "suppresses": ["research_sub"]
+          "boosts": [
+            "clinical",
+            "people_focused",
+            "specialist_medical",
+            "welfare"
+          ],
+          "suppresses": [
+            "research_sub"
+          ],
+          "label_hi": "किसी patient का बिना वजह तकलीफ़ सहना, जबकि इलाज मौजूद हो"
         },
         {
           "label": "A disease that has no cure yet — because no one has understood it",
-          "boosts": ["research_sub", "analytical", "science"],
-          "suppresses": ["clinical"]
+          "boosts": [
+            "research_sub",
+            "analytical",
+            "science"
+          ],
+          "suppresses": [
+            "clinical"
+          ],
+          "label_hi": "ऐसी बीमारी जिसका अब तक कोई इलाज नहीं है — क्योंकि किसी ने उसे समझा ही नहीं"
         },
         {
           "label": "Communities that have no access to even basic healthcare",
-          "boosts": ["policy_sub", "social", "field_work", "welfare"],
-          "suppresses": []
+          "boosts": [
+            "policy_sub",
+            "social",
+            "field_work",
+            "welfare"
+          ],
+          "suppresses": [],
+          "label_hi": "ऐसे समुदाय जिनके पास बुनियादी healthcare तक पहुंच नहीं है"
         },
         {
           "label": "Someone whose mental pain goes ignored and unnoticed",
-          "boosts": ["mental_health_sub", "people_focused", "social", "welfare"],
-          "suppresses": ["specialist_medical"]
+          "boosts": [
+            "mental_health_sub",
+            "people_focused",
+            "social",
+            "welfare"
+          ],
+          "suppresses": [
+            "specialist_medical"
+          ],
+          "label_hi": "किसी का mental pain नज़रअंदाज़ हो जाना और किसी का ध्यान न जाना"
         }
-      ]
+      ],
+      "text_hi": "इनमें से कौन सी बात आपको ज़्यादा परेशान करती है?"
     },
     {
       "id": "dd030",
@@ -791,25 +1720,54 @@
       "options": [
         {
           "label": "Ready for it — the goal is worth every bit of the effort",
-          "boosts": ["competitive_exam", "long_study", "specialist_medical", "pcb_stream"],
-          "suppresses": []
+          "boosts": [
+            "competitive_exam",
+            "long_study",
+            "specialist_medical",
+            "pcb_stream"
+          ],
+          "suppresses": [],
+          "label_hi": "तैयार हूं — लक्ष्य इतनी मेहनत के लायक है"
         },
         {
           "label": "Willing, but I would like to know what other paths exist too",
-          "boosts": ["clinical", "mental_health_sub", "research_sub"],
-          "suppresses": []
+          "boosts": [
+            "clinical",
+            "mental_health_sub",
+            "research_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "तैयार हूं, पर यह भी जानना है कि और कौन से रास्ते मौजूद हैं"
         },
         {
           "label": "Worried about the pressure — it feels like too much",
-          "boosts": ["any_stream", "wellness", "mental_health"],
-          "suppresses": ["competitive_exam", "specialist_medical"]
+          "boosts": [
+            "any_stream",
+            "wellness",
+            "mental_health"
+          ],
+          "suppresses": [
+            "competitive_exam",
+            "specialist_medical"
+          ],
+          "label_hi": "दबाव को लेकर चिंता होती है — बहुत ज़्यादा लगता है"
         },
         {
           "label": "Not for me — I want health careers that do not need NEET",
-          "boosts": ["wellness", "mental_health", "social"],
-          "suppresses": ["competitive_exam", "specialist_medical", "clinical"]
+          "boosts": [
+            "wellness",
+            "mental_health",
+            "social"
+          ],
+          "suppresses": [
+            "competitive_exam",
+            "specialist_medical",
+            "clinical"
+          ],
+          "label_hi": "यह मेरे लिए नहीं है — मुझे ऐसा health career चाहिए जिसमें NEET की ज़रूरत न हो"
         }
-      ]
+      ],
+      "text_hi": "सालों की कड़ी पढ़ाई और NEET जैसी मुश्किल परीक्षाओं के बारे में आपको कैसा लगता है?"
     },
     {
       "id": "dd031",
@@ -818,25 +1776,61 @@
       "options": [
         {
           "label": "Writing code and building apps that people use every day",
-          "boosts": ["software_sub", "tech", "entrepreneurial", "pcm_stream"],
-          "suppresses": ["hands_on", "field_work"]
+          "boosts": [
+            "software_sub",
+            "tech",
+            "entrepreneurial",
+            "pcm_stream"
+          ],
+          "suppresses": [
+            "hands_on",
+            "field_work"
+          ],
+          "label_hi": "code लिखना और ऐसे apps बनाना जिन्हें लोग रोज़ इस्तेमाल करें"
         },
         {
           "label": "Looking at data to find patterns and insights no one has spotted",
-          "boosts": ["data_sub", "analytical", "research_sub", "science"],
-          "suppresses": ["expressive"]
+          "boosts": [
+            "data_sub",
+            "analytical",
+            "research_sub",
+            "science"
+          ],
+          "suppresses": [
+            "expressive"
+          ],
+          "label_hi": "data देखकर ऐसे patterns और insights ढूंढना जो पहले किसी ने नहीं देखे"
         },
         {
           "label": "Designing how things look and feel to users",
-          "boosts": ["design_sub", "expressive", "creative", "visual_sub"],
-          "suppresses": ["infra_sub", "analytical"]
+          "boosts": [
+            "design_sub",
+            "expressive",
+            "creative",
+            "visual_sub"
+          ],
+          "suppresses": [
+            "infra_sub",
+            "analytical"
+          ],
+          "label_hi": "यह design करना कि चीज़ें users को कैसी दिखें और कैसा महसूस कराएं"
         },
         {
           "label": "The hardware side — circuits, chips, servers, physical systems",
-          "boosts": ["infra_sub", "engineering", "hands_on", "pcm_stream"],
-          "suppresses": ["design_sub", "expressive"]
+          "boosts": [
+            "infra_sub",
+            "engineering",
+            "hands_on",
+            "pcm_stream"
+          ],
+          "suppresses": [
+            "design_sub",
+            "expressive"
+          ],
+          "label_hi": "hardware वाला हिस्सा — circuits, chips, servers, physical systems"
         }
-      ]
+      ],
+      "text_hi": "technology में आपको सबसे ज़्यादा क्या आकर्षित करता है?"
     },
     {
       "id": "dd032",
@@ -845,25 +1839,60 @@
       "options": [
         {
           "label": "Building a mobile app from scratch — from idea to launch",
-          "boosts": ["software_sub", "entrepreneurial", "tech"],
-          "suppresses": ["infra_sub", "research_sub"]
+          "boosts": [
+            "software_sub",
+            "entrepreneurial",
+            "tech"
+          ],
+          "suppresses": [
+            "infra_sub",
+            "research_sub"
+          ],
+          "label_hi": "शुरुआत से एक mobile app बनाना — idea से launch तक"
         },
         {
           "label": "Training an AI model on health data to predict outcomes",
-          "boosts": ["data_sub", "analytical", "research_sub", "science"],
-          "suppresses": ["expressive", "design_sub"]
+          "boosts": [
+            "data_sub",
+            "analytical",
+            "research_sub",
+            "science"
+          ],
+          "suppresses": [
+            "expressive",
+            "design_sub"
+          ],
+          "label_hi": "health data पर एक AI model train करना जो outcomes की भविष्यवाणी करे"
         },
         {
           "label": "Redesigning a confusing website to be beautiful and easy to use",
-          "boosts": ["design_sub", "visual_sub", "expressive", "people_focused"],
-          "suppresses": ["infra_sub"]
+          "boosts": [
+            "design_sub",
+            "visual_sub",
+            "expressive",
+            "people_focused"
+          ],
+          "suppresses": [
+            "infra_sub"
+          ],
+          "label_hi": "किसी उलझे हुए website को फिर से design करना ताकि वह सुंदर और आसान बने"
         },
         {
           "label": "Setting up a strong, safe network for a hospital",
-          "boosts": ["infra_sub", "structured", "analytical", "engineering"],
-          "suppresses": ["expressive", "design_sub"]
+          "boosts": [
+            "infra_sub",
+            "structured",
+            "analytical",
+            "engineering"
+          ],
+          "suppresses": [
+            "expressive",
+            "design_sub"
+          ],
+          "label_hi": "किसी hospital के लिए एक मज़बूत, सुरक्षित network तैयार करना"
         }
-      ]
+      ],
+      "text_hi": "कौन सा tech project आपको सबसे ज़्यादा उत्साहित करेगा?"
     },
     {
       "id": "dd033",
@@ -872,25 +1901,55 @@
       "options": [
         {
           "label": "How the code might be built underneath",
-          "boosts": ["software_sub", "analytical", "infra_sub"],
-          "suppresses": ["expressive"]
+          "boosts": [
+            "software_sub",
+            "analytical",
+            "infra_sub"
+          ],
+          "suppresses": [
+            "expressive"
+          ],
+          "label_hi": "इसका code अंदर से कैसे बना होगा"
         },
         {
           "label": "What data it collects and what patterns it might show",
-          "boosts": ["data_sub", "analytical", "research_sub"],
-          "suppresses": ["design_sub"]
+          "boosts": [
+            "data_sub",
+            "analytical",
+            "research_sub"
+          ],
+          "suppresses": [
+            "design_sub"
+          ],
+          "label_hi": "यह कौन सा data इकट्ठा करता है और उसमें क्या patterns दिख सकते हैं"
         },
         {
           "label": "How good the design and user flow feels",
-          "boosts": ["design_sub", "visual_sub", "expressive", "people_focused"],
-          "suppresses": ["infra_sub"]
+          "boosts": [
+            "design_sub",
+            "visual_sub",
+            "expressive",
+            "people_focused"
+          ],
+          "suppresses": [
+            "infra_sub"
+          ],
+          "label_hi": "इसका design और user flow कितना अच्छा लगता है"
         },
         {
           "label": "Whether it would handle lots of users and stay secure",
-          "boosts": ["infra_sub", "structured", "engineering"],
-          "suppresses": ["expressive"]
+          "boosts": [
+            "infra_sub",
+            "structured",
+            "engineering"
+          ],
+          "suppresses": [
+            "expressive"
+          ],
+          "label_hi": "क्या यह बहुत सारे users को संभाल पाएगा और सुरक्षित रहेगा"
         }
-      ]
+      ],
+      "text_hi": "जब आप कोई app या website इस्तेमाल करते हैं, तो सबसे पहले आपका ध्यान किस पर जाता है?"
     },
     {
       "id": "dd034",
@@ -899,25 +1958,58 @@
       "options": [
         {
           "label": "Software that runs on hundreds of millions of phones",
-          "boosts": ["software_sub", "tech", "entrepreneurial", "high_earning"],
-          "suppresses": ["hands_on", "field_work"]
+          "boosts": [
+            "software_sub",
+            "tech",
+            "entrepreneurial",
+            "high_earning"
+          ],
+          "suppresses": [
+            "hands_on",
+            "field_work"
+          ],
+          "label_hi": "ऐसा software जो सैकड़ों करोड़ फोनों पर चलता है"
         },
         {
           "label": "A bridge or building that will still be standing in 100 years",
-          "boosts": ["engineering", "architecture", "hands_on", "structured"],
-          "suppresses": ["software_sub", "data_sub"]
+          "boosts": [
+            "engineering",
+            "architecture",
+            "hands_on",
+            "structured"
+          ],
+          "suppresses": [
+            "software_sub",
+            "data_sub"
+          ],
+          "label_hi": "ऐसा bridge या building जो 100 साल बाद भी खड़ी रहे"
         },
         {
           "label": "A data model that predicts stock prices or disease outbreaks",
-          "boosts": ["data_sub", "analytical", "finance_analytical", "research_sub"],
-          "suppresses": []
+          "boosts": [
+            "data_sub",
+            "analytical",
+            "finance_analytical",
+            "research_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "ऐसा data model जो stock prices या बीमारी फैलने की भविष्यवाणी करे"
         },
         {
           "label": "A network that protects banks and hospitals from hackers",
-          "boosts": ["infra_sub", "analytical", "structured", "legal_sub"],
-          "suppresses": ["expressive"]
+          "boosts": [
+            "infra_sub",
+            "analytical",
+            "structured",
+            "legal_sub"
+          ],
+          "suppresses": [
+            "expressive"
+          ],
+          "label_hi": "ऐसा network जो banks और hospitals को hackers से बचाए"
         }
-      ]
+      ],
+      "text_hi": "आपको इनमें से सबसे ज़्यादा दिलचस्प क्या लगता है?"
     },
     {
       "id": "dd035",
@@ -926,25 +2018,60 @@
       "options": [
         {
           "label": "Software and digital systems — apps, platforms, programs",
-          "boosts": ["software_sub", "tech", "data_sub", "pcm_stream"],
-          "suppresses": ["hands_on", "field_work"]
+          "boosts": [
+            "software_sub",
+            "tech",
+            "data_sub",
+            "pcm_stream"
+          ],
+          "suppresses": [
+            "hands_on",
+            "field_work"
+          ],
+          "label_hi": "software और digital systems — apps, platforms, programs"
         },
         {
           "label": "Electrical and electronics — circuits, sensors, communication systems",
-          "boosts": ["engineering", "infra_sub", "hands_on", "pcm_stream"],
-          "suppresses": ["design_sub"]
+          "boosts": [
+            "engineering",
+            "infra_sub",
+            "hands_on",
+            "pcm_stream"
+          ],
+          "suppresses": [
+            "design_sub"
+          ],
+          "label_hi": "electrical और electronics — circuits, sensors, communication systems"
         },
         {
           "label": "Mechanical, civil, or structural — machines, bridges, buildings",
-          "boosts": ["engineering", "hands_on", "architecture", "construction"],
-          "suppresses": ["software_sub", "data_sub"]
+          "boosts": [
+            "engineering",
+            "hands_on",
+            "architecture",
+            "construction"
+          ],
+          "suppresses": [
+            "software_sub",
+            "data_sub"
+          ],
+          "label_hi": "mechanical, civil, या structural — machines, bridges, buildings"
         },
         {
           "label": "Chemical or materials — processes, substances, manufacturing",
-          "boosts": ["engineering", "science", "research_sub", "hands_on"],
-          "suppresses": ["software_sub"]
+          "boosts": [
+            "engineering",
+            "science",
+            "research_sub",
+            "hands_on"
+          ],
+          "suppresses": [
+            "software_sub"
+          ],
+          "label_hi": "chemical या materials — processes, substances, manufacturing"
         }
-      ]
+      ],
+      "text_hi": "engineering में कौन सा क्षेत्र आपको अपनी ओर खींचता है?"
     },
     {
       "id": "dd036",
@@ -953,25 +2080,57 @@
       "options": [
         {
           "label": "Users love using what I built — great experience, high ratings",
-          "boosts": ["design_sub", "software_sub", "expressive", "people_focused"],
-          "suppresses": ["infra_sub"]
+          "boosts": [
+            "design_sub",
+            "software_sub",
+            "expressive",
+            "people_focused"
+          ],
+          "suppresses": [
+            "infra_sub"
+          ],
+          "label_hi": "users को जो बनाया वह इस्तेमाल करना अच्छा लगे — बेहतरीन experience, ऊंची ratings"
         },
         {
           "label": "The maths and logic is correct and elegant",
-          "boosts": ["data_sub", "analytical", "research_sub", "finance_analytical"],
-          "suppresses": ["expressive"]
+          "boosts": [
+            "data_sub",
+            "analytical",
+            "research_sub",
+            "finance_analytical"
+          ],
+          "suppresses": [
+            "expressive"
+          ],
+          "label_hi": "maths और logic सही और सुंदर हो"
         },
         {
           "label": "It solved a real physical problem — you can see and touch the result",
-          "boosts": ["engineering", "hands_on", "architecture", "construction"],
-          "suppresses": ["software_sub"]
+          "boosts": [
+            "engineering",
+            "hands_on",
+            "architecture",
+            "construction"
+          ],
+          "suppresses": [
+            "software_sub"
+          ],
+          "label_hi": "इसने कोई असली physical समस्या सुलझाई — जिसका नतीजा देखा और छुआ जा सके"
         },
         {
           "label": "It keeps private data safe and systems running securely",
-          "boosts": ["infra_sub", "structured", "legal_sub"],
-          "suppresses": ["expressive"]
+          "boosts": [
+            "infra_sub",
+            "structured",
+            "legal_sub"
+          ],
+          "suppresses": [
+            "expressive"
+          ],
+          "label_hi": "यह private data को सुरक्षित रखे और systems को सुचारू और सुरक्षित चलाए"
         }
-      ]
+      ],
+      "text_hi": "आपके काम का कौन सा नतीजा आपके लिए सबसे ज़्यादा मायने रखेगा?"
     },
     {
       "id": "dd037",
@@ -980,25 +2139,60 @@
       "options": [
         {
           "label": "Programming languages and step-by-step problem solving",
-          "boosts": ["software_sub", "data_sub", "tech", "pcm_stream"],
-          "suppresses": ["expressive", "hands_on"]
+          "boosts": [
+            "software_sub",
+            "data_sub",
+            "tech",
+            "pcm_stream"
+          ],
+          "suppresses": [
+            "expressive",
+            "hands_on"
+          ],
+          "label_hi": "Programming languages और step-by-step समस्या सुलझाना"
         },
         {
           "label": "Statistics, machine learning, and data modelling",
-          "boosts": ["data_sub", "analytical", "research_sub", "science"],
-          "suppresses": ["expressive"]
+          "boosts": [
+            "data_sub",
+            "analytical",
+            "research_sub",
+            "science"
+          ],
+          "suppresses": [
+            "expressive"
+          ],
+          "label_hi": "Statistics, machine learning, और data modelling"
         },
         {
           "label": "Visual design, user research, and making test models",
-          "boosts": ["design_sub", "visual_sub", "expressive", "people_focused"],
-          "suppresses": ["infra_sub"]
+          "boosts": [
+            "design_sub",
+            "visual_sub",
+            "expressive",
+            "people_focused"
+          ],
+          "suppresses": [
+            "infra_sub"
+          ],
+          "label_hi": "Visual design, user research, और test models बनाना"
         },
         {
           "label": "Physical systems, design tools, and real-world engineering",
-          "boosts": ["engineering", "hands_on", "construction", "architecture"],
-          "suppresses": ["software_sub", "data_sub"]
+          "boosts": [
+            "engineering",
+            "hands_on",
+            "construction",
+            "architecture"
+          ],
+          "suppresses": [
+            "software_sub",
+            "data_sub"
+          ],
+          "label_hi": "Physical systems, design tools, और असल दुनिया की engineering"
         }
-      ]
+      ],
+      "text_hi": "अगर आपको specialise करना पड़े, तो कौन से skills आप गहराई से सीखना पसंद करेंगे?"
     },
     {
       "id": "dd038",
@@ -1007,25 +2201,60 @@
       "options": [
         {
           "label": "Building and growing your own company from scratch",
-          "boosts": ["entrepreneurial", "leadership_sub", "business", "high_earning"],
-          "suppresses": ["structured", "policy_sub"]
+          "boosts": [
+            "entrepreneurial",
+            "leadership_sub",
+            "business",
+            "high_earning"
+          ],
+          "suppresses": [
+            "structured",
+            "policy_sub"
+          ],
+          "label_hi": "शुरुआत से अपनी खुद की company बनाना और बढ़ाना"
         },
         {
           "label": "Studying companies and markets to make smart investment decisions",
-          "boosts": ["finance_analytical", "analytical", "data_sub", "structured"],
-          "suppresses": ["people_focused"]
+          "boosts": [
+            "finance_analytical",
+            "analytical",
+            "data_sub",
+            "structured"
+          ],
+          "suppresses": [
+            "people_focused"
+          ],
+          "label_hi": "companies और markets को समझकर समझदारी से investment के फैसले लेना"
         },
         {
           "label": "Checking if financial records are correct and rules are being followed",
-          "boosts": ["structured", "finance", "analytical", "legal_sub"],
-          "suppresses": ["entrepreneurial", "expressive"]
+          "boosts": [
+            "structured",
+            "finance",
+            "analytical",
+            "legal_sub"
+          ],
+          "suppresses": [
+            "entrepreneurial",
+            "expressive"
+          ],
+          "label_hi": "यह जांचना कि financial records सही हैं और नियमों का पालन हो रहा है"
         },
         {
           "label": "Convincing customers to choose a product — marketing and branding",
-          "boosts": ["expressive", "business", "people_focused", "creative"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "expressive",
+            "business",
+            "people_focused",
+            "creative"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "customers को किसी product को चुनने के लिए मनाना — marketing और branding"
         }
-      ]
+      ],
+      "text_hi": "business में आपको ऊर्जा कहां से मिलती है?"
     },
     {
       "id": "dd039",
@@ -1034,25 +2263,60 @@
       "options": [
         {
           "label": "Starting a new business — building something from zero",
-          "boosts": ["entrepreneurial", "leadership_sub", "business", "any_stream"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "entrepreneurial",
+            "leadership_sub",
+            "business",
+            "any_stream"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "नया business शुरू करना — शून्य से कुछ बनाना"
         },
         {
           "label": "Figuring out what a company is really worth",
-          "boosts": ["finance_analytical", "analytical", "structured"],
-          "suppresses": ["expressive", "hands_on"]
+          "boosts": [
+            "finance_analytical",
+            "analytical",
+            "structured"
+          ],
+          "suppresses": [
+            "expressive",
+            "hands_on"
+          ],
+          "label_hi": "यह पता लगाना कि कोई company असल में कितनी worth है"
         },
         {
           "label": "Checking a company's accounts — making sure every number is correct",
-          "boosts": ["structured", "finance", "analytical", "commerce_stream"],
-          "suppresses": ["entrepreneurial", "expressive"]
+          "boosts": [
+            "structured",
+            "finance",
+            "analytical",
+            "commerce_stream"
+          ],
+          "suppresses": [
+            "entrepreneurial",
+            "expressive"
+          ],
+          "label_hi": "किसी company के accounts जांचना — यह पक्का करना कि हर number सही है"
         },
         {
           "label": "Running a marketing campaign — reaching people and changing their minds",
-          "boosts": ["expressive", "business", "creative", "people_focused"],
-          "suppresses": ["data_sub", "infra_sub"]
+          "boosts": [
+            "expressive",
+            "business",
+            "creative",
+            "people_focused"
+          ],
+          "suppresses": [
+            "data_sub",
+            "infra_sub"
+          ],
+          "label_hi": "एक marketing campaign चलाना — लोगों तक पहुंचना और उनकी सोच बदलना"
         }
-      ]
+      ],
+      "text_hi": "कौन सी business चुनौती आपको आकर्षित करती है?"
     },
     {
       "id": "dd040",
@@ -1061,25 +2325,53 @@
       "options": [
         {
           "label": "Judging a company's potential — its growth, risk, and future value",
-          "boosts": ["finance_analytical", "analytical", "data_sub"],
-          "suppresses": []
+          "boosts": [
+            "finance_analytical",
+            "analytical",
+            "data_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "किसी company की क्षमता आंकना — उसकी growth, risk, और भविष्य की value"
         },
         {
           "label": "Making sure accounts are legally correct and rules are followed",
-          "boosts": ["structured", "finance", "legal_sub", "commerce_stream"],
-          "suppresses": ["entrepreneurial"]
+          "boosts": [
+            "structured",
+            "finance",
+            "legal_sub",
+            "commerce_stream"
+          ],
+          "suppresses": [
+            "entrepreneurial"
+          ],
+          "label_hi": "यह पक्का करना कि accounts कानूनी रूप से सही हैं और नियमों का पालन हो रहा है"
         },
         {
           "label": "Managing a set of investments across different markets",
-          "boosts": ["finance_analytical", "high_earning", "analytical", "structured"],
-          "suppresses": []
+          "boosts": [
+            "finance_analytical",
+            "high_earning",
+            "analytical",
+            "structured"
+          ],
+          "suppresses": [],
+          "label_hi": "अलग-अलग markets में investments का एक पूरा set manage करना"
         },
         {
           "label": "Using economics to predict how markets and government policies affect each other",
-          "boosts": ["finance_analytical", "research_sub", "policy_sub", "analytical"],
-          "suppresses": ["hands_on"]
+          "boosts": [
+            "finance_analytical",
+            "research_sub",
+            "policy_sub",
+            "analytical"
+          ],
+          "suppresses": [
+            "hands_on"
+          ],
+          "label_hi": "economics का इस्तेमाल करके यह अनुमान लगाना कि markets और सरकारी policies एक-दूसरे को कैसे प्रभावित करती हैं"
         }
-      ]
+      ],
+      "text_hi": "कौन सा financial skill आप सबसे ज़्यादा चाहेंगे?"
     },
     {
       "id": "dd041",
@@ -1088,25 +2380,55 @@
       "options": [
         {
           "label": "I want to help others manage or grow their money",
-          "boosts": ["finance_analytical", "finance", "people_focused"],
-          "suppresses": []
+          "boosts": [
+            "finance_analytical",
+            "finance",
+            "people_focused"
+          ],
+          "suppresses": [],
+          "label_hi": "दूसरों को उनका पैसा manage करने या बढ़ाने में मदद करना चाहता हूं"
         },
         {
           "label": "I want to build something that earns a lot of money",
-          "boosts": ["entrepreneurial", "leadership_sub", "business", "high_earning"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "entrepreneurial",
+            "leadership_sub",
+            "business",
+            "high_earning"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "कुछ ऐसा बनाना जो खूब पैसा कमाए"
         },
         {
           "label": "I want to study it and find opportunities in the market",
-          "boosts": ["finance_analytical", "analytical", "data_sub"],
-          "suppresses": ["hands_on"]
+          "boosts": [
+            "finance_analytical",
+            "analytical",
+            "data_sub"
+          ],
+          "suppresses": [
+            "hands_on"
+          ],
+          "label_hi": "पैसे को समझना और market में मौके ढूंढना"
         },
         {
           "label": "I want to make sure every rupee is counted and recorded correctly",
-          "boosts": ["structured", "finance", "legal_sub", "commerce_stream"],
-          "suppresses": ["entrepreneurial", "expressive"]
+          "boosts": [
+            "structured",
+            "finance",
+            "legal_sub",
+            "commerce_stream"
+          ],
+          "suppresses": [
+            "entrepreneurial",
+            "expressive"
+          ],
+          "label_hi": "यह पक्का करना कि हर रुपया गिना और सही तरीके से दर्ज हो"
         }
-      ]
+      ],
+      "text_hi": "जब आप अपने career में पैसे के बारे में सोचते हैं...?"
     },
     {
       "id": "dd042",
@@ -1115,25 +2437,58 @@
       "options": [
         {
           "label": "A fast-moving startup — high risk, high energy, figure it out as you go",
-          "boosts": ["entrepreneurial", "software_sub", "high_earning", "tech"],
-          "suppresses": ["structured", "policy_sub"]
+          "boosts": [
+            "entrepreneurial",
+            "software_sub",
+            "high_earning",
+            "tech"
+          ],
+          "suppresses": [
+            "structured",
+            "policy_sub"
+          ],
+          "label_hi": "एक तेज़-रफ़्तार startup — ज़्यादा risk, ज़्यादा energy, करते-करते सीखना"
         },
         {
           "label": "A big company with clear processes, defined roles, and professional growth",
-          "boosts": ["structured", "finance", "business", "commerce_stream"],
-          "suppresses": ["entrepreneurial"]
+          "boosts": [
+            "structured",
+            "finance",
+            "business",
+            "commerce_stream"
+          ],
+          "suppresses": [
+            "entrepreneurial"
+          ],
+          "label_hi": "साफ़ processes, तय roles, और professional growth वाली एक बड़ी company"
         },
         {
           "label": "A consulting firm — different client problems to solve every week",
-          "boosts": ["leadership_sub", "business", "analytical", "people_focused"],
-          "suppresses": []
+          "boosts": [
+            "leadership_sub",
+            "business",
+            "analytical",
+            "people_focused"
+          ],
+          "suppresses": [],
+          "label_hi": "एक consulting firm — हर हफ्ते सुलझाने के लिए अलग-अलग client problems"
         },
         {
           "label": "Independent research or analysis — thinking deeply without many meetings",
-          "boosts": ["research_sub", "finance_analytical", "analytical", "written_sub"],
-          "suppresses": ["performing_sub", "people_focused"]
+          "boosts": [
+            "research_sub",
+            "finance_analytical",
+            "analytical",
+            "written_sub"
+          ],
+          "suppresses": [
+            "performing_sub",
+            "people_focused"
+          ],
+          "label_hi": "स्वतंत्र research या analysis — बिना ज़्यादा meetings के गहराई से सोचना"
         }
-      ]
+      ],
+      "text_hi": "कौन सी work culture आपको सूट करती है?"
     },
     {
       "id": "dd043",
@@ -1142,25 +2497,54 @@
       "options": [
         {
           "label": "The strategy — beating rivals and winning more customers",
-          "boosts": ["entrepreneurial", "leadership_sub", "business", "competitive_exam"],
-          "suppresses": []
+          "boosts": [
+            "entrepreneurial",
+            "leadership_sub",
+            "business",
+            "competitive_exam"
+          ],
+          "suppresses": [],
+          "label_hi": "strategy — प्रतिद्वंद्वियों को हराना और ज़्यादा customers जीतना"
         },
         {
           "label": "The numbers behind it — making decisions using data",
-          "boosts": ["finance_analytical", "analytical", "data_sub"],
-          "suppresses": ["expressive"]
+          "boosts": [
+            "finance_analytical",
+            "analytical",
+            "data_sub"
+          ],
+          "suppresses": [
+            "expressive"
+          ],
+          "label_hi": "इसके पीछे के numbers — data के आधार पर फैसले लेना"
         },
         {
           "label": "The people and relationships — building trust and networks",
-          "boosts": ["people_focused", "business", "social"],
-          "suppresses": ["data_sub"]
+          "boosts": [
+            "people_focused",
+            "business",
+            "social"
+          ],
+          "suppresses": [
+            "data_sub"
+          ],
+          "label_hi": "लोग और रिश्ते — भरोसा और networks बनाना"
         },
         {
           "label": "The creative and branding side — what makes people pick one thing over another",
-          "boosts": ["expressive", "creative", "business", "design_sub"],
-          "suppresses": ["analytical"]
+          "boosts": [
+            "expressive",
+            "creative",
+            "business",
+            "design_sub"
+          ],
+          "suppresses": [
+            "analytical"
+          ],
+          "label_hi": "creative और branding वाला पहलू — जो लोगों को एक चीज़ को दूसरे पर चुनने पर मजबूर करता है"
         }
-      ]
+      ],
+      "text_hi": "markets और business के बारे में आपको सबसे रोमांचक क्या लगता है?"
     },
     {
       "id": "dd044",
@@ -1169,25 +2553,58 @@
       "options": [
         {
           "label": "Visual — images, colour, illustration, graphic design",
-          "boosts": ["visual_sub", "design_sub", "expressive", "creative"],
-          "suppresses": ["analytical", "structured"]
+          "boosts": [
+            "visual_sub",
+            "design_sub",
+            "expressive",
+            "creative"
+          ],
+          "suppresses": [
+            "analytical",
+            "structured"
+          ],
+          "label_hi": "Visual — images, रंग, illustration, graphic design"
         },
         {
           "label": "Written — stories, articles, scripts, essays",
-          "boosts": ["written_sub", "expressive", "creative", "arts_stream"],
-          "suppresses": ["hands_on"]
+          "boosts": [
+            "written_sub",
+            "expressive",
+            "creative",
+            "arts_stream"
+          ],
+          "suppresses": [
+            "hands_on"
+          ],
+          "label_hi": "लिखित — कहानियां, articles, scripts, essays"
         },
         {
           "label": "Audio — music, singing, sound, voice",
-          "boosts": ["performing_sub", "expressive", "creative"],
-          "suppresses": ["research_sub"]
+          "boosts": [
+            "performing_sub",
+            "expressive",
+            "creative"
+          ],
+          "suppresses": [
+            "research_sub"
+          ],
+          "label_hi": "Audio — संगीत, गाना, आवाज़, sound"
         },
         {
           "label": "Performance — acting, dance, spoken word, movement",
-          "boosts": ["performing_sub", "expressive", "people_focused"],
-          "suppresses": ["structured", "analytical"]
+          "boosts": [
+            "performing_sub",
+            "expressive",
+            "people_focused"
+          ],
+          "suppresses": [
+            "structured",
+            "analytical"
+          ],
+          "label_hi": "Performance — अभिनय, नृत्य, spoken word, movement"
         }
-      ]
+      ],
+      "text_hi": "creative काम में, कौन सा रूप आपको सबसे स्वाभाविक लगता है?"
     },
     {
       "id": "dd045",
@@ -1196,25 +2613,55 @@
       "options": [
         {
           "label": "A film or documentary people watch and remember",
-          "boosts": ["visual_sub", "expressive", "leadership_sub", "creative"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "visual_sub",
+            "expressive",
+            "leadership_sub",
+            "creative"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "एक film या documentary जिसे लोग देखें और याद रखें"
         },
         {
           "label": "A book, article, or piece of writing people read and share",
-          "boosts": ["written_sub", "expressive", "creative", "arts_stream"],
-          "suppresses": []
+          "boosts": [
+            "written_sub",
+            "expressive",
+            "creative",
+            "arts_stream"
+          ],
+          "suppresses": [],
+          "label_hi": "एक किताब, article, या लेखन जिसे लोग पढ़ें और शेयर करें"
         },
         {
           "label": "Music or audio that people listen to and feel something",
-          "boosts": ["performing_sub", "expressive", "creative"],
-          "suppresses": ["analytical"]
+          "boosts": [
+            "performing_sub",
+            "expressive",
+            "creative"
+          ],
+          "suppresses": [
+            "analytical"
+          ],
+          "label_hi": "संगीत या audio जिसे सुनकर लोग कुछ महसूस करें"
         },
         {
           "label": "A design or visual identity that makes things more beautiful and easy to use",
-          "boosts": ["design_sub", "visual_sub", "expressive", "people_focused"],
-          "suppresses": ["performing_sub"]
+          "boosts": [
+            "design_sub",
+            "visual_sub",
+            "expressive",
+            "people_focused"
+          ],
+          "suppresses": [
+            "performing_sub"
+          ],
+          "label_hi": "एक design या visual identity जो चीज़ों को ज़्यादा सुंदर और आसान बनाए"
         }
-      ]
+      ],
+      "text_hi": "आप सबसे ज़्यादा किस तरह का creative काम बनाना चाहते हैं?"
     },
     {
       "id": "dd046",
@@ -1223,25 +2670,56 @@
       "options": [
         {
           "label": "Students you want to inspire and guide",
-          "boosts": ["teaching_sub", "education", "people_focused"],
-          "suppresses": ["finance"]
+          "boosts": [
+            "teaching_sub",
+            "education",
+            "people_focused"
+          ],
+          "suppresses": [
+            "finance"
+          ],
+          "label_hi": "students जिन्हें आप प्रेरित करना और मार्गदर्शन देना चाहते हैं"
         },
         {
           "label": "The general public you want to inform or make curious",
-          "boosts": ["written_sub", "performing_sub", "social", "expressive"],
-          "suppresses": []
+          "boosts": [
+            "written_sub",
+            "performing_sub",
+            "social",
+            "expressive"
+          ],
+          "suppresses": [],
+          "label_hi": "आम जनता जिसे आप जानकारी देना या जिज्ञासु बनाना चाहते हैं"
         },
         {
           "label": "A brand's customers you want to reach and influence",
-          "boosts": ["business", "expressive", "creative", "entrepreneurial"],
-          "suppresses": ["teaching_sub"]
+          "boosts": [
+            "business",
+            "expressive",
+            "creative",
+            "entrepreneurial"
+          ],
+          "suppresses": [
+            "teaching_sub"
+          ],
+          "label_hi": "किसी brand के customers जिन तक आप पहुंचना और जिन्हें प्रभावित करना चाहते हैं"
         },
         {
           "label": "Anyone who experiences your art — no particular target",
-          "boosts": ["visual_sub", "expressive", "creative", "performing_sub"],
-          "suppresses": ["structured", "analytical"]
+          "boosts": [
+            "visual_sub",
+            "expressive",
+            "creative",
+            "performing_sub"
+          ],
+          "suppresses": [
+            "structured",
+            "analytical"
+          ],
+          "label_hi": "कोई भी जो आपकी कला का अनुभव करे — कोई खास target नहीं"
         }
-      ]
+      ],
+      "text_hi": "आपकी audience कौन है?"
     },
     {
       "id": "dd047",
@@ -1250,25 +2728,56 @@
       "options": [
         {
           "label": "Camera and video editing — filming and cutting stories together",
-          "boosts": ["visual_sub", "expressive", "creative", "leadership_sub"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "visual_sub",
+            "expressive",
+            "creative",
+            "leadership_sub"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "Camera और video editing — कहानियों को film करना और जोड़ना"
         },
         {
           "label": "Stage and live performance — theatre, music, or dance",
-          "boosts": ["performing_sub", "expressive", "people_focused"],
-          "suppresses": ["data_sub", "research_sub"]
+          "boosts": [
+            "performing_sub",
+            "expressive",
+            "people_focused"
+          ],
+          "suppresses": [
+            "data_sub",
+            "research_sub"
+          ],
+          "label_hi": "Stage और live performance — theatre, संगीत, या नृत्य"
         },
         {
           "label": "A blank canvas or sketchpad — illustration, painting, or design",
-          "boosts": ["visual_sub", "design_sub", "expressive", "creative"],
-          "suppresses": ["people_focused"]
+          "boosts": [
+            "visual_sub",
+            "design_sub",
+            "expressive",
+            "creative"
+          ],
+          "suppresses": [
+            "people_focused"
+          ],
+          "label_hi": "एक खाली canvas या sketchpad — illustration, painting, या design"
         },
         {
           "label": "A keyboard and words — writing stories, articles, or scripts",
-          "boosts": ["written_sub", "expressive", "creative", "arts_stream"],
-          "suppresses": []
+          "boosts": [
+            "written_sub",
+            "expressive",
+            "creative",
+            "arts_stream"
+          ],
+          "suppresses": [],
+          "label_hi": "एक keyboard और शब्द — कहानियां, articles, या scripts लिखना"
         }
-      ]
+      ],
+      "text_hi": "कौन सा medium आपको सबसे ज़्यादा उत्साहित करता है?"
     },
     {
       "id": "dd048",
@@ -1277,25 +2786,50 @@
       "options": [
         {
           "label": "Explaining hard ideas simply so anyone can understand",
-          "boosts": ["teaching_sub", "education", "people_focused", "written_sub"],
-          "suppresses": []
+          "boosts": [
+            "teaching_sub",
+            "education",
+            "people_focused",
+            "written_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "मुश्किल ideas को इतनी सरलता से समझाना कि कोई भी समझ सके"
         },
         {
           "label": "Designing how learning happens — what is taught, tools, and systems",
-          "boosts": ["teaching_sub", "design_sub", "policy_sub", "structured"],
-          "suppresses": []
+          "boosts": [
+            "teaching_sub",
+            "design_sub",
+            "policy_sub",
+            "structured"
+          ],
+          "suppresses": [],
+          "label_hi": "यह design करना कि सीखना कैसे हो — क्या पढ़ाया जाए, tools, और systems"
         },
         {
           "label": "Mentoring students one-on-one and watching them grow",
-          "boosts": ["teaching_sub", "people_focused", "mental_health_sub"],
-          "suppresses": ["data_sub"]
+          "boosts": [
+            "teaching_sub",
+            "people_focused",
+            "mental_health_sub"
+          ],
+          "suppresses": [
+            "data_sub"
+          ],
+          "label_hi": "students को एक-एक करके mentor करना और उन्हें बढ़ते हुए देखना"
         },
         {
           "label": "Researching better ways to teach and checking what actually works",
-          "boosts": ["research_sub", "teaching_sub", "analytical"],
-          "suppresses": []
+          "boosts": [
+            "research_sub",
+            "teaching_sub",
+            "analytical"
+          ],
+          "suppresses": [],
+          "label_hi": "पढ़ाने के बेहतर तरीके खोजना और यह जांचना कि असल में क्या काम करता है"
         }
-      ]
+      ],
+      "text_hi": "education में आपको क्या आकर्षित करता है?"
     },
     {
       "id": "dd049",
@@ -1304,25 +2838,53 @@
       "options": [
         {
           "label": "A student saying 'you changed my life'",
-          "boosts": ["teaching_sub", "education", "people_focused", "social"],
-          "suppresses": ["high_earning", "finance"]
+          "boosts": [
+            "teaching_sub",
+            "education",
+            "people_focused",
+            "social"
+          ],
+          "suppresses": [
+            "high_earning",
+            "finance"
+          ],
+          "label_hi": "किसी student का यह कहना — 'आपने मेरी ज़िंदगी बदल दी'"
         },
         {
           "label": "An audience giving you a standing ovation",
-          "boosts": ["performing_sub", "expressive", "people_focused"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "performing_sub",
+            "expressive",
+            "people_focused"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "किसी audience का खड़े होकर तालियां बजाना"
         },
         {
           "label": "A major design or industry award",
-          "boosts": ["design_sub", "visual_sub", "expressive", "competitive_exam"],
-          "suppresses": []
+          "boosts": [
+            "design_sub",
+            "visual_sub",
+            "expressive",
+            "competitive_exam"
+          ],
+          "suppresses": [],
+          "label_hi": "कोई बड़ा design या industry award"
         },
         {
           "label": "A bestselling book or a piece of writing that goes viral",
-          "boosts": ["written_sub", "expressive", "creative"],
-          "suppresses": []
+          "boosts": [
+            "written_sub",
+            "expressive",
+            "creative"
+          ],
+          "suppresses": [],
+          "label_hi": "एक bestselling किताब या ऐसा लेखन जो viral हो जाए"
         }
-      ]
+      ],
+      "text_hi": "कौन सी पहचान आपके लिए सबसे ज़्यादा मायने रखेगी?"
     },
     {
       "id": "dd050",
@@ -1331,25 +2893,60 @@
       "options": [
         {
           "label": "Discover new scientific knowledge that changes how the world understands something",
-          "boosts": ["research_sub", "science", "analytical", "long_study"],
-          "suppresses": ["hands_on", "entrepreneurial"]
+          "boosts": [
+            "research_sub",
+            "science",
+            "analytical",
+            "long_study"
+          ],
+          "suppresses": [
+            "hands_on",
+            "entrepreneurial"
+          ],
+          "label_hi": "नई scientific जानकारी खोजना जो दुनिया के किसी चीज़ को समझने का तरीका बदल दे"
         },
         {
           "label": "Fight for justice for people who have been wronged",
-          "boosts": ["legal_sub", "people_focused", "social", "welfare"],
-          "suppresses": ["data_sub"]
+          "boosts": [
+            "legal_sub",
+            "people_focused",
+            "social",
+            "welfare"
+          ],
+          "suppresses": [
+            "data_sub"
+          ],
+          "label_hi": "उन लोगों के लिए न्याय की लड़ाई लड़ना जिनके साथ गलत हुआ है"
         },
         {
           "label": "Make policies that improve the lives of millions",
-          "boosts": ["policy_sub", "leadership_sub", "governance", "social"],
-          "suppresses": ["entrepreneurial"]
+          "boosts": [
+            "policy_sub",
+            "leadership_sub",
+            "governance",
+            "social"
+          ],
+          "suppresses": [
+            "entrepreneurial"
+          ],
+          "label_hi": "ऐसी policies बनाना जो लाखों लोगों की ज़िंदगी बेहतर बनाएं"
         },
         {
           "label": "Protect the environment and natural world for future generations",
-          "boosts": ["environment", "field_work", "research_sub", "science"],
-          "suppresses": ["finance", "high_earning"]
+          "boosts": [
+            "environment",
+            "field_work",
+            "research_sub",
+            "science"
+          ],
+          "suppresses": [
+            "finance",
+            "high_earning"
+          ],
+          "label_hi": "आने वाली पीढ़ियों के लिए पर्यावरण और प्रकृति को बचाना"
         }
-      ]
+      ],
+      "text_hi": "आप किस तरह का असर छोड़ना चाहते हैं?"
     },
     {
       "id": "dd051",
@@ -1358,25 +2955,60 @@
       "options": [
         {
           "label": "Years in a lab — discovering something that has never been known before",
-          "boosts": ["research_sub", "science", "analytical", "long_study"],
-          "suppresses": ["people_focused", "field_work"]
+          "boosts": [
+            "research_sub",
+            "science",
+            "analytical",
+            "long_study"
+          ],
+          "suppresses": [
+            "people_focused",
+            "field_work"
+          ],
+          "label_hi": "एक lab में सालों बिताना — ऐसा कुछ खोजना जो पहले कभी किसी को पता नहीं था"
         },
         {
           "label": "Years in court — arguing cases and upholding the law",
-          "boosts": ["legal_sub", "structured", "expressive", "people_focused"],
-          "suppresses": ["hands_on"]
+          "boosts": [
+            "legal_sub",
+            "structured",
+            "expressive",
+            "people_focused"
+          ],
+          "suppresses": [
+            "hands_on"
+          ],
+          "label_hi": "court में सालों बिताना — मामले लड़ना और कानून को बनाए रखना"
         },
         {
           "label": "Years in civil services — managing districts and running the government",
-          "boosts": ["policy_sub", "governance", "leadership_sub", "competitive_exam"],
-          "suppresses": ["entrepreneurial"]
+          "boosts": [
+            "policy_sub",
+            "governance",
+            "leadership_sub",
+            "competitive_exam"
+          ],
+          "suppresses": [
+            "entrepreneurial"
+          ],
+          "label_hi": "civil services में सालों बिताना — जिलों को संभालना और सरकार चलाना"
         },
         {
           "label": "Years doing fieldwork — in communities, in nature, on the ground",
-          "boosts": ["field_work", "social", "welfare", "agriculture"],
-          "suppresses": ["structured", "finance"]
+          "boosts": [
+            "field_work",
+            "social",
+            "welfare",
+            "agriculture"
+          ],
+          "suppresses": [
+            "structured",
+            "finance"
+          ],
+          "label_hi": "fieldwork में सालों बिताना — समुदायों में, प्रकृति में, ज़मीन पर"
         }
-      ]
+      ],
+      "text_hi": "कौन सा रास्ता आपको आकर्षित करता है?"
     },
     {
       "id": "dd052",
@@ -1385,25 +3017,58 @@
       "options": [
         {
           "label": "A disease that has no cure yet",
-          "boosts": ["research_sub", "science", "clinical", "long_study"],
-          "suppresses": ["legal_sub", "finance"]
+          "boosts": [
+            "research_sub",
+            "science",
+            "clinical",
+            "long_study"
+          ],
+          "suppresses": [
+            "legal_sub",
+            "finance"
+          ],
+          "label_hi": "ऐसी बीमारी जिसका अब तक कोई इलाज नहीं है"
         },
         {
           "label": "An unfair law that harms people in need",
-          "boosts": ["legal_sub", "social", "policy_sub", "welfare"],
-          "suppresses": ["data_sub"]
+          "boosts": [
+            "legal_sub",
+            "social",
+            "policy_sub",
+            "welfare"
+          ],
+          "suppresses": [
+            "data_sub"
+          ],
+          "label_hi": "ऐसा अन्यायपूर्ण कानून जो ज़रूरतमंद लोगों को नुकसान पहुंचाता है"
         },
         {
           "label": "A government system that wastes public money and fails citizens",
-          "boosts": ["policy_sub", "governance", "leadership_sub", "finance_analytical"],
-          "suppresses": []
+          "boosts": [
+            "policy_sub",
+            "governance",
+            "leadership_sub",
+            "finance_analytical"
+          ],
+          "suppresses": [],
+          "label_hi": "ऐसा सरकारी तंत्र जो जनता का पैसा बर्बाद करता है और नागरिकों को निराश करता है"
         },
         {
           "label": "Climate change, pollution, and the destruction of nature",
-          "boosts": ["environment", "research_sub", "field_work", "policy_sub"],
-          "suppresses": ["high_earning", "finance"]
+          "boosts": [
+            "environment",
+            "research_sub",
+            "field_work",
+            "policy_sub"
+          ],
+          "suppresses": [
+            "high_earning",
+            "finance"
+          ],
+          "label_hi": "climate change, प्रदूषण, और प्रकृति का विनाश"
         }
-      ]
+      ],
+      "text_hi": "कौन सी समस्या आप सबसे ज़्यादा सुलझाना चाहेंगे?"
     },
     {
       "id": "dd053",
@@ -1412,25 +3077,57 @@
       "options": [
         {
           "label": "Comfortable — I want to use authority to enforce rules and drive change",
-          "boosts": ["leadership_sub", "policy_sub", "governance", "legal_sub"],
-          "suppresses": ["expressive"]
+          "boosts": [
+            "leadership_sub",
+            "policy_sub",
+            "governance",
+            "legal_sub"
+          ],
+          "suppresses": [
+            "expressive"
+          ],
+          "label_hi": "सहज लगता है — नियम लागू करने और बदलाव लाने के लिए authority इस्तेमाल करना है"
         },
         {
           "label": "I prefer advising and persuading — not giving orders",
-          "boosts": ["legal_sub", "policy_sub", "written_sub", "analytical"],
-          "suppresses": ["leadership_sub"]
+          "boosts": [
+            "legal_sub",
+            "policy_sub",
+            "written_sub",
+            "analytical"
+          ],
+          "suppresses": [
+            "leadership_sub"
+          ],
+          "label_hi": "सलाह देना और मनाना ज़्यादा पसंद है — आदेश देना नहीं"
         },
         {
           "label": "I would rather work inside the system and change it from within",
-          "boosts": ["policy_sub", "social", "governance"],
-          "suppresses": ["entrepreneurial"]
+          "boosts": [
+            "policy_sub",
+            "social",
+            "governance"
+          ],
+          "suppresses": [
+            "entrepreneurial"
+          ],
+          "label_hi": "system के अंदर रहकर उसे बदलना ज़्यादा पसंद है"
         },
         {
           "label": "I prefer independent research — not using official power",
-          "boosts": ["research_sub", "analytical", "science"],
-          "suppresses": ["leadership_sub", "governance"]
+          "boosts": [
+            "research_sub",
+            "analytical",
+            "science"
+          ],
+          "suppresses": [
+            "leadership_sub",
+            "governance"
+          ],
+          "label_hi": "स्वतंत्र research ज़्यादा पसंद है — official power इस्तेमाल करना नहीं"
         }
-      ]
+      ],
+      "text_hi": "authority और power के बारे में आपको कैसा लगता है?"
     },
     {
       "id": "dd054",
@@ -1439,25 +3136,62 @@
       "options": [
         {
           "label": "Running experiments, reading papers, and writing up findings",
-          "boosts": ["research_sub", "analytical", "science", "written_sub"],
-          "suppresses": ["people_focused", "hands_on"]
+          "boosts": [
+            "research_sub",
+            "analytical",
+            "science",
+            "written_sub"
+          ],
+          "suppresses": [
+            "people_focused",
+            "hands_on"
+          ],
+          "label_hi": "experiments चलाना, papers पढ़ना, और findings लिखना"
         },
         {
           "label": "Preparing legal arguments and representing clients in court",
-          "boosts": ["legal_sub", "structured", "expressive", "people_focused"],
-          "suppresses": ["data_sub", "field_work"]
+          "boosts": [
+            "legal_sub",
+            "structured",
+            "expressive",
+            "people_focused"
+          ],
+          "suppresses": [
+            "data_sub",
+            "field_work"
+          ],
+          "label_hi": "कानूनी दलीलें तैयार करना और court में clients का प्रतिनिधित्व करना"
         },
         {
           "label": "Managing government programmes, teams, and public resources",
-          "boosts": ["policy_sub", "governance", "leadership_sub", "structured"],
-          "suppresses": ["expressive", "entrepreneurial"]
+          "boosts": [
+            "policy_sub",
+            "governance",
+            "leadership_sub",
+            "structured"
+          ],
+          "suppresses": [
+            "expressive",
+            "entrepreneurial"
+          ],
+          "label_hi": "सरकारी programmes, teams, और सार्वजनिक संसाधनों को manage करना"
         },
         {
           "label": "Visiting communities, collecting data, and running programmes on the ground",
-          "boosts": ["field_work", "social", "welfare", "people_focused"],
-          "suppresses": ["structured", "finance"]
+          "boosts": [
+            "field_work",
+            "social",
+            "welfare",
+            "people_focused"
+          ],
+          "suppresses": [
+            "structured",
+            "finance"
+          ],
+          "label_hi": "समुदायों में जाना, data इकट्ठा करना, और ज़मीन पर programmes चलाना"
         }
-      ]
+      ],
+      "text_hi": "कौन सा रोज़ का काम आपको सबसे सही लगता है?"
     },
     {
       "id": "dd055",
@@ -1466,25 +3200,59 @@
       "options": [
         {
           "label": "Curiosity — really understanding how the world works",
-          "boosts": ["research_sub", "science", "analytical", "data_sub"],
-          "suppresses": ["performing_sub"]
+          "boosts": [
+            "research_sub",
+            "science",
+            "analytical",
+            "data_sub"
+          ],
+          "suppresses": [
+            "performing_sub"
+          ],
+          "label_hi": "जिज्ञासा — यह सच में समझना कि दुनिया कैसे काम करती है"
         },
         {
           "label": "Fairness and justice — making sure people are treated right",
-          "boosts": ["legal_sub", "social", "welfare", "policy_sub"],
-          "suppresses": ["finance"]
+          "boosts": [
+            "legal_sub",
+            "social",
+            "welfare",
+            "policy_sub"
+          ],
+          "suppresses": [
+            "finance"
+          ],
+          "label_hi": "निष्पक्षता और न्याय — यह पक्का करना कि लोगों के साथ सही व्यवहार हो"
         },
         {
           "label": "Public service — serving the country and its people",
-          "boosts": ["policy_sub", "governance", "leadership_sub"],
-          "suppresses": ["entrepreneurial", "high_earning"]
+          "boosts": [
+            "policy_sub",
+            "governance",
+            "leadership_sub"
+          ],
+          "suppresses": [
+            "entrepreneurial",
+            "high_earning"
+          ],
+          "label_hi": "जनसेवा — देश और उसके लोगों की सेवा करना"
         },
         {
           "label": "Conservation — protecting nature and the environment",
-          "boosts": ["environment", "field_work", "agriculture", "research_sub"],
-          "suppresses": ["finance", "high_earning"]
+          "boosts": [
+            "environment",
+            "field_work",
+            "agriculture",
+            "research_sub"
+          ],
+          "suppresses": [
+            "finance",
+            "high_earning"
+          ],
+          "label_hi": "संरक्षण — प्रकृति और पर्यावरण को बचाना"
         }
-      ]
+      ],
+      "text_hi": "आपको सबसे ज़्यादा क्या प्रेरित करता है?"
     },
     {
       "id": "dd056",
@@ -1493,25 +3261,61 @@
       "options": [
         {
           "label": "High income — I want to earn well and build financial security",
-          "boosts": ["high_earning", "finance_analytical", "entrepreneurial", "software_sub"],
-          "suppresses": ["social", "welfare"]
+          "boosts": [
+            "high_earning",
+            "finance_analytical",
+            "entrepreneurial",
+            "software_sub"
+          ],
+          "suppresses": [
+            "social",
+            "welfare"
+          ],
+          "label_hi": "ज़्यादा कमाई — अच्छा कमाना और financial सुरक्षा बनाना"
         },
         {
           "label": "Making a difference — I want my work to have real impact",
-          "boosts": ["social", "policy_sub", "clinical", "mental_health"],
-          "suppresses": ["high_earning", "finance"]
+          "boosts": [
+            "social",
+            "policy_sub",
+            "clinical",
+            "mental_health"
+          ],
+          "suppresses": [
+            "high_earning",
+            "finance"
+          ],
+          "label_hi": "फर्क लाना — काम का असली असर होना चाहिए"
         },
         {
           "label": "Creative freedom — doing work I love in my own way",
-          "boosts": ["entrepreneurial", "expressive", "creative", "written_sub"],
-          "suppresses": ["structured", "policy_sub"]
+          "boosts": [
+            "entrepreneurial",
+            "expressive",
+            "creative",
+            "written_sub"
+          ],
+          "suppresses": [
+            "structured",
+            "policy_sub"
+          ],
+          "label_hi": "creative आज़ादी — अपने तरीके से पसंद का काम करना"
         },
         {
           "label": "Stability and security — a reliable career path",
-          "boosts": ["structured", "education", "governance", "finance"],
-          "suppresses": ["entrepreneurial"]
+          "boosts": [
+            "structured",
+            "education",
+            "governance",
+            "finance"
+          ],
+          "suppresses": [
+            "entrepreneurial"
+          ],
+          "label_hi": "स्थिरता और सुरक्षा — एक भरोसेमंद career path"
         }
-      ]
+      ],
+      "text_hi": "career में आपके लिए सबसे ज़्यादा क्या मायने रखता है?"
     },
     {
       "id": "dd057",
@@ -1520,25 +3324,53 @@
       "options": [
         {
           "label": "In a major Indian city — Mumbai, Bangalore, Delhi",
-          "boosts": ["software_sub", "finance", "business", "high_earning"],
-          "suppresses": ["field_work", "agriculture"]
+          "boosts": [
+            "software_sub",
+            "finance",
+            "business",
+            "high_earning"
+          ],
+          "suppresses": [
+            "field_work",
+            "agriculture"
+          ],
+          "label_hi": "किसी बड़े भारतीय शहर में — Mumbai, Bangalore, Delhi"
         },
         {
           "label": "Anywhere in India — open to wherever the work takes me",
-          "boosts": ["policy_sub", "social", "clinical", "education"],
-          "suppresses": []
+          "boosts": [
+            "policy_sub",
+            "social",
+            "clinical",
+            "education"
+          ],
+          "suppresses": [],
+          "label_hi": "भारत में कहीं भी — जहां काम ले जाए वहां जाने को तैयार"
         },
         {
           "label": "Willing to travel internationally for the right opportunity",
-          "boosts": ["research_sub", "entrepreneurial", "business", "high_earning"],
-          "suppresses": []
+          "boosts": [
+            "research_sub",
+            "entrepreneurial",
+            "business",
+            "high_earning"
+          ],
+          "suppresses": [],
+          "label_hi": "सही मौके के लिए विदेश जाने को भी तैयार"
         },
         {
           "label": "My hometown or a smaller city — roots and community matter to me",
-          "boosts": ["education", "clinical", "trades", "structured"],
-          "suppresses": []
+          "boosts": [
+            "education",
+            "clinical",
+            "trades",
+            "structured"
+          ],
+          "suppresses": [],
+          "label_hi": "अपना गृहनगर या कोई छोटा शहर — जड़ें और community मेरे लिए मायने रखती हैं"
         }
-      ]
+      ],
+      "text_hi": "आप कहां रहना और काम करना चाहते हैं?"
     },
     {
       "id": "dd058",
@@ -1547,25 +3379,56 @@
       "options": [
         {
           "label": "Very important — I want a safe, guaranteed job",
-          "boosts": ["structured", "education", "governance", "policy_sub"],
-          "suppresses": ["entrepreneurial", "high_earning"]
+          "boosts": [
+            "structured",
+            "education",
+            "governance",
+            "policy_sub"
+          ],
+          "suppresses": [
+            "entrepreneurial",
+            "high_earning"
+          ],
+          "label_hi": "बहुत ज़रूरी — एक सुरक्षित, guaranteed नौकरी चाहिए"
         },
         {
           "label": "Somewhat important — good prospects but not at any cost",
-          "boosts": ["clinical", "business", "engineering", "finance"],
-          "suppresses": []
+          "boosts": [
+            "clinical",
+            "business",
+            "engineering",
+            "finance"
+          ],
+          "suppresses": [],
+          "label_hi": "कुछ हद तक ज़रूरी — अच्छे मौके चाहिए, पर किसी भी कीमत पर नहीं"
         },
         {
           "label": "Less important — I will take risk for a bigger reward",
-          "boosts": ["entrepreneurial", "finance_analytical", "high_earning"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "entrepreneurial",
+            "finance_analytical",
+            "high_earning"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "ज़्यादा ज़रूरी नहीं — बड़े फायदे के लिए risk लेने को तैयार"
         },
         {
           "label": "Not at all — I will build my own path",
-          "boosts": ["entrepreneurial", "expressive", "creative"],
-          "suppresses": ["structured", "governance"]
+          "boosts": [
+            "entrepreneurial",
+            "expressive",
+            "creative"
+          ],
+          "suppresses": [
+            "structured",
+            "governance"
+          ],
+          "label_hi": "बिल्कुल नहीं — अपना रास्ता खुद बनाना है"
         }
-      ]
+      ],
+      "text_hi": "job security आपके लिए कितनी ज़रूरी है?"
     },
     {
       "id": "dd059",
@@ -1574,25 +3437,57 @@
       "options": [
         {
           "label": "Become the best in my field — known as a top expert",
-          "boosts": ["specialist_medical", "research_sub", "competitive_exam", "long_study"],
-          "suppresses": ["leadership_sub"]
+          "boosts": [
+            "specialist_medical",
+            "research_sub",
+            "competitive_exam",
+            "long_study"
+          ],
+          "suppresses": [
+            "leadership_sub"
+          ],
+          "label_hi": "अपने क्षेत्र में सबसे बेहतर बनना — एक top expert के तौर पर जाना जाना"
         },
         {
           "label": "Build something of my own — a company, a clinic, a brand",
-          "boosts": ["entrepreneurial", "leadership_sub", "business", "high_earning"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "entrepreneurial",
+            "leadership_sub",
+            "business",
+            "high_earning"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "अपना खुद का कुछ बनाना — एक company, एक clinic, एक brand"
         },
         {
           "label": "Rise to leadership — manage teams, organisations, or institutions",
-          "boosts": ["leadership_sub", "policy_sub", "governance", "business"],
-          "suppresses": []
+          "boosts": [
+            "leadership_sub",
+            "policy_sub",
+            "governance",
+            "business"
+          ],
+          "suppresses": [],
+          "label_hi": "leadership तक पहुंचना — teams, organisations, या institutions को manage करना"
         },
         {
           "label": "Contribute quietly but meaningfully — do great work without the fame",
-          "boosts": ["research_sub", "social", "education", "structured"],
-          "suppresses": ["performing_sub", "entrepreneurial"]
+          "boosts": [
+            "research_sub",
+            "social",
+            "education",
+            "structured"
+          ],
+          "suppresses": [
+            "performing_sub",
+            "entrepreneurial"
+          ],
+          "label_hi": "चुपचाप लेकिन सार्थक योगदान देना — बिना नाम कमाए बेहतरीन काम करना"
         }
-      ]
+      ],
+      "text_hi": "आपकी महत्वाकांक्षा को कौन सा सबसे अच्छे से बताता है?"
     },
     {
       "id": "dd060",
@@ -1601,25 +3496,57 @@
       "options": [
         {
           "label": "Deep focus on one complex thing for hours at a time",
-          "boosts": ["research_sub", "analytical", "data_sub", "software_sub"],
-          "suppresses": ["people_focused", "performing_sub"]
+          "boosts": [
+            "research_sub",
+            "analytical",
+            "data_sub",
+            "software_sub"
+          ],
+          "suppresses": [
+            "people_focused",
+            "performing_sub"
+          ],
+          "label_hi": "घंटों तक एक जटिल चीज़ पर गहराई से ध्यान लगाना"
         },
         {
           "label": "Switching between different tasks and people throughout the day",
-          "boosts": ["leadership_sub", "business", "clinical", "social"],
-          "suppresses": []
+          "boosts": [
+            "leadership_sub",
+            "business",
+            "clinical",
+            "social"
+          ],
+          "suppresses": [],
+          "label_hi": "दिनभर अलग-अलग tasks और लोगों के बीच बदलते रहना"
         },
         {
           "label": "Creative and free — exploring ideas without fixed plans",
-          "boosts": ["expressive", "creative", "entrepreneurial", "design_sub"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "expressive",
+            "creative",
+            "entrepreneurial",
+            "design_sub"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "creative और खुला — बिना तय plans के ideas को explore करना"
         },
         {
           "label": "Clear tasks with measurable results — I know exactly what I achieved",
-          "boosts": ["structured", "finance", "engineering", "trades"],
-          "suppresses": ["expressive"]
+          "boosts": [
+            "structured",
+            "finance",
+            "engineering",
+            "trades"
+          ],
+          "suppresses": [
+            "expressive"
+          ],
+          "label_hi": "साफ़ tasks और मापे जा सकने वाले results — पता हो कि क्या हासिल हुआ"
         }
-      ]
+      ],
+      "text_hi": "कौन सी work style आपको सूट करती है?"
     },
     {
       "id": "dd061",
@@ -1628,25 +3555,55 @@
       "options": [
         {
           "label": "I love it — competing brings out my best",
-          "boosts": ["competitive_exam", "sports", "finance_analytical", "high_earning"],
-          "suppresses": ["social"]
+          "boosts": [
+            "competitive_exam",
+            "sports",
+            "finance_analytical",
+            "high_earning"
+          ],
+          "suppresses": [
+            "social"
+          ],
+          "label_hi": "बहुत पसंद है — मुकाबला मुझसे मेरा सबसे अच्छा प्रदर्शन निकलवाता है"
         },
         {
           "label": "It helps in small amounts — I like a healthy challenge",
-          "boosts": ["business", "clinical", "software_sub"],
-          "suppresses": []
+          "boosts": [
+            "business",
+            "clinical",
+            "software_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "थोड़ा-बहुत मदद करता है — एक healthy चुनौती पसंद है"
         },
         {
           "label": "I prefer working together over competing",
-          "boosts": ["people_focused", "social", "teaching_sub", "welfare"],
-          "suppresses": ["competitive_exam"]
+          "boosts": [
+            "people_focused",
+            "social",
+            "teaching_sub",
+            "welfare"
+          ],
+          "suppresses": [
+            "competitive_exam"
+          ],
+          "label_hi": "मुकाबले से ज़्यादा साथ मिलकर काम करना पसंद है"
         },
         {
           "label": "I only compete with my past self — personal growth over rankings",
-          "boosts": ["research_sub", "expressive", "creative", "education"],
-          "suppresses": ["competitive_exam"]
+          "boosts": [
+            "research_sub",
+            "expressive",
+            "creative",
+            "education"
+          ],
+          "suppresses": [
+            "competitive_exam"
+          ],
+          "label_hi": "सिर्फ अपने पुराने खुद से मुकाबला करना है — rankings से ज़्यादा personal growth मायने रखती है"
         }
-      ]
+      ],
+      "text_hi": "competition के बारे में आपको कैसा लगता है?"
     },
     {
       "id": "dd062",
@@ -1655,25 +3612,57 @@
       "options": [
         {
           "label": "I like structure and consistent patterns — it helps me do my best work",
-          "boosts": ["structured", "finance", "education", "research_sub"],
-          "suppresses": ["entrepreneurial", "expressive"]
+          "boosts": [
+            "structured",
+            "finance",
+            "education",
+            "research_sub"
+          ],
+          "suppresses": [
+            "entrepreneurial",
+            "expressive"
+          ],
+          "label_hi": "structure और तय patterns पसंद हैं — इससे सबसे अच्छा काम कर पाना संभव होता है"
         },
         {
           "label": "I want every day to be different — variety keeps me going",
-          "boosts": ["entrepreneurial", "social", "business", "field_work"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "entrepreneurial",
+            "social",
+            "business",
+            "field_work"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "हर दिन अलग हो — variety से हौसला बना रहता है"
         },
         {
           "label": "Some routine is fine but I need space to be creative",
-          "boosts": ["expressive", "design_sub", "creative", "clinical"],
-          "suppresses": []
+          "boosts": [
+            "expressive",
+            "design_sub",
+            "creative",
+            "clinical"
+          ],
+          "suppresses": [],
+          "label_hi": "थोड़ी बहुत routine ठीक है, पर creative होने के लिए जगह चाहिए"
         },
         {
           "label": "I want to design my own routine — not follow someone else's",
-          "boosts": ["entrepreneurial", "written_sub", "expressive"],
-          "suppresses": ["policy_sub", "structured"]
+          "boosts": [
+            "entrepreneurial",
+            "written_sub",
+            "expressive"
+          ],
+          "suppresses": [
+            "policy_sub",
+            "structured"
+          ],
+          "label_hi": "अपनी routine खुद design करनी है — किसी और की नहीं अपनानी"
         }
-      ]
+      ],
+      "text_hi": "routine के बारे में आपको कैसा लगता है?"
     },
     {
       "id": "dd063",
@@ -1682,25 +3671,58 @@
       "options": [
         {
           "label": "Being respected and well known in my field",
-          "boosts": ["specialist_medical", "research_sub", "competitive_exam", "legal_sub"],
-          "suppresses": []
+          "boosts": [
+            "specialist_medical",
+            "research_sub",
+            "competitive_exam",
+            "legal_sub"
+          ],
+          "suppresses": [],
+          "label_hi": "अपने क्षेत्र में respected और जाना-पहचाना होना"
         },
         {
           "label": "Financial freedom — having the freedom that money brings",
-          "boosts": ["high_earning", "finance_analytical", "entrepreneurial", "business"],
-          "suppresses": ["social", "welfare"]
+          "boosts": [
+            "high_earning",
+            "finance_analytical",
+            "entrepreneurial",
+            "business"
+          ],
+          "suppresses": [
+            "social",
+            "welfare"
+          ],
+          "label_hi": "financial freedom — पैसे से मिलने वाली आज़ादी"
         },
         {
           "label": "Having a positive impact on society — leaving things better than I found them",
-          "boosts": ["social", "policy_sub", "clinical", "welfare"],
-          "suppresses": ["high_earning"]
+          "boosts": [
+            "social",
+            "policy_sub",
+            "clinical",
+            "welfare"
+          ],
+          "suppresses": [
+            "high_earning"
+          ],
+          "label_hi": "समाज पर सकारात्मक असर डालना — चीज़ों को उससे बेहतर छोड़ना जैसी मिलीं"
         },
         {
           "label": "Living a balanced, happy life with time for what matters to me",
-          "boosts": ["education", "wellness", "structured", "mental_health"],
-          "suppresses": ["competitive_exam", "entrepreneurial"]
+          "boosts": [
+            "education",
+            "wellness",
+            "structured",
+            "mental_health"
+          ],
+          "suppresses": [
+            "competitive_exam",
+            "entrepreneurial"
+          ],
+          "label_hi": "एक संतुलित, खुशहाल ज़िंदगी जीना, जिसमें ज़रूरी चीज़ों के लिए समय हो"
         }
-      ]
+      ],
+      "text_hi": "जब आप अपने भविष्य के बारे में सोचते हैं, तो सबसे ज़्यादा क्या मायने रखता है?"
     },
     {
       "id": "dd064",
@@ -1709,25 +3731,58 @@
       "options": [
         {
           "label": "Fine with it — being careful and following process matters",
-          "boosts": ["structured", "finance", "legal_sub", "policy_sub"],
-          "suppresses": ["expressive", "entrepreneurial"]
+          "boosts": [
+            "structured",
+            "finance",
+            "legal_sub",
+            "policy_sub"
+          ],
+          "suppresses": [
+            "expressive",
+            "entrepreneurial"
+          ],
+          "label_hi": "कोई दिक्कत नहीं — सावधानी बरतना और process का पालन करना ज़रूरी लगता है"
         },
         {
           "label": "Okay with it if the work itself is meaningful",
-          "boosts": ["clinical", "social", "research_sub", "education"],
-          "suppresses": []
+          "boosts": [
+            "clinical",
+            "social",
+            "research_sub",
+            "education"
+          ],
+          "suppresses": [],
+          "label_hi": "ठीक है, अगर असली काम सार्थक हो"
         },
         {
           "label": "I prefer to keep it minimum — I want to focus on the real work",
-          "boosts": ["entrepreneurial", "hands_on", "trades", "creative"],
-          "suppresses": ["structured", "legal_sub"]
+          "boosts": [
+            "entrepreneurial",
+            "hands_on",
+            "trades",
+            "creative"
+          ],
+          "suppresses": [
+            "structured",
+            "legal_sub"
+          ],
+          "label_hi": "इसे कम से कम रखना पसंद है — असली काम पर ध्यान देना है"
         },
         {
           "label": "I really dislike it — too much paperwork and rules slow everything down",
-          "boosts": ["entrepreneurial", "expressive", "performing_sub"],
-          "suppresses": ["policy_sub", "structured"]
+          "boosts": [
+            "entrepreneurial",
+            "expressive",
+            "performing_sub"
+          ],
+          "suppresses": [
+            "policy_sub",
+            "structured"
+          ],
+          "label_hi": "बिल्कुल पसंद नहीं — बहुत ज़्यादा paperwork और नियम सब कुछ धीमा कर देते हैं"
         }
-      ]
+      ],
+      "text_hi": "paperwork, documentation, और नियमों का पालन करने के बारे में आपको कैसा लगता है?"
     },
     {
       "id": "dd065",
@@ -1736,25 +3791,55 @@
       "options": [
         {
           "label": "I like knowing exactly what is expected of me — clarity helps me work well",
-          "boosts": ["structured", "finance", "engineering", "education"],
-          "suppresses": ["entrepreneurial", "expressive"]
+          "boosts": [
+            "structured",
+            "finance",
+            "engineering",
+            "education"
+          ],
+          "suppresses": [
+            "entrepreneurial",
+            "expressive"
+          ],
+          "label_hi": "यह जानना पसंद है कि क्या उम्मीद की जा रही है — स्पष्टता से अच्छा काम करना आसान होता है"
         },
         {
           "label": "I like figuring things out as I go — the path reveals itself",
-          "boosts": ["entrepreneurial", "creative", "expressive", "field_work"],
-          "suppresses": ["structured"]
+          "boosts": [
+            "entrepreneurial",
+            "creative",
+            "expressive",
+            "field_work"
+          ],
+          "suppresses": [
+            "structured"
+          ],
+          "label_hi": "करते-करते चीज़ों को समझना पसंद है — रास्ता खुद-ब-खुद दिखने लगता है"
         },
         {
           "label": "I like setting the direction for others — I am a natural planner and leader",
-          "boosts": ["leadership_sub", "entrepreneurial", "policy_sub", "business"],
-          "suppresses": []
+          "boosts": [
+            "leadership_sub",
+            "entrepreneurial",
+            "policy_sub",
+            "business"
+          ],
+          "suppresses": [],
+          "label_hi": "दूसरों के लिए दिशा तय करना पसंद है — मैं स्वाभाविक रूप से एक planner और leader हूं"
         },
         {
           "label": "I like mixing structure with creative freedom — the best of both",
-          "boosts": ["design_sub", "software_sub", "clinical", "any_stream"],
-          "suppresses": []
+          "boosts": [
+            "design_sub",
+            "software_sub",
+            "clinical",
+            "any_stream"
+          ],
+          "suppresses": [],
+          "label_hi": "structure को creative आज़ादी के साथ मिलाना पसंद है — दोनों का सबसे अच्छा हिस्सा"
         }
-      ]
+      ],
+      "text_hi": "इनमें से कौन सा आपको सबसे अच्छे से बताता है?"
     }
   ]
 }

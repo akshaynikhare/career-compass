@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W50KH3VDVE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-W50KH3VDVE');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, follow">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4F46E5">
+  <link rel="icon" href="icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+  <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="description" content="Explore your career matches as an interactive graph — see how streams, exams, and categories connect to your personality.">
   <meta name="keywords" content="career exploration India, career categories India, science arts commerce career options, career streams India, career visualization tool, career explorer India, career options after 10th, career fields India, Class 10 career graph, career guidance India">
@@ -31,16 +29,18 @@
   <meta name="twitter:title" content="Career Compass — Career Explorer">
   <meta name="twitter:description" content="Explore your career matches as an interactive graph — see how streams, exams, and categories connect to your personality.">
   <meta name="twitter:image" content="https://akshaynikhare.github.io/career-compass/icons/og-image.png">
-  <title>Career Compass — Career Explorer</title>
+  <title data-i18n-hi="Career Compass — करियर एक्सप्लोरर">Career Compass — Career Explorer</title>
   <link rel="stylesheet" href="styles/main.css">
+  <script src="src/analytics.js" defer></script>
+  <script src="src/consent.js" defer></script>
 </head>
 <body>
   <div class="container" style="max-width:100%; padding:1rem;">
     <div class="test-header">
       <a href="index.html" class="btn-ghost" style="padding-left:0; color:var(--primary); font-weight:700; font-size:1rem; text-decoration:none;">
-        &#9711; Career Advisor
+        &#9711; Career Compass
       </a>
-      <a href="result.html" class="btn-secondary" style="font-size:0.8125rem; padding:0.4rem 0.875rem;">
+      <a href="result.html" class="btn-secondary" style="font-size:0.8125rem; padding:0.4rem 0.875rem;" data-i18n-hi-html="&#8592; परिणामों पर वापस जाएं">
         &#8592; Back to Results
       </a>
     </div>
@@ -48,16 +48,16 @@
     <!-- No-result fallback -->
     <div id="no-result" class="hidden card text-center" style="padding:2rem; max-width:640px; margin:0 auto;">
       <p style="font-size:2rem;">&#128202;</p>
-      <h2 class="mt-1">No results yet</h2>
-      <p class="mt-1">Complete the test first to explore your career graph.</p>
-      <a href="test.html" class="btn-primary mt-2" style="margin-top:1rem;">Take the Test &#8594;</a>
+      <h2 class="mt-1" data-i18n-hi="अभी तक कोई परिणाम नहीं">No results yet</h2>
+      <p class="mt-1" data-i18n-hi="अपना करियर ग्राफ़ देखने के लिए पहले टेस्ट पूरा करें।">Complete the test first to explore your career graph.</p>
+      <a href="test.html" class="btn-primary mt-2" style="margin-top:1rem;" data-i18n-hi-html="टेस्ट लें &#8594;">Take the Test &#8594;</a>
     </div>
 
     <!-- Graph area -->
     <div id="explore-content" class="hidden">
       <div class="card" style="margin-bottom:1rem; max-width:640px; margin-left:auto; margin-right:auto;">
-        <h1 style="font-size:1.25rem; font-weight:700; color:var(--text); margin-bottom:0.25rem;">Career Network</h1>
-        <p style="font-size:0.875rem; color:var(--muted);">Your top matches connected by streams, entrance exams, and categories. Drag to explore. Click a career for details.</p>
+        <h1 style="font-size:1.25rem; font-weight:700; color:var(--text); margin-bottom:0.25rem;" data-i18n-hi="करियर नेटवर्क">Career Network</h1>
+        <p style="font-size:0.875rem; color:var(--muted);" data-i18n-hi="आपके शीर्ष मैच स्ट्रीम, प्रवेश परीक्षाओं और श्रेणियों से जुड़े हैं। एक्सप्लोर करने के लिए खींचें। विवरण के लिए किसी करियर पर क्लिक करें।">Your top matches connected by streams, entrance exams, and categories. Drag to explore. Click a career for details.</p>
       </div>
       <div id="graph-container" style="width:100%; height:calc(100vh - 160px); background:var(--white); border-radius:var(--radius) var(--radius) 0 0; box-shadow:var(--shadow); overflow:hidden; position:relative;">
         <svg id="graph-svg" style="width:100%; height:100%;"></svg>
@@ -65,20 +65,21 @@
         <div id="node-tooltip" style="display:none; position:absolute; background:var(--white); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.75rem 1rem; box-shadow:var(--shadow-md); max-width:240px; pointer-events:none; z-index:10;">
           <div id="tooltip-name" style="font-weight:600; color:var(--text); font-size:0.9375rem; margin-bottom:0.25rem;"></div>
           <div id="tooltip-summary" style="font-size:0.8125rem; color:var(--muted); margin-bottom:0.5rem; line-height:1.4;"></div>
-          <a id="tooltip-timeline-link" href="#" style="font-size:0.8125rem; color:var(--primary); font-weight:500; text-decoration:none;">See Timeline &#8594;</a>
+          <a id="tooltip-timeline-link" href="#" style="font-size:0.8125rem; color:var(--primary); font-weight:500; text-decoration:none;" data-i18n-hi-html="टाइमलाइन देखें &#8594;">See Timeline &#8594;</a>
         </div>
       </div>
         <div id="graph-legend" style="display:flex; flex-wrap:wrap; gap:0.75rem; padding:0.75rem 1rem; background:var(--white); border-top:1px solid var(--border); border-radius:0 0 var(--radius) var(--radius); font-size:0.8125rem;">
-          <span style="display:flex; align-items:center; gap:0.375rem;"><span style="display:inline-block; width:14px; height:14px; border-radius:50%; background:#4F46E5; border:2px solid #fff; box-shadow:0 0 0 1px #4F46E5;"></span> Career match</span>
-          <span style="display:flex; align-items:center; gap:0.375rem;"><span style="display:inline-block; width:11px; height:11px; border-radius:50%; background:#10B981;"></span> Stream</span>
-          <span style="display:flex; align-items:center; gap:0.375rem;"><span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:#F59E0B;"></span> Entrance Exam</span>
-          <span style="display:flex; align-items:center; gap:0.375rem;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#8B5CF6;"></span> Category</span>
-          <span style="color:var(--muted);">Drag to rearrange · Click career for details</span>
+          <span style="display:flex; align-items:center; gap:0.375rem;" data-i18n-hi-html="<span style=&quot;display:inline-block; width:14px; height:14px; border-radius:50%; background:#4F46E5; border:2px solid #fff; box-shadow:0 0 0 1px #4F46E5;&quot;></span> करियर मैच"><span style="display:inline-block; width:14px; height:14px; border-radius:50%; background:#4F46E5; border:2px solid #fff; box-shadow:0 0 0 1px #4F46E5;"></span> Career match</span>
+          <span style="display:flex; align-items:center; gap:0.375rem;" data-i18n-hi-html="<span style=&quot;display:inline-block; width:11px; height:11px; border-radius:50%; background:#10B981;&quot;></span> स्ट्रीम"><span style="display:inline-block; width:11px; height:11px; border-radius:50%; background:#10B981;"></span> Stream</span>
+          <span style="display:flex; align-items:center; gap:0.375rem;" data-i18n-hi-html="<span style=&quot;display:inline-block; width:10px; height:10px; border-radius:50%; background:#F59E0B;&quot;></span> प्रवेश परीक्षा"><span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:#F59E0B;"></span> Entrance Exam</span>
+          <span style="display:flex; align-items:center; gap:0.375rem;" data-i18n-hi-html="<span style=&quot;display:inline-block; width:12px; height:12px; border-radius:50%; background:#8B5CF6;&quot;></span> श्रेणी"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#8B5CF6;"></span> Category</span>
+          <span style="color:var(--muted);" data-i18n-hi="पुनर्व्यवस्थित करने के लिए खींचें · विवरण के लिए करियर पर क्लिक करें">Drag to rearrange · Click career for details</span>
         </div>
     </div>
   </div>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="src/strings.js"></script>
   <script src="src/explore.js"></script>
   <script src="src/i18n.js"></script>
 </body>

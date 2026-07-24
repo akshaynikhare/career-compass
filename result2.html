@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W50KH3VDVE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-W50KH3VDVE');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, follow">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4F46E5">
+  <link rel="icon" href="icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+  <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="description" content="Your best career match from Career Compass — a personalised, in-depth career recommendation based on your RIASEC personality profile.">
   <meta name="keywords" content="best career match India, career deep dive results, career recommendation Class 10, top career suggestion India, RIASEC career match, personalized career India, career fit result, career after 10th India">
@@ -31,73 +29,83 @@
   <meta name="twitter:title" content="Career Compass — Your Best Career Match">
   <meta name="twitter:description" content="Your best career match from Career Compass — a personalised, in-depth career recommendation based on your RIASEC personality profile.">
   <meta name="twitter:image" content="https://akshaynikhare.github.io/career-compass/icons/og-image.png">
-  <title>Career Compass — Your Best Career Match</title>
+  <title data-i18n-hi="Career Compass — आपका सबसे उपयुक्त करियर मैच">Career Compass — Your Best Career Match</title>
   <link rel="stylesheet" href="styles/main.css">
+  <script src="src/analytics.js" defer></script>
+  <script src="src/consent.js" defer></script>
 </head>
 <body>
   <div class="container">
 
     <div class="test-header">
       <a href="index.html" class="btn-ghost" style="padding-left:0; color:var(--primary); font-weight:700; font-size:1rem; text-decoration:none;">
-        &#9711; Career Advisor
+        &#9711; Career Compass
       </a>
-      <a href="result.html" class="btn-secondary" style="font-size:0.8125rem; padding:0.4rem 0.875rem;">
+      <a href="result.html" class="btn-secondary" style="font-size:0.8125rem; padding:0.4rem 0.875rem;" data-i18n-hi-html="&#8592; सभी नतीजे">
         &#8592; All Results
       </a>
     </div>
 
     <div id="no-result" class="hidden card text-center" style="padding:2rem;">
       <p style="font-size:2rem;">&#128214;</p>
-      <h2 class="mt-1">No deep dive result yet</h2>
-      <p class="mt-1">Complete the career test and deep dive first.</p>
-      <a href="test.html" class="btn-primary" style="margin-top:1rem; display:block;">Start Here &#8594;</a>
+      <h2 class="mt-1" data-i18n-hi="अभी तक कोई डीप डाइव नतीजा नहीं है">No deep dive result yet</h2>
+      <p class="mt-1" data-i18n-hi="पहले करियर टेस्ट और डीप डाइव पूरा करें।">Complete the career test and deep dive first.</p>
+      <a href="test.html" class="btn-primary" style="margin-top:1rem; display:block;" data-i18n-hi-html="यहाँ से शुरू करें &#8594;">Start Here &#8594;</a>
     </div>
 
     <div id="result2-content" class="hidden">
 
       <div class="card mb-2" style="margin-bottom:1rem; text-align:center; padding:1.75rem 1.5rem; background:linear-gradient(135deg,#EEF2FF 0%,#FFFFFF 60%);">
-        <p style="font-size:0.75rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:0.5rem;">Your Best Career Match</p>
+        <p style="font-size:0.75rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:0.5rem;" data-i18n-hi="आपका सबसे उपयुक्त करियर मैच">Your Best Career Match</p>
         <div id="winner-badge" style="margin-bottom:0.625rem;"></div>
         <h1 id="winner-name" style="font-size:1.5rem; font-weight:800; color:var(--text); margin-bottom:0.5rem;"></h1>
         <p id="winner-summary" style="font-size:0.9375rem; color:var(--muted); line-height:1.55; margin-bottom:1rem;"></p>
         <div style="margin-bottom:0.375rem;">
           <div style="display:flex; justify-content:space-between; font-size:0.8125rem; margin-bottom:0.25rem;">
-            <span style="color:var(--muted);">Match confidence</span>
+            <span style="color:var(--muted);" data-i18n-hi="मिलान विश्वास">Match confidence</span>
             <span id="winner-conf-text" style="color:var(--primary); font-weight:600;"></span>
           </div>
           <div style="height:8px; background:var(--border); border-radius:999px; overflow:hidden;">
             <div id="winner-conf-bar" style="height:100%; background:var(--primary); border-radius:999px; transition:width 0.6s ease; width:0%;"></div>
           </div>
         </div>
-        <p style="font-size:0.75rem; color:var(--muted); margin-top:0.375rem;">Based on <span id="q-count"></span> work-preference questions</p>
+        <p style="font-size:0.75rem; color:var(--muted); margin-top:0.375rem;"><span data-i18n-hi="आधार:">Based on</span> <span id="q-count"></span> <span data-i18n-hi="कार्य-वरीयता प्रश्न">work-preference questions</span></p>
       </div>
 
       <div class="card mb-2" style="margin-bottom:1rem;">
-        <h2 class="section-title">Why this career fits you</h2>
+        <h2 class="section-title" data-i18n-hi="यह करियर आपके लिए क्यों उपयुक्त है">Why this career fits you</h2>
         <div id="reasons-list" style="display:flex; flex-direction:column; gap:0.625rem;"></div>
         <div id="runner-up-block" style="display:none; margin-top:1rem; padding:0.875rem; background:var(--bg); border-radius:var(--radius-sm);">
-          <p style="font-size:0.75rem; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:0.25rem;">Runner-up</p>
+          <p style="font-size:0.75rem; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:0.25rem;" data-i18n-hi="उपविजेता">Runner-up</p>
           <p id="runner-up-name" style="font-size:0.9375rem; font-weight:600; color:var(--text);"></p>
           <p id="runner-up-conf" style="font-size:0.8125rem; color:var(--muted);"></p>
         </div>
       </div>
 
+      <div class="card mb-2 hidden" id="dd-confidence-card" style="margin-bottom:1rem;">
+        <h2 class="section-title" data-i18n-hi="आपके मिलानों की तुलना कैसी रही">How your matches compared</h2>
+        <p class="text-muted" style="font-size:0.875rem; margin-bottom:0.75rem;" data-i18n-hi="डीप डाइव के बाद आपके शीर्ष करियर उम्मीदवारों में विश्वास।">Confidence across your top career candidates after the deep dive.</p>
+        <div id="dd-confidence-chart"></div>
+      </div>
+
       <div class="card mb-2" style="margin-bottom:1rem;">
-        <h2 class="section-title">Career Details</h2>
+        <h2 class="section-title" data-i18n-hi="करियर विवरण">Career Details</h2>
         <div id="winner-detail"></div>
       </div>
 
       <div class="card" style="margin-bottom:2rem;">
         <div style="display:flex; flex-direction:column; gap:0.75rem;">
-          <a id="timeline-link" href="timeline.html" class="btn-primary" style="text-align:center; text-decoration:none;">See Career Timeline &#8594;</a>
-          <a href="deepdive.html" class="btn-secondary" style="justify-content:center; text-align:center;">Retake Deep Dive</a>
-          <a href="result.html" class="btn-secondary" style="justify-content:center; text-align:center;">&#8592; Back to All Matches</a>
+          <a id="timeline-link" href="timeline.html" class="btn-primary" style="text-align:center; text-decoration:none;" data-i18n-hi-html="करियर टाइमलाइन देखें &#8594;">See Career Timeline &#8594;</a>
+          <a href="deepdive.html" class="btn-secondary" style="justify-content:center; text-align:center;" data-i18n-hi="फिर से डीप डाइव करें">Retake Deep Dive</a>
+          <a href="result.html" class="btn-secondary" style="justify-content:center; text-align:center;" data-i18n-hi-html="&#8592; सभी मैच पर वापस जाएँ">&#8592; Back to All Matches</a>
         </div>
       </div>
 
     </div>
   </div>
 
+  <script src="src/strings.js"></script>
+  <script src="src/charts.js"></script>
   <script>
   (function () {
     'use strict';
@@ -143,16 +151,16 @@
 
     var badge = document.createElement('span');
     badge.className = 'badge';
-    badge.textContent = w.category;
+    badge.textContent = window.tCat(w.category);
     badge.style.background = col.bg;
     badge.style.color = col.text;
     document.getElementById('winner-badge').appendChild(badge);
 
-    document.getElementById('winner-name').textContent = w.name;
-    document.getElementById('winner-summary').textContent = w.summary || '';
+    document.getElementById('winner-name').textContent = window.pickLang(w, 'name');
+    document.getElementById('winner-summary').textContent = window.pickLang(w, 'summary') || '';
 
     var pct = Math.round((data.winner_confidence || 0) * 100);
-    document.getElementById('winner-conf-text').textContent = pct + '% confidence';
+    document.getElementById('winner-conf-text').textContent = window.T('conf_pct', pct);
     setTimeout(function () {
       document.getElementById('winner-conf-bar').style.width = pct + '%';
     }, 120);
@@ -177,36 +185,53 @@
     if (data.runner_up) {
       var block = document.getElementById('runner-up-block');
       block.style.display = 'block';
-      document.getElementById('runner-up-name').textContent = data.runner_up.name;
+      document.getElementById('runner-up-name').textContent = window.pickLang(data.runner_up, 'name');
       document.getElementById('runner-up-conf').textContent =
-        Math.round((data.runner_up_confidence || 0) * 100) + '% confidence — runner-up';
+        window.T('conf_runner', Math.round((data.runner_up_confidence || 0) * 100));
     }
 
     var detail = document.getElementById('winner-detail');
     if (w.path_india) {
       var pathEl = document.createElement('p');
       pathEl.style.cssText = 'font-size:0.875rem; color:var(--muted); margin-bottom:0.75rem; line-height:1.5;';
-      pathEl.textContent = w.path_india;
+      pathEl.textContent = window.pickLang(w, 'path_india');
       detail.appendChild(pathEl);
     }
     var meta = document.createElement('div');
     meta.style.cssText = 'display:flex; flex-wrap:wrap; gap:0.75rem;';
-    var STREAM_LABELS = { pcm: 'Science (PCM)', pcb: 'Science (PCB)', commerce: 'Commerce', arts: 'Arts / Humanities', any: 'Any stream' };
+    var STREAM_KEYS = { pcm: 'stream_pcm', pcb: 'stream_pcb', commerce: 'stream_commerce', arts: 'stream_arts', any: 'stream_any' };
+    function streamLabel(s) { return STREAM_KEYS[s] ? window.T(STREAM_KEYS[s]) : s; }
     function chip(text) {
       var s = document.createElement('span');
       s.className = 'career-meta-item';
       s.textContent = text;
       meta.appendChild(s);
     }
-    if (w.years_min)     chip('⏱ ' + w.years_min + '+ yrs');
-    if (w.entrance_exam) chip('✍ ' + w.entrance_exam);
-    if (w.salary_lpa)    chip('₹ ' + w.salary_lpa.entry + 'L–' + w.salary_lpa.senior + 'L/yr');
+    if (w.years_min)     chip(window.T('meta_years', w.years_min));
+    if (w.entrance_exam) chip(window.T('meta_exam', w.entrance_exam));
+    if (w.salary_lpa)    chip(window.T('winner_salary', w.salary_lpa.entry, w.salary_lpa.senior));
     if (w.streams && w.streams.length) {
-      chip('📚 ' + w.streams.map(function (s) { return STREAM_LABELS[s] || s; }).join(', '));
+      chip(window.T('meta_streams', w.streams.map(streamLabel).join(', ')));
     }
     detail.appendChild(meta);
 
     document.getElementById('timeline-link').href = 'timeline.html?id=' + encodeURIComponent(w.id);
+
+    // ── Deep-dive confidence chart: top-5 candidates ──
+    if (window.Charts && data.candidates_final && data.candidates_final.length > 1) {
+      var rows = data.candidates_final.map(function (c) {
+        var cat = (CATEGORY_COLORS[c.profession.category] || DEFAULT_COLOR);
+        return {
+          label: window.pickLang(c.profession, 'name'),
+          value: c.confidence || 0,
+          color: cat.text
+        };
+      });
+      var chartEl = document.getElementById('dd-confidence-chart');
+      chartEl.innerHTML = '';
+      chartEl.appendChild(window.Charts.hbars({ rows: rows }));
+      document.getElementById('dd-confidence-card').classList.remove('hidden');
+    }
   })();
   </script>
   <script src="src/i18n.js"></script>

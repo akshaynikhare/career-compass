@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W50KH3VDVE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-W50KH3VDVE');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, follow">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4F46E5">
+  <link rel="icon" href="icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+  <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="description" content="Deep-dive into your best career fit — answer targeted questions for a precision career recommendation.">
   <meta name="keywords" content="career deep dive India, specific career recommendation, career fit analysis India, best career options Class 10, personalized career guidance India, career precision test, career counselling India, RIASEC career match, career after 10th India">
@@ -31,8 +29,10 @@
   <meta name="twitter:title" content="Career Compass — Deep Dive">
   <meta name="twitter:description" content="Deep-dive into your best career fit — answer targeted questions for a precision career recommendation.">
   <meta name="twitter:image" content="https://akshaynikhare.github.io/career-compass/icons/og-image.png">
-  <title>Career Compass — Deep Dive</title>
+  <title data-i18n-hi="Career Compass — गहन विश्लेषण">Career Compass — Deep Dive</title>
   <link rel="stylesheet" href="styles/main.css">
+  <script src="src/analytics.js" defer></script>
+  <script src="src/consent.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -40,16 +40,16 @@
     <!-- Header -->
     <div class="test-header">
       <a href="result.html" class="app-logo btn-ghost" style="padding-left:0; color:var(--primary); font-weight:700; font-size:1rem; text-decoration:none;">
-        &#9711; Career Advisor
+        &#9711; Career Compass
       </a>
     </div>
 
     <!-- No-result fallback (shown if no first-test result in localStorage) -->
     <div id="no-result" class="hidden card text-center" style="padding:2rem;">
       <p style="font-size:2rem;">&#128214;</p>
-      <h2 class="mt-1">Complete the first test first</h2>
-      <p class="mt-1">The deep dive narrows down from your top 10 matches.</p>
-      <a href="test.html" class="btn-primary mt-2" style="margin-top:1rem; display:block;">Take the Career Test &rarr;</a>
+      <h2 class="mt-1" data-i18n-hi="पहले पहला टेस्ट पूरा करें">Complete the first test first</h2>
+      <p class="mt-1" data-i18n-hi="गहन विश्लेषण आपके टॉप 10 मैचों में से सबसे उपयुक्त करियर चुनता है।">The deep dive narrows down from your top 10 matches.</p>
+      <a href="test.html" class="btn-primary mt-2" style="margin-top:1rem; display:block;" data-i18n-hi-html="करियर टेस्ट लें &rarr;">Take the Career Test &rarr;</a>
     </div>
 
     <!-- Progress bar (hidden until engine starts) -->
@@ -62,7 +62,7 @@
         <div class="progress-fill" id="progress-fill" style="width:0%"></div>
       </div>
       <!-- Candidates remaining indicator -->
-      <div id="candidates-indicator" style="text-align:right; font-size:0.75rem; color:var(--muted); margin-top:0.25rem;">
+      <div id="candidates-indicator" style="text-align:right; font-size:0.75rem; color:var(--muted); margin-top:0.25rem;" data-i18n-hi-html="फोकस में <span id=&quot;candidates-count&quot;>10</span> करियर">
         <span id="candidates-count">10</span> careers in focus
       </div>
     </div>
@@ -71,10 +71,10 @@
     <div class="card hidden" id="question-card">
       <div id="loading-state" class="loading-state">
         <div class="spinner"></div>
-        <p class="mt-2 text-muted">Loading…</p>
+        <p class="mt-2 text-muted" data-i18n-hi="लोड हो रहा है…">Loading…</p>
       </div>
       <div id="question-content" class="hidden">
-        <span class="question-type-label" id="question-type-label">Deep Dive</span>
+        <span class="question-type-label" id="question-type-label" data-i18n-hi="गहन विश्लेषण">Deep Dive</span>
         <p class="question-number" id="question-number"></p>
         <p class="question-text" id="question-text"></p>
         <div class="options-list options-personality" id="options-list"></div>
@@ -83,7 +83,7 @@
 
     <!-- Navigation (Prev is hidden — adaptive test can't go back) -->
     <div class="nav-buttons hidden" id="nav-buttons">
-      <button class="btn-ghost" id="btn-prev" style="visibility:hidden;" disabled>&#8592; Prev</button>
+      <button class="btn-ghost" id="btn-prev" style="visibility:hidden;" disabled data-i18n-hi-html="&#8592; पिछला">&#8592; Prev</button>
       <button class="btn-primary" id="btn-next" disabled>Next &rarr;</button>
     </div>
 
@@ -92,6 +92,7 @@
 
   </div>
 
+  <script src="src/strings.js"></script>
   <script src="src/deep_dive_engine.js"></script>
   <script src="src/deepdive_app.js"></script>
   <script src="src/i18n.js"></script>

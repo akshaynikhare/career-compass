@@ -1,6 +1,6 @@
 {
   "en": {
-    "app_name": "Career Advisor",
+    "app_name": "Career Compass",
     "btn_begin": "Begin Test →",
     "btn_next": "Next →",
     "btn_prev": "← Prev",
@@ -52,7 +52,7 @@
     "toggle_lang": "हिंदी"
   },
   "hi": {
-    "app_name": "करियर सलाहकार",
+    "app_name": "करियर कम्पास",
     "btn_begin": "टेस्ट शुरू करें →",
     "btn_next": "आगे →",
     "btn_prev": "← पीछे",

@@ -48,7 +48,7 @@
     matches.slice(0, 10).forEach(function (m, i) {
       var opt = document.createElement('option');
       opt.value = String(i);
-      opt.textContent = m.profession.name;
+      opt.textContent = window.pickLang(m.profession, 'name');
       select.appendChild(opt);
     });
     card.classList.remove('hidden');
@@ -72,7 +72,7 @@
     function setBusy(busy) {
       askBtn.disabled = busy;
       roadmapBtn.disabled = busy;
-      askBtn.textContent = busy ? '…' : 'Ask';
+      askBtn.textContent = busy ? '…' : window.T('ai_ask');
     }
 
     function ask() {
@@ -82,9 +82,9 @@
       addBubble('user', q);
       input.value = '';
       setBusy(true);
-      var pending = addBubble('ai', 'Thinking…');
+      var pending = addBubble('ai', window.T('ai_thinking'));
       CareerAI.chat(prof, q).then(function (answer) {
-        pending.textContent = answer || 'Sorry, I could not answer that right now. Please try again.';
+        pending.textContent = answer || window.T('ai_answer_fail');
         setBusy(false);
       });
     }
@@ -92,11 +92,11 @@
     function roadmap() {
       var prof = currentProfession();
       if (!prof) return;
-      addBubble('user', 'Roadmap to become a ' + prof.name);
+      addBubble('user', window.T('ai_roadmap_for', window.pickLang(prof, 'name')));
       setBusy(true);
-      var pending = addBubble('ai', 'Building your roadmap…');
+      var pending = addBubble('ai', window.T('ai_roadmap_build'));
       CareerAI.roadmap(prof, constraints).then(function (text) {
-        pending.textContent = text || 'Roadmap unavailable right now. Please try again.';
+        pending.textContent = text || window.T('ai_roadmap_fail');
         setBusy(false);
       });
     }

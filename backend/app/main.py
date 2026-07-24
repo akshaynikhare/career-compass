@@ -18,7 +18,7 @@ from slowapi.errors import RateLimitExceeded
 
 from . import config, db
 from .ratelimit import limiter
-from .routers import ai, results
+from .routers import ai, results, sessions
 
 logger = logging.getLogger("career-compass")
 
@@ -57,6 +57,7 @@ app.add_middleware(
 )
 
 app.include_router(results.router)
+app.include_router(sessions.router)
 app.include_router(ai.router)
 
 

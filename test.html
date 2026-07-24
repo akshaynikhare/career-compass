@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W50KH3VDVE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-W50KH3VDVE');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4F46E5">
+  <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="icon" href="icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+  <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <meta name="description" content="Take the 45-question Career Compass assessment — personalised career matches based on your personality, budget, and stream preference.">
   <meta name="keywords" content="career aptitude test India, RIASEC personality test free, career assessment for students, career quiz Class 10, Holland code test India, personality career test, career interest test India, online career test students, career guidance India, aptitude test Class 10, free career test India">
   <meta name="author" content="Career Compass">
@@ -30,44 +29,56 @@
   <meta name="twitter:title" content="Career Compass — Take the Assessment">
   <meta name="twitter:description" content="Take the 45-question Career Compass assessment — personalised career matches based on your personality, budget, and stream preference.">
   <meta name="twitter:image" content="https://akshaynikhare.github.io/career-compass/icons/og-image.png">
-  <title>Career Compass — Take the Assessment</title>
+  <title data-i18n-hi="करियर कम्पास — असेसमेंट लें">Career Compass — Take the Assessment</title>
   <link rel="stylesheet" href="styles/main.css">
-  <style>
-    .form-group { margin-bottom: 1rem; }
-    .form-group label { display:block; font-size:0.875rem; font-weight:600; color:var(--text); margin-bottom:0.4rem; }
-    .form-group input { width:100%; padding:0.65rem 0.875rem; border:2px solid var(--border); border-radius:8px; font-size:1rem; color:var(--text); box-sizing:border-box; }
-    .form-group input:focus { outline:none; border-color:var(--primary); }
-  </style>
+  <script src="src/analytics.js" defer></script>
+  <script src="src/consent.js" defer></script>
 </head>
 <body>
-  <div class="container">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <main class="container" id="main-content">
 
     <!-- Header -->
     <div class="test-header">
       <a href="index.html" class="app-logo btn-ghost" style="padding-left:0; color: var(--primary); font-weight:700; font-size:1rem; text-decoration:none;">
-        &#9711; Career Advisor
+        &#9711; Career Compass
       </a>
     </div>
 
-    <!-- Student Info (Phase 0) -->
+    <!-- Intro (Phase 0) — details optional & skippable -->
     <div id="student-info-phase" class="card">
-      <p class="question-type-label">Before we begin</p>
-      <h2 style="font-size:1.25rem; margin-bottom:0.25rem;">Tell us about yourself</h2>
-      <p class="text-muted" style="font-size:0.875rem; margin-bottom:1.5rem;">Your details help personalise your career report. We keep them private.</p>
-      <div class="form-group">
-        <label for="si-name">Full Name *</label>
-        <input type="text" id="si-name" placeholder="Your full name" autocomplete="name" />
+      <p class="question-type-label" data-i18n-hi="शुरू करने से पहले">Before we begin</p>
+      <h2 style="font-size:1.25rem; margin-bottom:0.5rem;" data-i18n-hi="अपने लिए सबसे उपयुक्त करियर खोजने के लिए तैयार हैं?">Ready to find your best-fit career?</h2>
+      <p class="text-muted" style="font-size:0.9375rem; margin-bottom:1rem; line-height:1.6;" data-i18n-hi="आप अपनी रुचियों, व्यक्तित्व और व्यावहारिक स्थिति के बारे में 45 छोटे प्रश्नों के उत्तर देंगे। इसमें लगभग 10 मिनट लगते हैं।">You'll answer 45 short questions about your interests, personality, and practical situation. It takes about 10 minutes.</p>
+
+      <!-- Optional details — power the resume link + report email -->
+      <div class="save-form" style="margin-bottom:1rem;">
+        <div class="form-field">
+          <label for="si-name">Your name <span style="color:var(--muted); font-weight:400;" data-i18n-hi="(वैकल्पिक)">(optional)</span></label>
+          <input type="text" id="si-name" placeholder="Full name" autocomplete="name">
+        </div>
+        <div class="form-field">
+          <label for="si-email">Email <span style="color:var(--muted); font-weight:400;" data-i18n-hi="(वैकल्पिक)">(optional)</span></label>
+          <input type="email" id="si-email" placeholder="your@email.com" autocomplete="email">
+        </div>
+        <div class="form-field">
+          <label for="si-phone">Mobile <span style="color:var(--muted); font-weight:400;" data-i18n-hi="(वैकल्पिक)">(optional)</span></label>
+          <input type="tel" id="si-phone" placeholder="10-digit mobile" autocomplete="tel" maxlength="10" inputmode="numeric">
+        </div>
+        <p id="si-error" class="save-status error" role="alert" aria-live="assertive"></p>
       </div>
-      <div class="form-group">
-        <label for="si-email">Email Address *</label>
-        <input type="email" id="si-email" placeholder="your@email.com" autocomplete="email" />
+
+      <button class="btn-primary" id="btn-begin" data-i18n-hi-html="टेस्ट शुरू करें &#8594;">Begin Test &#8594;</button>
+      <p class="text-muted" style="font-size:0.75rem; margin-top:0.75rem; text-align:center; line-height:1.5;" data-i18n-hi="वैकल्पिक और निजी। अपना नाम/ईमेल जोड़ने पर आप अपनी प्रगति सहेज सकते हैं और किसी भी डिवाइस पर अपने लिंक से टेस्ट फिर से शुरू कर सकते हैं — या इसे खाली छोड़कर सीधे शुरू करें।">Optional &amp; private. Add your details to save progress and resume on any device with your own link — or leave blank and start straight away.</p>
+    </div>
+
+    <!-- Resume link — appears once a session exists; stays visible during the test -->
+    <div id="resume-note" class="hidden" style="margin-bottom:1rem; padding:0.75rem 0.875rem; background:var(--primary-light); border:1px solid var(--primary); border-radius:var(--radius-sm); font-size:0.8125rem;">
+      <p style="color:var(--text); margin-bottom:0.375rem;" data-i18n-hi="✓ आपकी प्रगति सहेजी जा रही है। इस लिंक को सहेजें और किसी भी समय फिर से शुरू करें:">✓ Your progress is being saved. Bookmark this link to resume anytime:</p>
+      <div style="display:flex; gap:0.375rem;">
+        <input id="resume-link" type="text" readonly style="flex:1; font-size:0.75rem; padding:0.375rem 0.5rem; border:1px solid var(--border); border-radius:6px; background:var(--white); color:var(--text);">
+        <button id="resume-copy" class="btn-secondary" style="padding:0.375rem 0.625rem; font-size:0.75rem;" data-i18n-hi="कॉपी">Copy</button>
       </div>
-      <div class="form-group">
-        <label for="si-phone">Mobile Number *</label>
-        <input type="tel" id="si-phone" placeholder="10-digit mobile number" autocomplete="tel" maxlength="10" pattern="[0-9]{10}" />
-      </div>
-      <p id="si-error" class="hidden" style="color:#DC2626; font-size:0.875rem; margin-top:0.5rem;"></p>
-      <button class="btn-primary" id="btn-begin" style="margin-top:1rem;">Begin Test &#8594;</button>
     </div>
 
     <!-- Progress bar (hidden during phase 0) -->
@@ -76,7 +87,7 @@
         <span id="progress-text">Personal Background — Q1 of 10</span>
         <span id="progress-pct">2%</span>
       </div>
-      <div class="progress-track">
+      <div class="progress-track" id="progress-track" role="progressbar" aria-label="Test progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="2">
         <div class="progress-fill" id="progress-fill" style="width: 2%"></div>
       </div>
     </div>
@@ -85,14 +96,14 @@
     <div class="card hidden" id="question-card">
       <div id="loading-state" class="loading-state">
         <div class="spinner"></div>
-        <p class="mt-2 text-muted">Loading questions…</p>
+        <p class="mt-2 text-muted" data-i18n-hi="प्रश्न लोड हो रहे हैं…">Loading questions…</p>
       </div>
 
       <div id="question-content" class="hidden">
         <span class="question-type-label" id="question-type-label"></span>
         <p class="question-number" id="question-number"></p>
         <p class="question-text" id="question-text"></p>
-        <div class="options-list" id="options-list"></div>
+        <div class="options-list" id="options-list" role="radiogroup" aria-label="Answer choices"></div>
       </div>
     </div>
 
@@ -103,9 +114,10 @@
     </div>
 
     <!-- Error message -->
-    <p id="error-msg" class="hidden text-center mt-2" style="color:#DC2626; font-size:0.875rem;"></p>
-  </div>
+    <p id="error-msg" class="hidden text-center mt-2" role="alert" aria-live="assertive" style="color:#DC2626; font-size:0.875rem;"></p>
+  </main>
 
+  <script src="src/strings.js"></script>
   <script src="src/config.js"></script>
   <script src="src/match.js"></script>
   <script src="src/store.js"></script>

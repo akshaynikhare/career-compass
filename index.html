@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W50KH3VDVE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-W50KH3VDVE');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Search Console: paste the meta tag from Settings > Ownership verification here.
        Example: <meta name="google-site-verification" content="YOUR_TOKEN"> -->
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4F46E5">
+  <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" href="icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+  <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <meta name="description" content="Free RIASEC career aptitude test for Indian Class 9–10 students. Discover your best career path from 507 Indian professions in 10 minutes.">
   <meta name="keywords" content="career test India, free career aptitude test Class 10, RIASEC test free India, career guidance for students India, best career after 10th grade, career counselling online free, career options after Class 10, career quiz India, aptitude test for students India, free career assessment India, career planning tool India, what career suits me India, career after 10th, career guidance India">
   <meta name="author" content="Career Compass">
   <link rel="canonical" href="https://akshaynikhare.github.io/career-compass/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Career Compass">
+  <meta property="og:locale" content="en_IN">
   <meta property="og:title" content="Career Compass — Free Career Aptitude Test for Class 10 Students">
   <meta property="og:description" content="Free RIASEC career aptitude test for Indian Class 9–10 students. Discover your best career path from 507 Indian professions in 10 minutes.">
   <meta property="og:url" content="https://akshaynikhare.github.io/career-compass/">
@@ -84,105 +85,269 @@
     "founder": { "@type": "Person", "name": "Akshay Nikhare" }
   }
   </script>
-  <title>Career Compass — Free Career Aptitude Test for Class 10 Students</title>
+  <title data-i18n-hi="Career Compass — कक्षा 10 के छात्रों के लिए मुफ़्त करियर एप्टीट्यूड टेस्ट">Career Compass — Free Career Aptitude Test for Class 10 Students</title>
   <link rel="stylesheet" href="styles/main.css">
   <style>
-    /* Landing-specific tweaks */
+    /* ===== Home / hub layout ===== */
+    .home {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 2.5rem 1rem 3rem;
+    }
+    .home-hero { text-align: center; margin-bottom: 2.25rem; }
     .hero-icon { color: var(--primary); margin-bottom: 0.5rem; }
-    .start-link { display: block; text-decoration: none; }
-    .features {
+    .home-hero .app-name { margin-bottom: 0.25rem; }
+    .home-hero .tagline { color: var(--muted); font-size: 1rem; margin-bottom: 1rem; }
+    .home-hero .lead {
+      max-width: 40rem;
+      margin: 0 auto 1.25rem;
+      color: var(--text);
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+    .hero-cta {
+      display: inline-block;
+      width: auto;
+      padding: 0.75rem 1.75rem;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .hero-note { font-size: 0.75rem; color: var(--muted); margin-top: 0.75rem; }
+
+    .home-section { margin-bottom: 2rem; }
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0.25rem 0.875rem;
+    }
+
+    /* Main-pages grid */
+    .home-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .home-card {
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
-      text-align: left;
+      background: var(--white);
+      border: var(--border-structural) solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.25rem;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
     }
-    .feature-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.5rem;
-      font-size: 0.875rem;
-      color: var(--text);
+    .home-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
     }
-    .feature-icon {
-      flex-shrink: 0;
-      width: 20px;
-      height: 20px;
+    .home-card:focus-visible {
+      outline: var(--border-interactive) solid var(--primary);
+      outline-offset: 2px;
+    }
+    .home-card.is-featured {
+      grid-column: 1 / -1;
       background: var(--primary-light);
-      border-radius: 50%;
+      border-color: var(--primary);
+    }
+    .home-card .hc-emoji { font-size: 1.5rem; line-height: 1; margin-bottom: 0.75rem; }
+    .home-card h3 { font-size: 1.0625rem; color: var(--text); margin-bottom: 0.35rem; }
+    .home-card p {
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+      flex: 1;
+    }
+    .hc-action { font-size: 0.8125rem; font-weight: 600; color: var(--primary); }
+    .hc-hint {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: var(--muted);
+      background: var(--bg);
+      border: var(--border-structural) solid var(--border);
+      border-radius: 999px;
+      padding: 0.1rem 0.5rem;
+      margin-bottom: 0.6rem;
+      align-self: flex-start;
+    }
+
+    /* Popular fields nav */
+    .fields-nav-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.5rem;
+    }
+    .fields-nav-list a {
       display: flex;
       align-items: center;
-      justify-content: center;
-      font-size: 0.625rem;
-      color: var(--primary);
-      font-weight: 700;
-      margin-top: 1px;
+      justify-content: space-between;
+      gap: 0.375rem;
+      background: var(--white);
+      border: var(--border-structural) solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.6rem 0.85rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+      transition: border-color 0.15s ease, background 0.15s ease;
     }
-    .footer-note {
+    .fields-nav-list a:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+    .fields-nav-list a span {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: var(--primary);
+      background: var(--primary-light);
+      border-radius: 999px;
+      padding: 0.0625rem 0.4rem;
+    }
+    .fields-nav-all { margin-top: 0.875rem; font-size: 0.8125rem; text-align: center; }
+    .fields-nav-all a { color: var(--primary); text-decoration: none; font-weight: 500; }
+
+    .home-foot {
+      text-align: center;
       font-size: 0.75rem;
       color: var(--muted);
-      margin-top: 1.25rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 480px) {
+      .home { padding: 1.75rem 0.75rem 2.5rem; }
+      .home-grid { grid-template-columns: 1fr; }
     }
   </style>
+  <script src="src/analytics.js" defer></script>
+  <script src="src/consent.js" defer></script>
 </head>
 <body>
-  <div class="page-center">
-    <div class="card landing-card">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <main class="home" id="main-content">
 
-      <!-- Compass SVG Logo -->
+    <!-- ===== Hero ===== -->
+    <header class="home-hero">
       <div class="logo-wrap hero-icon">
         <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="28" cy="28" r="26" stroke="#4F46E5" stroke-width="2.5" fill="#EEF2FF"/>
           <circle cx="28" cy="28" r="3" fill="#4F46E5"/>
-          <!-- Outer ring tick marks -->
           <line x1="28" y1="4"  x2="28" y2="9"  stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/>
           <line x1="28" y1="47" x2="28" y2="52" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/>
           <line x1="4"  y1="28" x2="9"  y2="28" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/>
           <line x1="47" y1="28" x2="52" y2="28" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/>
-          <!-- Compass needle — north (indigo) -->
           <polygon points="28,12 24,28 28,25 32,28" fill="#4F46E5"/>
-          <!-- Compass needle — south (muted) -->
           <polygon points="28,44 24,28 28,31 32,28" fill="#A5B4FC"/>
-          <!-- N label -->
           <text x="28" y="8.5" text-anchor="middle" font-size="4.5" font-weight="700" fill="#4F46E5" font-family="system-ui,sans-serif">N</text>
         </svg>
       </div>
 
-      <h1 class="app-name">Career Advisor</h1>
-      <p class="tagline">Find your path after Class 10</p>
+      <h1 class="app-name">Career Compass</h1>
+      <p class="tagline" data-i18n-hi="मुफ़्त करियर एप्टीट्यूड टेस्ट — कक्षा 10 के बाद अपना रास्ता चुनें">Free career aptitude test — find your path after Class 10</p>
+      <p class="lead" data-i18n-hi-html="अपने व्यक्तित्व, रुचियों और परिस्थिति के बारे में 45 छोटे सवालों के जवाब दें। हम आपको ऐसे करियर से मिलाएँगे जो <em>आपके</em> लिए सही हों — RIASEC मॉडल के आधार पर, जिसे दुनिया भर के करियर काउंसलर इस्तेमाल करते हैं, साथ में 507 पेशों के लिए भारत-विशिष्ट रास्ते, परीक्षाएँ और वेतन।">Answer 45 short questions about your personality, interests, and situation. We'll match you with careers that fit <em>you</em> — using the RIASEC model that career counsellors use worldwide, with India-specific paths, exams and salaries for 507 professions.</p>
 
-      <div class="description">
-        <p>Answer 25 short questions about your personality, interests, and practical situation.</p>
-        <p>We'll match you with careers that fit <em>you</em> — based on the RIASEC model used by career counsellors worldwide.</p>
+      <a href="test.html" class="btn-primary hero-cta" data-i18n-hi="मुफ़्त टेस्ट शुरू करें →">Start the free test &rarr;</a>
+      <p class="hero-note" data-i18n-hi="मुफ़्त · कोई साइन-अप नहीं · ~10 मिनट · नतीजे आपके डिवाइस पर सुरक्षित">Free · No sign-up · Takes ~10 minutes · Results saved on your device</p>
+    </header>
+
+    <!-- ===== Main pages / tools ===== -->
+    <section class="home-section" aria-labelledby="tools-label">
+      <h2 class="section-label" id="tools-label" data-i18n-hi="यहाँ आप क्या-क्या कर सकते हैं">Everything you can do here</h2>
+      <div class="home-grid">
+
+        <a class="home-card is-featured" href="test.html">
+          <div class="hc-emoji">📝</div>
+          <h3 data-i18n-hi="करियर टेस्ट दें">Take the career test</h3>
+          <p data-i18n-hi="45 सवालों का RIASEC मूल्यांकन जो आपके व्यक्तित्व और रुचियों को पढ़कर आपके टॉप-10 सबसे उपयुक्त करियर को भारत-विशिष्ट रास्तों के साथ रैंक करता है।">A 45-question RIASEC assessment that reads your personality and interests, then ranks your top-10 best-fit careers with India-specific paths.</p>
+          <span class="hc-action" data-i18n-hi="अभी शुरू करें →">Start now &rarr;</span>
+        </a>
+
+        <a class="home-card" href="careers/index.html">
+          <div class="hc-emoji">🧭</div>
+          <h3 data-i18n-hi="सभी करियर देखें">Browse all careers</h3>
+          <p data-i18n-hi="19 क्षेत्रों में सभी 507 भारतीय पेशों को देखें — हर एक के साथ शिक्षा का रास्ता, प्रवेश परीक्षाएँ, वेतन सीमा और सुझाई गई स्ट्रीम।">Explore all 507 Indian professions across 19 fields — each with the education path, entrance exams, salary range and recommended stream.</p>
+          <span class="hc-action" data-i18n-hi="507 करियर देखें →">Browse 507 careers &rarr;</span>
+        </a>
+
+        <a class="home-card" href="explore.html">
+          <div class="hc-emoji">🕸️</div>
+          <span class="hc-hint" data-i18n-hi="आपके टेस्ट नतीजों का उपयोग करता है">Uses your test results</span>
+          <h3 data-i18n-hi="करियर नेटवर्क">Career network</h3>
+          <p data-i18n-hi="अपने मैचों को एक इंटरैक्टिव ग्राफ़ के रूप में देखें — स्ट्रीम, परीक्षाएँ और श्रेणियाँ आपके व्यक्तित्व प्रोफ़ाइल से कैसे जुड़ती हैं।">See your matches as an interactive graph — how streams, exams and categories connect to your personality profile.</p>
+          <span class="hc-action" data-i18n-hi="एक्सप्लोरर खोलें →">Open explorer &rarr;</span>
+        </a>
+
+        <a class="home-card" href="timeline.html">
+          <div class="hc-emoji">🗓️</div>
+          <span class="hc-hint" data-i18n-hi="आपके टेस्ट नतीजों का उपयोग करता है">Uses your test results</span>
+          <h3 data-i18n-hi="करियर टाइमलाइन">Career timeline</h3>
+          <p data-i18n-hi="कक्षा 10 से अपने लक्ष्य तक का रास्ता देखें — पड़ाव, प्रवेश परीक्षाएँ और शिक्षा के चरण साल-दर-साल।">Visualise the road from Class 10 to your goal — milestones, entrance exams and education stages laid out year by year.</p>
+          <span class="hc-action" data-i18n-hi="टाइमलाइन देखें →">View timeline &rarr;</span>
+        </a>
+
+        <a class="home-card" href="deepdive.html">
+          <div class="hc-emoji">🔬</div>
+          <span class="hc-hint" data-i18n-hi="आपके टेस्ट नतीजों का उपयोग करता है">Uses your test results</span>
+          <h3 data-i18n-hi="गहराई से जानें">Deep dive</h3>
+          <p data-i18n-hi="लक्षित फ़ॉलो-अप सवालों के जवाब देकर सटीक सिफ़ारिश के साथ अपने सबसे उपयुक्त करियर तक पहुँचें।">Answer targeted follow-up questions to narrow in on your single best-fit career with a precision recommendation.</p>
+          <span class="hc-action" data-i18n-hi="और गहराई में जाएँ →">Go deeper &rarr;</span>
+        </a>
+
+        <a class="home-card" href="result.html">
+          <div class="hc-emoji">📊</div>
+          <span class="hc-hint" data-i18n-hi="आपके टेस्ट नतीजों का उपयोग करता है">Uses your test results</span>
+          <h3 data-i18n-hi="आपके नतीजे">Your results</h3>
+          <p data-i18n-hi="अपनी सुरक्षित RIASEC प्रोफ़ाइल और टॉप करियर मैच कभी भी दोबारा देखें — सब कुछ आपके डिवाइस पर रहता है।">Revisit your saved RIASEC profile and top career matches any time — everything stays on your device.</p>
+          <span class="hc-action" data-i18n-hi="नतीजे देखें →">View results &rarr;</span>
+        </a>
+
       </div>
+    </section>
 
-      <div class="features">
-        <div class="feature-item">
-          <div class="feature-icon">✓</div>
-          <span>25 questions — takes about 5 minutes</span>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon">✓</div>
-          <span>Personalised top-10 career matches with India-specific paths</span>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon">✓</div>
-          <span>Considers your budget, years available, and stream preference</span>
-        </div>
-      </div>
+    <!-- ===== Popular fields — internal linking for SEO + quick browse ===== -->
+    <section class="home-section" aria-labelledby="fields-label">
+      <h2 class="section-label" id="fields-label" data-i18n-hi="क्षेत्र के अनुसार करियर देखें">Explore careers by field</h2>
+      <ul class="fields-nav-list">
+        <li><a href="careers/field-healthcare.html" data-i18n-hi-html="स्वास्थ्य सेवा <span>77</span>">Healthcare <span>77</span></a></li>
+        <li><a href="careers/field-technology.html" data-i18n-hi-html="तकनीक <span>50</span>">Technology <span>50</span></a></li>
+        <li><a href="careers/field-engineering.html" data-i18n-hi-html="इंजीनियरिंग <span>29</span>">Engineering <span>29</span></a></li>
+        <li><a href="careers/field-finance-business.html" data-i18n-hi-html="वित्त और व्यापार <span>29</span>">Finance &amp; Business <span>29</span></a></li>
+        <li><a href="careers/field-arts-media.html" data-i18n-hi-html="कला और मीडिया <span>35</span>">Arts &amp; Media <span>35</span></a></li>
+        <li><a href="careers/field-science-research.html" data-i18n-hi-html="विज्ञान और अनुसंधान <span>32</span>">Science &amp; Research <span>32</span></a></li>
+        <li><a href="careers/field-law-government.html" data-i18n-hi-html="कानून और सरकार <span>28</span>">Law &amp; Government <span>28</span></a></li>
+        <li><a href="careers/field-education.html" data-i18n-hi-html="शिक्षा <span>25</span>">Education <span>25</span></a></li>
+      </ul>
+      <p class="fields-nav-all"><a href="careers/index.html" data-i18n-hi="सभी 19 क्षेत्र और 507 करियर देखें →">See all 19 fields &amp; 507 careers &rarr;</a></p>
+    </section>
 
-      <a href="test.html" class="btn-primary start-link">Start Test &rarr;</a>
+    <!-- ===== Choosing a stream — high-intent SEO guides ===== -->
+    <section class="home-section" aria-labelledby="streams-label">
+      <h2 class="section-label" id="streams-label" data-i18n-hi="कक्षा 10 के बाद स्ट्रीम चुननी है?">Choosing a stream after Class 10?</h2>
+      <ul class="fields-nav-list">
+        <li><a href="careers/stream-pcm.html" data-i18n-hi="विज्ञान — PCM">Science — PCM</a></li>
+        <li><a href="careers/stream-pcb.html" data-i18n-hi="विज्ञान — PCB">Science — PCB</a></li>
+        <li><a href="careers/stream-commerce.html" data-i18n-hi="कॉमर्स">Commerce</a></li>
+        <li><a href="careers/stream-arts.html" data-i18n-hi="कला / मानविकी">Arts / Humanities</a></li>
+      </ul>
+      <p class="fields-nav-all"><a href="careers/streams.html" data-i18n-hi="मुझे कौन सी स्ट्रीम चुननी चाहिए? PCM बनाम PCB बनाम कॉमर्स बनाम आर्ट्स →">Which stream should I choose? PCM vs PCB vs Commerce vs Arts &rarr;</a></p>
+    </section>
 
-      <p style="margin-top:0.75rem;"><a href="careers/index.html" style="color:var(--primary); font-size:0.875rem; text-decoration:none;">Or browse all 507 careers by field &rarr;</a></p>
-
-      <p class="footer-note">Free. No sign-up needed. Results saved on your device.</p>
-    </div>
-  </div>
+    <p class="home-foot" data-i18n-hi="मुफ़्त। कोई साइन-अप नहीं। नतीजे आपके डिवाइस पर सुरक्षित।">Free. No sign-up needed. Results saved on your device.</p>
+  </main>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js').catch(function(){});
     }
   </script>
+  <script src="src/strings.js"></script>
   <script src="src/i18n.js"></script>
 </body>
 </html>

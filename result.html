@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W50KH3VDVE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-W50KH3VDVE');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, follow">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4F46E5">
+  <link rel="icon" href="icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+  <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="description" content="Your Career Compass results — top career matches, domain analysis, and a personalised path from Class 10 to your dream job.">
   <meta name="keywords" content="career test results India, RIASEC results, career matches India, best career for me, career recommendation India, career personality match, top careers India, career path suggestion Class 10, career guidance India, aptitude test results students">
@@ -31,18 +29,21 @@
   <meta name="twitter:title" content="Career Compass — Your Results">
   <meta name="twitter:description" content="Your Career Compass results — top career matches, domain analysis, and a personalised path from Class 10 to your dream job.">
   <meta name="twitter:image" content="https://akshaynikhare.github.io/career-compass/icons/og-image.png">
-  <title>Career Compass — Your Results</title>
+  <title data-i18n-hi="Career Compass — आपके परिणाम">Career Compass — Your Results</title>
   <link rel="stylesheet" href="styles/main.css">
+  <script src="src/analytics.js" defer></script>
+  <script src="src/consent.js" defer></script>
 </head>
 <body>
-  <div class="container">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <main class="container" id="main-content">
 
     <!-- Header -->
     <div class="test-header">
-      <a href="index.html" class="btn-ghost" style="padding-left:0; color:var(--primary); font-weight:700; font-size:1rem; text-decoration:none;">
-        &#9711; Career Advisor
+      <a href="index.html" class="btn-ghost" style="padding-left:0; color:var(--primary); font-weight:700; font-size:1rem; text-decoration:none;" data-i18n-hi-html="&#9711; Career Compass">
+        &#9711; Career Compass
       </a>
-      <button onclick="window.location.replace('test.html')" class="btn-secondary" style="font-size:0.8125rem; padding:0.4rem 0.875rem; cursor:pointer;">
+      <button onclick="window.location.replace('test.html')" class="btn-secondary" style="font-size:0.8125rem; padding:0.4rem 0.875rem; cursor:pointer;" data-i18n-hi="दोबारा टेस्ट लें">
         Retake Test
       </button>
     </div>
@@ -50,9 +51,9 @@
     <!-- No-result fallback -->
     <div id="no-result" class="hidden card text-center" style="padding:2rem;">
       <p style="font-size:2rem;">&#128214;</p>
-      <h2 class="mt-1">No results yet</h2>
-      <p class="mt-1">Complete the test first to see your career matches.</p>
-      <a href="test.html" class="btn-primary mt-2" style="margin-top:1rem;">Take the Test &rarr;</a>
+      <h2 class="mt-1" data-i18n-hi="अभी कोई परिणाम नहीं">No results yet</h2>
+      <p class="mt-1" data-i18n-hi="अपने करियर मिलान देखने के लिए पहले टेस्ट पूरा करें।">Complete the test first to see your career matches.</p>
+      <a href="test.html" class="btn-primary mt-2" style="margin-top:1rem;" data-i18n-hi-html="टेस्ट दें &rarr;">Take the Test &rarr;</a>
     </div>
 
     <!-- Results (hidden until data loads) -->
@@ -60,123 +61,156 @@
 
       <!-- Hero header -->
       <div class="result-header card mb-2" style="margin-bottom:1rem;">
-        <h1>Your Career Profile</h1>
-        <p>Based on your answers, here are your top career matches.</p>
-        <p style="font-size:0.8125rem; color:var(--muted); margin-top:0.625rem; padding:0.5rem 0.75rem; background:var(--bg); border-radius:var(--radius-sm); border-left:3px solid var(--primary);">
+        <h1 data-i18n-hi="आपकी करियर प्रोफाइल">Your Career Profile</h1>
+        <p data-i18n-hi="आपके उत्तरों के आधार पर, ये हैं आपके शीर्ष करियर मिलान।">Based on your answers, here are your top career matches.</p>
+        <p style="font-size:0.8125rem; color:var(--muted); margin-top:0.625rem; padding:0.5rem 0.75rem; background:var(--bg); border-radius:var(--radius-sm); border-left:3px solid var(--primary);" data-i18n-hi="याद रखें: स्ट्रीम का चुनाव स्थायी नहीं है। कई सफल लोग अप्रत्याशित रास्तों से अपने करियर तक पहुंचे हैं। इसे एक शुरुआती बिंदु मानें, जीवनभर की सजा नहीं।">
           Remember: stream choice is not permanent. Many successful people reached their careers through unexpected routes. Use this as a starting point, not a life sentence.
         </p>
       </div>
 
       <!-- AI personalized summary (populated by src/ai_ui.js; hidden until ready) -->
       <div id="ai-summary-card" class="card mb-2 hidden" style="margin-bottom:1rem; border-left:3px solid var(--primary);">
-        <h2 class="section-title" style="display:flex; align-items:center; gap:0.4rem;">&#10024; Your Personalised Summary</h2>
+        <h2 class="section-title" style="display:flex; align-items:center; gap:0.4rem;" data-i18n-hi-html="&#10024; आपका व्यक्तिगत सारांश">&#10024; Your Personalised Summary</h2>
         <p id="ai-summary-text" style="font-size:0.9375rem; line-height:1.65; color:var(--text);"></p>
       </div>
 
       <!-- RIASEC Chart -->
       <div class="card mb-2" style="margin-bottom:1rem;">
-        <h2 class="section-title">Your Personality Profile (RIASEC)</h2>
+        <h2 class="section-title" data-i18n-hi="आपका व्यक्तित्व प्रोफाइल (RIASEC)">Your Personality Profile (RIASEC)</h2>
+        <div id="riasec-toggle" class="chart-toggle" role="group"></div>
         <div id="riasec-chart" class="riasec-chart"></div>
-        <p class="text-muted mt-1" style="font-size:0.8125rem;">The bar shows your relative strength in each interest dimension.</p>
+        <p id="riasec-hint" class="text-muted mt-1" style="font-size:0.8125rem;"></p>
       </div>
 
       <!-- RIASEC Explainer (collapsible) -->
       <div class="card mb-2" style="margin-bottom:1rem;">
         <div class="collapsible-header" id="riasec-explain-toggle" aria-expanded="false" role="button" tabindex="0">
-          <h2 style="font-size:1rem; font-weight:600;">What do these letters mean?</h2>
+          <h2 style="font-size:1rem; font-weight:600;" data-i18n-hi="इन अक्षरों का क्या मतलब है?">What do these letters mean?</h2>
           <span class="collapsible-chevron" aria-hidden="true">&#9660;</span>
         </div>
         <div class="collapsible-body" id="riasec-explain-body">
           <div class="section-divider"></div>
           <div style="display:flex; flex-direction:column; gap:0.625rem; padding-top:0.25rem;">
-            <div><strong style="color:#F97316;">R — Realistic:</strong> <span style="color:var(--muted); font-size:0.875rem;">You like working with your hands, tools, machines, or the outdoors. → Mechanical Engineer, Pilot, Electrician</span></div>
-            <div><strong style="color:#3B82F6;">I — Investigative:</strong> <span style="color:var(--muted); font-size:0.875rem;">You love researching, analyzing, and solving complex problems. → Doctor, Scientist, Data Analyst</span></div>
-            <div><strong style="color:#EC4899;">A — Artistic:</strong> <span style="color:var(--muted); font-size:0.875rem;">You are creative and expressive — writing, design, music, or acting. → Graphic Designer, Filmmaker, Author</span></div>
-            <div><strong style="color:#10B981;">S — Social:</strong> <span style="color:var(--muted); font-size:0.875rem;">You enjoy helping, teaching, or counselling people. → Teacher, Psychologist, Social Worker</span></div>
-            <div><strong style="color:#F59E0B;">E — Enterprising:</strong> <span style="color:var(--muted); font-size:0.875rem;">You like leading, persuading, and starting things. → Entrepreneur, Lawyer, Marketing Manager</span></div>
-            <div><strong style="color:#8B5CF6;">C — Conventional:</strong> <span style="color:var(--muted); font-size:0.875rem;">You prefer structured, organised, detail-oriented work. → CA, Bank Manager, Data Entry Specialist</span></div>
+            <div data-i18n-hi-html="&lt;strong style=&quot;color:#F97316;&quot;&gt;R — यथार्थवादी:&lt;/strong&gt; &lt;span style=&quot;color:var(--muted); font-size:0.875rem;&quot;&gt;आपको हाथों से काम करना, उपकरण, मशीनें, या बाहर का काम पसंद है। → मैकेनिकल इंजीनियर, पायलट, इलेक्ट्रीशियन&lt;/span&gt;"><strong style="color:#F97316;">R — Realistic:</strong> <span style="color:var(--muted); font-size:0.875rem;">You like working with your hands, tools, machines, or the outdoors. → Mechanical Engineer, Pilot, Electrician</span></div>
+            <div data-i18n-hi-html="&lt;strong style=&quot;color:#3B82F6;&quot;&gt;I — अन्वेषणात्मक:&lt;/strong&gt; &lt;span style=&quot;color:var(--muted); font-size:0.875rem;&quot;&gt;आपको शोध करना, विश्लेषण करना, और जटिल समस्याओं को हल करना पसंद है। → डॉक्टर, वैज्ञानिक, डेटा एनालिस्ट&lt;/span&gt;"><strong style="color:#3B82F6;">I — Investigative:</strong> <span style="color:var(--muted); font-size:0.875rem;">You love researching, analyzing, and solving complex problems. → Doctor, Scientist, Data Analyst</span></div>
+            <div data-i18n-hi-html="&lt;strong style=&quot;color:#EC4899;&quot;&gt;A — कलात्मक:&lt;/strong&gt; &lt;span style=&quot;color:var(--muted); font-size:0.875rem;&quot;&gt;आप रचनात्मक और अभिव्यक्तिशील हैं — लेखन, डिज़ाइन, संगीत, या अभिनय। → ग्राफिक डिज़ाइनर, फिल्म निर्माता, लेखक&lt;/span&gt;"><strong style="color:#EC4899;">A — Artistic:</strong> <span style="color:var(--muted); font-size:0.875rem;">You are creative and expressive — writing, design, music, or acting. → Graphic Designer, Filmmaker, Author</span></div>
+            <div data-i18n-hi-html="&lt;strong style=&quot;color:#10B981;&quot;&gt;S — सामाजिक:&lt;/strong&gt; &lt;span style=&quot;color:var(--muted); font-size:0.875rem;&quot;&gt;आपको लोगों की मदद करना, पढ़ाना, या परामर्श देना पसंद है। → शिक्षक, मनोवैज्ञानिक, सामाजिक कार्यकर्ता&lt;/span&gt;"><strong style="color:#10B981;">S — Social:</strong> <span style="color:var(--muted); font-size:0.875rem;">You enjoy helping, teaching, or counselling people. → Teacher, Psychologist, Social Worker</span></div>
+            <div data-i18n-hi-html="&lt;strong style=&quot;color:#F59E0B;&quot;&gt;E — उद्यमशील:&lt;/strong&gt; &lt;span style=&quot;color:var(--muted); font-size:0.875rem;&quot;&gt;आपको नेतृत्व करना, समझाना, और नई चीजें शुरू करना पसंद है। → उद्यमी, वकील, मार्केटिंग मैनेजर&lt;/span&gt;"><strong style="color:#F59E0B;">E — Enterprising:</strong> <span style="color:var(--muted); font-size:0.875rem;">You like leading, persuading, and starting things. → Entrepreneur, Lawyer, Marketing Manager</span></div>
+            <div data-i18n-hi-html="&lt;strong style=&quot;color:#8B5CF6;&quot;&gt;C — पारंपरिक:&lt;/strong&gt; &lt;span style=&quot;color:var(--muted); font-size:0.875rem;&quot;&gt;आप संरचित, व्यवस्थित, विस्तार-केंद्रित काम पसंद करते हैं। → CA, बैंक मैनेजर, डेटा एंट्री विशेषज्ञ&lt;/span&gt;"><strong style="color:#8B5CF6;">C — Conventional:</strong> <span style="color:var(--muted); font-size:0.875rem;">You prefer structured, organised, detail-oriented work. → CA, Bank Manager, Data Entry Specialist</span></div>
           </div>
         </div>
       </div>
 
       <!-- Your Matching Domains -->
       <div class="card mb-2" style="margin-bottom:1rem;" id="domain-section">
-        <h2 class="section-title">Your Matching Domains</h2>
-        <p class="text-muted" style="font-size:0.875rem; margin-bottom:0.75rem;">Career fields that suit your personality — top 2 from each domain.</p>
+        <h2 class="section-title" data-i18n-hi="आपके अनुकूल क्षेत्र">Your Matching Domains</h2>
+        <p class="text-muted" style="font-size:0.875rem; margin-bottom:0.75rem;" data-i18n-hi="वे करियर क्षेत्र जो आपके व्यक्तित्व से मेल खाते हैं — हर क्षेत्र से शीर्ष 2।">Career fields that suit your personality — top 2 from each domain.</p>
+        <div id="domain-donut"></div>
         <div id="domain-cards"></div>
       </div>
 
       <!-- Top 10 Matches -->
       <div class="card mb-2" style="margin-bottom:1rem;">
-        <h2 class="section-title">Your Top Career Matches</h2>
+        <h2 class="section-title" data-i18n-hi="आपके शीर्ष करियर मिलान">Your Top Career Matches</h2>
         <div id="top10-cards" class="career-cards"></div>
         <div class="explore-actions" style="display:flex; flex-direction:column; gap:0.5rem; margin-top:1rem;">
-          <a href="deepdive.html" class="btn-primary" style="text-align:center; text-decoration:none;">&#127919; Find My Best Career</a>
+          <a href="deepdive.html" class="btn-primary" style="text-align:center; text-decoration:none;" data-i18n-hi-html="&#127919; मेरा सर्वश्रेष्ठ करियर खोजें">&#127919; Find My Best Career</a>
           <div style="display:flex; gap:0.5rem;">
-            <a href="explore.html" class="btn-secondary" style="flex:1; justify-content:center; text-align:center;">Explore as Graph &#8594;</a>
-            <a href="timeline.html" class="btn-secondary" style="flex:1; justify-content:center; text-align:center;">Career Timeline &#8594;</a>
+            <a href="explore.html" class="btn-secondary" style="flex:1; justify-content:center; text-align:center;" data-i18n-hi-html="ग्राफ के रूप में देखें &#8594;">Explore as Graph &#8594;</a>
+            <a href="timeline.html" class="btn-secondary" style="flex:1; justify-content:center; text-align:center;" data-i18n-hi-html="करियर टाइमलाइन &#8594;">Career Timeline &#8594;</a>
           </div>
+        </div>
+      </div>
+
+      <!-- Salary Outlook (populated by src/render.js; hidden until data ready) -->
+      <div class="card mb-2 hidden" id="salary-outlook-card" style="margin-bottom:1rem;">
+        <h2 class="section-title" data-i18n-hi="वेतन की संभावना">Salary Outlook</h2>
+        <p class="text-muted" style="font-size:0.875rem; margin-bottom:0.75rem;" data-i18n-hi="आपके शीर्ष करियर मिलानों में आगे बढ़ने पर सामान्य वार्षिक वेतन।">Typical annual pay as you grow in your top career matches.</p>
+        <div class="chart-line-scroll">
+          <div id="salary-chart"></div>
+        </div>
+      </div>
+
+      <!-- Optional: email / save report (opt-in — no details required to take the test) -->
+      <div class="card mb-2" id="save-report-card" style="margin-bottom:1rem; border-left:3px solid var(--primary);">
+        <h2 class="section-title" style="display:flex; align-items:center; gap:0.4rem;" data-i18n-hi-html="&#9993; अपनी रिपोर्ट ईमेल करें या सहेजें">&#9993; Email or save your report</h2>
+        <p class="text-muted" style="font-size:0.875rem; margin-bottom:0.875rem;" data-i18n-hi="वैकल्पिक — अपने परिणामों की एक प्रति और आगे का मार्गदर्शन प्राप्त करें। आपकी जानकारी केवल तभी भेजी जाती है जब आप सेव पर टैप करते हैं।">Optional — get a copy of your results and follow-up guidance. Your details are sent only when you tap Save.</p>
+        <div class="save-form" id="save-report-form">
+          <div class="form-field">
+            <label for="sr-name" data-i18n-hi-html="आपका नाम &lt;span style=&quot;color:var(--muted); font-weight:400;&quot;&gt;(वैकल्पिक)&lt;/span&gt;">Your name <span style="color:var(--muted); font-weight:400;">(optional)</span></label>
+            <input type="text" id="sr-name" placeholder="Full name" autocomplete="name" data-i18n-hi-ph="पूरा नाम">
+          </div>
+          <div class="form-field">
+            <label for="sr-email" data-i18n-hi-html="ईमेल &lt;span style=&quot;color:var(--muted); font-weight:400;&quot;&gt;(सहेजने के लिए आवश्यक)&lt;/span&gt;">Email <span style="color:var(--muted); font-weight:400;">(required to save)</span></label>
+            <input type="email" id="sr-email" placeholder="your@email.com" autocomplete="email" data-i18n-hi-ph="आपका@email.com">
+          </div>
+          <div class="form-field">
+            <label for="sr-phone" data-i18n-hi-html="मोबाइल &lt;span style=&quot;color:var(--muted); font-weight:400;&quot;&gt;(वैकल्पिक)&lt;/span&gt;">Mobile <span style="color:var(--muted); font-weight:400;">(optional)</span></label>
+            <input type="tel" id="sr-phone" placeholder="10-digit mobile" autocomplete="tel" maxlength="10" inputmode="numeric" data-i18n-hi-ph="10-अंकों का मोबाइल नंबर">
+          </div>
+          <button class="btn-primary" id="sr-save" type="button" data-i18n-hi="मेरी रिपोर्ट सहेजें">Save my report</button>
+          <p id="sr-status" class="save-status" role="status" aria-live="polite"></p>
         </div>
       </div>
 
       <!-- AI: Ask about a career + roadmap (populated by src/ai_ui.js) -->
       <div id="ai-ask-card" class="card mb-2 hidden" style="margin-bottom:1rem;">
-        <h2 class="section-title" style="display:flex; align-items:center; gap:0.4rem;">&#128172; Ask About a Career</h2>
-        <p class="text-muted" style="font-size:0.875rem; margin-bottom:0.75rem;">Pick one of your matches and ask anything — exams, salary, daily work, or get a step-by-step roadmap.</p>
+        <h2 class="section-title" style="display:flex; align-items:center; gap:0.4rem;" data-i18n-hi-html="&#128172; करियर के बारे में पूछें">&#128172; Ask About a Career</h2>
+        <p class="text-muted" style="font-size:0.875rem; margin-bottom:0.75rem;" data-i18n-hi="अपने मिलानों में से एक चुनें और कुछ भी पूछें — परीक्षाएं, वेतन, दैनिक कार्य, या चरण-दर-चरण रोडमैप प्राप्त करें।">Pick one of your matches and ask anything — exams, salary, daily work, or get a step-by-step roadmap.</p>
         <select id="ai-ask-profession" style="width:100%; padding:0.55rem 0.75rem; border:1px solid var(--border); border-radius:var(--radius-sm); font-size:0.9375rem; margin-bottom:0.625rem; background:var(--white); color:var(--text);"></select>
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <input id="ai-ask-input" type="text" placeholder="e.g. Which entrance exams do I need?" style="flex:1; min-width:180px; padding:0.55rem 0.75rem; border:1px solid var(--border); border-radius:var(--radius-sm); font-size:0.9375rem;">
-          <button id="ai-ask-btn" class="btn-primary" style="min-width:90px; justify-content:center;">Ask</button>
+          <input id="ai-ask-input" type="text" placeholder="e.g. Which entrance exams do I need?" style="flex:1; min-width:180px; padding:0.55rem 0.75rem; border:1px solid var(--border); border-radius:var(--radius-sm); font-size:0.9375rem;" data-i18n-hi-ph="जैसे, मुझे कौन सी प्रवेश परीक्षाएं देनी होंगी?">
+          <button id="ai-ask-btn" class="btn-primary" style="min-width:90px; justify-content:center;" data-i18n-hi="पूछें">Ask</button>
         </div>
-        <button id="ai-roadmap-btn" class="btn-secondary" style="margin-top:0.625rem; width:100%; justify-content:center;">&#128506; Get a step-by-step roadmap</button>
+        <button id="ai-roadmap-btn" class="btn-secondary" style="margin-top:0.625rem; width:100%; justify-content:center;" data-i18n-hi-html="&#128506; चरण-दर-चरण रोडमैप प्राप्त करें">&#128506; Get a step-by-step roadmap</button>
         <div id="ai-ask-thread" style="margin-top:1rem; display:flex; flex-direction:column; gap:0.75rem;"></div>
       </div>
 
       <!-- Next 3 Steps -->
       <div class="card mb-2" style="margin-bottom:1rem;">
-        <h2 class="section-title">Your Next 3 Steps</h2>
+        <h2 class="section-title" data-i18n-hi="आपके अगले 3 कदम">Your Next 3 Steps</h2>
         <div style="display:flex; flex-direction:column; gap:0.875rem;">
           <div style="display:flex; gap:0.75rem; align-items:flex-start;">
             <span style="flex-shrink:0; width:1.75rem; height:1.75rem; border-radius:50%; background:var(--primary); color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.8125rem; font-weight:700;">1</span>
             <div>
-              <p style="color:var(--text); font-size:0.9375rem; font-weight:500; margin-bottom:0.125rem;">Talk to someone</p>
-              <p style="font-size:0.8125rem; color:var(--muted);">Share this with a parent, teacher, or counsellor. Ask them about your top 2 career matches.</p>
+              <p style="color:var(--text); font-size:0.9375rem; font-weight:500; margin-bottom:0.125rem;" data-i18n-hi="किसी से बात करें">Talk to someone</p>
+              <p style="font-size:0.8125rem; color:var(--muted);" data-i18n-hi="इसे अपने माता-पिता, शिक्षक, या काउंसलर के साथ साझा करें। उनसे अपने शीर्ष 2 करियर मिलानों के बारे में पूछें।">Share this with a parent, teacher, or counsellor. Ask them about your top 2 career matches.</p>
             </div>
           </div>
           <div style="display:flex; gap:0.75rem; align-items:flex-start;">
             <span style="flex-shrink:0; width:1.75rem; height:1.75rem; border-radius:50%; background:var(--primary); color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.8125rem; font-weight:700;">2</span>
             <div>
-              <p style="color:var(--text); font-size:0.9375rem; font-weight:500; margin-bottom:0.125rem;">See the full path</p>
-              <p style="font-size:0.8125rem; color:var(--muted);">Tap "See Career Timeline" on your #1 match to see the full education path from Class 10.</p>
+              <p style="color:var(--text); font-size:0.9375rem; font-weight:500; margin-bottom:0.125rem;" data-i18n-hi="पूरा रास्ता देखें">See the full path</p>
+              <p style="font-size:0.8125rem; color:var(--muted);" data-i18n-hi="अपने #1 मिलान पर “करियर टाइमलाइन देखें” पर टैप करें ताकि Class 10 से शुरू होने वाला पूरा शिक्षा पथ देख सकें।">Tap "See Career Timeline" on your #1 match to see the full education path from Class 10.</p>
             </div>
           </div>
           <div style="display:flex; gap:0.75rem; align-items:flex-start;">
             <span style="flex-shrink:0; width:1.75rem; height:1.75rem; border-radius:50%; background:var(--primary); color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.8125rem; font-weight:700;">3</span>
             <div>
-              <p style="color:var(--text); font-size:0.9375rem; font-weight:500; margin-bottom:0.125rem;">Check the stream</p>
-              <p style="font-size:0.8125rem; color:var(--muted);">Note which Class 11 subjects your top career needs — that's your stream choice (PCM / PCB / Commerce / Arts).</p>
+              <p style="color:var(--text); font-size:0.9375rem; font-weight:500; margin-bottom:0.125rem;" data-i18n-hi="स्ट्रीम जांचें">Check the stream</p>
+              <p style="font-size:0.8125rem; color:var(--muted);" data-i18n-hi="ध्यान दें कि आपके शीर्ष करियर के लिए कौन से Class 11 विषय चाहिए — यही आपकी स्ट्रीम का चुनाव है (PCM / PCB / Commerce / Arts)।">Note which Class 11 subjects your top career needs — that's your stream choice (PCM / PCB / Commerce / Arts).</p>
             </div>
           </div>
         </div>
         <div style="display:flex; gap:0.5rem; margin-top:1.25rem; flex-wrap:wrap;">
           <a id="btn-whatsapp-share" href="#" target="_blank" rel="noopener"
-             style="flex:1; min-width:140px; display:flex; align-items:center; justify-content:center; gap:0.375rem; background:#25D366; color:#fff; border:none; border-radius:var(--radius-sm); padding:0.625rem 1rem; font-size:0.9375rem; font-weight:600; text-decoration:none; cursor:pointer;">
+             style="flex:1; min-width:140px; display:flex; align-items:center; justify-content:center; gap:0.375rem; background:#25D366; color:#fff; border:none; border-radius:var(--radius-sm); padding:0.625rem 1rem; font-size:0.9375rem; font-weight:600; text-decoration:none; cursor:pointer;" data-i18n-hi-html="&#128172; WhatsApp">
             &#128172; WhatsApp
           </a>
-          <button id="btn-share-result" class="btn-secondary" style="flex:1; min-width:140px; justify-content:center;">
+          <button id="btn-share-result" class="btn-secondary" style="flex:1; min-width:140px; justify-content:center;" data-i18n-hi-html="&#128279; लिंक कॉपी करें">
             &#128279; Copy Link
           </button>
         </div>
-        <p id="share-copied" style="display:none; font-size:0.8125rem; color:#059669; text-align:center; margin-top:0.5rem;">Link copied to clipboard!</p>
+        <p id="share-copied" style="display:none; font-size:0.8125rem; color:#059669; text-align:center; margin-top:0.5rem;" data-i18n-hi="लिंक क्लिपबोर्ड पर कॉपी हो गया!">Link copied to clipboard!</p>
       </div>
 
       <!-- Stretch Goals (collapsible) -->
       <div class="card mb-2" style="margin-bottom:1rem;" id="stretch-section">
         <div class="collapsible-header" id="stretch-toggle" aria-expanded="false" role="button" tabindex="0">
-          <h2>Stretch Goals</h2>
+          <h2 data-i18n-hi="महत्वाकांक्षी लक्ष्य">Stretch Goals</h2>
           <span class="collapsible-chevron" aria-hidden="true">&#9660;</span>
         </div>
-        <p class="text-muted mt-1" style="font-size:0.875rem; margin-bottom:0.75rem;">These careers match your personality but have some practical constraints. Worth knowing about.</p>
+        <p class="text-muted mt-1" style="font-size:0.875rem; margin-bottom:0.75rem;" data-i18n-hi="ये करियर आपके व्यक्तित्व से मेल खाते हैं लेकिन इनमें कुछ व्यावहारिक बाधाएं हैं। जानना जरूरी है।">These careers match your personality but have some practical constraints. Worth knowing about.</p>
         <div class="collapsible-body" id="stretch-body">
           <div class="section-divider"></div>
           <div id="stretch5-cards" class="career-cards" style="padding-top:0.5rem;"></div>
@@ -185,39 +219,39 @@
 
       <!-- Print / Share with Parents -->
       <div class="card mb-2" id="print-card-section" style="margin-bottom:1rem;">
-        <h2 class="section-title">Share with Parents or Counsellor</h2>
-        <p class="text-muted" style="font-size:0.875rem; margin-bottom:1rem;">Print or screenshot this summary to start a conversation about your career path.</p>
+        <h2 class="section-title" data-i18n-hi="माता-पिता या काउंसलर के साथ साझा करें">Share with Parents or Counsellor</h2>
+        <p class="text-muted" style="font-size:0.875rem; margin-bottom:1rem;" data-i18n-hi="अपने करियर पथ के बारे में बातचीत शुरू करने के लिए इस सारांश को प्रिंट करें या स्क्रीनशॉट लें।">Print or screenshot this summary to start a conversation about your career path.</p>
         <div id="print-summary" style="border:1px solid var(--border); border-radius:var(--radius-sm); padding:1rem; background:var(--bg);">
-          <p style="font-size:0.75rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.5rem;">Career Compass — Student Profile</p>
+          <p style="font-size:0.75rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.5rem;" data-i18n-hi="Career Compass — छात्र प्रोफाइल">Career Compass — Student Profile</p>
           <p id="print-student-name" style="font-size:1.125rem; font-weight:700; color:var(--text); margin-bottom:0.75rem;"></p>
-          <p style="font-size:0.75rem; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:0.375rem;">Top 3 Career Matches</p>
+          <p style="font-size:0.75rem; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:0.375rem;" data-i18n-hi="शीर्ष 3 करियर मिलान">Top 3 Career Matches</p>
           <div id="print-top3" style="display:flex; flex-direction:column; gap:0.375rem; margin-bottom:0.75rem;"></div>
-          <p style="font-size:0.75rem; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:0.25rem;">Recommended Stream</p>
+          <p style="font-size:0.75rem; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:0.25rem;" data-i18n-hi="अनुशंसित स्ट्रीम">Recommended Stream</p>
           <p id="print-stream" style="font-size:0.9375rem; color:var(--text); margin-bottom:0.75rem;"></p>
-          <p style="font-size:0.75rem; color:var(--muted);">Generated by a 45-question RIASEC career assessment · careercompass.app</p>
+          <p style="font-size:0.75rem; color:var(--muted);" data-i18n-hi="45-प्रश्नों वाले RIASEC करियर मूल्यांकन द्वारा तैयार · careercompass.app">Generated by a 45-question RIASEC career assessment · careercompass.app</p>
         </div>
-        <button id="btn-print" class="btn-secondary" style="margin-top:1rem; width:100%; justify-content:center;">🖨 Print / Save as PDF</button>
-        <button id="btn-download-card" class="btn-secondary" style="margin-top:0.625rem; width:100%; justify-content:center;">&#128247; Download Profile Card</button>
+        <button id="btn-print" class="btn-secondary" style="margin-top:1rem; width:100%; justify-content:center;" data-i18n-hi="🖨 प्रिंट / PDF सेव करें">🖨 Print / Save as PDF</button>
+        <button id="btn-download-card" class="btn-secondary" style="margin-top:0.625rem; width:100%; justify-content:center;" data-i18n-hi-html="&#128247; प्रोफाइल कार्ड डाउनलोड करें">&#128247; Download Profile Card</button>
       </div>
 
 
       <!-- Counsellor Email Draft -->
       <div class="card mb-2" style="margin-bottom:1rem;">
-        <h2 class="section-title">Email Your Counsellor or Parent</h2>
-        <p class="text-muted" style="font-size:0.875rem; margin-bottom:1rem;">Send a ready-made summary of your results to start a conversation.</p>
+        <h2 class="section-title" data-i18n-hi="अपने काउंसलर या माता-पिता को ईमेल करें">Email Your Counsellor or Parent</h2>
+        <p class="text-muted" style="font-size:0.875rem; margin-bottom:1rem;" data-i18n-hi="बातचीत शुरू करने के लिए अपने परिणामों का तैयार सारांश भेजें।">Send a ready-made summary of your results to start a conversation.</p>
         <div id="email-draft-preview" style="background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.875rem 1rem; font-size:0.8125rem; color:var(--text); line-height:1.7; margin-bottom:0.875rem; white-space:pre-wrap; font-family:inherit;"></div>
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <a id="btn-email-counsellor" href="#" class="btn-primary" style="flex:1; text-align:center; text-decoration:none; min-width:130px;">&#9993; Open in Email</a>
-          <button id="btn-copy-email" class="btn-secondary" style="flex:1; min-width:130px; justify-content:center;">&#128203; Copy Text</button>
+          <a id="btn-email-counsellor" href="#" class="btn-primary" style="flex:1; text-align:center; text-decoration:none; min-width:130px;" data-i18n-hi-html="&#9993; ईमेल में खोलें">&#9993; Open in Email</a>
+          <button id="btn-copy-email" class="btn-secondary" style="flex:1; min-width:130px; justify-content:center;" data-i18n-hi-html="&#128203; टेक्स्ट कॉपी करें">&#128203; Copy Text</button>
         </div>
-        <p id="email-copied" style="display:none; font-size:0.8125rem; color:#059669; text-align:center; margin-top:0.5rem;">Email text copied!</p>
+        <p id="email-copied" style="display:none; font-size:0.8125rem; color:#059669; text-align:center; margin-top:0.5rem;" data-i18n-hi="ईमेल टेक्स्ट कॉपी हो गया!">Email text copied!</p>
       </div>
 
       <!-- Compare Modal -->
       <div id="compare-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.45); z-index:100; overflow-y:auto; padding:1rem;">
         <div style="background:var(--white); border-radius:var(--radius); max-width:600px; margin:2rem auto; padding:1.5rem; position:relative;">
           <button id="compare-close" style="position:absolute; top:1rem; right:1rem; background:none; border:none; font-size:1.25rem; cursor:pointer; color:var(--muted);">✕</button>
-          <h2 style="margin-bottom:1rem; font-size:1.125rem;">Career Comparison</h2>
+          <h2 style="margin-bottom:1rem; font-size:1.125rem;" data-i18n-hi="करियर तुलना">Career Comparison</h2>
           <div id="compare-table-wrap" style="overflow-x:auto;"></div>
         </div>
       </div>
@@ -227,11 +261,12 @@
     <!-- Sticky compare bar -->
     <div id="compare-bar" style="display:none; position:fixed; bottom:0; left:0; right:0; background:var(--primary); color:#fff; padding:0.875rem 1rem; z-index:50; text-align:center;">
       <span id="compare-bar-text" style="font-weight:600; font-size:0.9375rem;"></span>
-      <button id="btn-compare-open" style="margin-left:1rem; background:#fff; color:var(--primary); border:none; border-radius:var(--radius-sm); padding:0.375rem 0.875rem; font-size:0.875rem; font-weight:600; cursor:pointer;">Compare →</button>
-      <button id="btn-compare-clear" style="margin-left:0.5rem; background:transparent; color:rgba(255,255,255,0.75); border:1px solid rgba(255,255,255,0.4); border-radius:var(--radius-sm); padding:0.375rem 0.625rem; font-size:0.875rem; cursor:pointer;">Clear</button>
+      <button id="btn-compare-open" style="margin-left:1rem; background:#fff; color:var(--primary); border:none; border-radius:var(--radius-sm); padding:0.375rem 0.875rem; font-size:0.875rem; font-weight:600; cursor:pointer;" data-i18n-hi="तुलना करें →">Compare →</button>
+      <button id="btn-compare-clear" style="margin-left:0.5rem; background:transparent; color:rgba(255,255,255,0.75); border:1px solid rgba(255,255,255,0.4); border-radius:var(--radius-sm); padding:0.375rem 0.625rem; font-size:0.875rem; cursor:pointer;" data-i18n-hi="साफ़ करें">Clear</button>
     </div>
-  </div><!-- /container -->
+  </main><!-- /container -->
 
+  <script src="src/strings.js"></script>
   <script src="src/config.js"></script>
   <script src="src/ai.js"></script>
   <script src="src/store.js"></script>
@@ -293,6 +328,75 @@
         return body;
       }
 
+      // ── Optional opt-in save/email report ──────────────────────────────
+      (function() {
+        var srName   = document.getElementById('sr-name');
+        var srEmail  = document.getElementById('sr-email');
+        var srPhone  = document.getElementById('sr-phone');
+        var srSave   = document.getElementById('sr-save');
+        var srStatus = document.getElementById('sr-status');
+        if (!srSave) return;
+
+        // Prefill from any previously saved details.
+        var stored = null;
+        try { stored = JSON.parse(localStorage.getItem('cat_result')); } catch(e) {}
+        if (stored && stored.studentInfo) {
+          if (stored.studentInfo.name)  srName.value  = stored.studentInfo.name;
+          if (stored.studentInfo.email) srEmail.value = stored.studentInfo.email;
+          if (stored.studentInfo.phone) srPhone.value = stored.studentInfo.phone;
+        }
+
+        function setStatus(msg, cls) {
+          srStatus.textContent = msg;
+          srStatus.className = 'save-status' + (cls ? ' ' + cls : '');
+        }
+
+        srSave.addEventListener('click', function() {
+          var name  = srName.value.trim();
+          var email = srEmail.value.trim();
+          var phone = srPhone.value.trim();
+          var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if (!emailRe.test(email)) { setStatus('Please enter a valid email to save.', 'error'); srEmail.focus(); return; }
+          if (phone && !/^[0-9]{10}$/.test(phone)) { setStatus('Enter a valid 10-digit mobile, or leave it blank.', 'error'); srPhone.focus(); return; }
+
+          var studentInfo = { name: name || null, email: email, phone: phone || null };
+
+          // Persist locally so the print card and email draft use these details.
+          var result = null;
+          try {
+            result = JSON.parse(localStorage.getItem('cat_result')) || {};
+            result.studentInfo = studentInfo;
+            localStorage.setItem('cat_result', JSON.stringify(result));
+          } catch(e) {}
+
+          var printName = document.getElementById('print-student-name');
+          if (printName && name) printName.textContent = name;
+
+          srSave.disabled = true;
+          setStatus('Saving…', '');
+
+          if (window.Store && window.Store.saveResult && result) {
+            window.Store.saveResult(studentInfo, result).then(function(res) {
+              srSave.disabled = false;
+              if (res && res.ok) {
+                setStatus('Saved! We’ll be in touch with guidance.', 'success');
+                srSave.textContent = 'Saved ✓';
+              } else if (res && res.reason === 'no_config') {
+                setStatus('Saved to this device.', 'success');
+                srSave.textContent = 'Saved ✓';
+              } else {
+                setStatus('Couldn’t reach the server — your details are saved on this device.', 'error');
+              }
+            });
+          } else {
+            srSave.disabled = false;
+            setStatus('Saved to this device.', 'success');
+            srSave.textContent = 'Saved ✓';
+          }
+        });
+      })();
+
       var draftEl = document.getElementById('email-draft-preview');
       var btnEmail = document.getElementById('btn-email-counsellor');
       var btnCopyEmail = document.getElementById('btn-copy-email');
@@ -316,6 +420,7 @@
     })();
   </script>
   <script src="src/share_card.js"></script>
+  <script src="src/charts.js"></script>
   <script src="src/render.js"></script>
   <script src="src/ai_ui.js"></script>
   <script src="src/i18n.js"></script>

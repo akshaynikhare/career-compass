@@ -1,22 +1,222 @@
 [
-  {"dominant":["I","R"],"name":"A.P.J. Abdul Kalam","role":"Scientist & 11th President of India","note":"Combined deep curiosity with hands-on aerospace engineering"},
-  {"dominant":["I","E"],"name":"Sundar Pichai","role":"CEO, Google & Alphabet","note":"Analytical mind paired with business leadership at global scale"},
-  {"dominant":["A","E"],"name":"Shah Rukh Khan","role":"Actor & Film Producer","note":"Creative performer who built one of India's biggest entertainment companies"},
-  {"dominant":["S","E"],"name":"Narendra Modi","role":"Prime Minister of India","note":"People-centred leadership with strong entrepreneurial drive"},
-  {"dominant":["I","C"],"name":"Infosys Narayana Murthy","role":"Co-founder, Infosys","note":"Methodical thinker who built India's IT industry with structured precision"},
-  {"dominant":["A","S"],"name":"A.R. Rahman","role":"Music Composer & Oscar Winner","note":"Artistic genius with deep emotional connection to his audience"},
-  {"dominant":["I","A"],"name":"Viswanathan Anand","role":"World Chess Champion","note":"Pure investigative thinking with creative strategic flair"},
-  {"dominant":["S","A"],"name":"Priyanka Chopra","role":"Actor & Global Entrepreneur","note":"Social charisma and artistic expression on a world stage"},
-  {"dominant":["R","I"],"name":"Kalpana Chawla","role":"NASA Astronaut","note":"Hands-on engineering drive fueled by relentless scientific curiosity"},
-  {"dominant":["E","C"],"name":"Ratan Tata","role":"Chairman Emeritus, Tata Group","note":"Business leadership built on disciplined long-term thinking"},
-  {"dominant":["S","I"],"name":"Vandana Shiva","role":"Environmental Scientist & Activist","note":"Combines scientific research with deep social commitment"},
-  {"dominant":["A","I"],"name":"Vikram Sarabhai","role":"Father of India's Space Programme","note":"Artistic vision guided by rigorous scientific methodology"},
-  {"dominant":["R","E"],"name":"Dhirubhai Ambani","role":"Founder, Reliance Industries","note":"Built India's largest conglomerate with hands-on entrepreneurial grit"},
-  {"dominant":["C","I"],"name":"T.N. Seshan","role":"Chief Election Commissioner","note":"Structured thinking and investigative rigour reformed Indian elections"},
-  {"dominant":["S","E"],"name":"Azim Premji","role":"Chairman, Wipro","note":"Led a global tech company while dedicating billions to Indian education"},
-  {"dominant":["A","E"],"name":"Satyajit Ray","role":"Filmmaker & Oscar Laureate","note":"Creative storytelling combined with the drive to build a cinematic legacy"},
-  {"dominant":["I","S"],"name":"M.S. Swaminathan","role":"Father of India's Green Revolution","note":"Scientific research channelled entirely toward social food security"},
-  {"dominant":["R","C"],"name":"Sudha Murthy","role":"Author & Philanthropist","note":"Engineering precision paired with structured compassionate giving"},
-  {"dominant":["E","S"],"name":"Verghese Kurien","role":"Father of India's White Revolution","note":"Entrepreneurial leadership that transformed India's dairy industry for farmers"},
-  {"dominant":["I","C"],"name":"C.V. Raman","role":"Nobel Laureate in Physics","note":"Methodical experimentation and precise thinking led to the discovery of the Raman Effect"}
+  {
+    "dominant": [
+      "I",
+      "R"
+    ],
+    "name": "A.P.J. Abdul Kalam",
+    "role": "Scientist & 11th President of India",
+    "note": "Combined deep curiosity with hands-on aerospace engineering",
+    "role_hi": "वैज्ञानिक और भारत के 11वें राष्ट्रपति",
+    "note_hi": "गहरी जिज्ञासा को हाथों से एयरोस्पेस इंजीनियरिंग करने के जज़्बे के साथ जोड़ा"
+  },
+  {
+    "dominant": [
+      "I",
+      "E"
+    ],
+    "name": "Sundar Pichai",
+    "role": "CEO, Google & Alphabet",
+    "note": "Analytical mind paired with business leadership at global scale",
+    "role_hi": "CEO, Google और Alphabet",
+    "note_hi": "विश्लेषणात्मक सोच को वैश्विक स्तर के बिज़नेस नेतृत्व के साथ जोड़ा"
+  },
+  {
+    "dominant": [
+      "A",
+      "E"
+    ],
+    "name": "Shah Rukh Khan",
+    "role": "Actor & Film Producer",
+    "note": "Creative performer who built one of India's biggest entertainment companies",
+    "role_hi": "अभिनेता और फिल्म निर्माता",
+    "note_hi": "एक रचनात्मक कलाकार जिसने भारत की सबसे बड़ी मनोरंजन कंपनियों में से एक बनाई"
+  },
+  {
+    "dominant": [
+      "S",
+      "E"
+    ],
+    "name": "Narendra Modi",
+    "role": "Prime Minister of India",
+    "note": "People-centred leadership with strong entrepreneurial drive",
+    "role_hi": "भारत के प्रधानमंत्री",
+    "note_hi": "लोगों को केंद्र में रखने वाला नेतृत्व और मज़बूत उद्यमशीलता की सोच"
+  },
+  {
+    "dominant": [
+      "I",
+      "C"
+    ],
+    "name": "Infosys Narayana Murthy",
+    "role": "Co-founder, Infosys",
+    "note": "Methodical thinker who built India's IT industry with structured precision",
+    "role_hi": "सह-संस्थापक, Infosys",
+    "note_hi": "एक व्यवस्थित सोच वाले व्यक्ति जिन्होंने भारत के IT उद्योग को अनुशासित तरीके से खड़ा किया"
+  },
+  {
+    "dominant": [
+      "A",
+      "S"
+    ],
+    "name": "A.R. Rahman",
+    "role": "Music Composer & Oscar Winner",
+    "note": "Artistic genius with deep emotional connection to his audience",
+    "role_hi": "संगीतकार और ऑस्कर विजेता",
+    "note_hi": "कलात्मक प्रतिभा जो अपने श्रोताओं से गहरे भावनात्मक जुड़ाव के साथ आती है"
+  },
+  {
+    "dominant": [
+      "I",
+      "A"
+    ],
+    "name": "Viswanathan Anand",
+    "role": "World Chess Champion",
+    "note": "Pure investigative thinking with creative strategic flair",
+    "role_hi": "विश्व शतरंज चैंपियन",
+    "note_hi": "गहन विश्लेषणात्मक सोच के साथ रचनात्मक रणनीतिक कौशल"
+  },
+  {
+    "dominant": [
+      "S",
+      "A"
+    ],
+    "name": "Priyanka Chopra",
+    "role": "Actor & Global Entrepreneur",
+    "note": "Social charisma and artistic expression on a world stage",
+    "role_hi": "अभिनेत्री और वैश्विक उद्यमी",
+    "note_hi": "विश्व मंच पर सामाजिक आकर्षण और कलात्मक अभिव्यक्ति"
+  },
+  {
+    "dominant": [
+      "R",
+      "I"
+    ],
+    "name": "Kalpana Chawla",
+    "role": "NASA Astronaut",
+    "note": "Hands-on engineering drive fueled by relentless scientific curiosity",
+    "role_hi": "NASA अंतरिक्ष यात्री",
+    "note_hi": "अथक वैज्ञानिक जिज्ञासा से प्रेरित हाथों से काम करने वाली इंजीनियरिंग की लगन"
+  },
+  {
+    "dominant": [
+      "E",
+      "C"
+    ],
+    "name": "Ratan Tata",
+    "role": "Chairman Emeritus, Tata Group",
+    "note": "Business leadership built on disciplined long-term thinking",
+    "role_hi": "अध्यक्ष एमेरिटस, Tata Group",
+    "note_hi": "अनुशासित दीर्घकालिक सोच पर आधारित बिज़नेस नेतृत्व"
+  },
+  {
+    "dominant": [
+      "S",
+      "I"
+    ],
+    "name": "Vandana Shiva",
+    "role": "Environmental Scientist & Activist",
+    "note": "Combines scientific research with deep social commitment",
+    "role_hi": "पर्यावरण वैज्ञानिक और कार्यकर्ता",
+    "note_hi": "वैज्ञानिक शोध को गहरी सामाजिक प्रतिबद्धता के साथ जोड़ती हैं"
+  },
+  {
+    "dominant": [
+      "A",
+      "I"
+    ],
+    "name": "Vikram Sarabhai",
+    "role": "Father of India's Space Programme",
+    "note": "Artistic vision guided by rigorous scientific methodology",
+    "role_hi": "भारत के अंतरिक्ष कार्यक्रम के जनक",
+    "note_hi": "कठोर वैज्ञानिक पद्धति से निर्देशित रचनात्मक सोच"
+  },
+  {
+    "dominant": [
+      "R",
+      "E"
+    ],
+    "name": "Dhirubhai Ambani",
+    "role": "Founder, Reliance Industries",
+    "note": "Built India's largest conglomerate with hands-on entrepreneurial grit",
+    "role_hi": "संस्थापक, Reliance Industries",
+    "note_hi": "हाथों से काम करने वाली उद्यमशीलता की लगन से भारत का सबसे बड़ा समूह खड़ा किया"
+  },
+  {
+    "dominant": [
+      "C",
+      "I"
+    ],
+    "name": "T.N. Seshan",
+    "role": "Chief Election Commissioner",
+    "note": "Structured thinking and investigative rigour reformed Indian elections",
+    "role_hi": "मुख्य चुनाव आयुक्त",
+    "note_hi": "व्यवस्थित सोच और गहन जांच-परख से भारतीय चुनावों में सुधार किया"
+  },
+  {
+    "dominant": [
+      "S",
+      "E"
+    ],
+    "name": "Azim Premji",
+    "role": "Chairman, Wipro",
+    "note": "Led a global tech company while dedicating billions to Indian education",
+    "role_hi": "अध्यक्ष, Wipro",
+    "note_hi": "एक वैश्विक टेक कंपनी का नेतृत्व करते हुए भारतीय शिक्षा के लिए अरबों रुपये समर्पित किए"
+  },
+  {
+    "dominant": [
+      "A",
+      "E"
+    ],
+    "name": "Satyajit Ray",
+    "role": "Filmmaker & Oscar Laureate",
+    "note": "Creative storytelling combined with the drive to build a cinematic legacy",
+    "role_hi": "फिल्म निर्माता और ऑस्कर विजेता",
+    "note_hi": "रचनात्मक कहानी कहने की कला और एक सिनेमाई विरासत बनाने का जज़्बा"
+  },
+  {
+    "dominant": [
+      "I",
+      "S"
+    ],
+    "name": "M.S. Swaminathan",
+    "role": "Father of India's Green Revolution",
+    "note": "Scientific research channelled entirely toward social food security",
+    "role_hi": "भारत की हरित क्रांति के जनक",
+    "note_hi": "वैज्ञानिक शोध को पूरी तरह से सामाजिक खाद्य सुरक्षा के लिए समर्पित किया"
+  },
+  {
+    "dominant": [
+      "R",
+      "C"
+    ],
+    "name": "Sudha Murthy",
+    "role": "Author & Philanthropist",
+    "note": "Engineering precision paired with structured compassionate giving",
+    "role_hi": "लेखिका और परोपकारी",
+    "note_hi": "इंजीनियरिंग जैसी सटीकता को व्यवस्थित और दयालु दान-कार्य के साथ जोड़ा"
+  },
+  {
+    "dominant": [
+      "E",
+      "S"
+    ],
+    "name": "Verghese Kurien",
+    "role": "Father of India's White Revolution",
+    "note": "Entrepreneurial leadership that transformed India's dairy industry for farmers",
+    "role_hi": "भारत की श्वेत क्रांति के जनक",
+    "note_hi": "उद्यमशील नेतृत्व से भारत के डेयरी उद्योग को किसानों के लिए बदल दिया"
+  },
+  {
+    "dominant": [
+      "I",
+      "C"
+    ],
+    "name": "C.V. Raman",
+    "role": "Nobel Laureate in Physics",
+    "note": "Methodical experimentation and precise thinking led to the discovery of the Raman Effect",
+    "role_hi": "भौतिकी में नोबेल पुरस्कार विजेता",
+    "note_hi": "व्यवस्थित प्रयोग और सटीक सोच से रमन प्रभाव की खोज हुई"
+  }
 ]

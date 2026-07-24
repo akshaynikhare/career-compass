@@ -7,12 +7,33 @@
       "type": "single",
       "key": "stream_pref",
       "options": [
-        { "label": "Science with Maths (PCM)",    "value": "pcm" },
-        { "label": "Science with Biology (PCB)",   "value": "pcb" },
-        { "label": "Commerce",                     "value": "commerce" },
-        { "label": "Arts/Humanities",              "value": "arts" },
-        { "label": "Not decided yet",              "value": "any" }
-      ]
+        {
+          "label": "Science with Maths (PCM)",
+          "value": "pcm",
+          "label_hi": "विज्ञान गणित के साथ (PCM)"
+        },
+        {
+          "label": "Science with Biology (PCB)",
+          "value": "pcb",
+          "label_hi": "विज्ञान जीव विज्ञान के साथ (PCB)"
+        },
+        {
+          "label": "Commerce",
+          "value": "commerce",
+          "label_hi": "कॉमर्स"
+        },
+        {
+          "label": "Arts/Humanities",
+          "value": "arts",
+          "label_hi": "आर्ट्स/मानविकी"
+        },
+        {
+          "label": "Not decided yet",
+          "value": "any",
+          "label_hi": "अभी तय नहीं किया"
+        }
+      ],
+      "text_hi": "Class 10 के बाद आप कौन-सी स्ट्रीम लेने की सोच रहे हैं?"
     },
     {
       "id": "pf02",
@@ -20,11 +41,28 @@
       "type": "single",
       "key": "years_available",
       "options": [
-        { "label": "1–2 years",        "value": 2 },
-        { "label": "3–4 years",        "value": 4 },
-        { "label": "5–6 years",        "value": 6 },
-        { "label": "7 or more years",  "value": 9 }
-      ]
+        {
+          "label": "1–2 years",
+          "value": 2,
+          "label_hi": "1–2 वर्ष"
+        },
+        {
+          "label": "3–4 years",
+          "value": 4,
+          "label_hi": "3–4 वर्ष"
+        },
+        {
+          "label": "5–6 years",
+          "value": 6,
+          "label_hi": "5–6 वर्ष"
+        },
+        {
+          "label": "7 or more years",
+          "value": 9,
+          "label_hi": "7 या उससे ज़्यादा वर्ष"
+        }
+      ],
+      "text_hi": "Class 12 के बाद आपका परिवार कितने साल तक आपकी पढ़ाई का खर्चा उठा सकता है?"
     },
     {
       "id": "pf03",
@@ -32,11 +70,28 @@
       "type": "single",
       "key": "annual_budget_inr",
       "options": [
-        { "label": "Under ₹50,000",        "value": 50000 },
-        { "label": "₹50,000–₹2 Lakh",     "value": 200000 },
-        { "label": "₹2 Lakh–₹6 Lakh",     "value": 600000 },
-        { "label": "Above ₹6 Lakh",        "value": 1500000 }
-      ]
+        {
+          "label": "Under ₹50,000",
+          "value": 50000,
+          "label_hi": "₹50,000 से कम"
+        },
+        {
+          "label": "₹50,000–₹2 Lakh",
+          "value": 200000,
+          "label_hi": "₹50,000–₹2 लाख"
+        },
+        {
+          "label": "₹2 Lakh–₹6 Lakh",
+          "value": 600000,
+          "label_hi": "₹2 लाख–₹6 लाख"
+        },
+        {
+          "label": "Above ₹6 Lakh",
+          "value": 1500000,
+          "label_hi": "₹6 लाख से ज़्यादा"
+        }
+      ],
+      "text_hi": "आपका परिवार हर साल आपकी पढ़ाई पर (फीस + खाना + रहना) कितना खर्च कर सकता है?"
     },
     {
       "id": "pf04",
@@ -44,10 +99,23 @@
       "type": "single",
       "key": "exam_intensity",
       "options": [
-        { "label": "Yes, I will give my best",               "value": 3 },
-        { "label": "Maybe, I am not fully sure",             "value": 2 },
-        { "label": "I prefer courses with easier entrance",  "value": 1 }
-      ]
+        {
+          "label": "Yes, I will give my best",
+          "value": 3,
+          "label_hi": "हाँ, मैं पूरी कोशिश करूँगा/करूँगी"
+        },
+        {
+          "label": "Maybe, I am not fully sure",
+          "value": 2,
+          "label_hi": "शायद, मुझे पूरा यकीन नहीं है"
+        },
+        {
+          "label": "I prefer courses with easier entrance",
+          "value": 1,
+          "label_hi": "मुझे आसान प्रवेश वाले कोर्स पसंद हैं"
+        }
+      ],
+      "text_hi": "क्या आप NEET या JEE जैसी मुश्किल प्रवेश परीक्षाओं के लिए बहुत मेहनत करने को तैयार हैं?"
     },
     {
       "id": "pf05",
@@ -55,9 +123,18 @@
       "type": "single",
       "key": "can_relocate",
       "options": [
-        { "label": "Yes, anywhere in India",       "value": true },
-        { "label": "I want to stay in my state",   "value": false }
-      ]
+        {
+          "label": "Yes, anywhere in India",
+          "value": true,
+          "label_hi": "हाँ, भारत में कहीं भी"
+        },
+        {
+          "label": "I want to stay in my state",
+          "value": false,
+          "label_hi": "मैं अपने राज्य में रहना चाहता/चाहती हूँ"
+        }
+      ],
+      "text_hi": "क्या आप पढ़ाई के लिए किसी दूसरे शहर या राज्य में जाने के लिए तैयार हैं?"
     },
     {
       "id": "pf06",
@@ -65,9 +142,18 @@
       "type": "single",
       "key": "need_early_income",
       "options": [
-        { "label": "Yes, I need to earn soon",      "value": true },
-        { "label": "No, I can study for longer",    "value": false }
-      ]
+        {
+          "label": "Yes, I need to earn soon",
+          "value": true,
+          "label_hi": "हाँ, मुझे जल्दी कमाना है"
+        },
+        {
+          "label": "No, I can study for longer",
+          "value": false,
+          "label_hi": "नहीं, मैं और लंबे समय तक पढ़ सकता/सकती हूँ"
+        }
+      ],
+      "text_hi": "क्या आपको Class 12 के बाद 3–4 साल के अंदर पैसा कमाना शुरू करना ज़रूरी है?"
     },
     {
       "id": "pf07",
@@ -75,10 +161,23 @@
       "type": "single",
       "key": "work_setting",
       "options": [
-        { "label": "Mostly indoors (office / lab / hospital)",   "value": "indoor" },
-        { "label": "Mostly outdoors (field / site / nature)",    "value": "outdoor" },
-        { "label": "Mix of both",                                "value": "any" }
-      ]
+        {
+          "label": "Mostly indoors (office / lab / hospital)",
+          "value": "indoor",
+          "label_hi": "ज़्यादातर घर के अंदर (ऑफिस / लैब / अस्पताल)"
+        },
+        {
+          "label": "Mostly outdoors (field / site / nature)",
+          "value": "outdoor",
+          "label_hi": "ज़्यादातर बाहर (फील्ड / साइट / प्रकृति)"
+        },
+        {
+          "label": "Mix of both",
+          "value": "any",
+          "label_hi": "दोनों का मिश्रण"
+        }
+      ],
+      "text_hi": "आप खुद को कहाँ काम करते हुए देखते/देखती हैं?"
     },
     {
       "id": "pf08",
@@ -86,10 +185,23 @@
       "type": "single",
       "key": "college_type",
       "options": [
-        { "label": "Government college (lower fees)",   "value": "govt" },
-        { "label": "Private college (more seats)",      "value": "private" },
-        { "label": "Any good college",                  "value": "any" }
-      ]
+        {
+          "label": "Government college (lower fees)",
+          "value": "govt",
+          "label_hi": "सरकारी कॉलेज (कम फीस)"
+        },
+        {
+          "label": "Private college (more seats)",
+          "value": "private",
+          "label_hi": "प्राइवेट कॉलेज (ज़्यादा सीटें)"
+        },
+        {
+          "label": "Any good college",
+          "value": "any",
+          "label_hi": "कोई भी अच्छा कॉलेज"
+        }
+      ],
+      "text_hi": "आपको किस तरह का कॉलेज पसंद है?"
     },
     {
       "id": "pf09",
@@ -97,10 +209,23 @@
       "type": "single",
       "key": "learning_style",
       "options": [
-        { "label": "By doing things (labs, workshops, building)",   "value": "practical" },
-        { "label": "By reading and thinking",                       "value": "theoretical" },
-        { "label": "Both work equally well for me",                 "value": "any" }
-      ]
+        {
+          "label": "By doing things (labs, workshops, building)",
+          "value": "practical",
+          "label_hi": "करके सीखना (लैब, वर्कशॉप, बनाना)"
+        },
+        {
+          "label": "By reading and thinking",
+          "value": "theoretical",
+          "label_hi": "पढ़कर और सोचकर सीखना"
+        },
+        {
+          "label": "Both work equally well for me",
+          "value": "any",
+          "label_hi": "मेरे लिए दोनों तरीके बराबर अच्छे हैं"
+        }
+      ],
+      "text_hi": "आप सबसे अच्छे से कैसे सीखते/सीखती हैं?"
     },
     {
       "id": "pf10",
@@ -108,12 +233,33 @@
       "type": "single",
       "key": "family_background",
       "options": [
-        { "label": "Government job",         "value": "govt" },
-        { "label": "Private company job",    "value": "private" },
-        { "label": "Business / self-employed", "value": "business" },
-        { "label": "Farming",                "value": "farming" },
-        { "label": "Other",                  "value": "other" }
-      ]
+        {
+          "label": "Government job",
+          "value": "govt",
+          "label_hi": "सरकारी नौकरी"
+        },
+        {
+          "label": "Private company job",
+          "value": "private",
+          "label_hi": "प्राइवेट कंपनी में नौकरी"
+        },
+        {
+          "label": "Business / self-employed",
+          "value": "business",
+          "label_hi": "व्यापार / खुद का काम"
+        },
+        {
+          "label": "Farming",
+          "value": "farming",
+          "label_hi": "खेती"
+        },
+        {
+          "label": "Other",
+          "value": "other",
+          "label_hi": "अन्य"
+        }
+      ],
+      "text_hi": "आपके माता-पिता या अभिभावक क्या काम करते हैं?"
     }
   ],
   "career_quick": [
@@ -123,10 +269,23 @@
       "dimension": "R",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको मशीनों, औज़ारों के साथ काम करना या हाथों से काम करना पसंद है?"
     },
     {
       "id": "cq02",
@@ -134,10 +293,23 @@
       "dimension": "I",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको पहेलियाँ सुलझाना या यह पता लगाना पसंद है कि चीज़ें कैसे काम करती हैं?"
     },
     {
       "id": "cq03",
@@ -145,10 +317,23 @@
       "dimension": "A",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको कुछ नया बनाना पसंद होगा — जैसे कला, संगीत, लेखन या डिज़ाइन?"
     },
     {
       "id": "cq04",
@@ -156,10 +341,23 @@
       "dimension": "S",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "जब आप किसी को कुछ समझने या कोई समस्या हल करने में मदद करते हैं, तो क्या आपको अच्छा लगता है?"
     },
     {
       "id": "cq05",
@@ -167,10 +365,23 @@
       "dimension": "E",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको किसी समूह का नेतृत्व करना या दूसरों को अपने विचारों के लिए मनाना पसंद होगा?"
     },
     {
       "id": "cq06",
@@ -178,10 +389,23 @@
       "dimension": "C",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आप तब खुश महसूस करते/करती हैं जब आपके आसपास सब कुछ साफ-सुथरा और व्यवस्थित हो?"
     },
     {
       "id": "cq07",
@@ -189,10 +413,23 @@
       "dimension": "R",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आप ऐसा काम पसंद करेंगे जिसमें शारीरिक मेहनत हो, न कि सिर्फ बैठकर लिखना?"
     },
     {
       "id": "cq08",
@@ -200,10 +437,23 @@
       "dimension": "I",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको विज्ञान, तकनीक या दुनिया कैसे काम करती है, इसके बारे में जिज्ञासा है?"
     },
     {
       "id": "cq09",
@@ -211,10 +461,23 @@
       "dimension": "S",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको सच में मुश्किल में फँसे लोगों की मदद करने की परवाह होती है?"
     },
     {
       "id": "cq10",
@@ -222,10 +485,23 @@
       "dimension": "A",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको ऐसी नौकरी पसंद होगी जहाँ आप हर दिन रचनात्मक बन सकें?"
     },
     {
       "id": "cq11",
@@ -233,10 +509,23 @@
       "dimension": "R",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको गैजेट या मशीनों को खोलकर यह देखना पसंद है कि अंदर कैसे काम करते हैं?"
     },
     {
       "id": "cq12",
@@ -244,10 +533,23 @@
       "dimension": "R",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आप किसी चीज़ के बारे में पढ़ने के बजाय उसे करके सीखना पसंद करेंगे?"
     },
     {
       "id": "cq13",
@@ -255,10 +557,23 @@
       "dimension": "R",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आप पूरे दिन डेस्क पर बैठने के बजाय हाथों से काम करना पसंद करते/करती हैं?"
     },
     {
       "id": "cq14",
@@ -266,10 +581,23 @@
       "dimension": "I",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको संख्याओं या जानकारी को देखकर उनमें पैटर्न ढूँढना पसंद है?"
     },
     {
       "id": "cq15",
@@ -277,10 +605,23 @@
       "dimension": "I",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "जब कोई बात समझ में नहीं आती, तो क्या आप तब तक 'क्यों' पूछते रहते/रहती हैं जब तक समझ न आ जाए?"
     },
     {
       "id": "cq16",
@@ -288,10 +629,23 @@
       "dimension": "I",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आप सिर्फ मज़े के लिए विज्ञान, तकनीक या नई खोजों के बारे में पढ़ते हैं?"
     },
     {
       "id": "cq17",
@@ -299,10 +653,23 @@
       "dimension": "A",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आप किसी मौजूदा डिज़ाइन की नकल करने के बजाय बिल्कुल नई चीज़ बनाना पसंद करते/करती हैं?"
     },
     {
       "id": "cq18",
@@ -310,10 +677,23 @@
       "dimension": "A",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आप तब भी नोटिस कर लेते/लेती हैं जब कुछ गलत या अजीब लगता है, भले ही आसपास के लोग न देखें?"
     },
     {
       "id": "cq19",
@@ -321,10 +701,23 @@
       "dimension": "A",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको लेखन, चित्रकारी, फिल्मों या अभिनय के ज़रिए कहानी सुनाना पसंद है?"
     },
     {
       "id": "cq20",
@@ -332,10 +725,23 @@
       "dimension": "S",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या दोस्त बात करने या सलाह के लिए आपके पास आते हैं?"
     },
     {
       "id": "cq21",
@@ -343,10 +749,23 @@
       "dimension": "S",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको ऐसा करियर पसंद होगा जिसमें आप अपने आसपास के लोगों की सीधे मदद कर सकें?"
     },
     {
       "id": "cq22",
@@ -354,10 +773,23 @@
       "dimension": "S",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको दूसरों को तब तक समझाना पसंद है जब तक वे पूरी तरह समझ न जाएँ?"
     },
     {
       "id": "cq23",
@@ -365,10 +797,23 @@
       "dimension": "E",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको किसी चीज़ को शुरुआत से शुरू करके उसे बढ़ते हुए देखना पसंद है?"
     },
     {
       "id": "cq24",
@@ -376,10 +821,23 @@
       "dimension": "E",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको अपने विचार बाँटना और दूसरों को उनके लिए उत्साहित करना पसंद होगा?"
     },
     {
       "id": "cq25",
@@ -387,10 +845,23 @@
       "dimension": "E",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "जब आप किसी समूह या प्रोजेक्ट का नेतृत्व करते/करती हैं, तो क्या आप उत्साहित महसूस करते/करती हैं?"
     },
     {
       "id": "cq26",
@@ -398,10 +869,23 @@
       "dimension": "E",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको किसी लक्ष्य तक पहुँचने के लिए प्रतिस्पर्धा करना पसंद है — पढ़ाई, खेल या व्यापार में?"
     },
     {
       "id": "cq27",
@@ -409,10 +893,23 @@
       "dimension": "C",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको तब बुरा लगता है जब आपके आसपास की चीज़ें बिखरी या अव्यवस्थित हों?"
     },
     {
       "id": "cq28",
@@ -420,10 +917,23 @@
       "dimension": "C",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आपको ऐसी नौकरी पसंद होगी जिसमें रिकॉर्ड रखना, फाइलें संभालना या संख्याओं के साथ काम करना हो?"
     },
     {
       "id": "cq29",
@@ -431,10 +941,23 @@
       "dimension": "C",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आप ऐसी नौकरियाँ पसंद करते/करती हैं जिनमें काम करने का एक स्पष्ट और सही तरीका हो?"
     },
     {
       "id": "cq30",
@@ -442,10 +965,23 @@
       "dimension": "C",
       "weight": 0.8,
       "options": [
-        { "label": "Yes, definitely", "score": 3 },
-        { "label": "Maybe",           "score": 2 },
-        { "label": "Not really",      "score": 1 }
-      ]
+        {
+          "label": "Yes, definitely",
+          "score": 3,
+          "label_hi": "हाँ, बिल्कुल"
+        },
+        {
+          "label": "Maybe",
+          "score": 2,
+          "label_hi": "शायद"
+        },
+        {
+          "label": "Not really",
+          "score": 1,
+          "label_hi": "ज़्यादा नहीं"
+        }
+      ],
+      "text_hi": "क्या आप बिना कोई कदम छोड़े, निर्देशों को कदम-दर-कदम पूरी तरह से पालन करने में अच्छे हैं?"
     }
   ],
   "career_deep": [
@@ -453,661 +989,1441 @@
       "id": "cd01",
       "text": "I enjoy fixing or building things with my hands (a cycle, a gadget, furniture).",
       "dimension": "R",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे अपने हाथों से चीज़ें ठीक करना या बनाना पसंद है (साइकिल, गैजेट, फर्नीचर)।"
     },
     {
       "id": "cd02",
       "text": "I prefer doing practical work over reading books or writing reports.",
       "dimension": "R",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे किताबें पढ़ने या रिपोर्ट लिखने के बजाय व्यावहारिक काम करना पसंद है।"
     },
     {
       "id": "cd03",
       "text": "I like working outdoors or in a physical place more than sitting in an office.",
       "dimension": "R",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे ऑफिस में बैठने की बजाय बाहर या किसी भौतिक जगह पर काम करना ज़्यादा पसंद है।"
     },
     {
       "id": "cd04",
       "text": "I feel happy when I can see the result of my work — like something I built or fixed.",
       "dimension": "R",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "जब मैं अपने काम का नतीजा देख सकता/सकती हूँ — जैसे कुछ बनाया या ठीक किया — तो मुझे अच्छा लगता है।"
     },
     {
       "id": "cd05",
       "text": "I would rather learn a skill by doing it than by reading about it.",
       "dimension": "R",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मैं किसी हुनर को पढ़कर सीखने के बजाय करके सीखना पसंद करूँगा/करूँगी।"
     },
     {
       "id": "cd06",
       "text": "I enjoy finding out why things happen the way they do.",
       "dimension": "I",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे यह पता लगाना पसंद है कि चीज़ें जैसे होती हैं वैसे क्यों होती हैं।"
     },
     {
       "id": "cd07",
       "text": "I can stay focused for a long time when trying to solve a tough problem.",
       "dimension": "I",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "किसी मुश्किल समस्या को हल करने की कोशिश करते समय मैं लंबे समय तक ध्यान लगा सकता/सकती हूँ।"
     },
     {
       "id": "cd08",
       "text": "I like reading about science, technology, medicine, or how things work.",
       "dimension": "I",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे विज्ञान, तकनीक, मेडिसिन या चीज़ें कैसे काम करती हैं, इसके बारे में पढ़ना पसंद है।"
     },
     {
       "id": "cd09",
       "text": "I like to think through a problem carefully before I act.",
       "dimension": "I",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "कोई कदम उठाने से पहले मुझे किसी समस्या के बारे में ध्यान से सोचना पसंद है।"
     },
     {
       "id": "cd10",
       "text": "I have a good eye for style, design, and colour.",
       "dimension": "A",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "स्टाइल, डिज़ाइन और रंगों को लेकर मेरी अच्छी समझ है।"
     },
     {
       "id": "cd11",
       "text": "I enjoy sharing my ideas through drawing, writing, music, dance, or acting.",
       "dimension": "A",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे अपने विचार चित्रकारी, लेखन, संगीत, नृत्य या अभिनय के ज़रिए बाँटना पसंद है।"
     },
     {
       "id": "cd12",
       "text": "I prefer work where I can try new ideas, not just follow the same method every time.",
       "dimension": "A",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे ऐसा काम पसंद है जहाँ मैं हर बार एक ही तरीके का पालन करने के बजाय नए विचार आज़मा सकूँ।"
     },
     {
       "id": "cd13",
       "text": "I get bored if I have to do the same task in the same way every single day.",
       "dimension": "A",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "अगर मुझे रोज़ एक ही काम एक ही तरीके से करना पड़े तो मुझे बोरियत होती है।"
     },
     {
       "id": "cd14",
       "text": "I enjoy working with people more than working alone.",
       "dimension": "S",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे अकेले काम करने के बजाय लोगों के साथ काम करना पसंद है।"
     },
     {
       "id": "cd15",
       "text": "Friends often come to me when they need advice or support.",
       "dimension": "S",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "दोस्त अक्सर सलाह या सहारे के लिए मेरे पास आते हैं।"
     },
     {
       "id": "cd16",
       "text": "I feel happy and purposeful when I do something that helps someone.",
       "dimension": "S",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "जब मैं किसी की मदद करता/करती हूँ तो मुझे खुशी और एक मकसद महसूस होता है।"
     },
     {
       "id": "cd17",
       "text": "I am patient with people who take more time to understand or need extra help.",
       "dimension": "S",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "जिन लोगों को समझने में ज़्यादा समय लगता है या अतिरिक्त मदद चाहिए होती है, उनके साथ मैं धैर्य रखता/रखती हूँ।"
     },
     {
       "id": "cd18",
       "text": "I like the idea of teaching or guiding others.",
       "dimension": "S",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे दूसरों को सिखाने या मार्गदर्शन करने का विचार पसंद है।"
     },
     {
       "id": "cd19",
       "text": "I enjoy being in charge and making decisions for a group.",
       "dimension": "E",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे ज़िम्मेदारी लेना और किसी समूह के लिए फैसले लेना पसंद है।"
     },
     {
       "id": "cd20",
       "text": "I enjoy convincing or inspiring others to take action.",
       "dimension": "E",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे दूसरों को कोई काम करने के लिए मनाना या प्रेरित करना पसंद है।"
     },
     {
       "id": "cd21",
       "text": "I am okay with taking risks when I believe in what I am doing.",
       "dimension": "E",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "जब मुझे अपने काम पर भरोसा होता है, तो मैं जोखिम लेने के लिए तैयार रहता/रहती हूँ।"
     },
     {
       "id": "cd22",
       "text": "I can see myself running my own business or leading a team one day.",
       "dimension": "E",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मैं खुद को भविष्य में अपना खुद का व्यापार चलाते या किसी टीम का नेतृत्व करते हुए देख सकता/सकती हूँ।"
     },
     {
       "id": "cd23",
       "text": "I like tasks that have clear steps and a correct answer.",
       "dimension": "C",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे ऐसे काम पसंद हैं जिनमें स्पष्ट कदम और सही जवाब हों।"
     },
     {
       "id": "cd24",
       "text": "I am good at keeping records, managing files, or following step-by-step instructions.",
       "dimension": "C",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मैं रिकॉर्ड रखने, फाइलें संभालने या कदम-दर-कदम निर्देशों का पालन करने में अच्छा/अच्छी हूँ।"
     },
     {
       "id": "cd25",
       "text": "I am comfortable following rules and set processes at work.",
       "dimension": "C",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "काम पर नियमों और तय प्रक्रियाओं का पालन करने में मुझे कोई दिक्कत नहीं है।"
     },
     {
       "id": "cd26",
       "text": "I enjoy using tools, machines, or equipment in my work.",
       "dimension": "R",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे अपने काम में औज़ार, मशीनें या उपकरण इस्तेमाल करना पसंद है।"
     },
     {
       "id": "cd27",
       "text": "I am good at understanding how machines or electronic devices work.",
       "dimension": "R",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मशीनें या इलेक्ट्रॉनिक उपकरण कैसे काम करते हैं, यह समझने में मैं अच्छा/अच्छी हूँ।"
     },
     {
       "id": "cd28",
       "text": "I prefer work where I can see a physical result, like something built or repaired.",
       "dimension": "R",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे ऐसा काम पसंद है जिसमें कोई भौतिक नतीजा दिखे, जैसे कुछ बनाया या मरम्मत किया गया हो।"
     },
     {
       "id": "cd29",
       "text": "I enjoy activities like woodwork, fixing electronics, or working on vehicles.",
       "dimension": "R",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे लकड़ी का काम, इलेक्ट्रॉनिक्स ठीक करना या वाहनों पर काम करना जैसी गतिविधियाँ पसंद हैं।"
     },
     {
       "id": "cd30",
       "text": "I am comfortable working in places like workshops, construction sites, or open fields.",
       "dimension": "R",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे वर्कशॉप, निर्माण स्थल या खुले खेतों जैसी जगहों पर काम करने में कोई दिक्कत नहीं है।"
     },
     {
       "id": "cd31",
       "text": "I enjoy reading about new discoveries in science, technology, or medicine in my free time.",
       "dimension": "I",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे अपने खाली समय में विज्ञान, तकनीक या मेडिसिन की नई खोजों के बारे में पढ़ना पसंद है।"
     },
     {
       "id": "cd32",
       "text": "I like looking at information or numbers to find patterns and understand what they mean.",
       "dimension": "I",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे जानकारी या संख्याओं को देखकर उनमें पैटर्न ढूँढना और उनका मतलब समझना पसंद है।"
     },
     {
       "id": "cd33",
       "text": "I enjoy working on problems that do not have a simple or obvious answer.",
       "dimension": "I",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे ऐसी समस्याओं पर काम करना पसंद है जिनका कोई आसान या साफ जवाब नहीं होता।"
     },
     {
       "id": "cd34",
       "text": "I like to fully understand a topic before I move on to the next one.",
       "dimension": "I",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "अगले विषय पर जाने से पहले मुझे किसी विषय को पूरी तरह समझना पसंद है।"
     },
     {
       "id": "cd35",
       "text": "I like to question things rather than just accept them as they are.",
       "dimension": "I",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे चीज़ों को बिना सवाल किए मान लेने के बजाय सवाल पूछना पसंद है।"
     },
     {
       "id": "cd36",
       "text": "I enjoy trying out new ideas or small experiments to see if they work.",
       "dimension": "I",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे यह देखने के लिए नए विचार या छोटे-छोटे प्रयोग आज़माना पसंद है कि वे काम करते हैं या नहीं।"
     },
     {
       "id": "cd37",
       "text": "I notice when something looks off or wrong, even when others around me don't.",
       "dimension": "A",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मैं तब भी नोटिस कर लेता/लेती हूँ जब कुछ गलत या अजीब लगता है, भले ही मेरे आसपास के लोग न देखें।"
     },
     {
       "id": "cd38",
       "text": "I enjoy taking an existing idea and giving it a fresh, personal touch.",
       "dimension": "A",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे किसी मौजूदा विचार को लेकर उसमें अपना नया, निजी टच देना पसंद है।"
     },
     {
       "id": "cd39",
       "text": "I feel a deep connection to music, art, films, or books.",
       "dimension": "A",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे संगीत, कला, फिल्मों या किताबों से गहरा जुड़ाव महसूस होता है।"
     },
     {
       "id": "cd40",
       "text": "I feel happy when I come up with a creative idea and finish it completely.",
       "dimension": "A",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "जब मैं कोई रचनात्मक विचार सोचता/सोचती हूँ और उसे पूरी तरह पूरा करता/करती हूँ, तो मुझे खुशी होती है।"
     },
     {
       "id": "cd41",
       "text": "I prefer places where I can express myself freely, not just follow strict rules.",
       "dimension": "A",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे ऐसी जगहें पसंद हैं जहाँ मैं खुलकर खुद को अभिव्यक्त कर सकूँ, न कि सिर्फ सख्त नियमों का पालन करूँ।"
     },
     {
       "id": "cd42",
       "text": "Making something original makes me proud in a way that doing the same task every day does not.",
       "dimension": "A",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "कुछ मौलिक बनाना मुझे उस तरह गर्व महसूस कराता है जैसा रोज़ एक जैसा काम करने से नहीं होता।"
     },
     {
       "id": "cd43",
       "text": "I can often tell how someone is feeling even before they say anything.",
       "dimension": "S",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे अक्सर पता चल जाता है कि कोई कैसा महसूस कर रहा है, भले ही उसने कुछ न कहा हो।"
     },
     {
       "id": "cd44",
       "text": "I find it fulfilling to do community service or volunteer work.",
       "dimension": "S",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे सामुदायिक सेवा या स्वयंसेवी काम करने में संतोष मिलता है।"
     },
     {
       "id": "cd45",
       "text": "I am good at helping people get along and settle their disagreements.",
       "dimension": "S",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "लोगों को आपस में मिलाने और उनके मतभेद सुलझाने में मैं अच्छा/अच्छी हूँ।"
     },
     {
       "id": "cd46",
       "text": "I believe the most meaningful work is the kind that helps people directly.",
       "dimension": "S",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मेरा मानना है कि सबसे सार्थक काम वही है जो लोगों की सीधे मदद करता है।"
     },
     {
       "id": "cd47",
       "text": "I enjoy working in teams where everyone's effort is valued.",
       "dimension": "S",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे ऐसी टीमों में काम करना पसंद है जहाँ हर किसी की मेहनत की कद्र हो।"
     },
     {
       "id": "cd48",
       "text": "I enjoy setting big goals and working hard to reach them.",
       "dimension": "E",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे बड़े लक्ष्य तय करना और उन्हें पाने के लिए मेहनत करना पसंद है।"
     },
     {
       "id": "cd49",
       "text": "I am comfortable selling or promoting my ideas, products, or skills to others.",
       "dimension": "E",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे अपने विचारों, उत्पादों या हुनर को दूसरों के सामने बेचने या प्रचार करने में कोई हिचक नहीं है।"
     },
     {
       "id": "cd50",
       "text": "I do well in situations where performance is tracked and good results are rewarded.",
       "dimension": "E",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "जहाँ प्रदर्शन को ट्रैक किया जाता है और अच्छे नतीजों को पुरस्कृत किया जाता है, वहाँ मैं अच्छा प्रदर्शन करता/करती हूँ।"
     },
     {
       "id": "cd51",
       "text": "I am good at pushing the people around me to give their best.",
       "dimension": "E",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मैं अपने आसपास के लोगों को अपना सर्वश्रेष्ठ देने के लिए प्रेरित करने में अच्छा/अच्छी हूँ।"
     },
     {
       "id": "cd52",
       "text": "I enjoy making a plan and then carrying it out step by step to reach a goal.",
       "dimension": "E",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे कोई योजना बनाना और फिर लक्ष्य तक पहुँचने के लिए उसे कदम-दर-कदम पूरा करना पसंद है।"
     },
     {
       "id": "cd53",
       "text": "I am comfortable speaking in front of a group or leading a meeting.",
       "dimension": "E",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "किसी समूह के सामने बोलने या किसी मीटिंग का नेतृत्व करने में मुझे कोई झिझक नहीं होती।"
     },
     {
       "id": "cd54",
       "text": "I prefer knowing exactly what is expected of me rather than figuring it out as I go.",
       "dimension": "C",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे यह पता होना पसंद है कि मुझसे क्या उम्मीद की जा रही है, बजाय इसके कि मैं इसे खुद ही समझता/समझती जाऊँ।"
     },
     {
       "id": "cd55",
       "text": "I am careful and precise — I rarely make careless mistakes.",
       "dimension": "C",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मैं सावधान और सटीक हूँ — मुझसे लापरवाही की गलतियाँ शायद ही कभी होती हैं।"
     },
     {
       "id": "cd56",
       "text": "I like to check my work again before submitting it to make sure it is correct.",
       "dimension": "C",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "जमा करने से पहले मुझे अपना काम दोबारा जाँचना पसंद है ताकि यह सही हो।"
     },
     {
       "id": "cd57",
       "text": "I enjoy working with numbers, tables, and organised data.",
       "dimension": "C",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे संख्याओं, तालिकाओं और व्यवस्थित डेटा के साथ काम करना पसंद है।"
     },
     {
       "id": "cd58",
       "text": "I feel most productive when I have a clear daily schedule and stick to it.",
       "dimension": "C",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "जब मेरे पास एक स्पष्ट दैनिक समय-सारणी हो और मैं उसका पालन करता/करती हूँ, तो मैं सबसे ज़्यादा उत्पादक महसूस करता/करती हूँ।"
     },
     {
       "id": "cd59",
       "text": "I prefer following a set method rather than making things up as I go.",
       "dimension": "C",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मुझे अपने मन से चीज़ें करने के बजाय एक तय तरीके का पालन करना पसंद है।"
     },
     {
       "id": "cd60",
       "text": "I am dependable — when I say I will do something, I always follow through.",
       "dimension": "C",
-      "weight": 1.0,
+      "weight": 1,
       "options": [
-        { "label": "Disagree",          "score": 2 },
-        { "label": "Neutral",           "score": 3 },
-        { "label": "Agree",             "score": 4 }
-      ]
+        {
+          "label": "Disagree",
+          "score": 2,
+          "label_hi": "असहमत"
+        },
+        {
+          "label": "Neutral",
+          "score": 3,
+          "label_hi": "तटस्थ"
+        },
+        {
+          "label": "Agree",
+          "score": 4,
+          "label_hi": "सहमत"
+        }
+      ],
+      "text_hi": "मैं भरोसेमंद हूँ — जब मैं कुछ करने की बात कहता/कहती हूँ, तो हमेशा उसे पूरा करता/करती हूँ।"
     }
   ]
 }

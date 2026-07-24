@@ -22,7 +22,7 @@
     profTags    = results[0];
     ddQuestions = results[1];
   } catch (err) {
-    showError('Failed to load data. Please refresh the page. (' + err.message + ')');
+    showError(window.T('err_load', err.message));
     return;
   }
 
@@ -38,7 +38,7 @@
 
   document.getElementById('btn-next').addEventListener('click', function () {
     if (currentAnswer === null) {
-      showError('Please select an option to continue.');
+      showError(window.T('err_select_option'));
       return;
     }
 
@@ -63,13 +63,13 @@
 
     var prog = engine.progress();
     var pct = Math.round((prog.asked / prog.max) * 100);
-    document.getElementById('progress-text').textContent = 'Finding your best match… Q' + (prog.asked + 1);
+    document.getElementById('progress-text').textContent = window.T('dd_finding', prog.asked + 1);
     document.getElementById('progress-pct').textContent = pct + '%';
     document.getElementById('progress-fill').style.width = pct + '%';
     document.getElementById('candidates-count').textContent = prog.remainingCount;
 
     document.getElementById('question-number').textContent = 'Q' + (prog.asked + 1);
-    document.getElementById('question-text').textContent = currentQuestion.text;
+    document.getElementById('question-text').textContent = window.pickLang(currentQuestion, 'text');
 
     var optionsList = document.getElementById('options-list');
     optionsList.innerHTML = '';
@@ -85,7 +85,7 @@
 
       var label = document.createElement('label');
       label.htmlFor = input.id;
-      label.textContent = opt.label;
+      label.textContent = window.pickLang(opt, 'label');
 
       input.addEventListener('change', function () {
         currentAnswer = i;
@@ -99,7 +99,7 @@
     });
 
     document.getElementById('btn-next').disabled = true;
-    document.getElementById('btn-next').textContent = 'Next →';
+    document.getElementById('btn-next').textContent = window.T('btn_next');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 

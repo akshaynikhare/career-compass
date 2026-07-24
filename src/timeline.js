@@ -21,7 +21,7 @@
   top10.forEach(function (m, i) {
     var opt = document.createElement('option');
     opt.value = i;
-    opt.textContent = '#' + (i + 1) + ' — ' + m.profession.name;
+    opt.textContent = '#' + (i + 1) + ' — ' + window.pickLang(m.profession, 'name');
     select.appendChild(opt);
   });
 

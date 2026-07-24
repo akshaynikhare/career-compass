@@ -35,16 +35,18 @@
     ctx.fillText('Career Compass', 56, 72);
 
     // Headline
-    var name = result.studentInfo && result.studentInfo.name ? result.studentInfo.name + '\'s' : 'Your';
+    var headline = (result.studentInfo && result.studentInfo.name)
+      ? window.T('card_profile_name', result.studentInfo.name)
+      : window.T('card_profile_you');
     ctx.font = 'bold 28px -apple-system, sans-serif';
     ctx.fillStyle = '#ffffff';
-    ctx.fillText(name + ' Career Profile', 56, 112);
+    ctx.fillText(headline, 56, 112);
 
     // Top career
-    var topCareer = result.top10 && result.top10.length ? result.top10[0].profession.name : '—';
+    var topCareer = result.top10 && result.top10.length ? window.pickLang(result.top10[0].profession, 'name') : '—';
     ctx.font = '14px -apple-system, sans-serif';
     ctx.fillStyle = 'rgba(255,255,255,0.7)';
-    ctx.fillText('TOP MATCH', 56, 148);
+    ctx.fillText(window.T('card_top_match'), 56, 148);
     ctx.font = 'bold 22px -apple-system, sans-serif';
     ctx.fillStyle = '#ffffff';
     ctx.fillText(topCareer, 56, 178);

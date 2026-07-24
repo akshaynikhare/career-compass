@@ -1,6 +1,6 @@
 // Paths are RELATIVE to the service-worker scope (career-compass/) so the PWA
 // works under the GitHub Pages project subpath, not just a root domain.
-var CACHE = 'career-compass-v2';
+var CACHE = 'career-compass-v5';
 var ASSETS = [
   './',
   'index.html',
@@ -11,6 +11,8 @@ var ASSETS = [
   'deepdive.html',
   'result2.html',
   'styles/main.css',
+  'src/analytics.js',
+  'src/consent.js',
   'src/config.js',
   'src/match.js',
   'src/store.js',
@@ -24,6 +26,7 @@ var ASSETS = [
   'src/timeline.js',
   'src/explore.js',
   'src/share_card.js',
+  'src/charts.js',
   'src/i18n.js',
   'data/questions.json',
   'data/professions.json',

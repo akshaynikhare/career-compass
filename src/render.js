@@ -34,14 +34,14 @@
 
   var compareSelected = [];
 
-  // RIASEC dimension labels
+  // RIASEC dimension labels (localized)
   var DIM_LABELS = {
-    R: 'Realistic',
-    I: 'Investigative',
-    A: 'Artistic',
-    S: 'Social',
-    E: 'Enterprising',
-    C: 'Conventional'
+    R: window.T('dim_R'),
+    I: window.T('dim_I'),
+    A: window.T('dim_A'),
+    S: window.T('dim_S'),
+    E: window.T('dim_E'),
+    C: window.T('dim_C')
   };
 
   var DIM_COLORS = {
@@ -56,10 +56,10 @@
   var DIMS = ['R', 'I', 'A', 'S', 'E', 'C'];
 
   var CONSTRAINT_LABELS = {
-    years_min:         'Study duration too long',
-    annual_budget_inr: 'May exceed your budget',
-    stream_pref:       'Stream mismatch',
-    exam_intensity:    'Competitive exam required'
+    years_min:         window.T('con_years_min'),
+    annual_budget_inr: window.T('con_annual_budget_inr'),
+    stream_pref:       window.T('con_stream_pref'),
+    exam_intensity:    window.T('con_exam_intensity')
   };
 
   // ── Bootstrap ─────────────────────────────────────────────────────────────
@@ -80,6 +80,7 @@
   renderRiasec(result.riasec);
   renderPeopleSection(result.riasec);
   renderDomains(result.topByDomain || []);
+  renderSalaryOutlook(result.top10 || []);
   renderCards('top10-cards', result.top10 || [], false, result.constraints, result.riasec);
   renderCards('stretch5-cards', result.stretch5 || [], true, result.constraints, result.riasec);
   setupCollapsible();
@@ -96,7 +97,7 @@
         document.querySelectorAll('.domain-group').forEach(function (group) {
           var titleEl = group.querySelector('.domain-group-header-title');
           if (!titleEl) return;
-          var cat = titleEl.textContent;
+          var cat = titleEl.getAttribute('data-cat') || titleEl.textContent;
           var reason = reasonMap[cat];
           if (!reason) return;
           var reasonEl = document.createElement('span');
@@ -108,19 +109,69 @@
       .catch(function () {});
   }
 
-  // ── RIASEC bar chart ──────────────────────────────────────────────────────
+  // ── RIASEC chart: radar (default) with a toggle to the classic bars ─────────
   function renderRiasec(riasec) {
     var container = document.getElementById('riasec-chart');
-    container.innerHTML = '';
+    var toggleBox = document.getElementById('riasec-toggle');
+    var hintEl    = document.getElementById('riasec-hint');
+    if (!container) return;
 
-    // Find max for scaling
     var max = DIMS.reduce(function (m, d) { return Math.max(m, riasec[d] || 0); }, 0);
     if (max === 0) max = 1;
 
+    function showView(view) {
+      container.innerHTML = '';
+      container.className = '';   // each view carries its own layout wrapper
+      if (view === 'bars') {
+        container.appendChild(buildRiasecBars(riasec, max));
+        if (hintEl) hintEl.textContent = window.T('chart_riasec_hint_bars');
+      } else {
+        container.appendChild(buildRiasecRadar(riasec, max));
+        if (hintEl) hintEl.textContent = window.T('chart_riasec_hint_radar');
+      }
+      if (toggleBox) {
+        toggleBox.querySelectorAll('button').forEach(function (b) {
+          b.classList.toggle('active', b.getAttribute('data-view') === view);
+        });
+      }
+    }
+
+    if (toggleBox) {
+      toggleBox.innerHTML = '';
+      [['radar', window.T('chart_view_radar')], ['bars', window.T('chart_view_bars')]].forEach(function (pair) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('data-view', pair[0]);
+        b.textContent = pair[1];
+        b.addEventListener('click', function () { showView(pair[0]); });
+        toggleBox.appendChild(b);
+      });
+    }
+
+    showView('radar');
+  }
+
+  // Radar view — geometry scaled to the strongest dimension (like the bars),
+  // tooltip shows the true share-of-profile percentage.
+  function buildRiasecRadar(riasec, max) {
+    var axes = DIMS.map(function (d) {
+      var val = riasec[d] || 0;
+      return {
+        label: d,                              // compact vertex label (R/I/A/S/E/C)
+        value: val / max,                      // 0-1 geometry
+        display: Math.round(val * 100) + '% · ' + (DIM_LABELS[d] || d),
+        color: DIM_COLORS[d]
+      };
+    });
+    return window.Charts.radar({ axes: axes, size: 280 });
+  }
+
+  // Classic vertical bar view (unchanged visual).
+  function buildRiasecBars(riasec, max) {
+    var frag = document.createDocumentFragment();
     DIMS.forEach(function (d) {
       var val  = riasec[d] || 0;
       var pct  = Math.round(val * 100);
-      // Scale bar height relative to max (so chart fills nicely)
       var barH = Math.round((val / max) * 100);
 
       var wrap = document.createElement('div');
@@ -141,8 +192,7 @@
 
       var dimLabel = document.createElement('span');
       dimLabel.className   = 'riasec-dim-label';
-      var SHORT_DIM = { R: 'Realistic', I: 'Investigative', A: 'Artistic', S: 'Social', E: 'Enterprising', C: 'Conventional' };
-      dimLabel.textContent = SHORT_DIM[d] || d;
+      dimLabel.textContent = DIM_LABELS[d] || d;
       dimLabel.style.fontSize = '0.6875rem';
       dimLabel.title = DIM_LABELS[d];
       dimLabel.style.color = DIM_COLORS[d];
@@ -150,8 +200,47 @@
       wrap.appendChild(pctLabel);
       wrap.appendChild(bar);
       wrap.appendChild(dimLabel);
-      container.appendChild(wrap);
+      frag.appendChild(wrap);
     });
+    var host = document.createElement('div');
+    host.className = 'riasec-chart';
+    host.style.width = '100%';
+    host.appendChild(frag);
+    return host;
+  }
+
+  // ── Salary Outlook: entry→mid→senior progression for the top matches ────────
+  function renderSalaryOutlook(top10) {
+    var card    = document.getElementById('salary-outlook-card');
+    var chartEl = document.getElementById('salary-chart');
+    if (!card || !chartEl || !window.Charts) return;
+
+    var withSalary = (top10 || []).filter(function (m) {
+      var s = m.profession && m.profession.salary_lpa;
+      return s && s.entry != null && s.senior != null;
+    }).slice(0, 4);   // cap for a readable multi-line chart
+
+    if (withSalary.length === 0) return;   // leave the card hidden
+
+    var series = withSalary.map(function (m) {
+      var p = m.profession;
+      var col = (CATEGORY_COLORS[p.category] || DEFAULT_COLOR).text;
+      var s = p.salary_lpa;
+      var vals = [s.entry, (s.mid != null ? s.mid : Math.round((s.entry + s.senior) / 2)), s.senior];
+      return { label: window.pickLang(p, 'name'), color: col, values: vals };
+    });
+
+    var node = window.Charts.multiLine({
+      series: series,
+      categories: [window.T('salary_stage_entry'), window.T('salary_stage_mid'), window.T('salary_stage_senior')],
+      yUnit: window.T('salary_unit'),
+      valueSuffix: window.T('salary_suffix'),
+      yLabel: window.T('salary_axis_label')
+    });
+
+    chartEl.innerHTML = '';
+    chartEl.appendChild(node);
+    card.classList.remove('hidden');
   }
 
   function renderPeopleSection(riasec) {
@@ -174,7 +263,7 @@
         if (!match) return;
 
         var DIM_COLORS = { R:'#F97316', I:'#3B82F6', A:'#EC4899', S:'#10B981', E:'#F59E0B', C:'#8B5CF6' };
-        var DIM_LABELS = { R:'Realistic', I:'Investigative', A:'Artistic', S:'Social', E:'Enterprising', C:'Conventional' };
+        var DIM_LABELS = { R:window.T('dim_R'), I:window.T('dim_I'), A:window.T('dim_A'), S:window.T('dim_S'), E:window.T('dim_E'), C:window.T('dim_C') };
 
         var section = document.createElement('div');
         section.className = 'card mb-2';
@@ -189,7 +278,7 @@
 
         var eyebrow = document.createElement('p');
         eyebrow.style.cssText = 'font-size:0.75rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.25rem;';
-        eyebrow.textContent = 'A Profile Like Yours';
+        eyebrow.textContent = window.T('profile_like_yours');
 
         var personName = document.createElement('p');
         personName.style.cssText = 'font-size:1rem; font-weight:700; color:var(--text); margin-bottom:0.125rem;';
@@ -197,11 +286,11 @@
 
         var role = document.createElement('p');
         role.style.cssText = 'font-size:0.8125rem; color:var(--primary); font-weight:500; margin-bottom:0.375rem;';
-        role.textContent = match.role;
+        role.textContent = window.pickLang(match, 'role');
 
         var note = document.createElement('p');
         note.style.cssText = 'font-size:0.8125rem; color:var(--muted); line-height:1.5;';
-        note.textContent = match.note;
+        note.textContent = window.pickLang(match, 'note');
 
         var dimPills = document.createElement('div');
         dimPills.style.cssText = 'display:flex; gap:0.375rem; margin-top:0.5rem; flex-wrap:wrap;';
@@ -239,7 +328,7 @@
     if (matches.length === 0) {
       var empty = document.createElement('p');
       empty.className   = 'text-muted text-center';
-      empty.textContent = isStretch ? 'No stretch goals found — great fit!' : 'No matches found.';
+      empty.textContent = isStretch ? window.T('no_stretch') : window.T('no_matches');
       empty.style.padding = '1rem 0';
       container.appendChild(empty);
       return;
@@ -257,7 +346,7 @@
       var remaining = matches.length - initialCount;
       var btn = document.createElement('button');
       btn.className   = 'btn-secondary';
-      btn.textContent = 'Show ' + remaining + ' more';
+      btn.textContent = window.T('show_n_more', remaining);
       btn.style.cssText = 'width:100%; justify-content:center; margin-top:0.75rem;';
       btn.addEventListener('click', function () {
         container.querySelectorAll('.career-card').forEach(function (c) { c.style.display = ''; });
@@ -267,7 +356,34 @@
     }
   }
 
+  // Donut of how the user's matches distribute across career fields.
+  function renderDomainDonut(topByDomain) {
+    var host = document.getElementById('domain-donut');
+    if (!host || !window.Charts) return;
+    host.innerHTML = '';
+    if (!topByDomain || topByDomain.length === 0) return;
+
+    var segments = topByDomain.map(function (domain) {
+      return {
+        label: window.tCat(domain.category),
+        value: (domain.matches || []).length,
+        color: (CATEGORY_COLORS[domain.category] || DEFAULT_COLOR).text
+      };
+    }).filter(function (s) { return s.value > 0; });
+
+    if (segments.length === 0) return;
+
+    host.appendChild(window.Charts.donut({
+      segments: segments,
+      centerValue: segments.length,
+      centerLabel: window.T('domain_donut_center')
+    }));
+    host.style.marginBottom = '1rem';
+  }
+
   function renderDomains(topByDomain) {
+    renderDomainDonut(topByDomain);
+
     var container = document.getElementById('domain-cards');
     if (!container) return;
     container.innerHTML = '';
@@ -275,7 +391,7 @@
     if (!topByDomain || topByDomain.length === 0) {
       var empty = document.createElement('p');
       empty.className = 'text-muted text-center';
-      empty.textContent = 'No domain matches found.';
+      empty.textContent = window.T('no_domain_matches');
       empty.style.padding = '1rem 0';
       container.appendChild(empty);
       return;
@@ -295,7 +411,8 @@
 
       var title = document.createElement('span');
       title.className = 'domain-group-header-title';
-      title.textContent = domain.category;
+      title.setAttribute('data-cat', domain.category);
+      title.textContent = window.tCat(domain.category);
       header.appendChild(title);
       group.appendChild(header);
 
@@ -329,7 +446,7 @@
 
     var name = document.createElement('div');
     name.className   = 'career-name';
-    name.textContent = p.name;
+    name.textContent = window.pickLang(p, 'name');
 
     if (rank !== null && rank !== undefined) {
       var rankEl = document.createElement('span');
@@ -341,7 +458,7 @@
 
     var badge = document.createElement('span');
     badge.className         = 'badge';
-    badge.textContent       = p.category;
+    badge.textContent       = window.tCat(p.category);
     badge.style.background  = col.bg;
     badge.style.color       = col.text;
 
@@ -359,14 +476,17 @@
 
     var fill = document.createElement('div');
     fill.className   = 'score-bar';
-    fill.style.width = pct + '%';
+    fill.style.width = '0%';   // animate to pct on next frame (CSS transition)
     fill.style.background = isStretch ? '#F59E0B' : '#4F46E5';
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () { fill.style.width = pct + '%'; });
+    });
 
     track.appendChild(fill);
 
     var pctLabel = document.createElement('span');
     pctLabel.className   = 'score-pct';
-    pctLabel.textContent = pct + '% match';
+    pctLabel.textContent = window.T('pct_match', pct);
     pctLabel.style.color = isStretch ? '#92400E' : '#4F46E5';
 
     scoreRow.appendChild(track);
@@ -377,7 +497,7 @@
     if (p.summary) {
       var summary = document.createElement('p');
       summary.className   = 'career-summary';
-      summary.textContent = p.summary;
+      summary.textContent = window.pickLang(p, 'summary');
       card.appendChild(summary);
     }
 
@@ -385,7 +505,7 @@
     if (p.path_india) {
       var path = document.createElement('p');
       path.className   = 'career-path';
-      path.textContent = p.path_india;
+      path.textContent = window.pickLang(p, 'path_india');
       card.appendChild(path);
     }
 
@@ -396,32 +516,25 @@
     if (p.years_min) {
       var yearsItem = document.createElement('span');
       yearsItem.className   = 'career-meta-item';
-      yearsItem.textContent = '⏱ ' + p.years_min + '+ yrs';
+      yearsItem.textContent = window.T('meta_years', p.years_min);
       meta.appendChild(yearsItem);
     }
 
     if (p.streams && p.streams.length > 0) {
       var streamItem = document.createElement('span');
       streamItem.className   = 'career-meta-item';
-      streamItem.textContent = '📚 ' + formatStreams(p.streams);
+      streamItem.textContent = window.T('meta_streams', formatStreams(p.streams));
       meta.appendChild(streamItem);
     }
 
     if (p.entrance_exam) {
       var examItem = document.createElement('span');
       examItem.className   = 'career-meta-item';
-      examItem.textContent = '✍ ' + p.entrance_exam;
-      var EXAM_DESC = {
-        'NEET': 'National entrance for medical colleges',
-        'JEE Main': 'National entrance for engineering colleges',
-        'JEE Advanced': 'Entrance for IITs (premium engineering)',
-        'CLAT': 'National entrance for law colleges (NLUs)',
-        'CAT': 'Entrance for IIMs and top MBA colleges',
-        'GATE': 'Entrance for M.Tech and PSU jobs',
-        'UPSC': 'Civil services — IAS, IPS, IFS'
-      };
-      if (EXAM_DESC[p.entrance_exam]) {
-        examItem.title = EXAM_DESC[p.entrance_exam];
+      examItem.textContent = window.T('meta_exam', p.entrance_exam);
+      var examDescKey = 'exam_' + p.entrance_exam;
+      var examDesc = window.T(examDescKey);
+      if (examDesc !== examDescKey) {
+        examItem.title = examDesc;
         examItem.style.cursor = 'help';
       }
       meta.appendChild(examItem);
@@ -430,7 +543,7 @@
     if (p.salary_lpa && p.salary_lpa.entry !== undefined) {
       var salaryItem = document.createElement('span');
       salaryItem.className   = 'career-meta-item';
-      salaryItem.textContent = '₹ ' + p.salary_lpa.entry + '–' + p.salary_lpa.senior + ' LPA';
+      salaryItem.textContent = window.T('meta_salary', p.salary_lpa.entry, p.salary_lpa.senior);
       meta.appendChild(salaryItem);
     }
 
@@ -456,7 +569,7 @@
 
         var prepToggle = document.createElement('button');
         prepToggle.style.cssText = 'background:none; border:none; padding:0; font-size:0.75rem; color:var(--primary); cursor:pointer; font-weight:600; display:flex; align-items:center; gap:0.25rem;';
-        prepToggle.innerHTML = '&#9654; Free ' + p.entrance_exam + ' prep resources';
+        prepToggle.innerHTML = '&#9654; ' + window.T('prep_resources', p.entrance_exam);
 
         var prepList = document.createElement('div');
         prepList.style.cssText = 'display:none; margin-top:0.375rem; padding:0.5rem 0.75rem; background:var(--bg); border-radius:var(--radius-sm); flex-direction:column; gap:0.25rem;';
@@ -474,7 +587,7 @@
         prepToggle.addEventListener('click', function() {
           var open = prepList.style.display === 'flex';
           prepList.style.display = open ? 'none' : 'flex';
-          prepToggle.innerHTML = (open ? '&#9654;' : '&#9660;') + ' Free ' + p.entrance_exam + ' prep resources';
+          prepToggle.innerHTML = (open ? '&#9654;' : '&#9660;') + ' ' + window.T('prep_resources', p.entrance_exam);
         });
 
         prepWrap.appendChild(prepToggle);
@@ -490,16 +603,16 @@
 
       var dilToggle = document.createElement('button');
       dilToggle.style.cssText = 'background:none; border:none; padding:0; font-size:0.75rem; color:var(--primary); cursor:pointer; font-weight:600; display:flex; align-items:center; gap:0.25rem;';
-      dilToggle.innerHTML = '&#9654; A day in the life';
+      dilToggle.innerHTML = '&#9654; ' + window.T('day_in_life');
 
       var dilBody = document.createElement('div');
       dilBody.style.cssText = 'display:none; margin-top:0.375rem; padding:0.5rem 0.75rem; background:var(--bg); border-radius:var(--radius-sm); font-size:0.8125rem; color:var(--muted); line-height:1.6;';
-      dilBody.textContent = p.day_in_life;
+      dilBody.textContent = window.pickLang(p, 'day_in_life');
 
       dilToggle.addEventListener('click', function () {
         var open = dilBody.style.display === 'block';
         dilBody.style.display = open ? 'none' : 'block';
-        dilToggle.innerHTML = (open ? '&#9654;' : '&#9660;') + ' A day in the life';
+        dilToggle.innerHTML = (open ? '&#9654;' : '&#9660;') + ' ' + window.T('day_in_life');
       });
 
       dilWrap.appendChild(dilToggle);
@@ -511,22 +624,20 @@
     if (constraints && riasec && !isStretch) {
       var matchReasons = [];
 
-      var streamLabels = { pcm: 'Science (PCM)', pcb: 'Science (PCB)', commerce: 'Commerce', arts: 'Arts / Humanities', any: 'Any stream' };
       if (constraints.stream_pref && constraints.stream_pref !== 'any') {
         if (p.streams && (p.streams.includes(constraints.stream_pref) || p.streams.includes('any'))) {
-          matchReasons.push('Matches your ' + (streamLabels[constraints.stream_pref] || constraints.stream_pref) + ' stream');
+          matchReasons.push(window.T('why_stream', streamLabel(constraints.stream_pref)));
         }
       }
       if (constraints.years_available && p.years_min <= constraints.years_available) {
-        matchReasons.push(p.years_min + '+ year path fits your ' + constraints.years_available + '-year plan');
+        matchReasons.push(window.T('why_years', p.years_min, constraints.years_available));
       }
       if (constraints.exam_intensity && p.exam_intensity <= constraints.exam_intensity) {
-        var intensityLabel = ['', 'Low', 'Moderate', 'High'];
-        matchReasons.push((intensityLabel[p.exam_intensity] || p.exam_intensity) + ' exam intensity — matches your preference');
+        var intensityLabel = ['', window.T('intensity_low'), window.T('intensity_moderate'), window.T('intensity_high')];
+        matchReasons.push(window.T('why_exam', (intensityLabel[p.exam_intensity] || p.exam_intensity)));
       }
-      var DIM_NAMES = { R: 'hands-on / technical', I: 'research / analytical', A: 'creative / expressive', S: 'people-focused', E: 'leadership / business', C: 'structured / detail-oriented' };
       var topUserDim = Object.keys(riasec).reduce(function(a, b) { return riasec[a] > riasec[b] ? a : b; });
-      matchReasons.push('Aligns with your ' + (DIM_NAMES[topUserDim] || topUserDim) + ' personality (' + topUserDim + ')');
+      matchReasons.push(window.T('why_personality', window.T('dimname_' + topUserDim), topUserDim));
 
       if (matchReasons.length > 0) {
         var whyWrap = document.createElement('div');
@@ -534,7 +645,7 @@
 
         var whyLabel = document.createElement('p');
         whyLabel.style.cssText = 'font-size:0.75rem; font-weight:600; color:var(--muted); margin-bottom:0.375rem; text-transform:uppercase; letter-spacing:0.04em;';
-        whyLabel.textContent = 'Why it matched';
+        whyLabel.textContent = window.T('why_matched');
         whyWrap.appendChild(whyLabel);
 
         matchReasons.forEach(function(reason) {
@@ -559,9 +670,9 @@
     if (isStretch && match.constraint_issues && match.constraint_issues.length > 0) {
       var reason = document.createElement('div');
       reason.className = 'stretch-reason';
-      reason.textContent = '⚠️ Constraints: ' + match.constraint_issues.map(function (k) {
+      reason.textContent = window.T('constraints_prefix', match.constraint_issues.map(function (k) {
         return CONSTRAINT_LABELS[k] || k;
-      }).join('; ');
+      }).join('; '));
       card.appendChild(reason);
     }
 
@@ -575,7 +686,7 @@
       var cmpLabel = document.createElement('label');
       cmpLabel.htmlFor = 'cmp_' + p.id;
       cmpLabel.style.cssText = 'font-size:0.8125rem; color:var(--muted); cursor:pointer;';
-      cmpLabel.textContent = 'Add to compare';
+      cmpLabel.textContent = window.T('add_to_compare');
       cmpCheckbox.addEventListener('change', function() {
         if (cmpCheckbox.checked) {
           if (compareSelected.length >= 2) {
@@ -596,9 +707,12 @@
     return card;
   }
 
+  var STREAM_KEYS = { pcm: 'stream_pcm', pcb: 'stream_pcb', commerce: 'stream_commerce', arts: 'stream_arts', any: 'stream_any' };
+  function streamLabel(s) {
+    return STREAM_KEYS[s] ? window.T(STREAM_KEYS[s]) : s;
+  }
   function formatStreams(streams) {
-    var labels = { pcm: 'Science (PCM)', pcb: 'Science (PCB)', commerce: 'Commerce', arts: 'Arts / Humanities', any: 'Any stream' };
-    return streams.map(function (s) { return labels[s] || s; }).join(', ');
+    return streams.map(streamLabel).join(', ');
   }
 
   // ── Collapsible stretch section ───────────────────────────────────────────
@@ -638,12 +752,10 @@
 
     if (!nameEl) return;
 
-    if (result.studentInfo && result.studentInfo.name) {
-      nameEl.textContent = result.studentInfo.name;
-    }
+    nameEl.textContent = (result.studentInfo && result.studentInfo.name) ? result.studentInfo.name : 'Student';
 
-    var streamLabels = { pcm: 'Science — PCM (Physics, Chemistry, Maths)', pcb: 'Science — PCB (Physics, Chemistry, Biology)', commerce: 'Commerce', arts: 'Arts / Humanities', any: 'Any stream' };
-    var topStream = result.constraints && result.constraints.stream_pref ? (streamLabels[result.constraints.stream_pref] || result.constraints.stream_pref) : 'Not specified';
+    var streamLabelsLong = { pcm: window.T('stream_pcm_long'), pcb: window.T('stream_pcb_long'), commerce: window.T('stream_commerce'), arts: window.T('stream_arts'), any: window.T('stream_any') };
+    var topStream = result.constraints && result.constraints.stream_pref ? (streamLabelsLong[result.constraints.stream_pref] || result.constraints.stream_pref) : window.T('not_specified');
     if (streamEl) streamEl.textContent = topStream;
 
     if (top3El && result.top10) {
@@ -655,7 +767,7 @@
         num.textContent = '#' + (i + 1);
         var name = document.createElement('span');
         name.style.cssText = 'font-size:0.9375rem; color:var(--text);';
-        name.textContent = m.profession.name;
+        name.textContent = window.pickLang(m.profession, 'name');
         row.appendChild(num);
         row.appendChild(name);
         top3El.appendChild(row);
@@ -677,8 +789,8 @@
     } else {
       bar.style.display = 'block';
       barText.textContent = compareSelected.length === 1
-        ? '1 career selected — pick one more to compare'
-        : compareSelected[0].profession.name + ' vs ' + compareSelected[1].profession.name;
+        ? window.T('compare_one_more')
+        : window.T('compare_vs', window.pickLang(compareSelected[0].profession, 'name'), window.pickLang(compareSelected[1].profession, 'name'));
       document.getElementById('btn-compare-open').style.display = compareSelected.length === 2 ? 'inline-block' : 'none';
     }
   }
@@ -688,20 +800,19 @@
     if (!wrap || compareSelected.length < 2) return;
     var a = compareSelected[0].profession;
     var b = compareSelected[1].profession;
-    var streamLabels = { pcm: 'Science (PCM)', pcb: 'Science (PCB)', commerce: 'Commerce', arts: 'Arts / Humanities', any: 'Any stream' };
-    var formatStreams2 = function(s) { return s.map(function(x) { return streamLabels[x] || x; }).join(', '); };
+    var formatStreams2 = function(s) { return s.map(streamLabel).join(', '); };
     var formatFee = function(range) { return range ? '₹' + Math.round(range[0]/1000) + 'k–' + Math.round(range[1]/1000) + 'k/yr' : '—'; };
     var formatSalary = function(sal) { return sal ? '₹' + sal.entry + 'L entry / ₹' + sal.senior + 'L senior' : '—'; };
-    var formatIntensity = function(n) { return ['', '●○○ Low', '●●○ Moderate', '●●● High'][n] || n; };
+    var formatIntensity = function(n) { return ['', window.T('intensity_low_dot'), window.T('intensity_moderate_dot'), window.T('intensity_high_dot')][n] || n; };
 
     var rows = [
-      ['Stream', formatStreams2(a.streams), formatStreams2(b.streams)],
-      ['Study Duration', a.years_min + '+ years', b.years_min + '+ years'],
-      ['Annual Fee', formatFee(a.annual_fee_range), formatFee(b.annual_fee_range)],
-      ['Salary Range', formatSalary(a.salary_lpa), formatSalary(b.salary_lpa)],
-      ['Entrance Exam', a.entrance_exam || '—', b.entrance_exam || '—'],
-      ['Exam Intensity', formatIntensity(a.exam_intensity), formatIntensity(b.exam_intensity)],
-      ['Category', a.category, b.category]
+      [window.T('cmp_stream'), formatStreams2(a.streams), formatStreams2(b.streams)],
+      [window.T('cmp_duration'), window.T('cmp_years_val', a.years_min), window.T('cmp_years_val', b.years_min)],
+      [window.T('cmp_fee'), formatFee(a.annual_fee_range), formatFee(b.annual_fee_range)],
+      [window.T('cmp_salary'), formatSalary(a.salary_lpa), formatSalary(b.salary_lpa)],
+      [window.T('cmp_exam'), a.entrance_exam || '—', b.entrance_exam || '—'],
+      [window.T('cmp_intensity'), formatIntensity(a.exam_intensity), formatIntensity(b.exam_intensity)],
+      [window.T('cmp_category'), window.tCat(a.category), window.tCat(b.category)]
     ];
 
     var table = document.createElement('table');
@@ -709,7 +820,7 @@
 
     var thead = document.createElement('thead');
     var headRow = document.createElement('tr');
-    ['', a.name, b.name].forEach(function(h, i) {
+    ['', window.pickLang(a, 'name'), window.pickLang(b, 'name')].forEach(function(h, i) {
       var th = document.createElement('th');
       th.style.cssText = 'padding:0.625rem 0.75rem; text-align:' + (i === 0 ? 'left' : 'center') + '; background:var(--bg); border-bottom:2px solid var(--border); font-size:0.8125rem; color:' + (i === 0 ? 'var(--muted)' : 'var(--primary)') + '; font-weight:700;';
       th.textContent = h;

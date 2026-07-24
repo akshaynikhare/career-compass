@@ -110,9 +110,9 @@
         var topShare = sorted[0].weight / total;
         var secondShare = sorted[1].weight / total;
         if (topShare > 0.35 && (topShare - secondShare) > 0.10 && opt.label) {
-          var topName = sorted[0].profession.name;
-          var secondName = sorted[1].profession.name;
-          reasons.push('You prefer "' + opt.label + '" — this fits ' + topName + ' more than ' + secondName);
+          var topName = window.pickLang(sorted[0].profession, 'name');
+          var secondName = window.pickLang(sorted[1].profession, 'name');
+          reasons.push(window.T('reason_prefer', window.pickLang(opt, 'label'), topName, secondName));
         }
       }
 
@@ -127,9 +127,9 @@
 
       if (reasons.length === 0) {
         if (runnerUp) {
-          reasons.push('Your work preferences point more clearly towards ' + winner.profession.name + ' than ' + runnerUp.profession.name);
+          reasons.push(window.T('reason_points', window.pickLang(winner.profession, 'name'), window.pickLang(runnerUp.profession, 'name')));
         } else {
-          reasons.push('Your preferences consistently aligned with ' + winner.profession.name + ' throughout the test');
+          reasons.push(window.T('reason_aligned', window.pickLang(winner.profession, 'name')));
         }
       }
 

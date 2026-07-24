@@ -35,7 +35,7 @@
 
     top10.forEach(function (m) {
       var p = m.profession;
-      nodes.push({ id: p.id, label: p.name, type: 'career', data: p });
+      nodes.push({ id: p.id, label: window.pickLang(p, 'name'), type: 'career', data: p });
 
       if (p.streams && p.streams.length) {
         p.streams.forEach(function (s) {
@@ -58,7 +58,7 @@
       if (p.category) {
         if (!catsSeen[p.category]) {
           catsSeen[p.category] = true;
-          nodes.push({ id: 'cat_' + p.category, label: p.category, type: 'category' });
+          nodes.push({ id: 'cat_' + p.category, label: window.tCat(p.category), type: 'category' });
         }
         edges.push({ source: p.id, target: 'cat_' + p.category });
       }
@@ -130,8 +130,8 @@
         if (d.type !== 'career') return;
         event.stopPropagation();
 
-        tooltipName.textContent = d.data.name;
-        var summary = d.data.summary || '';
+        tooltipName.textContent = window.pickLang(d.data, 'name');
+        var summary = window.pickLang(d.data, 'summary') || '';
         tooltipSummary.textContent = summary.length > 100 ? summary.slice(0, 100) + '…' : summary;
         tooltipLink.href = 'timeline.html?id=' + d.data.id;
 

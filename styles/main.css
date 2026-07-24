@@ -23,6 +23,100 @@
   --border-structural: 1px;
 }
 
+/* ===== DARK MODE (auto, follows OS preference) ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #818CF8;
+    --primary-dark: #A5B4FC;
+    --primary-light: #1E1B4B;
+    --text: #F3F4F6;
+    --muted: #9CA3AF;
+    --border: #374151;
+    --bg: #111827;
+    --white: #1F2937;
+    --shadow: 0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.4), 0 2px 4px rgba(0,0,0,0.35);
+  }
+}
+
+/* ===== ACCESSIBILITY ===== */
+/* Visible keyboard focus on every interactive element */
+:focus-visible {
+  outline: var(--border-interactive) solid var(--primary);
+  outline-offset: 2px;
+}
+/* The option radios are visually hidden — surface focus on their label instead */
+.option-item input[type="radio"]:focus-visible + label {
+  outline: var(--border-interactive) solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Skip-to-content link — hidden until focused */
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -3.5rem;
+  z-index: 300;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.5rem 0.875rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: top 0.15s ease;
+}
+.skip-link:focus { top: 0.5rem; }
+
+/* Screen-reader-only text */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Honour reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===== CONSENT BANNER ===== */
+.consent-banner {
+  position: fixed;
+  left: 1rem; right: 1rem; bottom: 1rem;
+  max-width: 620px;
+  margin: 0 auto;
+  background: var(--white);
+  border: var(--border-structural) solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 1rem 1.25rem;
+  z-index: 250;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.consent-text { font-size: 0.8125rem; color: var(--text); line-height: 1.5; }
+.consent-text a { color: var(--primary); }
+.consent-actions { display: flex; gap: 0.5rem; }
+.consent-actions .btn-primary,
+.consent-actions .btn-secondary { width: auto; flex: 1; padding: 0.5rem 0.875rem; font-size: 0.875rem; }
+@media (min-width: 560px) {
+  .consent-banner { flex-direction: row; align-items: center; }
+  .consent-text { flex: 1; }
+  .consent-actions { flex: 0 0 auto; }
+  .consent-actions .btn-primary,
+  .consent-actions .btn-secondary { flex: 0 0 auto; }
+}
+
 /* ===== BASE ===== */
 html {
   font-size: 16px;
@@ -904,4 +998,180 @@ p  { color: var(--muted); }
 /* ===== RESULT2 (DEEP DIVE WINNER) ===== */
 #winner-conf-bar {
   background: linear-gradient(90deg, #4F46E5, #7C3AED);
+}
+
+/* ===== CHARTS (src/charts.js) ===== */
+.chart-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.chart-svg {
+  display: block;
+  overflow: visible;
+}
+
+.chart-axis-label { font-size: 13px; }
+.chart-tick { font-size: 11px; }
+.chart-donut-value { font-size: 30px; }
+.chart-donut-caption { font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* Shared floating tooltip (chrome — follows theme) */
+.chart-tooltip {
+  position: absolute;
+  transform: translate(-50%, calc(-100% - 12px));
+  background: var(--white);
+  color: var(--text);
+  border: var(--border-structural) solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  padding: 0.4rem 0.625rem;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+  z-index: 20;
+}
+.chart-tooltip.visible { opacity: 1; }
+.chart-tooltip strong { color: var(--text); font-weight: 700; }
+
+/* Legend (shared with line + donut) */
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.875rem;
+  margin-top: 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+.chart-legend-donut { justify-content: center; }
+.chart-legend-item { display: flex; align-items: center; gap: 0.375rem; }
+.chart-legend-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+
+/* RIASEC radar / bars view toggle */
+.chart-toggle {
+  display: inline-flex;
+  gap: 0.125rem;
+  padding: 0.1875rem;
+  background: var(--bg);
+  border: var(--border-structural) solid var(--border);
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+}
+.chart-toggle button {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3125rem 0.75rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.chart-toggle button.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.chart-radar { max-width: 340px; margin: 0 auto; }
+.chart-line-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.chart-line-scroll .chart-line { min-width: 380px; }
+
+/* Horizontal confidence bars */
+.chart-hbar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.3125rem 0;
+  cursor: default;
+}
+.chart-hbar-label {
+  flex: 0 0 38%;
+  font-size: 0.8125rem;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.chart-hbar-track {
+  flex: 1;
+  height: 12px;
+  background: var(--bg);
+  border: var(--border-structural) solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.chart-hbar-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.chart-hbar-pct {
+  flex: 0 0 auto;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--muted);
+  min-width: 2.25rem;
+  text-align: right;
+}
+
+/* ===== SUBTLE ANIMATION ===== */
+/* Hover feedback is cheap and always on; keyframe entrances are gated behind
+   prefers-reduced-motion so the experience stays accessible. */
+.career-card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.career-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.domain-group-header,
+.chart-legend-item {
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.chart-legend-item:hover { opacity: 0.65; }
+
+.chart-toggle button:active { transform: scale(0.96); }
+
+@keyframes cc-rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes cc-pop {
+  0%   { opacity: 0; transform: scale(0.96); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Staggered reveal of the main result cards as the page settles. */
+  #results-content > .card,
+  #result2-content > .card,
+  #timeline-content > .card {
+    animation: cc-rise 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  #results-content > .card:nth-child(1),
+  #result2-content > .card:nth-child(1) { animation-delay: 0.02s; }
+  #results-content > .card:nth-child(2),
+  #result2-content > .card:nth-child(2) { animation-delay: 0.07s; }
+  #results-content > .card:nth-child(3),
+  #result2-content > .card:nth-child(3) { animation-delay: 0.12s; }
+  #results-content > .card:nth-child(4),
+  #result2-content > .card:nth-child(4) { animation-delay: 0.17s; }
+  #results-content > .card:nth-child(5) { animation-delay: 0.22s; }
+  #results-content > .card:nth-child(6) { animation-delay: 0.26s; }
+  #results-content > .card:nth-child(n+7) { animation-delay: 0.30s; }
+
+  /* Career cards rise in with a light stagger within their list. */
+  .career-cards > .career-card { animation: cc-rise 0.4s ease both; }
+  .career-cards > .career-card:nth-child(2) { animation-delay: 0.05s; }
+  .career-cards > .career-card:nth-child(3) { animation-delay: 0.10s; }
+  .career-cards > .career-card:nth-child(n+4) { animation-delay: 0.14s; }
+
+  /* Domain group cards pop gently. */
+  .domain-group { animation: cc-pop 0.4s ease both; }
 }
