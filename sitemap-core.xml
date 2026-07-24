@@ -24,7 +24,16 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/index.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/index.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/index.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/index.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/index.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/index.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/index.html"/>
   </url>
   <url>
@@ -33,7 +42,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/streams.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/streams.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/streams.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/streams.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/streams.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/streams.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/streams.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/streams.html"/>
   </url>
   <url>
@@ -42,7 +60,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/stream-pcm.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/stream-pcm.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/stream-pcm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/stream-pcm.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/stream-pcm.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/stream-pcm.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/stream-pcm.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/stream-pcm.html"/>
   </url>
   <url>
@@ -51,7 +78,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/stream-pcb.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/stream-pcb.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/stream-pcb.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/stream-pcb.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/stream-pcb.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/stream-pcb.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/stream-pcb.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/stream-pcb.html"/>
   </url>
   <url>
@@ -60,7 +96,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/stream-commerce.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/stream-commerce.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/stream-commerce.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/stream-commerce.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/stream-commerce.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/stream-commerce.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/stream-commerce.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/stream-commerce.html"/>
   </url>
   <url>
@@ -69,7 +114,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/stream-arts.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/stream-arts.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/stream-arts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/stream-arts.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/stream-arts.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/stream-arts.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/stream-arts.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/stream-arts.html"/>
   </url>
   <url>
@@ -78,7 +132,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-healthcare.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-healthcare.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-healthcare.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-healthcare.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-healthcare.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-healthcare.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-healthcare.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-healthcare.html"/>
   </url>
   <url>
@@ -87,7 +150,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-technology.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-technology.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-technology.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-technology.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-technology.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-technology.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-technology.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-technology.html"/>
   </url>
   <url>
@@ -96,7 +168,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-niche-emerging-professions.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-niche-emerging-professions.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-niche-emerging-professions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-niche-emerging-professions.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-niche-emerging-professions.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-niche-emerging-professions.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-niche-emerging-professions.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-niche-emerging-professions.html"/>
   </url>
   <url>
@@ -105,7 +186,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-arts-media.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-arts-media.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-arts-media.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-arts-media.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-arts-media.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-arts-media.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-arts-media.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-arts-media.html"/>
   </url>
   <url>
@@ -114,7 +204,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-science-research.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-science-research.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-science-research.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-science-research.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-science-research.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-science-research.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-science-research.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-science-research.html"/>
   </url>
   <url>
@@ -123,7 +222,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-finance-business.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-finance-business.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-finance-business.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-finance-business.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-finance-business.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-finance-business.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-finance-business.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-finance-business.html"/>
   </url>
   <url>
@@ -132,7 +240,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-engineering.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-engineering.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-engineering.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-engineering.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-engineering.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-engineering.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-engineering.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-engineering.html"/>
   </url>
   <url>
@@ -141,7 +258,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-law-government.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-law-government.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-law-government.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-law-government.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-law-government.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-law-government.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-law-government.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-law-government.html"/>
   </url>
   <url>
@@ -150,7 +276,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-agriculture-environment.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-agriculture-environment.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-agriculture-environment.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-agriculture-environment.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-agriculture-environment.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-agriculture-environment.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-agriculture-environment.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-agriculture-environment.html"/>
   </url>
   <url>
@@ -159,7 +294,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-education.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-education.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-education.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-education.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-education.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-education.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-education.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-education.html"/>
   </url>
   <url>
@@ -168,7 +312,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-social-welfare.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-social-welfare.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-social-welfare.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-social-welfare.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-social-welfare.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-social-welfare.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-social-welfare.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-social-welfare.html"/>
   </url>
   <url>
@@ -177,7 +330,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-hospitality-food.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-hospitality-food.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-hospitality-food.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-hospitality-food.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-hospitality-food.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-hospitality-food.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-hospitality-food.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-hospitality-food.html"/>
   </url>
   <url>
@@ -186,7 +348,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-sports-fitness.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-sports-fitness.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-sports-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-sports-fitness.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-sports-fitness.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-sports-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-sports-fitness.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-sports-fitness.html"/>
   </url>
   <url>
@@ -195,7 +366,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-trades-construction.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-trades-construction.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-trades-construction.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-trades-construction.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-trades-construction.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-trades-construction.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-trades-construction.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-trades-construction.html"/>
   </url>
   <url>
@@ -204,7 +384,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-transport-logistics.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-transport-logistics.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-transport-logistics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-transport-logistics.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-transport-logistics.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-transport-logistics.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-transport-logistics.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-transport-logistics.html"/>
   </url>
   <url>
@@ -213,7 +402,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-architecture-design.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-architecture-design.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-architecture-design.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-architecture-design.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-architecture-design.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-architecture-design.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-architecture-design.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-architecture-design.html"/>
   </url>
   <url>
@@ -222,7 +420,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-mental-health-wellness.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-mental-health-wellness.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-mental-health-wellness.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-mental-health-wellness.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-mental-health-wellness.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-mental-health-wellness.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-mental-health-wellness.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-mental-health-wellness.html"/>
   </url>
   <url>
@@ -231,7 +438,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-finance-specialized-niche.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-finance-specialized-niche.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-finance-specialized-niche.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-finance-specialized-niche.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-finance-specialized-niche.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-finance-specialized-niche.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-finance-specialized-niche.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-finance-specialized-niche.html"/>
   </url>
   <url>
@@ -240,7 +456,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-public-health-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/field-public-health-policy.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-public-health-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-public-health-policy.html"/>
+  </url>
+  <url>
+    <loc>https://akshaynikhare.github.io/career-compass/careers/hi/field-public-health-policy.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akshaynikhare.github.io/career-compass/careers/field-public-health-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://akshaynikhare.github.io/career-compass/careers/hi/field-public-health-policy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://akshaynikhare.github.io/career-compass/careers/field-public-health-policy.html"/>
   </url>
 </urlset>

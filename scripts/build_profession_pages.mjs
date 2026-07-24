@@ -72,6 +72,12 @@ const esc = (s) => String(s ?? '')
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
+// Inverse of esc() — decode &amp; LAST to avoid double-decoding.
+const decodeEnt = (s) => String(s)
+  .replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+  .replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+  .replace(/&amp;/g, '&');
+
 const slug = (id) => String(id).toLowerCase().replace(/_/g, '-').replace(/[^a-z0-9-]/g, '');
 const catSlug = (cat) => String(cat).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const clip = (s, n) => { s = String(s || '').replace(/\s+/g, ' ').trim(); return s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s; };
@@ -105,8 +111,11 @@ function gtag() {
   <script src="../src/consent.js" defer></script>`;
 }
 
-function head({ title, desc, canonical, jsonld }) {
+function head({ title, desc, canonical, jsonld, hiTitle, hiDesc }) {
   const ld = (jsonld || []).map((o) => `  <script type="application/ld+json">${JSON.stringify(o)}</script>`).join('\n');
+  // The Hindi title/desc ride along as a comment marker; toHindi() consumes it
+  // to build the /hi/ page and strips it from the English page.
+  const marker = hiTitle ? `\n  <!--i18n-hi title="${esc(hiTitle)}" desc="${esc(hiDesc || title)}"-->` : '';
   return `<!DOCTYPE html>
 <html lang="en-IN">
 <head>
@@ -121,7 +130,7 @@ ${gtag()}
   <link rel="icon" type="image/svg+xml" href="../icons/icon-192.svg">
   <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
   <title>${esc(title)}</title>
-  <meta name="description" content="${esc(desc)}">
+  <meta name="description" content="${esc(desc)}">${marker}
   <link rel="canonical" href="${esc(canonical)}">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Career Compass">
@@ -222,7 +231,9 @@ function professionPage(p, byCategory) {
     ['Stream after Class 10', esc(streams), 'Class 10 के बाद स्ट्रीम', esc(streamsHi)],
   ].filter(Boolean);
 
-  return `${head({ title: `How to Become ${art.replace(/^a/, 'A')} ${p.name} in India — Path, Exams & Salary | Career Compass`, desc, canonical, jsonld })}
+  const hiTitle = `भारत में ${nameHi} कैसे बनें — रास्ता, परीक्षाएं और वेतन | Career Compass`;
+  const hiDesc = clip(`भारत में ${nameHi} कैसे बनें: ${summaryHi}। Class 10 के बाद रास्ता, प्रवेश परीक्षाएं, वेतन और स्ट्रीम।`, 158);
+  return `${head({ title: `How to Become ${art.replace(/^a/, 'A')} ${p.name} in India — Path, Exams & Salary | Career Compass`, desc, canonical, jsonld, hiTitle, hiDesc })}
 <body>
   <div class="container" style="max-width:760px;">
     <nav aria-label="Breadcrumb" style="font-size:0.8125rem; color:var(--muted); margin:1rem 0;">
@@ -287,7 +298,9 @@ function categoryPage(category, items) {
       { '@type': 'ListItem', position: 2, name: category, item: canonical },
     ],
   }];
-  return `${head({ title: `${category} Careers in India (${items.length}) — Paths, Exams & Salary | Career Compass`, desc, canonical, jsonld })}
+  const hiTitle = `भारत में ${tcat(category)} करियर (${items.length}) — रास्ते, परीक्षाएं और वेतन | Career Compass`;
+  const hiDesc = clip(`भारतीय छात्रों के लिए ${tcat(category)} में ${items.length} करियर एक्सप्लोर करें — Class 10 के बाद रास्ते, प्रवेश परीक्षाएं और वेतन।`, 158);
+  return `${head({ title: `${category} Careers in India (${items.length}) — Paths, Exams & Salary | Career Compass`, desc, canonical, jsonld, hiTitle, hiDesc })}
 <body>
   <div class="container" style="max-width:760px;">
     <nav style="font-size:0.8125rem; color:var(--muted); margin:1rem 0;">
@@ -319,7 +332,9 @@ function indexPage(categories, total) {
     '@context': 'https://schema.org', '@type': 'CollectionPage',
     name: 'All careers in India', description: desc, url: canonical,
   }];
-  return `${head({ title: `${total} Careers in India by Field — Paths, Exams & Salary | Career Compass`, desc, canonical, jsonld })}
+  const hiTitle = `क्षेत्र के अनुसार भारत में ${total} करियर — रास्ते, परीक्षाएं और वेतन | Career Compass`;
+  const hiDesc = clip(`${total} भारतीय करियर क्षेत्र के अनुसार ब्राउज़ करें — चिकित्सा, इंजीनियरिंग, प्रौद्योगिकी, कानून, डिज़ाइन और बहुत कुछ। Class 10 के बाद रास्ते, परीक्षाएं और वेतन।`, 158);
+  return `${head({ title: `${total} Careers in India by Field — Paths, Exams & Salary | Career Compass`, desc, canonical, jsonld, hiTitle, hiDesc })}
 <body>
   <div class="container" style="max-width:760px;">
     <nav style="font-size:0.8125rem; color:var(--muted); margin:1rem 0;">
@@ -461,7 +476,9 @@ function streamGuidePage(key, items) {
 
   const others = Object.keys(STREAM_GUIDES).filter((k) => k !== key);
 
-  return `${head({ title: `Best Careers for ${g.label} Students After Class 10 in India | Career Compass`, desc, canonical, jsonld })}
+  const hiTitle = `Class 10 के बाद ${gHi.label} छात्रों के लिए सर्वश्रेष्ठ करियर | Career Compass`;
+  const hiDesc = clip(`भारत में Class 10 के बाद ${gHi.label} छात्रों के लिए सर्वश्रेष्ठ करियर — ${cats.length} क्षेत्रों में ${total} विकल्प, रास्तों, प्रवेश परीक्षाओं (${gHi.exams}) और वेतन के साथ।`, 158);
+  return `${head({ title: `Best Careers for ${g.label} Students After Class 10 in India | Career Compass`, desc, canonical, jsonld, hiTitle, hiDesc })}
 <body>
   <div class="container" style="max-width:760px;">
     <nav aria-label="Breadcrumb" style="font-size:0.8125rem; color:var(--muted); margin:1rem 0;">
@@ -538,7 +555,9 @@ function streamsHubPage(items) {
       { '@type': 'ListItem', position: 3, name: 'Streams', item: canonical },
     ] },
   ];
-  return `${head({ title: 'Which Stream After Class 10? PCM vs PCB vs Commerce vs Arts (India Guide) | Career Compass', desc, canonical, jsonld })}
+  const hiTitle = 'Class 10 के बाद कौन-सी स्ट्रीम? PCM बनाम PCB बनाम Commerce बनाम Arts (भारत गाइड) | Career Compass';
+  const hiDesc = clip('Class 10 के बाद भारत में आपको कौन-सी स्ट्रीम चुननी चाहिए? PCM, PCB, Commerce और Arts की तुलना करें — हर एक किस ओर ले जाती है, प्रवेश परीक्षाएं, और हर स्ट्रीम के लिए सर्वश्रेष्ठ करियर।', 158);
+  return `${head({ title: 'Which Stream After Class 10? PCM vs PCB vs Commerce vs Arts (India Guide) | Career Compass', desc, canonical, jsonld, hiTitle, hiDesc })}
 <body>
   <div class="container" style="max-width:760px;">
     <nav aria-label="Breadcrumb" style="font-size:0.8125rem; color:var(--muted); margin:1rem 0;">
@@ -577,18 +596,71 @@ function streamsHubPage(items) {
 </html>`;
 }
 
-// ── sitemap ───────────────────────────────────────────────────────────────────
-// Languages that i18n.js can render via ?lang=. English is the canonical URL
-// (also x-default); each other language is the same URL with a ?lang= param.
-const LANGS = ['en', 'hi'];
-const langHref = (loc, lang) =>
-  lang === 'en' ? loc : loc + (loc.includes('?') ? '&' : '?') + 'lang=' + lang;
+// ── English → Hindi page transform ────────────────────────────────────────────
+// Every translatable element in the English page carries its Hindi inline via a
+// data-i18n-hi* attribute. This turns that English page into a fully server-
+// rendered Hindi page at a distinct /hi/ URL (proper hreflang, no JS needed).
+function toHindi(html, enUrl, hiUrl) {
+  let out = html;
 
+  // Pull Hindi title/description out of the marker, then drop the marker.
+  let hiTitle = null, hiDesc = null;
+  const mk = out.match(/<!--i18n-hi title="([^"]*)" desc="([^"]*)"-->/);
+  if (mk) { hiTitle = decodeEnt(mk[1]); hiDesc = decodeEnt(mk[2]); }
+  out = out.replace(/\n?\s*<!--i18n-hi title="[^"]*" desc="[^"]*"-->/, '');
+
+  // 1. innerHTML swaps (markup/entities) — content runs to the matching close tag.
+  out = out.replace(
+    /<(\w+)([^>]*?)\sdata-i18n-hi-html="([^"]*)"([^>]*)>([\s\S]*?)<\/\1>/g,
+    (m, tag, pre, h, post) => `<${tag}${pre}${post}>${decodeEnt(h)}</${tag}>`
+  );
+  // 2. textContent swaps (leaf text elements — content has no nested tags).
+  out = out.replace(
+    /\sdata-i18n-hi="([^"]*)"([^>]*)>([^<]*)</g,
+    (m, h, rest) => `${rest}>${esc(decodeEnt(h))}<`
+  );
+
+  // 3. Language + canonical + og:url.
+  out = out.replace('<html lang="en-IN">', '<html lang="hi-IN">');
+  out = out.replace('<meta property="og:locale" content="en_IN">', '<meta property="og:locale" content="hi_IN">');
+  out = out.replace(`<link rel="canonical" href="${enUrl}">`, `<link rel="canonical" href="${hiUrl}">`);
+  out = out.replace(`<meta property="og:url" content="${enUrl}">`, `<meta property="og:url" content="${hiUrl}">`);
+
+  // 4. Hindi <title> + meta description / OG / Twitter.
+  if (hiTitle) {
+    out = out.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(hiTitle)}</title>`);
+    out = out.replace(/(<meta name="description" content=")[^"]*(">)/, `$1${esc(hiDesc)}$2`);
+    out = out.replace(/(<meta property="og:title" content=")[^"]*(">)/, `$1${esc(hiTitle)}$2`);
+    out = out.replace(/(<meta property="og:description" content=")[^"]*(">)/, `$1${esc(hiDesc)}$2`);
+    out = out.replace(/(<meta name="twitter:title" content=")[^"]*(">)/, `$1${esc(hiTitle)}$2`);
+    out = out.replace(/(<meta name="twitter:description" content=")[^"]*(">)/, `$1${esc(hiDesc)}$2`);
+  }
+
+  // 5. Root-relative asset/link paths — /hi/ pages sit one directory deeper.
+  out = out.replace(/="\.\.\//g, '="../../');
+  return out;
+}
+
+// Insert bidirectional hreflang alternates right after the canonical link.
+function withAlternates(html, enUrl, hiUrl) {
+  const alts =
+    `\n  <link rel="alternate" hreflang="en" href="${enUrl}"/>` +
+    `\n  <link rel="alternate" hreflang="hi" href="${hiUrl}"/>` +
+    `\n  <link rel="alternate" hreflang="x-default" href="${enUrl}"/>`;
+  return html.replace(/(<link rel="canonical"[^>]*>)/, `$1${alts}`);
+}
+
+const MARKER_RE = /\n?\s*<!--i18n-hi title="[^"]*" desc="[^"]*"-->/;
+
+// ── sitemap ───────────────────────────────────────────────────────────────────
+// English is canonical + x-default; Hindi is a distinct /hi/ URL (server-rendered)
+// for generated pages, or a ?lang= variant for the interactive app pages.
 function urlset(urls) {
-  const body = urls.map(({ loc, priority, changefreq }) => {
+  const body = urls.map(({ loc, priority, changefreq, altEn, altHi }) => {
     const alts = [
-      ...LANGS.map((lang) => `    <xhtml:link rel="alternate" hreflang="${lang}" href="${langHref(loc, lang)}"/>`),
-      `    <xhtml:link rel="alternate" hreflang="x-default" href="${loc}"/>`,
+      `    <xhtml:link rel="alternate" hreflang="en" href="${altEn}"/>`,
+      `    <xhtml:link rel="alternate" hreflang="hi" href="${altHi}"/>`,
+      `    <xhtml:link rel="alternate" hreflang="x-default" href="${altEn}"/>`,
     ].join('\n');
     return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n${alts}\n  </url>`;
   }).join('\n');
@@ -613,36 +685,54 @@ function main() {
   const categories = Object.entries(byCategory).sort((a, b) => b[1].length - a[1].length);
 
   const outDir = join(ROOT, 'careers');
-  // Clean stale generated pages so removed professions don't linger.
+  const hiDir  = join(outDir, 'hi');
+  // Clean stale generated pages (both languages) so removed professions don't linger.
   if (existsSync(outDir)) for (const f of readdirSync(outDir)) if (f.endsWith('.html')) rmSync(join(outDir, f));
+  if (existsSync(hiDir))  for (const f of readdirSync(hiDir))  if (f.endsWith('.html')) rmSync(join(hiDir, f));
   mkdirSync(outDir, { recursive: true });
+  mkdirSync(hiDir, { recursive: true });
 
+  // Write the English page + its server-rendered Hindi twin under /hi/.
+  function emit(file, rawEn) {
+    const enUrl = `${BASE}/careers/${file}`;
+    const hiUrl = `${BASE}/careers/hi/${file}`;
+    writeFileSync(join(outDir, file), withAlternates(rawEn.replace(MARKER_RE, ''), enUrl, hiUrl));
+    writeFileSync(join(hiDir, file), withAlternates(toHindi(rawEn, enUrl, hiUrl), enUrl, hiUrl));
+  }
+
+  // App pages (interactive) — no static /hi/ twin, so Hindi is a ?lang= variant.
   const urls = [
-    { loc: `${BASE}/`, priority: '1.0', changefreq: 'weekly' },
-    { loc: `${BASE}/test.html`, priority: '0.9', changefreq: 'monthly' },
-    { loc: `${BASE}/careers/index.html`, priority: '0.8', changefreq: 'weekly' },
-    { loc: `${BASE}/careers/streams.html`, priority: '0.8', changefreq: 'monthly' },
+    { loc: `${BASE}/`, priority: '1.0', changefreq: 'weekly', altEn: `${BASE}/`, altHi: `${BASE}/?lang=hi` },
+    { loc: `${BASE}/test.html`, priority: '0.9', changefreq: 'monthly', altEn: `${BASE}/test.html`, altHi: `${BASE}/test.html?lang=hi` },
   ];
+  // Generated pages contribute BOTH their en and hi URLs (each self-canonical).
+  function pushPair(list, file, priority, changefreq) {
+    const enUrl = `${BASE}/careers/${file}`;
+    const hiUrl = `${BASE}/careers/hi/${file}`;
+    list.push({ loc: enUrl, priority, changefreq, altEn: enUrl, altHi: hiUrl });
+    list.push({ loc: hiUrl, priority, changefreq, altEn: enUrl, altHi: hiUrl });
+  }
 
-  writeFileSync(join(outDir, 'index.html'), indexPage(categories, items.length));
+  emit('index.html', indexPage(categories, items.length));
+  pushPair(urls, 'index.html', '0.8', 'weekly');
 
-  // Stream guides (high-intent SEO landing pages) + hub
-  writeFileSync(join(outDir, 'streams.html'), streamsHubPage(items));
+  emit('streams.html', streamsHubPage(items));
+  pushPair(urls, 'streams.html', '0.8', 'monthly');
   for (const key of Object.keys(STREAM_GUIDES)) {
-    writeFileSync(join(outDir, `stream-${key}.html`), streamGuidePage(key, items));
-    urls.push({ loc: `${BASE}/careers/stream-${key}.html`, priority: '0.75', changefreq: 'monthly' });
+    emit(`stream-${key}.html`, streamGuidePage(key, items));
+    pushPair(urls, `stream-${key}.html`, '0.75', 'monthly');
   }
 
   for (const [cat, catItems] of categories) {
-    writeFileSync(join(outDir, `field-${catSlug(cat)}.html`), categoryPage(cat, catItems));
-    urls.push({ loc: `${BASE}/careers/field-${catSlug(cat)}.html`, priority: '0.7', changefreq: 'monthly' });
+    emit(`field-${catSlug(cat)}.html`, categoryPage(cat, catItems));
+    pushPair(urls, `field-${catSlug(cat)}.html`, '0.7', 'monthly');
   }
 
-  // Individual profession pages go in their own child sitemap.
+  // Individual profession pages go in their own child sitemap (en + hi each).
   const careerUrls = [];
   for (const p of items) {
-    writeFileSync(join(outDir, `${slug(p.id)}.html`), professionPage(p, byCategory));
-    careerUrls.push({ loc: `${BASE}/careers/${slug(p.id)}.html`, priority: '0.6', changefreq: 'monthly' });
+    emit(`${slug(p.id)}.html`, professionPage(p, byCategory));
+    pushPair(careerUrls, `${slug(p.id)}.html`, '0.6', 'monthly');
   }
 
   // Sitemap index → child sitemaps (core pages + profession pages).
@@ -650,7 +740,7 @@ function main() {
   writeFileSync(join(ROOT, 'sitemap-careers.xml'), urlset(careerUrls));
   writeFileSync(join(ROOT, 'sitemap.xml'), sitemapIndex(['sitemap-core.xml', 'sitemap-careers.xml']));
 
-  console.log(`Generated ${items.length} profession pages + ${categories.length} category hubs + ${Object.keys(STREAM_GUIDES).length} stream guides + streams hub + index.`);
+  console.log(`Generated ${items.length} profession pages + ${categories.length} category hubs + ${Object.keys(STREAM_GUIDES).length} stream guides + streams hub + index — English + Hindi (/hi/).`);
   console.log(`Sitemap index -> sitemap.xml (core: ${urls.length} URLs, careers: ${careerUrls.length} URLs)`);
 }
 

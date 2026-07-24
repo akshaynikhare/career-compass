@@ -1,23 +1,21 @@
 /**
  * i18n.js — Applies Hindi to static HTML + injects the language toggle.
  *
- * Language source precedence:
- *   ?lang= query param (so hreflang URLs in the sitemap resolve correctly)
- *   → saved preference (localStorage 'cat_lang')
- *   → English default.
+ * Two kinds of page:
  *
- * Static-HTML translation model: each translatable element carries its own
- * Hindi inline. When the language is Hindi we swap in the attribute value; when
- * English we leave the markup as-is (it is authored in English). Supported:
- *   data-i18n-hi         -> element.textContent
- *   data-i18n-hi-html    -> element.innerHTML  (markup / entities)
- *   data-i18n-hi-ph      -> placeholder attribute
- *   data-i18n-hi-title   -> title attribute
- *   data-i18n-hi-label   -> aria-label attribute
+ * 1. App pages (index/test/result/…): authored in English with inline Hindi on
+ *    data-i18n-hi* attributes. Language comes from ?lang= → localStorage → 'en'.
+ *    When Hindi, we swap the attribute values in; the toggle flips the stored
+ *    language and reloads so data-driven renderers re-read *_hi fields too.
+ *      data-i18n-hi        -> textContent
+ *      data-i18n-hi-html   -> innerHTML (markup / entities)
+ *      data-i18n-hi-ph     -> placeholder
+ *      data-i18n-hi-title  -> title
+ *      data-i18n-hi-label  -> aria-label
  *
- * The toggle flips the stored language and reloads the page so every script
- * (including data-driven renderers that read *_hi fields) re-renders in the
- * chosen language — avoids fragile live-swapping of dynamic content.
+ * 2. Static bilingual pages (generated careers/ + careers/hi/): each language is
+ *    a distinct, fully server-rendered URL cross-linked with hreflang alternates.
+ *    Here the toggle simply NAVIGATES to the counterpart URL — no in-place swap.
  */
 (function () {
   'use strict';
@@ -25,6 +23,46 @@
   var LANG_KEY = 'cat_lang';
   var SUPPORTED = ['en', 'hi'];
 
+  // Language the server rendered this page in (set on <html lang>), captured
+  // before we override it below.
+  var serverLang = (document.documentElement.getAttribute('lang') || '').slice(0, 2) === 'hi' ? 'hi' : 'en';
+
+  // Detect a static bilingual page via its hreflang alternates.
+  var altEnEl = document.querySelector('link[rel="alternate"][hreflang="en"]');
+  var altHiEl = document.querySelector('link[rel="alternate"][hreflang="hi"]');
+  var isBilingualStatic = !!(altEnEl && altHiEl && altEnEl.href !== altHiEl.href);
+
+  var INLINE_STYLE = 'background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.25rem 0.625rem; font-size:0.8125rem; font-weight:600; color:var(--text); cursor:pointer; flex-shrink:0; margin-left:auto;';
+  var FLOAT_STYLE = 'position:fixed; top:0.75rem; right:0.75rem; z-index:9999; background:var(--white,#fff); border:1px solid var(--border,#e5e7eb); border-radius:999px; padding:0.35rem 0.85rem; font-size:0.8125rem; font-weight:600; color:var(--primary,#4F46E5); cursor:pointer; box-shadow:0 1px 4px rgba(0,0,0,0.12);';
+
+  function makeButton(label, onClick) {
+    if (document.getElementById('lang-toggle-btn')) return;
+    var btn = document.createElement('button');
+    btn.id = 'lang-toggle-btn';
+    btn.type = 'button';
+    btn.setAttribute('aria-label', 'Change language / भाषा बदलें');
+    btn.textContent = label;
+    var header = document.querySelector('.test-header');
+    if (header) { btn.style.cssText = INLINE_STYLE; header.appendChild(btn); }
+    else { btn.style.cssText = FLOAT_STYLE; document.body.appendChild(btn); }
+    btn.addEventListener('click', onClick);
+  }
+
+  // ── Static bilingual page: toggle navigates to the counterpart URL ──────────
+  if (isBilingualStatic) {
+    function initNav() {
+      makeButton(serverLang === 'en' ? 'हिंदी' : 'English', function () {
+        var target = serverLang === 'en' ? altHiEl.href : altEnEl.href;
+        try { localStorage.setItem(LANG_KEY, serverLang === 'en' ? 'hi' : 'en'); } catch (e) {}
+        window.location.href = target;
+      });
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initNav);
+    else initNav();
+    return;
+  }
+
+  // ── App page: ?lang= → localStorage → default, with in-place Hindi swap ─────
   var urlLang = null;
   try {
     urlLang = new URLSearchParams(window.location.search).get('lang');
@@ -36,7 +74,6 @@
     (function () { try { return localStorage.getItem(LANG_KEY); } catch (e) { return null; } })() ||
     'en';
 
-  // Persist an explicit ?lang= choice so it survives navigation.
   if (urlLang && SUPPORTED.indexOf(urlLang) !== -1) {
     try { localStorage.setItem(LANG_KEY, urlLang); } catch (e) {}
   }
@@ -45,7 +82,6 @@
 
   function applyStaticHindi() {
     if (currentLang !== 'hi') return;
-
     document.querySelectorAll('[data-i18n-hi]').forEach(function (el) {
       el.textContent = el.getAttribute('data-i18n-hi');
     });
@@ -63,28 +99,11 @@
     });
   }
 
-  function injectToggle() {
-    if (document.getElementById('lang-toggle-btn')) return;
-
-    var btn = document.createElement('button');
-    btn.id = 'lang-toggle-btn';
-    btn.type = 'button';
-    btn.setAttribute('aria-label', 'Change language / भाषा बदलें');
-    btn.textContent = currentLang === 'en' ? 'हिंदी' : 'English';
-
-    var header = document.querySelector('.test-header');
-    if (header) {
-      btn.style.cssText = 'background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.25rem 0.625rem; font-size:0.8125rem; font-weight:600; color:var(--text); cursor:pointer; flex-shrink:0; margin-left:auto;';
-      header.appendChild(btn);
-    } else {
-      btn.style.cssText = 'position:fixed; top:0.75rem; right:0.75rem; z-index:9999; background:var(--white,#fff); border:1px solid var(--border,#e5e7eb); border-radius:999px; padding:0.35rem 0.85rem; font-size:0.8125rem; font-weight:600; color:var(--primary,#4F46E5); cursor:pointer; box-shadow:0 1px 4px rgba(0,0,0,0.12);';
-      document.body.appendChild(btn);
-    }
-
-    btn.addEventListener('click', function () {
+  function init() {
+    applyStaticHindi();
+    makeButton(currentLang === 'en' ? 'हिंदी' : 'English', function () {
       var next = currentLang === 'en' ? 'hi' : 'en';
       try { localStorage.setItem(LANG_KEY, next); } catch (e) {}
-      // Drop any ?lang= param so it doesn't override the new choice on reload.
       try {
         var url = new URL(window.location.href);
         url.searchParams.delete('lang');
@@ -93,11 +112,6 @@
         window.location.reload();
       }
     });
-  }
-
-  function init() {
-    applyStaticHindi();
-    injectToggle();
   }
 
   if (document.readyState === 'loading') {
