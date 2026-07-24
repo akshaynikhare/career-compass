@@ -7,6 +7,11 @@
     return (window.__CFG && window.__CFG.API_BASE_URL) || '';
   }
 
+  // Current UI language ('en' | 'hi') — so AI responses come back in Hindi too.
+  function lang() {
+    try { return (window.getLang && window.getLang()) || 'en'; } catch (e) { return 'en'; }
+  }
+
   async function postJSON(path, body) {
     var base = apiBase();
     if (!base) return null;
@@ -40,7 +45,8 @@
     var data = await postJSON('/api/ai/rank-domains', {
       riasec: riasec || {},
       constraints: constraints || {},
-      domains: domains
+      domains: domains,
+      lang: lang()
     });
 
     if (!Array.isArray(data)) return null;
@@ -55,7 +61,8 @@
       constraints: constraints || {},
       top_matches: (topMatches || []).map(function (m) {
         return { id: m.profession.id, name: m.profession.name, score: m.score };
-      })
+      }),
+      lang: lang()
     });
     return (data && data.text) || '';
   }
@@ -70,7 +77,8 @@
       profession_id: profession && profession.id,
       profession_name: profession && profession.name,
       profession_context: context,
-      question: question
+      question: question,
+      lang: lang()
     });
     return (data && data.text) || '';
   }
@@ -85,7 +93,8 @@
       profession_id: profession && profession.id,
       profession_name: profession && profession.name,
       profession_context: context,
-      constraints: constraints || {}
+      constraints: constraints || {},
+      lang: lang()
     });
     return (data && data.text) || '';
   }

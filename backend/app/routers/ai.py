@@ -37,6 +37,7 @@ async def rank_domains(request: Request, payload: RankDomainsIn) -> list[RankedD
             payload.riasec,
             payload.constraints,
             [d.model_dump() for d in payload.domains],
+            payload.lang,
         )
         return [RankedDomain(**item) for item in result]
     except Exception:  # noqa: BLE001 — graceful degradation, same as old ai.js
@@ -51,6 +52,7 @@ async def summary(request: Request, payload: SummaryIn) -> TextOut:
             payload.riasec,
             payload.constraints,
             [m.model_dump() for m in payload.top_matches],
+            payload.lang,
         )
         return TextOut(text=text)
     except Exception:  # noqa: BLE001
@@ -67,6 +69,7 @@ async def chat(request: Request, payload: ChatIn) -> TextOut:
             payload.profession_name or "this career",
             payload.profession_context,
             payload.question,
+            payload.lang,
         )
         return TextOut(text=text)
     except Exception:  # noqa: BLE001
@@ -81,6 +84,7 @@ async def roadmap(request: Request, payload: RoadmapIn) -> TextOut:
             payload.profession_name,
             payload.profession_context,
             payload.constraints,
+            payload.lang,
         )
         return TextOut(text=text)
     except Exception:  # noqa: BLE001

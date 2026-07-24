@@ -89,6 +89,7 @@ class RankDomainsIn(BaseModel):
     riasec: dict[str, float] = Field(default_factory=dict)
     constraints: dict[str, Any] = Field(default_factory=dict)
     domains: list[DomainMatch] = Field(default_factory=list)
+    lang: str = "en"  # 'en' | 'hi' — response language
 
 
 class RankedDomain(BaseModel):
@@ -100,6 +101,7 @@ class SummaryIn(BaseModel):
     riasec: dict[str, float] = Field(default_factory=dict)
     constraints: dict[str, Any] = Field(default_factory=dict)
     top_matches: list[TopMatch] = Field(default_factory=list)
+    lang: str = "en"  # 'en' | 'hi' — response language
 
 
 class ChatIn(BaseModel):
@@ -107,6 +109,7 @@ class ChatIn(BaseModel):
     profession_name: str | None = None
     profession_context: str | None = None  # optional grounding text from professions.json
     question: str
+    lang: str = "en"  # 'en' | 'hi' — response language
 
 
 class RoadmapIn(BaseModel):
@@ -114,6 +117,7 @@ class RoadmapIn(BaseModel):
     profession_name: str
     profession_context: str | None = None
     constraints: dict[str, Any] = Field(default_factory=dict)
+    lang: str = "en"  # 'en' | 'hi' — response language
 
 
 class TextOut(BaseModel):

@@ -38,6 +38,18 @@ _STREAM_LABELS = {
 _INTENSITY = ["", "Low", "Moderate", "High"]
 
 
+def _lang_instruction(lang: str) -> str:
+    """Extra prompt line telling Gemini to answer in Hindi when requested."""
+    if (lang or "en").lower().startswith("hi"):
+        return (
+            "Write your entire response in simple, natural Hindi (Devanagari script) "
+            "that a 14-16 year old Indian student easily understands. Keep well-known "
+            "exam names, abbreviations and proper nouns in Latin script (NEET, JEE, "
+            "MBBS, IIT, NIT, AIIMS, UPSC, CLAT, CAT, GATE, CA, PCM, PCB, Class 10/11/12)."
+        )
+    return ""
+
+
 def _get_client() -> genai.Client:
     global _client
     if _client is None:
@@ -99,9 +111,21 @@ def _student_block(riasec: dict, constraints: dict) -> str:
 
 
 # ── Feature 1: rank domains (ported + improved from src/ai.js) ────────────────
-async def rank_domains(riasec: dict, constraints: dict, domains: list[dict]) -> list[dict]:
+async def rank_domains(
+    riasec: dict, constraints: dict, domains: list[dict], lang: str = "en"
+) -> list[dict]:
     domain_summaries = "\n".join(
         f"{d['category']}: {d['careers']}" for d in domains[:10]
+    )
+    # The frontend matches results back to domain headers by the English category
+    # name, so the "category" value MUST stay English even in Hindi mode.
+    hi = (lang or "en").lower().startswith("hi")
+    lang_rule = (
+        'Keep each "category" value EXACTLY as the English domain name given above. '
+        'Write each "reason" in simple, natural Hindi (Devanagari) for a 14-16 year old; '
+        "keep exam names and abbreviations (NEET, JEE, UPSC, PCM, etc.) in Latin script."
+        if hi
+        else ""
     )
     prompt = "\n".join(
         [
@@ -120,8 +144,9 @@ async def rank_domains(riasec: dict, constraints: dict, domains: list[dict]) -> 
             "Respond in this exact JSON format (no markdown, no extra text):",
             '[{"category": "Domain Name", "reason": "One sentence why it fits."}]',
         ]
+        + ([lang_rule] if lang_rule else [])
     )
-    ck = cache.key_for("rank", prompt)
+    ck = cache.key_for("rank", lang, prompt)
     cached = cache.get(ck)
     if cached is not None:
         return json.loads(cached)
@@ -135,7 +160,9 @@ async def rank_domains(riasec: dict, constraints: dict, domains: list[dict]) -> 
 
 
 # ── Feature 2: personalized summary ───────────────────────────────────────────
-async def summary(riasec: dict, constraints: dict, top_matches: list[dict]) -> str:
+async def summary(
+    riasec: dict, constraints: dict, top_matches: list[dict], lang: str = "en"
+) -> str:
     matches = ", ".join(
         f"{m.get('name')} ({round((m.get('score') or 0) * 100)}% match)"
         for m in top_matches[:6]
@@ -154,8 +181,9 @@ async def summary(riasec: dict, constraints: dict, top_matches: list[dict]) -> s
             "and (3) gives one concrete next step for Class 11. Speak to 'you'. Plain text, "
             "no markdown, no lists.",
         ]
+        + ([_lang_instruction(lang)] if _lang_instruction(lang) else [])
     )
-    ck = cache.key_for("summary", prompt)
+    ck = cache.key_for("summary", lang, prompt)
     cached = cache.get(ck)
     if cached is not None:
         return cached
@@ -165,7 +193,9 @@ async def summary(riasec: dict, constraints: dict, top_matches: list[dict]) -> s
 
 
 # ── Feature 3: "ask about this career" Q&A ────────────────────────────────────
-async def chat(profession_name: str, context: str | None, question: str) -> str:
+async def chat(
+    profession_name: str, context: str | None, question: str, lang: str = "en"
+) -> str:
     prompt = "\n".join(
         [
             "You are a career counsellor answering an Indian Class 10 student's question "
@@ -179,9 +209,10 @@ async def chat(profession_name: str, context: str | None, question: str) -> str:
             "streams, typical path, realistic salary if asked). Be honest and encouraging. "
             "If the question is unrelated to careers/education, gently redirect. Plain text.",
         ]
+        + ([_lang_instruction(lang)] if _lang_instruction(lang) else [])
     )
     # Questions are free-form; cache exact repeats only.
-    ck = cache.key_for("chat", profession_name, context or "", question.strip().lower())
+    ck = cache.key_for("chat", lang, profession_name, context or "", question.strip().lower())
     cached = cache.get(ck)
     if cached is not None:
         return cached
@@ -191,7 +222,9 @@ async def chat(profession_name: str, context: str | None, question: str) -> str:
 
 
 # ── Feature 4: on-demand roadmap ──────────────────────────────────────────────
-async def roadmap(profession_name: str, context: str | None, constraints: dict) -> str:
+async def roadmap(
+    profession_name: str, context: str | None, constraints: dict, lang: str = "en"
+) -> str:
     stream = _STREAM_LABELS.get(
         constraints.get("stream_pref"), constraints.get("stream_pref") or "Not decided"
     )
@@ -207,8 +240,9 @@ async def roadmap(profession_name: str, context: str | None, constraints: dict) 
             "internships/skills). Be India-specific and realistic. Format as a numbered list, "
             "plain text, no markdown headers.",
         ]
+        + ([_lang_instruction(lang)] if _lang_instruction(lang) else [])
     )
-    ck = cache.key_for("roadmap", profession_name, context or "", stream)
+    ck = cache.key_for("roadmap", lang, profession_name, context or "", stream)
     cached = cache.get(ck)
     if cached is not None:
         return cached
